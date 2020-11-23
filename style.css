@@ -226,6 +226,11 @@ header {
   transition: 0.2s all ease;
 }
 
+header .asaiHeaderLogo {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
 header .booknow-btn {
   font-family: 'CircularStdBold';
   font-size: 14px;

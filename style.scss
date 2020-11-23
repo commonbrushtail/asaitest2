@@ -237,7 +237,11 @@ header {
 	justify-content: space-between;
 	padding: 15px 30px;
 	transition: 0.2s all ease;
+
 	
+	.asaiHeaderLogo{
+		transform: translateX(100%);
+	}
 
 	.booknow-btn {
 		font-family: 'CircularStdBold';
