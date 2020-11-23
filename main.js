@@ -207,7 +207,7 @@ var scene = new ScrollMagic.Scene({triggerElement: ".membership", duration: 200,
 
 let slidingText = document.querySelectorAll('.text');
 let slidingTextLeft = document.querySelectorAll('.textLeft');
-let textWrapLength = 4560;
+let textWrapLength = 3500;
 let textWrap = document.querySelectorAll('.textWrap');
 let count = 0
 
