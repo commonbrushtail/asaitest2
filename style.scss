@@ -237,6 +237,8 @@ header {
 	grid-template-columns: 1fr auto 1fr;
 
 	.left-header{
+		display: flex;
+		justify-content: flex-start;
 
 	}
 	.headerLogoWrap{

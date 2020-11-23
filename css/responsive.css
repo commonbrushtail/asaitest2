@@ -530,6 +530,34 @@
 }
 
 @media (max-width: 767px) {
+  header {
+    padding: 5px 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .left-header .hamburger {
+    padding: 20px 0 10px;
+  }
+  .left-header .hamburger .hamburger-inner, .left-header .hamburger .hamburger-inner::before, .left-header .hamburger .hamburger-inner::after {
+    width: 35px;
+  }
+  .headerLogoWrap svg {
+    width: 50px;
+    height: auto;
+  }
+  .right-header svg {
+    width: 25px;
+    height: auto;
+  }
   h3 {
     font-size: 20px;
   }
@@ -577,9 +605,6 @@
   }
   .usericon {
     width: 27px;
-  }
-  header {
-    padding: 20px;
   }
   .float-booking {
     font-size: 14px;
