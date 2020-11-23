@@ -1342,52 +1342,80 @@ header.scrolling{
 /* ---- Section Matching offer ----------------*/
 
 .matchingoffer {
-	background: #ECECEC;
-	overflow: hidden;
-	min-height: 600px;
+	background: hsl(0, 0%, 93%);
+	height: 600px;
+	width: 100%;
 	display: flex;
 	align-items: center;
 
 	.container{
-		transform: translateY(-50%);
-		.din-title{
-			transform: translateY(-50%);
+		width: 80%;
+		height: 100%;
+		
+		.row{
+			height: 100%;
+			display: flex;
+			align-items: center;
+
+			.topPart{
+				transform: translateY(-50%);
+				.din-title{
+					transform: translateY(-100%);
+				}
+			}
+
+			.bottomPart{
+				height: 100%;
+				display: flex;
+				align-items: center;
+				.offercard-wrap{
+					height: 100%;
+					display: flex;
+					align-items: center;
+
+					.buttonContainer{
+						position: absolute;
+						width: 120%;
+						display: flex;
+						justify-content: space-between;
+						left: 50%;
+						transform: translateX(-50%);
+						
+					
+						.arrowButton{
+							width: 40px;
+							height: 40px;
+							border-radius: 50%;
+							border: 1px solid $theblue;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							color: $theblue;
+							text-align: center;
+							vertical-align: center;	
+							cursor: pointer;
+						}
+					}
+				}
+				
+				
+			}
+			
 		}
+
+		
 	}
 	
 	
 }
 
-.offercard-wrap{
-	position: relative;
-	height: max-content;
-	height: 100%;
-	.buttonContainer{
-		position: absolute;
-		margin:0;
-		right: 50%;
-		top: 50%;
-		transform: translate(50%,50%);
-		width: 120%;
-		height:100%;
-		display: flex;
-		justify-content: space-between;
+		
+			
+
 	
-		.arrowButton{
-			width: 40px;
-			height: 40px;
-			border-radius: 50%;
-			border: 1px solid $theblue;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			color: $theblue;
-			text-align: center;
-			vertical-align: center;	
-			cursor: pointer;
-		}
-	}
-}
+	
+
+
 
 .offercard-wrap .card {
 	background: #E7BF92;

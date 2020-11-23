@@ -8,12 +8,12 @@ let overlayBookMenu = document.querySelector('.overlayBookMenu')
 let closeButton = document.querySelector('.closeButton')
 floatBooking.addEventListener('click',()=>{
     overlayBookMenu.classList.add('active')
-    html.classList.add('active')
+    
 })
 
 closeButton.addEventListener('click',()=>{
     overlayBookMenu.classList.remove('active')
-    html.classList.remove('active')
+   
 })
 
 let html = document.documentElement
@@ -167,7 +167,6 @@ revealText.forEach(section => {
 ScrollTrigger.create({
     start: "-45+top top",
     trigger:'.secondSection',
-    markers:true,
     endTrigger:"html" ,
     end:"bottom top",
     toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
@@ -327,7 +326,7 @@ function initCards(card, index) {
 
   newCards.forEach(function (card, index) {
     card.style.zIndex = allCards.length - index;
-    card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 40 * index + 'px)';
+    card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 35 * index + 'px)';
    
     
     

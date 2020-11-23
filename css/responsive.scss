@@ -2,9 +2,34 @@ $theblue: #071D49;
 
 // Big mornitor
 
+@media (min-width: 1700px) {
+	.membership {
+		height: 800px;
+		width: 100%;
+	
+		
+		#membershipLine{
+			width: 100%;
+			height: 100%;
+			left: 50%;
+			top: -10%;
+			transform: translateX(-50%);
+			
+		}
+	}
+}
+
 @media (min-width: 1600px) {
 	.membership {
 		height: 600px;
+		width: 100%;
+		
+		#membershipLine{
+			width: 100%;
+			left: 50%;
+			transform: translateX(-50%);
+			
+		}
 	}
 }
 
@@ -13,6 +38,18 @@ $theblue: #071D49;
 @media (max-width: 1500px) {
 	.container {
 		max-width: 90%;
+	}
+	.membership {
+		height: 600px;
+		width: 100%;
+		
+		#membershipLine{
+			width: 100%;
+			height: 80%;
+			left: 50%;
+			transform: translateX(-50%);
+			
+		}
 	}
 }
 
@@ -449,7 +486,7 @@ $theblue: #071D49;
 	.membership {
 		height: auto;
 	}
-	.membership img {
+	.membership #membershipLine {
 		margin-top: 30px;
 		position: relative;
 		bottom: 0;
@@ -545,65 +582,92 @@ $theblue: #071D49;
 		opacity: 1;
 	}
 
+
+
 	.matchingoffer {
-		background: #ECECEC;
-		height: 120vh;
-		padding: 50px 0 50px;
-		
-
+		background: hsl(0, 0%, 93%);
+		height:100vh;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		overflow: hidden;
+		padding: 25px 0;
 		.container{
-			width: 100%;
-			height: 100%;
-			transform: translate(0);
-
-			.row{
-			height: 100%;	
+			width: 85%;
+			height: 80%;
 			
-
-			.topPart{
-				height: 30%;
+			
+			.row{
+				height: 100%;
 				display: flex;
 				align-items: center;
-				justify-content: flex-start;
-				
-				.din-title{
-					transform: translate(0);
-					text-align: start;
+	
+				.topPart{
+					height: 20%;
+					transform: translateY(0);
+					.din-title{
+						transform: translateY(0);
+					}
 				}
-			}
-			
-
-			.bottomPart{
-				height: 70%;
-				margin: 0 auto;
-
-
-				.offercard-wrap{
-					margin: 0;
-					height: 100%;
-					max-width: 350px;
-					margin: 0 auto;
+	
+				.bottomPart{
+					height: 80%;
 					width: 100%;
-					.buttonContainer{
-						margin-top:50px;
-						top: 55%;
-						width: 50%;
-						height: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					.offercard-wrap{
+						margin-top: 0;
+						height: 100%;
+						width: 100%;
 						
+						.card{
+							left: 0;
+							right: 0;
+							max-width: 350px;
+							margin: 0 auto;
+						}
+	
+						.buttonContainer{
+							position: absolute;
+							width: 200px;
+							display: flex;
+							justify-content: space-between;
+							left: 50%;
+							transform: translateX(-50%);
+							top: initial;
+							bottom: 0;
+							
+
+							
 						
+							.arrowButton{
+								width: 40px;
+								height: 40px;
+								border-radius: 50%;
+								font-size: 20px;
+								border: 1px solid $theblue;
+								color: $theblue;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								cursor: pointer;
+							}
+						}
 					}
 					
 					
 				}
 				
 			}
-
-			}
+	
+			
 		}
 		
-	
 		
 	}
+
+	
 	
 }
 
@@ -822,6 +886,93 @@ $theblue: #071D49;
 	}
 	.locations h2 br {
 		display: block;
+	}
+
+
+	.matchingoffer {
+		background: hsl(0, 0%, 93%);
+		height: 700px;
+		width: 100vw;
+		display: flex;
+		padding: 30px 0;
+		flex-direction: column;
+		
+		
+
+		
+		.container{
+			width: 85%;
+			height: 100%;
+			
+			
+			.row{
+				height: 100%;
+				
+				
+				.topPart{
+					align-self: start;
+					transform: translateY(0);
+					.din-title{
+						transform: translateY(0);
+						margin: 0;
+					}
+				}
+	
+				.bottomPart{
+					
+					width: 100%;
+					display: flex;
+					align-items: flex-start;
+					justify-content: center;
+					.offercard-wrap{
+						margin-top: 0;
+						height: 100%;
+						width: 100%;
+						
+						.card{
+							left: 0;
+							right: 0;
+							max-width: 350px;
+							margin: 0 auto;
+						}
+	
+						.buttonContainer{
+							position: absolute;
+							width: 200px;
+							display: flex;
+							justify-content: space-between;
+							left: 50%;
+							transform: translateX(-50%);
+							top: initial;
+							bottom: 0;
+							
+
+							
+						
+							.arrowButton{
+								width: 40px;
+								height: 40px;
+								border-radius: 50%;
+								font-size: 20px;
+								border: 1px solid $theblue;
+								color: $theblue;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								cursor: pointer;
+							}
+						}
+					}
+					
+					
+				}
+				
+			}
+	
+			
+		}
+		
+		
 	}
 
 	
