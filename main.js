@@ -165,7 +165,7 @@ revealText.forEach(section => {
 
 
 ScrollTrigger.create({
-    start: "top top",
+    start: "-45+top top",
     trigger:'.secondSection',
     markers:true,
     endTrigger:"html" ,
