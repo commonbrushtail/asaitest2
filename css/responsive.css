@@ -550,6 +550,36 @@
   .left-header .hamburger .hamburger-inner, .left-header .hamburger .hamburger-inner::before, .left-header .hamburger .hamburger-inner::after {
     width: 35px;
   }
+  .left-header .hamburger--slider .hamburger-inner {
+    top: 2px;
+  }
+  .left-header .hamburger--slider .hamburger-inner::before {
+    top: 8px;
+    -webkit-transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+  }
+  .left-header .hamburger--slider .hamburger-inner::after {
+    top: 16px;
+  }
+  .left-header .hamburger--slider.is-active .hamburger-inner {
+    -webkit-transform: translate3d(0, 10px, 0) rotate(45deg);
+            transform: translate3d(0, 10px, 0) rotate(45deg);
+  }
+  .left-header .hamburger--slider.is-active .hamburger-inner::before {
+    -webkit-transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+            transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0;
+  }
+  .left-header .hamburger--slider.is-active .hamburger-inner::after {
+    -webkit-transform: translate3d(0, -16px, 0) rotate(-90deg);
+            transform: translate3d(0, -16px, 0) rotate(-90deg);
+  }
   .headerLogoWrap svg {
     width: 50px;
     height: auto;
