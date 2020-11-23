@@ -164,9 +164,10 @@ revealText.forEach(section => {
 
 
 
-
 ScrollTrigger.create({
-    start: "400 top",
+    start: "top top",
+    trigger:'.secondSection',
+    markers:true,
     endTrigger:"html" ,
     end:"bottom top",
     toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
