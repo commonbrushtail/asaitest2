@@ -230,18 +230,24 @@ header {
 	left: 0;
 	top: 0;
 	width: 100%;
-	text-align: center;
 	z-index: 20;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	padding: 15px 30px;
 	transition: 0.2s all ease;
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
 
-	
-	.asaiHeaderLogo{
-		transform: translateX(85%);
+	.left-header{
+
 	}
+	.headerLogoWrap{
+
+	}
+	.right-header{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	
 
 	.booknow-btn {
 		font-family: 'CircularStdBold';
