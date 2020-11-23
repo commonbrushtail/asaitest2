@@ -340,6 +340,19 @@ var leftListener = createButtonListener(false);
 var rightListener = createButtonListener(true);
 left.addEventListener('click', leftListener);
 right.addEventListener('click', rightListener);
+var tl = gsap.timeline();
+tl.to('.introAnimate1', {
+  opacity: 100,
+  duration: 2,
+  ease: "power1.out"
+}), tl.to('.introAnimate1', {
+  opacity: 0
+});
+tl.to('.introAnimate2', {
+  opacity: 100,
+  duration: 2,
+  delay: 1
+});
 /* for ruunning animation for mthe first time
     document.querySelector('#accept').addEventListener('click',(e)=>{
         e.preventDefault()
