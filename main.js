@@ -197,7 +197,7 @@ var tween = new TimelineMax()
 .add(TweenMax.to(line, 1, {ease:Linear.easeNone}), 0);// change color during the whole thing
 
 
-var scene = new ScrollMagic.Scene({triggerElement: ".membership", duration: 300, tweenChanges: false})
+var scene = new ScrollMagic.Scene({triggerElement: ".membership", duration: 1000, tweenChanges: false})
 .setTween(tween)
 //.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
