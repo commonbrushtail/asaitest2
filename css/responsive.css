@@ -514,48 +514,44 @@
   }
   .matchingoffer {
     background: #ededed;
-    height: 100vh;
+    height: 900px;
     width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden;
-    padding: 25px 0;
+    padding: 30px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .matchingoffer .container {
     width: 85%;
-    height: 80%;
+    height: 100%;
   }
   .matchingoffer .container .row {
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
   .matchingoffer .container .row .topPart {
-    height: 20%;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
   .matchingoffer .container .row .topPart .din-title {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    margin: 0;
   }
   .matchingoffer .container .row .bottomPart {
-    height: 80%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
