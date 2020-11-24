@@ -1204,6 +1204,7 @@ header.scrolling {
   width: 100%;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .matchingoffer .container {
   width: 80%;
