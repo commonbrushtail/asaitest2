@@ -284,7 +284,7 @@ scrollTrigger:{
 
 
 
-var allCardsLinkTag = document.querySelectorAll('.card a')
+
 
 
 var allCards = document.querySelectorAll('.card');
@@ -298,10 +298,6 @@ var offerCardWrap = document.querySelector('.cards')
 
 function initCards(card, index) {
     let removedCard = document.querySelector('.removed')
-    allCardsLinkTag.forEach(element => {
-        Hammer(element).off()
-    });
-    
   
     if(removedCard){
    
@@ -586,6 +582,3 @@ window.addEventListener('onResize', (event) => {
 });    
 
 
-function test(){
-    console.log('asdsad')
-}

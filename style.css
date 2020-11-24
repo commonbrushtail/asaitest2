@@ -1496,7 +1496,7 @@ header.scrolling {
 }
 
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer {
-  width: 120%;
+  width: 800px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1508,6 +1508,22 @@ header.scrolling {
           justify-content: space-between;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer .arrowButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid 1px #071D49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card {
@@ -1541,6 +1557,7 @@ header.scrolling {
 }
 
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card .content a {
+  pointer-events: all;
   cursor: pointer;
 }
 

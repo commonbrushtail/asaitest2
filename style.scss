@@ -1439,13 +1439,22 @@ header.scrolling{
 				}
 
 				.buttonContainer{
-					width:120%;
+					width: 800px;
 					position: absolute;
 					top: 50%;
 					left: 50%;
 					display: flex;
 					justify-content: space-between;
 					transform: translateX(-50%);
+					.arrowButton{
+						width: 40px;
+						height: 40px;
+						border-radius: 50%;
+						border:solid 1px $theblue;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
 				}
 
 				.card {
@@ -1470,7 +1479,7 @@ header.scrolling{
 						padding-top: 20px;
 						pointer-events: none!important;
 						a{
-							
+							pointer-events: all;
 							cursor: pointer;
 						}
 					}
