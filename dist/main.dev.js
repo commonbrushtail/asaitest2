@@ -149,7 +149,7 @@ var tween = new TimelineMax().add(TweenMax.to(line, 1, {
 
 var scene = new ScrollMagic.Scene({
   triggerElement: ".membership",
-  duration: 1000,
+  duration: 500,
   tweenChanges: false
 }).setTween(tween) //.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
@@ -234,7 +234,6 @@ function initCards(card, index) {
   newCards.forEach(function (card, index) {
     card.style.zIndex = allCards.length - index;
     card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 35 * index + 'px)';
-    card.style.opacity = (10 - index) / 10;
   });
 
   if (removedCard) {
