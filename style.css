@@ -335,6 +335,13 @@ header.scrolling {
 .float-book-wrap.white a {
   background-color: white;
   color: #071D49;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.float-book-wrap a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .float-book-wrap {

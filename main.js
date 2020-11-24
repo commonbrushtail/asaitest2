@@ -559,7 +559,7 @@ whiteSection.forEach(section => {
         endTrigger:section,
         start: "top bottom",
         end: "bottom bottom",
-        markers:true,
+       
         toggleClass: {targets: floatBook, className: "white",}
         
         
@@ -568,4 +568,21 @@ whiteSection.forEach(section => {
 
 
 });
+
+
+
+        
+ScrollTrigger.create({
+    trigger: 'footer',
+    endTrigger:'html',
+    start: "top bottom",
+    end: "bottom bottom",
+    
+    toggleClass: {targets: floatBook, className: "white",}
+    
+    
+    });
+
+
+
 

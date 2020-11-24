@@ -334,6 +334,11 @@ header.scrolling{
 .float-book-wrap.white a {
 	background-color: white;
 	color: $theblue;
+	transition: all 0.3s ease;
+}
+.float-book-wrap a {
+
+	transition: all 0.3s ease;
 }
 
 .float-book-wrap {
@@ -345,6 +350,7 @@ header.scrolling{
 	left: 0;
 	right: 0;
 	text-align: center;
+	
 }
 
 .float-booking {
