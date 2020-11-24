@@ -149,7 +149,7 @@ var tween = new TimelineMax().add(TweenMax.to(line, 1, {
 
 var scene = new ScrollMagic.Scene({
   triggerElement: ".membership",
-  duration: 500,
+  duration: 400,
   tweenChanges: false
 }).setTween(tween) //.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
