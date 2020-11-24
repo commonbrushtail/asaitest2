@@ -1465,7 +1465,6 @@ header.scrolling {
 .matchingoffer .container {
   width: 80%;
   height: 100%;
-  overflow: hidden;
 }
 
 .matchingoffer .container .row {
