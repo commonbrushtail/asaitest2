@@ -102,7 +102,7 @@ $theblue: #071D49;
 		width: 100px;
 		height: auto;
 		left: 50%;
-		top: 50%;
+		top: 40%;
 		transform: translate(-50%,-50%);
 		opacity: 0;
 		transition: all 2s ease;
@@ -122,6 +122,10 @@ $theblue: #071D49;
 .swiper-pagination-bullet {
 	width: 14px;
 	height: 14px;
+}
+
+.headerLogo{
+	clip-path: rect(30px, 20px, 30px, 40px);
 }
 
 input {
@@ -327,6 +331,11 @@ header.scrolling{
 	border-bottom: none;
 }
 
+.float-book-wrap.white a {
+	background-color: white;
+	color: $theblue;
+}
+
 .float-book-wrap {
 	display: none;
 	position: fixed;
@@ -443,6 +452,7 @@ header.scrolling{
 .svgHeaderIcon.scrolling{
 	fill: $theblue;
 }
+
 
 .perkCloseButton{
 	display: flex;

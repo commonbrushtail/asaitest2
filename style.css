@@ -101,7 +101,7 @@ body {
   width: 100px;
   height: auto;
   left: 50%;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   opacity: 0;
@@ -121,6 +121,11 @@ body {
 .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
+}
+
+.headerLogo {
+  -webkit-clip-path: rect(30px, 20px, 30px, 40px);
+          clip-path: rect(30px, 20px, 30px, 40px);
 }
 
 input {
@@ -325,6 +330,11 @@ header.scrolling {
 
 .left-header a {
   border-bottom: none;
+}
+
+.float-book-wrap.white a {
+  background-color: white;
+  color: #071D49;
 }
 
 .float-book-wrap {
