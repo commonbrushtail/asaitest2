@@ -50,29 +50,35 @@ body {
 
 .introAnimationOverlay {
   position: fixed;
-  display: none;
   top: 0;
   left: 0;
   z-index: 9999;
   background-color: #071D49;
-  width: 0;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
 }
-.introAnimationOverlay span {
+.introAnimationOverlay .introAnimate1Wrap {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   transition: all 2s ease;
-  opacity: 0;
-  display: none;
+  opacity: 100;
+  display: flex;
+  overflow: hidden;
 }
-.introAnimationOverlay svg {
-  display: none;
+.introAnimationOverlay .introAnimate1Wrap .introAnimate1 {
+  opacity: 100;
+  height: 100%;
+  display: block;
+  position: relative;
+  transform: translateY(120%);
+}
+.introAnimationOverlay .introAnimate2 {
   position: absolute;
   width: 100px;
   height: auto;
@@ -81,6 +87,10 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 2s ease;
+}
+
+.introAnimationOverlay.hide {
+  display: none;
 }
 
 .img-fluid {
@@ -667,49 +677,49 @@ header.scrolling {
   filter: grayscale(30%);
 }
 .overlayNav.container .rightMenu[data-background-image=default] {
-  background-image: url(/images/banner.jpg);
+  background-image: url(images/banner.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaDefault] {
-  background-image: url(/images/ig-3.jpg);
+  background-image: url(images/ig-3.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaOverview] {
-  background-image: url(/images/ig-4.jpg);
+  background-image: url(images/ig-4.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaRoom] {
-  background-image: url(/images/ig-1.jpg);
+  background-image: url(images/ig-1.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaRestaurant] {
-  background-image: url(/images/ig-2.jpg);
+  background-image: url(images/ig-2.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaGuide] {
-  background-image: url(/images/ig-4.jpg);
+  background-image: url(images/ig-4.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaHappenings] {
-  background-image: url(/images/ig-3.jpg);
+  background-image: url(images/ig-3.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaOffers] {
-  background-image: url(/images/ig-1.jpg);
+  background-image: url(images/ig-1.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornDefault] {
-  background-image: url(/images/ig-5.jpg);
+  background-image: url(images/ig-5.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornOverview] {
-  background-image: url(/images/ig-4.jpg);
+  background-image: url(images/ig-4.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornRoom] {
-  background-image: url(/images/ig-1.jpg);
+  background-image: url(images/ig-1.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornRestaurant] {
-  background-image: url(/images/ig-2.jpg);
+  background-image: url(images/ig-2.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornGuide] {
-  background-image: url(/images/ig-4.jpg);
+  background-image: url(images/ig-4.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornHappenings] {
-  background-image: url(/images/ig-3.jpg);
+  background-image: url(images/ig-3.jpg);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornOffers] {
-  background-image: url(/images/ig-1.jpg);
+  background-image: url(images/ig-1.jpg);
 }
 .overlayNav.container .rightMenu {
   display: flex;
@@ -1272,9 +1282,9 @@ header.scrolling {
 .story-expand .item {
   flex: 1;
   height: 100%;
-  transition: all 1.5s ease;
+  transition: all 1s ease;
   position: relative;
-  transition-delay: 0.1s;
+  transition-delay: 0 0.5s;
   overflow: hidden;
   display: block;
 }

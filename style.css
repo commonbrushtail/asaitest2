@@ -54,12 +54,11 @@ body {
 
 .introAnimationOverlay {
   position: fixed;
-  display: none;
   top: 0;
   left: 0;
   z-index: 9999;
   background-color: #071D49;
-  width: 0;
+  width: 100vw;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,7 +72,7 @@ body {
   color: white;
 }
 
-.introAnimationOverlay span {
+.introAnimationOverlay .introAnimate1Wrap {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -81,12 +80,23 @@ body {
           transform: translate(-50%, -50%);
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
-  opacity: 0;
-  display: none;
+  opacity: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
-.introAnimationOverlay svg {
-  display: none;
+.introAnimationOverlay .introAnimate1Wrap .introAnimate1 {
+  opacity: 100;
+  height: 100%;
+  display: block;
+  position: relative;
+  -webkit-transform: translateY(120%);
+          transform: translateY(120%);
+}
+
+.introAnimationOverlay .introAnimate2 {
   position: absolute;
   width: 100px;
   height: auto;
@@ -97,6 +107,10 @@ body {
   opacity: 0;
   -webkit-transition: all 2s ease;
   transition: all 2s ease;
+}
+
+.introAnimationOverlay.hide {
+  display: none;
 }
 
 .img-fluid {
@@ -1565,11 +1579,11 @@ header.scrolling {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  -webkit-transition: all 1.5s ease;
-  transition: all 1.5s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
   position: relative;
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
+  -webkit-transition-delay: 0 0.5s;
+          transition-delay: 0 0.5s;
   overflow: hidden;
   display: block;
 }
