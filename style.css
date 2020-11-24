@@ -75,7 +75,7 @@ body {
 .introAnimationOverlay .introAnimate1Wrap {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: all 2s ease;
