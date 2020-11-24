@@ -70,6 +70,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  opacity: 0;
 }
 
 .introAnimationOverlay .introAnimate1Wrap {
@@ -819,6 +820,7 @@ header.scrolling {
   width: 50%;
   line-height: 35px;
   letter-spacing: 1px;
+  font-family: 'CircularStdBook';
 }
 
 .overlayNav.container .leftMenu .container .socialLink a {
@@ -1437,80 +1439,45 @@ header.scrolling {
 .matchingoffer {
   background: #ededed;
   height: 600px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
+  width: 100vw;
 }
 
-.matchingoffer .container {
+.matchingoffer .titleCardWrapContainer {
   width: 80%;
   height: 100%;
+  padding: 50px 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.matchingoffer .container .row {
+.matchingoffer .titleCardWrapContainer .titleWrap {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.matchingoffer .titleCardWrapContainer .cardWrap {
+  width: 80%;
   height: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.matchingoffer .container .row .topPart {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.matchingoffer .container .row .topPart .din-title {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.matchingoffer .container .row .bottomPart {
+.matchingoffer .titleCardWrapContainer .cardWrap .cards {
+  width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.matchingoffer .container .row .bottomPart .offercard-wrap {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.matchingoffer .container .row .bottomPart .offercard-wrap .buttonContainer {
-  position: absolute;
-  width: 120%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.matchingoffer .container .row .bottomPart .offercard-wrap .buttonContainer .arrowButton {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #071D49;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1520,15 +1487,31 @@ header.scrolling {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #071D49;
-  text-align: center;
-  vertical-align: center;
-  cursor: pointer;
 }
 
-.cards .card {
+.matchingoffer .titleCardWrapContainer .cardWrap .cards div:nth-child(2) {
+  pointer-events: all !important;
+  cursor: -webkit-grab !important;
+  cursor: grab !important;
+}
+
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer {
+  width: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card {
   background: #E7BF92;
-  padding: 30px;
   position: absolute;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1536,38 +1519,47 @@ header.scrolling {
       -ms-flex-positive: 1;
           flex-grow: 1;
   pointer-events: none;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  width: 620px;
+  height: 280px;
 }
 
-.cards .card .row {
-  pointer-events: none;
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card .row {
+  pointer-events: none !important;
 }
 
-.cards .card .content {
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card .content {
   padding-top: 20px;
+  pointer-events: none !important;
 }
 
-.cards .card:first-of-type {
-  pointer-events: all !important;
-  cursor: -webkit-grab !important;
-  cursor: grab !important;
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card .content a {
+  cursor: pointer;
 }
 
-.cards .card.purple {
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card.purple {
   background-color: #AC9DB4;
 }
 
-.cards .card.green {
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card.green {
   background-color: #90AD9D;
 }
 
-.cards .card.moving {
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .cards .card.moving {
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
-.cards .link {
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .cards .link {
   margin-top: 10px;
   display: inline-block;
 }
@@ -1589,32 +1581,32 @@ header.scrolling {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
-  -webkit-transition-delay: 0 0.5s;
-          transition-delay: 0 0.5s;
+  -webkit-transition-delay: 0 0.2s;
+          transition-delay: 0 0.2s;
   overflow: hidden;
   display: block;
 }
 
 .story-expand .item .cat-text {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   top: 0;
   position: relative;
 }
 
 .story-expand .item h2 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
 .story-expand .item h3 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
 }

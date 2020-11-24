@@ -284,7 +284,7 @@ scrollTrigger:{
 
 
 
-
+var allCardsLinkTag = document.querySelectorAll('.card a')
 
 
 var allCards = document.querySelectorAll('.card');
@@ -298,6 +298,10 @@ var offerCardWrap = document.querySelector('.cards')
 
 function initCards(card, index) {
     let removedCard = document.querySelector('.removed')
+    allCardsLinkTag.forEach(element => {
+        Hammer(element).off()
+    });
+    
   
     if(removedCard){
    
@@ -489,11 +493,22 @@ let introAnimationOverlay = document.querySelector('.introAnimationOverlay')
 
 
 
-/*
+
         
 if(localStorage.getItem('asaiVisited')){
     introAnimationOverlay.classList.add('hide')  
 } else {
+    gsap.set('.introAnimationOverlay',{
+        opacity:100,
+    })
+
+    if(document.body.clientWidth>1200){
+        gsap.set('.introAnimate1Wrap,.introAnimate2',{
+            top:'50%'
+        })
+    }
+
+
     var tl = gsap.timeline({
         onStart:()=>{
             html.classList.add('active')
@@ -519,25 +534,6 @@ if(localStorage.getItem('asaiVisited')){
 }
 
 
-*/
-var tl = gsap.timeline({
-    onStart:()=>{
-        html.classList.add('active')
-    },
-    onComplete:()=>{
-        html.classList.remove('active')
-    }
-});
-tl.to('.introAnimate1',{y:0,duration:0.6,stagger:0.05,})
-          .to('.introAnimate1',{opacity:0,duration:0.8})
-          .to('.introAnimate2',{opacity:100,duration:0.8})
-          .to('.introAnimationOverlay',{height:0,duration:0.7,delay:0.8})
-          .to('.introAnimate2',{opacity:0,duration:0.01},'-=1')
-          .set('.introAnimationOverlay',{display:'none'})
-
-
-
-
 
 blueSection = document.querySelectorAll('.blue')
 whiteSection = document.querySelectorAll('.white')
@@ -550,8 +546,10 @@ whiteSection.forEach(section => {
         endTrigger:section,
         start: "top bottom",
         end: "bottom bottom",
-        markers:true,
-       
+        invalidateOnRefresh: true,
+        onEnter:()=>{ ScrollTrigger.refresh();},
+        onLeave:()=>{ ScrollTrigger.refresh();},
+
         toggleClass: {targets: floatBook, className: "white",}
         
         
@@ -568,8 +566,10 @@ ScrollTrigger.create({
     trigger: 'footer',
     endTrigger:'html',
     start: "top bottom",
-    end: "bottom bottom",
-    markers:true,
+    end: "bottom +500+bottom",
+    invalidateOnRefresh: true,
+    onEnter:()=>{ ScrollTrigger.refresh();},
+    onLeave:()=>{ ScrollTrigger.refresh();},
     
     toggleClass: {targets: floatBook, className: "white",}
     
@@ -577,5 +577,15 @@ ScrollTrigger.create({
     });
 
 
+window.addEventListener('DOMContentLoaded', (event) => {
+    ScrollTrigger.refresh();
+});    
+
+window.addEventListener('onResize', (event) => {
+    ScrollTrigger.refresh();
+});    
 
 
+function test(){
+    console.log('asdsad')
+}

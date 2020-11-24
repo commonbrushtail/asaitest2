@@ -76,6 +76,7 @@ $theblue: #071D49;
 	justify-content: center;
 	align-items: center;
 	color: white;
+	opacity: 0;
 	.introAnimate1Wrap{
 		position: absolute;
 		left: 50%;
@@ -757,6 +758,7 @@ header.scrolling{
 						width: 50%;
 						line-height: 35px;
 						letter-spacing: 1px;
+						font-family: 'CircularStdBook';
 
 					}
 				}
@@ -1397,73 +1399,117 @@ header.scrolling{
 .matchingoffer {
 	background: hsl(0, 0%, 93%);
 	height: 600px;
-	width: 100%;
-	display: flex;
-	align-items: center;
-	overflow: hidden;
-
-	.container{
+	width: 100vw;
+	.titleCardWrapContainer{
 		width: 80%;
 		height: 100%;
+		padding:50px 0;
+		margin: 0 auto;
+		display: flex;
 		
 		
-		.row{
-			height: 100%;
+
+		.titleWrap{
+			width:30%;
 			display: flex;
-			align-items: center;
+			justify-content: center;
+			
+		}
+		.cardWrap{
+			width: 80%;
+			height: 100%;
+			position: relative;
+			display: flex;
+			justify-content: center;
+			
 
-			.topPart{
-				transform: translateY(-50%);
-				.din-title{
-					transform: translateY(-100%);
-				}
-			}
 
-			.bottomPart{
+			
+			.cards{
+				width: 50%;
 				height: 100%;
+				position: relative;
 				display: flex;
+				justify-content: center;
 				align-items: center;
-				.offercard-wrap{
-					height: 100%;
-					display: flex;
-					align-items: center;
 
-					.buttonContainer{
-						position: absolute;
-						width: 120%;
-						display: flex;
-						justify-content: space-between;
-						left: 50%;
-						transform: translateX(-50%);
-						
+				div:nth-child(2){
+					pointer-events: all!important;
+					cursor: grab!important;
+				}
+
+				.buttonContainer{
+					width:120%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					display: flex;
+					justify-content: space-between;
+					transform: translateX(-50%);
+				}
+
+				.card {
+					background: #E7BF92;
 					
-						.arrowButton{
-							width: 40px;
-							height: 40px;
-							border-radius: 50%;
-							border: 1px solid $theblue;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							color: $theblue;
-							text-align: center;
-							vertical-align: center;	
+					position: absolute;
+					transition: all 0.3s ease-in-out;
+					flex-grow: 1;
+					pointer-events: none;
+					display: block;
+					justify-content: center;
+					align-items: center;
+					padding: 30px;
+					width: 620px;
+					height: 280px;
+					
+					
+					.row{
+						pointer-events: none!important;
+					}
+					.content {
+						padding-top: 20px;
+						pointer-events: none!important;
+						a{
+							
 							cursor: pointer;
 						}
 					}
 				}
 				
 				
+				.card.purple{
+					background-color:#AC9DB4 ;
+				} 
+				
+				.card.green{
+					background-color:#90AD9D ;
+				} 
+				
+				
+				
+				.cards .card.moving {
+				 transition: all 0.1s ease-out;
+				  cursor: -webkit-grabbing;
+				  cursor: -moz-grabbing;
+				  cursor: grabbing;
+				  
+				}
+				
+				.cards .link {
+					margin-top: 10px;
+					display: inline-block;
+					
+				}
+				
+
+
 			}
-			
 		}
-
-		
 	}
 	
+
 	
 }
-
 		
 			
 
@@ -1472,51 +1518,8 @@ header.scrolling{
 
 
 
-.cards .card {
-	background: #E7BF92;
-	padding: 30px;
-	position: absolute;
-	transition: all 0.3s ease-in-out;
-	flex-grow: 1;
-	pointer-events: none;
-	
-	.row{
-		pointer-events: none;
-	}
-	.content {
-		padding-top: 20px;
-	}
-}
-
-.cards .card:first-of-type {
-	pointer-events: all!important;
-	cursor: grab!important;
-	
-}
-
-.cards .card.purple{
-	background-color:#AC9DB4 ;
-} 
-
-.cards .card.green{
-	background-color:#90AD9D ;
-} 
 
 
-
-.cards .card.moving {
- transition: all 0.1s ease-out;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: grabbing;
-  
-}
-
-.cards .link {
-	margin-top: 10px;
-	display: inline-block;
-	
-}
 
 
 
@@ -1531,25 +1534,25 @@ header.scrolling{
 .story-expand .item {
 	flex: 1;
 	height: 100%;
-	transition: all 1s ease;
+	transition: all 0.3s ease;
 	position: relative;
-	transition-delay: .0.5s;
+	transition-delay: .0.2s;
 	overflow: hidden;
 	display: block;
 
 	.cat-text {
-		transition: 1s;
+		transition: 0.3s;
 		top: 0;
 		position: relative;
 	}
 
 	h2 {
-		transition: 1s;
+		transition: 0.3s;
 		transform-origin: left;
 	}
 
 	h3 {
-		transition: 1s;
+		transition: 0.3s;
 		transform-origin: left bottom;
 	}
 
