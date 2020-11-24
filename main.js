@@ -499,7 +499,7 @@ let introAnimationOverlay = document.querySelector('.introAnimationOverlay')
 
 
 
-/*
+        
 if(localStorage.getItem('asaiVisited')){
     introAnimationOverlay.classList.add('hide')  
 } else {
@@ -526,24 +526,7 @@ if(localStorage.getItem('asaiVisited')){
     
        
 }
-*/
-var tl = gsap.timeline({
-    onStart:()=>{
-        html.classList.add('active')
-    },
-    onComplete:()=>{
-        html.classList.remove('active')
-    }
-});
-tl.to('.introAnimate1',{y:0,duration:0.6,stagger:0.05,})
-.to('.introAnimate1',{opacity:0,duration:0.8})
-.to('.introAnimate2',{opacity:100,duration:0.8})
 
-/*
-.to('.introAnimationOverlay',{height:0,duration:0.7,delay:0.8})
-.to('.introAnimate2',{opacity:0,duration:0.01},'-=1')
-.set('.introAnimationOverlay',{display:'none'})
-*/
-localStorage.setItem('asaiVisited',true)  
+
         
 
