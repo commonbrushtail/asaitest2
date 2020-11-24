@@ -105,9 +105,9 @@ listForMenuBackground.forEach(function (element) {
     rightMenu.dataset.backgroundImage = dataTarget;
   });
 });
-var revealText = document.querySelectorAll('.revealText');
+var hiddenText = document.querySelectorAll('.hiddenText');
 var dinTitle = document.querySelectorAll('.din-title');
-revealText.forEach(function (section) {
+hiddenText.forEach(function (section) {
   ScrollTrigger.create({
     trigger: section,
     start: "100 bottom",
@@ -411,6 +411,7 @@ whiteSection.forEach(function (section) {
     endTrigger: section,
     start: "top bottom",
     end: "bottom bottom",
+    markers: true,
     toggleClass: {
       targets: floatBook,
       className: "white"
@@ -422,6 +423,7 @@ ScrollTrigger.create({
   endTrigger: 'html',
   start: "top bottom",
   end: "bottom bottom",
+  markers: true,
   toggleClass: {
     targets: floatBook,
     className: "white"

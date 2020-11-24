@@ -179,28 +179,11 @@ a:hover {
 }
 .revealText .hiddenText {
   display: block;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
 }
-
-.revealText::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: white;
-  bottom: 0;
-  transition: all ease 1.5s;
-}
-
-.revealText.brownBackground::after {
-  background-color: #D9C7B6;
-}
-
-.revealText.active::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: translateY(-100px);
+.revealText .hiddenText.active {
+  transform: translate(0);
 }
 
 .text-center {

@@ -127,14 +127,14 @@ listForMenuBackground.forEach(element => {
 });
 
 
-let revealText = document.querySelectorAll('.revealText');
+let hiddenText = document.querySelectorAll('.hiddenText');
 let dinTitle = document.querySelectorAll('.din-title');
 
 
 
    
 
-revealText.forEach(section => {
+hiddenText.forEach(section => {
     ScrollTrigger.create({
         trigger:section,
         start: "100 bottom",
@@ -550,6 +550,7 @@ whiteSection.forEach(section => {
         endTrigger:section,
         start: "top bottom",
         end: "bottom bottom",
+        markers:true,
        
         toggleClass: {targets: floatBook, className: "white",}
         
@@ -568,6 +569,7 @@ ScrollTrigger.create({
     endTrigger:'html',
     start: "top bottom",
     end: "bottom bottom",
+    markers:true,
     
     toggleClass: {targets: floatBook, className: "white",}
     
