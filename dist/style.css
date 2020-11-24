@@ -1253,36 +1253,42 @@ header.scrolling {
   cursor: pointer;
 }
 
-.offercard-wrap .card {
+.cards .card {
   background: #E7BF92;
   padding: 30px;
   position: absolute;
   transition: all 0.3s ease-in-out;
   flex-grow: 1;
-}
-.offercard-wrap .card .row {
   pointer-events: none;
 }
-.offercard-wrap .card .content {
+.cards .card .row {
+  pointer-events: none;
+}
+.cards .card .content {
   padding-top: 20px;
 }
 
-.offercard-wrap .card.purple {
+.cards .card:first-of-type {
+  pointer-events: all !important;
+  cursor: grab !important;
+}
+
+.cards .card.purple {
   background-color: #AC9DB4;
 }
 
-.offercard-wrap .card.green {
+.cards .card.green {
   background-color: #90AD9D;
 }
 
-.offercard-wrap .card.moving {
+.cards .card.moving {
   transition: all 0.1s ease-out;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
-.offercard-wrap .link {
+.cards .link {
   margin-top: 10px;
   display: inline-block;
 }

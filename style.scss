@@ -1487,12 +1487,13 @@ header.scrolling{
 
 
 
-.offercard-wrap .card {
+.cards .card {
 	background: #E7BF92;
 	padding: 30px;
 	position: absolute;
 	transition: all 0.3s ease-in-out;
 	flex-grow: 1;
+	pointer-events: none;
 	
 	.row{
 		pointer-events: none;
@@ -1502,17 +1503,23 @@ header.scrolling{
 	}
 }
 
-.offercard-wrap .card.purple{
+.cards .card:first-of-type {
+	pointer-events: all!important;
+	cursor: grab!important;
+	
+}
+
+.cards .card.purple{
 	background-color:#AC9DB4 ;
 } 
 
-.offercard-wrap .card.green{
+.cards .card.green{
 	background-color:#90AD9D ;
 } 
 
 
 
-.offercard-wrap .card.moving {
+.cards .card.moving {
  transition: all 0.1s ease-out;
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
@@ -1520,7 +1527,7 @@ header.scrolling{
   
 }
 
-.offercard-wrap .link {
+.cards .link {
 	margin-top: 10px;
 	display: inline-block;
 	

@@ -197,7 +197,7 @@ var tween = new TimelineMax()
 .add(TweenMax.to(line, 1, {ease:Linear.easeNone}), 0);// change color during the whole thing
 
 
-var scene = new ScrollMagic.Scene({triggerElement: ".membership", duration: 200, tweenChanges: false})
+var scene = new ScrollMagic.Scene({triggerElement: ".membership", duration: 300, tweenChanges: false})
 .setTween(tween)
 //.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
@@ -290,16 +290,16 @@ scrollTrigger:{
 var allCards = document.querySelectorAll('.card');
 var left = document.querySelector('.left');
 var right = document.querySelector('.right');
-var offerCardWrap = document.querySelector('.offercard-wrap')
+var offerCardWrap = document.querySelector('.cards')
 
 
 
 
 
 function initCards(card, index) {
-  let removedCard = document.querySelector('.removed')
+    let removedCard = document.querySelector('.removed')
   
-  if(removedCard){
+    if(removedCard){
    
       
         let removedCardContent = removedCard.innerHTML;
@@ -322,31 +322,20 @@ function initCards(card, index) {
 
   }
 
-  var newCards = document.querySelectorAll('.card:not(.removed)');
-
-  newCards.forEach(function (card, index) {
+    var newCards = document.querySelectorAll('.card:not(.removed)');
+    newCards.forEach(function (card, index) {
     card.style.zIndex = allCards.length - index;
     card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 35 * index + 'px)';
     card.style.opacity = (10 - index) / 10;
+    });
+    if(removedCard){
+        setTimeout(() => {
+            let toRemove = document.getElementsByClassName('removed');
+            toRemove[0].remove()
+        }, 100);
+    }
 
     
-    
-  });
-if(removedCard){
-setTimeout(() => {
-  
-    
-    
-    let toRemove = document.getElementsByClassName('removed');
-    toRemove[0].remove()
-
-    
-      
-  }, 100
-);
-}
-
-
 
 
 

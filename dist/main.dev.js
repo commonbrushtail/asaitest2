@@ -149,7 +149,7 @@ var tween = new TimelineMax().add(TweenMax.to(line, 1, {
 
 var scene = new ScrollMagic.Scene({
   triggerElement: ".membership",
-  duration: 200,
+  duration: 300,
   tweenChanges: false
 }).setTween(tween) //.addIndicators() // add indicators (requires plugin)
 .addTo(controller);
@@ -210,7 +210,7 @@ gsap.to('.textLeft', {
 var allCards = document.querySelectorAll('.card');
 var left = document.querySelector('.left');
 var right = document.querySelector('.right');
-var offerCardWrap = document.querySelector('.offercard-wrap');
+var offerCardWrap = document.querySelector('.cards');
 
 function initCards(card, index) {
   var removedCard = document.querySelector('.removed');
