@@ -390,6 +390,7 @@ function addHammer(el){
   
       if (keep) {
         event.target.style.transform = '';
+        initCards();
         
       } else {
         var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
@@ -439,6 +440,7 @@ allCards.forEach(function (el) {
 
     if (keep) {
       event.target.style.transform = '';
+      initCards();
       
     } else {
       var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
