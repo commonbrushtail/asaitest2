@@ -349,7 +349,8 @@ initCards();
 function addHammer(el){
   
     var hammertime = new Hammer(el);
-
+    hammertime.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    
     
   
     hammertime.on('pan', function (event) {
