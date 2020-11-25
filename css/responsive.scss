@@ -135,17 +135,18 @@ $theblue: #071D49;
 @media (max-width: 991px) {
 	.matchingoffer {
 		background: hsl(0, 0%, 93%);
-		height: 100vw;
+		height: 900px;
 		width: 100vw;
 		.titleCardWrapContainer{
-			max-width: 1600px;
+			max-width: 991px;
 			width: 80%;
 			height: 100%;
-			padding:0px 0 0px;
+			
 			margin: 0 auto;
 			display: flex;
 			align-items: center;
 			flex-direction: column;
+			padding: 60px 0;
 			
 			
 	
@@ -183,10 +184,11 @@ $theblue: #071D49;
 					}
 	
 					.buttonContainer{
-						width: 300px;
+						width: 150px;
 						position: absolute;
-						top: 45%;
+						top: initial;
 						left: 50%;
+						bottom: 25px;
 						display: flex;
 						justify-content: space-between;
 						transform: translateX(-50%);
@@ -227,7 +229,7 @@ $theblue: #071D49;
 						align-items: center;
 						padding: 30px;
 						width: 350px;
-						height: 450px;
+						height: 420px;
 						
 						
 						.row{
@@ -602,7 +604,7 @@ $theblue: #071D49;
 	.location-swiper .swiper-pagination {
 		display: block;
 	}
-	.offercard-wrap .card .content {
+	.cards .card .content {
 		text-align: center;
 	}
 	.col2-section {
@@ -953,6 +955,154 @@ $theblue: #071D49;
 	}
 	.locations h2 br {
 		display: block;
+	}
+
+	.matchingoffer {
+		background: hsl(0, 0%, 93%);
+		height: 800px;
+		width: 100vw;
+		.titleCardWrapContainer{
+			max-width: 991px;
+			width: 80%;
+			height: 100%;
+			
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			padding: 50px 0;
+			
+			
+	
+			.titleWrap{
+				width:100%;
+				height: 20%;
+				display: flex;
+				justify-content: flex-start;
+				
+			}
+			.cardWrap{
+				width: 100%;
+				height: 80%;
+				position: relative;
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				
+				
+	
+	
+				
+				.cards{
+					width: 100%;
+					height: 100%;
+					position: relative;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					transform: translateY(0);			
+	
+					div:nth-child(2){
+						pointer-events: all!important;
+						cursor: grab!important;
+					}
+	
+					.buttonContainer{
+						width: 150px;
+						position: absolute;
+						top: initial;
+						left: 50%;
+						bottom: 40px;
+						display: flex;
+						justify-content: space-between;
+						transform: translateX(-50%);
+						
+						.arrowButton{
+							width: 44px;
+							height: 44px;
+							border-radius: 50%;
+							border:solid 2px $theblue;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							cursor: pointer!important;
+							.left{
+								position: relative;
+								right: 2px;
+								cursor: pointer;
+							}
+							.right{
+								position: relative;
+								left: 2px;
+								cursor: pointer;
+								
+							}
+						}
+						
+					}
+	
+					.card {
+						margin-top: 50px;
+						background: #E7BF92;
+						top: 0;
+						position: absolute;
+						transition: all 0.3s ease-in-out;
+						flex-grow: 1;
+						pointer-events: none;
+						display: block;
+						justify-content: center;
+						align-items: center;
+						padding: 30px;
+						width: 300px;
+						height: 400px;
+						
+						
+						.row{
+							pointer-events: none!important;
+						}
+						.content {
+							padding-top: 20px;
+							pointer-events: none!important;
+							a{
+								pointer-events: all;
+								cursor: pointer;
+							}
+						}
+					}
+					
+					
+					.card.purple{
+						background-color:#AC9DB4 ;
+					} 
+					
+					.card.green{
+						background-color:#90AD9D ;
+					} 
+					
+					
+					
+					.cards .card.moving {
+					 transition: all 0.1s ease-out;
+					  cursor: -webkit-grabbing;
+					  cursor: -moz-grabbing;
+					  cursor: grabbing;
+					  
+					}
+					
+					.cards .link {
+						margin-top: 10px;
+						display: inline-block;
+						
+					}
+					
+	
+	
+				}
+			}
+		}
+		
+	
+		
 	}
 
 
