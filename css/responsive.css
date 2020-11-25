@@ -1008,10 +1008,6 @@
     padding-top: 20px;
     pointer-events: none !important;
   }
-  .matchingoffer .titleCardWrapContainer .cardWrap .cards .card .content a {
-    pointer-events: all;
-    cursor: pointer;
-  }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .card.purple {
     background-color: #AC9DB4;
   }
