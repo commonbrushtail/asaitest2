@@ -339,6 +339,8 @@ header.scrolling {
   left: 0;
   right: 0;
   text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .float-booking {
