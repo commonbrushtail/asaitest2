@@ -295,7 +295,6 @@ var offerCardWrap = document.querySelector('.cards')
 
 
 
-
 function initCards(card, index) {
     let removedCard = document.querySelector('.removed')
   
@@ -350,6 +349,8 @@ initCards();
 function addHammer(el){
   
     var hammertime = new Hammer(el);
+
+    
   
     hammertime.on('pan', function (event) {
       el.classList.add('moving');
@@ -395,12 +396,15 @@ function addHammer(el){
         initCards();
       }
     });
+
+   
   
 }
 
 allCards.forEach(function (el) {
   var hammertime = new Hammer(el);
-
+  hammertime.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+    
   hammertime.on('pan', function (event) {
     el.classList.add('moving');
   });

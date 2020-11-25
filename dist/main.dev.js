@@ -284,6 +284,9 @@ function addHammer(el) {
 
 allCards.forEach(function (el) {
   var hammertime = new Hammer(el);
+  hammertime.get('pan').set({
+    direction: Hammer.DIRECTION_HORIZONTAL
+  });
   hammertime.on('pan', function (event) {
     el.classList.add('moving');
   });
@@ -342,66 +345,51 @@ var rightListener = createButtonListener(true);
 left.addEventListener('click', leftListener);
 right.addEventListener('click', rightListener);
 var introAnimationOverlay = document.querySelector('.introAnimationOverlay');
-/*
-        
-if(localStorage.getItem('asaiVisited')){
-    introAnimationOverlay.classList.add('hide')  
+
+if (localStorage.getItem('asaiVisited')) {
+  introAnimationOverlay.classList.add('hide');
 } else {
-    var tl = gsap.timeline({
-        onStart:()=>{
-            html.classList.add('active')
-        },
-        onComplete:()=>{
-            html.classList.remove('active')
-        }
+  gsap.set('.introAnimationOverlay', {
+    opacity: 100
+  });
+
+  if (document.body.clientWidth > 1200) {
+    gsap.set('.introAnimate1Wrap,.introAnimate2', {
+      top: '50%'
     });
-        
-        
-        tl.to('.introAnimate1',{y:0,duration:0.6,stagger:0.05,})
-          .to('.introAnimate1',{opacity:0,duration:0.8})
-          .to('.introAnimate2',{opacity:100,duration:0.8})
-          .to('.introAnimationOverlay',{height:0,duration:0.7,delay:0.8})
-          .to('.introAnimate2',{opacity:0,duration:0.01},'-=1')
-          .set('.introAnimationOverlay',{display:'none'})
-          
-          localStorage.setItem('asaiVisited',true)          
-        
-    
-    
-       
+  }
+
+  var tl = gsap.timeline({
+    onStart: function onStart() {
+      html.classList.add('active');
+    },
+    onComplete: function onComplete() {
+      html.classList.remove('active');
+    }
+  });
+  tl.to('.introAnimate1', {
+    y: 0,
+    duration: 0.6,
+    stagger: 0.05
+  }).to('.introAnimate1', {
+    opacity: 0,
+    duration: 0.8
+  }).to('.introAnimate2', {
+    opacity: 100,
+    duration: 0.8
+  }).to('.introAnimationOverlay', {
+    height: 0,
+    duration: 0.7,
+    delay: 0.8
+  }).to('.introAnimate2', {
+    opacity: 0,
+    duration: 0.01
+  }, '-=1').set('.introAnimationOverlay', {
+    display: 'none'
+  });
+  localStorage.setItem('asaiVisited', true);
 }
 
-
-*/
-
-var tl = gsap.timeline({
-  onStart: function onStart() {
-    html.classList.add('active');
-  },
-  onComplete: function onComplete() {
-    html.classList.remove('active');
-  }
-});
-tl.to('.introAnimate1', {
-  y: 0,
-  duration: 0.6,
-  stagger: 0.05
-}).to('.introAnimate1', {
-  opacity: 0,
-  duration: 0.8
-}).to('.introAnimate2', {
-  opacity: 100,
-  duration: 0.8
-}).to('.introAnimationOverlay', {
-  height: 0,
-  duration: 0.7,
-  delay: 0.8
-}).to('.introAnimate2', {
-  opacity: 0,
-  duration: 0.01
-}, '-=1').set('.introAnimationOverlay', {
-  display: 'none'
-});
 blueSection = document.querySelectorAll('.blue');
 whiteSection = document.querySelectorAll('.white');
 floatBook = document.querySelector('.float-book-wrap');
@@ -411,7 +399,13 @@ whiteSection.forEach(function (section) {
     endTrigger: section,
     start: "top bottom",
     end: "bottom bottom",
-    markers: true,
+    invalidateOnRefresh: true,
+    onEnter: function onEnter() {
+      ScrollTrigger.refresh();
+    },
+    onLeave: function onLeave() {
+      ScrollTrigger.refresh();
+    },
     toggleClass: {
       targets: floatBook,
       className: "white"
@@ -422,10 +416,22 @@ ScrollTrigger.create({
   trigger: 'footer',
   endTrigger: 'html',
   start: "top bottom",
-  end: "bottom bottom",
-  markers: true,
+  end: "bottom +500+bottom",
+  invalidateOnRefresh: true,
+  onEnter: function onEnter() {
+    ScrollTrigger.refresh();
+  },
+  onLeave: function onLeave() {
+    ScrollTrigger.refresh();
+  },
   toggleClass: {
     targets: floatBook,
     className: "white"
   }
+});
+window.addEventListener('DOMContentLoaded', function (event) {
+  ScrollTrigger.refresh();
+});
+window.addEventListener('onResize', function (event) {
+  ScrollTrigger.refresh();
 });
