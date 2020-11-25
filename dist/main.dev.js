@@ -312,7 +312,7 @@ allCards.forEach(function (el) {
   });
   hammertime.on('panend', function (event) {
     var moveOutWidth = document.body.clientWidth;
-    var keep = Math.abs(event.deltaX) < 60 || Math.abs(event.velocityX) < 0.5;
+    var keep = Math.abs(event.deltaX) < 20 || Math.abs(event.velocityX) < 0.3;
     event.target.classList.toggle('removed', !keep);
     event.target.id = "removed";
 
