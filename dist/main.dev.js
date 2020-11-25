@@ -118,11 +118,21 @@ hiddenText.forEach(function (section) {
     }
   });
 });
+
+function findSecondSection() {
+  if (parseInt(window.innerWidth) >= 1200) {
+    return "-220+top top";
+  } else {
+    return "-45+top top";
+  }
+}
+
 ScrollTrigger.create({
-  start: "-45+top top",
+  start: findSecondSection(),
   trigger: '.secondSection',
   endTrigger: "html",
   end: "bottom top",
+  markers: true,
   toggleClass: {
     targets: "header,.svgHeaderIcon,.hamburger-inner",
     className: "scrolling"
@@ -248,9 +258,6 @@ initCards();
 
 function addHammer(el) {
   var hammertime = new Hammer(el);
-  hammertime.get('pan').set({
-    direction: Hammer.DIRECTION_HORIZONTAL
-  });
   hammertime.on('pan', function (event) {
     el.classList.add('moving');
   });

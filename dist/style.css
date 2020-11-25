@@ -674,51 +674,52 @@ header.scrolling {
 .overlayNav.container .rightMenu[data-background-image] {
   transition: ease all 0.3s;
   filter: grayscale(30%);
+  background-size: cover;
 }
 .overlayNav.container .rightMenu[data-background-image=default] {
-  background-image: url(images/banner.jpg);
+  background-image: url(images/menu-Sathorn-overview.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaDefault] {
-  background-image: url(images/ig-3.jpg);
+  background-image: url(images/menu-open.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaOverview] {
-  background-image: url(images/ig-4.jpg);
+  background-image: url(images/menu-chinatown-overview.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaRoom] {
-  background-image: url(images/ig-1.jpg);
+  background-image: url(images/menu-chinatown-Room.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaRestaurant] {
-  background-image: url(images/ig-2.jpg);
+  background-image: url(images/menu-chinatown-Resturant.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaGuide] {
-  background-image: url(images/ig-4.jpg);
+  background-image: url(images/menu-chinatown-Guide.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaHappenings] {
-  background-image: url(images/ig-3.jpg);
+  background-image: url(images/menu-chinatown-Happening.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaOffers] {
-  background-image: url(images/ig-1.jpg);
+  background-image: url(images/menu-chinatown-Offers.png);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornDefault] {
-  background-image: url(images/ig-5.jpg);
+  background-image: url(images/menu-open.png);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornOverview] {
-  background-image: url(images/ig-4.jpg);
+  background-image: url(images/menu-Sathorn-overview.png);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornRoom] {
-  background-image: url(images/ig-1.jpg);
+  background-image: url(images/menu-Sathorn-Room.png);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornRestaurant] {
-  background-image: url(images/ig-2.jpg);
+  background-image: url(images/menu-Sathorn-Resturant.png);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornGuide] {
-  background-image: url(images/ig-4.jpg);
+  background-image: url(images/menu-Sathorn-Guide.png);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornHappenings] {
-  background-image: url(images/ig-3.jpg);
+  background-image: url(images/menu-Sathorn-Happening.png);
 }
 .overlayNav.container .rightMenu[data-background-image=sathornOffers] {
-  background-image: url(images/ig-1.jpg);
+  background-image: url(images/menu-Sathorn-Offers.png);
 }
 .overlayNav.container .rightMenu {
   display: flex;
