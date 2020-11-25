@@ -393,7 +393,7 @@ function addHammer(el){
     
   
       var moveOutWidth = document.body.clientWidth;
-      var keep = Math.abs(event.deltaX) < 20 || Math.abs(event.velocityX) < 0.3;
+      var keep = Math.abs(event.deltaX) < 10 || Math.abs(event.velocityX) < 0.01;
   
       event.target.classList.toggle('removed', !keep);
       event.target.id = "removed"
@@ -449,7 +449,7 @@ allCards.forEach(function (el) {
   
 
     var moveOutWidth = document.body.clientWidth;
-    var keep = Math.abs(event.deltaX) < 20 || Math.abs(event.velocityX) < 0.3;
+    var keep = Math.abs(event.deltaX) < 10 || Math.abs(event.velocityX) < 0.01;
 
     event.target.classList.toggle('removed', !keep);
     event.target.id = "removed"
