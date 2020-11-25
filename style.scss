@@ -80,7 +80,7 @@ $theblue: #071D49;
 	.introAnimate1Wrap{
 		position: absolute;
 		left: 50%;
-		top: 40%;
+		
 		transform: translate(-50%,-50%);
 		transition: all 2s ease;
 		opacity: 100;
@@ -103,7 +103,7 @@ $theblue: #071D49;
 		width: 100px;
 		height: auto;
 		left: 50%;
-		top: 40%;
+		
 		transform: translate(-50%,-50%);
 		opacity: 0;
 		transition: all 2s ease;
