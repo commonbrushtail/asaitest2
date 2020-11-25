@@ -1,6 +1,8 @@
 "use strict";
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function test() {
+  console.log('adas');
+}
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
@@ -110,21 +112,16 @@ listForMenuBackground.forEach(function (element) {
 var hiddenText = document.querySelectorAll('.hiddenText');
 var dinTitle = document.querySelectorAll('.din-title');
 hiddenText.forEach(function (section) {
-  var _ScrollTrigger$create;
-
-  ScrollTrigger.create((_ScrollTrigger$create = {
+  ScrollTrigger.create({
     trigger: section,
     start: "100 bottom",
     endTrigger: section,
     end: "bottom center",
     onEnter: function onEnter(i) {
       section.classList.add('active');
+      ScrollTrigger.refresh();
     }
-  }, _defineProperty(_ScrollTrigger$create, "onEnter", function onEnter() {
-    ScrollTrigger.refresh();
-  }), _defineProperty(_ScrollTrigger$create, "onLeave", function onLeave() {
-    ScrollTrigger.refresh();
-  }), _ScrollTrigger$create));
+  });
 });
 
 function findSecondSection() {
@@ -140,12 +137,6 @@ ScrollTrigger.create({
   trigger: '.secondSection',
   endTrigger: "html",
   end: "bottom top",
-  onEnter: function onEnter() {
-    ScrollTrigger.refresh();
-  },
-  onLeave: function onLeave() {
-    ScrollTrigger.refresh();
-  },
   toggleClass: {
     targets: "header,.svgHeaderIcon,.hamburger-inner",
     className: "scrolling"
@@ -284,7 +275,7 @@ function addHammer(el) {
   });
   hammertime.on('panend', function (event) {
     var moveOutWidth = document.body.clientWidth;
-    var keep = Math.abs(event.deltaX) < 60 || Math.abs(event.velocityX) < 0.5;
+    var keep = Math.abs(event.deltaX) < 20 || Math.abs(event.velocityX) < 0.3;
     event.target.classList.toggle('removed', !keep);
     event.target.id = "removed";
 

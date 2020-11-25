@@ -1,3 +1,8 @@
+function test(){
+    console.log('adas')
+}
+
+
 
 gsap.registerPlugin(ScrollTrigger)
 gsap.registerPlugin(MotionPathPlugin);
@@ -140,14 +145,12 @@ hiddenText.forEach(section => {
         start: "100 bottom",
         endTrigger:section ,
         end:"bottom center",
+        onEnter:(i)=>{
+            section.classList.add('active')
+            ScrollTrigger.refresh()
+            
+        },
         
-        
-        
-    
-        
-        onEnter:(i)=>{section.classList.add('active')},
-        onEnter:()=>{ ScrollTrigger.refresh();},
-        onLeave:()=>{ ScrollTrigger.refresh();},
             
     });
 
@@ -180,8 +183,7 @@ ScrollTrigger.create({
     trigger:'.secondSection',
     endTrigger:"html" ,
     end:"bottom top",
-    onEnter:()=>{ ScrollTrigger.refresh();},
-    onLeave:()=>{ ScrollTrigger.refresh();},
+    
     toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
     
 
@@ -391,7 +393,7 @@ function addHammer(el){
     
   
       var moveOutWidth = document.body.clientWidth;
-      var keep = Math.abs(event.deltaX) < 60 || Math.abs(event.velocityX) < 0.5;
+      var keep = Math.abs(event.deltaX) < 20 || Math.abs(event.velocityX) < 0.3;
   
       event.target.classList.toggle('removed', !keep);
       event.target.id = "removed"
