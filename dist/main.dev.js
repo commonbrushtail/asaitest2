@@ -132,7 +132,6 @@ ScrollTrigger.create({
   trigger: '.secondSection',
   endTrigger: "html",
   end: "bottom top",
-  markers: true,
   toggleClass: {
     targets: "header,.svgHeaderIcon,.hamburger-inner",
     className: "scrolling"
