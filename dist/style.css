@@ -677,7 +677,7 @@ header.scrolling {
   background-size: cover;
 }
 .overlayNav.container .rightMenu[data-background-image=default] {
-  background-image: url(images/menu-Sathorn-overview.png);
+  background-image: url(images/menu-chinatown-Room.png);
 }
 .overlayNav.container .rightMenu[data-background-image=chinaDefault] {
   background-image: url(images/menu-open.png);
