@@ -263,7 +263,7 @@ function addHammer(el) {
   hammertime.on('pan', function (event) {
     if (event.deltaX === 0) return;
     if (event.center.x === 0 && event.center.y === 0) return;
-    var xMulti = event.deltaX * 0.03;
+    var xMulti = event.deltaX * 0.01;
     var yMulti = event.deltaY / 80;
     var rotate = xMulti * yMulti;
     event.target.style.transform = 'translate(' + event.deltaX + 'px) rotate(' + rotate + 'deg)';
@@ -282,7 +282,7 @@ function addHammer(el) {
       var toX = event.deltaX > 0 ? endX : -endX;
       var endY = Math.abs(event.velocityY) * moveOutWidth;
       var toY = event.deltaY > 0 ? endY : -endY;
-      var xMulti = event.deltaX * 0.03;
+      var xMulti = event.deltaX * 0.01;
       var yMulti = event.deltaY / 80;
       var rotate = xMulti * yMulti;
       event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';

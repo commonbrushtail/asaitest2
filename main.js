@@ -375,7 +375,7 @@ function addHammer(el){
   
       
   
-      var xMulti = event.deltaX * 0.03;
+      var xMulti = event.deltaX * 0.01;
       var yMulti = event.deltaY / 80;
       var rotate = xMulti * yMulti;
   
@@ -400,7 +400,7 @@ function addHammer(el){
         var toX = event.deltaX > 0 ? endX : -endX;
         var endY = Math.abs(event.velocityY) * moveOutWidth;
         var toY = event.deltaY > 0 ? endY : -endY;
-        var xMulti = event.deltaX * 0.03;
+        var xMulti = event.deltaX * 0.01;
         var yMulti = event.deltaY / 80;
         var rotate = xMulti * yMulti;
         event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
