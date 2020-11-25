@@ -337,7 +337,7 @@ function initCards(card, index) {
     var newCards = document.querySelectorAll('.card:not(.removed)');
     newCards.forEach(function (card, index) {
     card.style.zIndex = allCards.length - index;
-    card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 35 * index + 'px)';
+    card.style.transform = 'scale(' + (20 - index) / 20 + ') translateY(-' + 25 * index + 'px)';
    
     });
     if(removedCard){
@@ -416,8 +416,11 @@ function addHammer(el){
 
 allCards.forEach(function (el) {
   var hammertime = new Hammer(el);
-  hammertime.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
-    
+  
+ 
+  hammertime.get('pan').options.direction = 6
+  
+  
   hammertime.on('pan', function (event) {
     el.classList.add('moving');
   });
@@ -432,7 +435,7 @@ allCards.forEach(function (el) {
     var yMulti = event.deltaY / 80;
     var rotate = xMulti * yMulti;
 
-    event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px) rotate(' + rotate + 'deg)';
+    event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px)';
   });
 
   hammertime.on('panend', function (event) {
