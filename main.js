@@ -435,7 +435,7 @@ allCards.forEach(function (el) {
     var yMulti = event.deltaY / 80;
     var rotate = xMulti * yMulti;
 
-    event.target.style.transform = 'translate(' + event.deltaX + 'px, ' + event.deltaY + 'px)';
+    event.target.style.transform = 'translate(' + event.deltaX + 'px) rotate(' + rotate + 'deg)';
   });
 
   hammertime.on('panend', function (event) {
