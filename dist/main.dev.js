@@ -1,5 +1,7 @@
 "use strict";
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 gsap.registerPlugin(CSSRulePlugin);
@@ -108,7 +110,9 @@ listForMenuBackground.forEach(function (element) {
 var hiddenText = document.querySelectorAll('.hiddenText');
 var dinTitle = document.querySelectorAll('.din-title');
 hiddenText.forEach(function (section) {
-  ScrollTrigger.create({
+  var _ScrollTrigger$create;
+
+  ScrollTrigger.create((_ScrollTrigger$create = {
     trigger: section,
     start: "100 bottom",
     endTrigger: section,
@@ -116,7 +120,11 @@ hiddenText.forEach(function (section) {
     onEnter: function onEnter(i) {
       section.classList.add('active');
     }
-  });
+  }, _defineProperty(_ScrollTrigger$create, "onEnter", function onEnter() {
+    ScrollTrigger.refresh();
+  }), _defineProperty(_ScrollTrigger$create, "onLeave", function onLeave() {
+    ScrollTrigger.refresh();
+  }), _ScrollTrigger$create));
 });
 
 function findSecondSection() {
@@ -132,6 +140,12 @@ ScrollTrigger.create({
   trigger: '.secondSection',
   endTrigger: "html",
   end: "bottom top",
+  onEnter: function onEnter() {
+    ScrollTrigger.refresh();
+  },
+  onLeave: function onLeave() {
+    ScrollTrigger.refresh();
+  },
   toggleClass: {
     targets: "header,.svgHeaderIcon,.hamburger-inner",
     className: "scrolling"

@@ -141,10 +141,13 @@ hiddenText.forEach(section => {
         endTrigger:section ,
         end:"bottom center",
         
+        
+        
     
         
         onEnter:(i)=>{section.classList.add('active')},
-        
+        onEnter:()=>{ ScrollTrigger.refresh();},
+        onLeave:()=>{ ScrollTrigger.refresh();},
             
     });
 
@@ -177,7 +180,8 @@ ScrollTrigger.create({
     trigger:'.secondSection',
     endTrigger:"html" ,
     end:"bottom top",
-  
+    onEnter:()=>{ ScrollTrigger.refresh();},
+    onLeave:()=>{ ScrollTrigger.refresh();},
     toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
     
 
@@ -289,6 +293,7 @@ scrollTrigger:{
     endTrigger:'.text' ,
     end:"+600+top center",
     scrub:true,
+    
    
 }
 }
@@ -531,6 +536,7 @@ if(localStorage.getItem('asaiVisited')){
         },
         onComplete:()=>{
             html.classList.remove('active')
+            
         }
     });
         
