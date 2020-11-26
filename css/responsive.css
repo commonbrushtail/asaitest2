@@ -663,22 +663,22 @@
     background-color: #071D49;
     opacity: 1;
   }
-  .accordion-wrap {
+  .accordionFooterWrap {
     margin-top: 0;
     display: block !important;
     /* Thumb */
     /* Panel */
   }
-  .accordion-wrap .accordionFooter {
+  .accordionFooterWrap .accordionFooter {
     margin: 1rem 0;
     padding: 0;
     list-style: none;
   }
-  .accordion-wrap .accordionFooterItem {
+  .accordionFooterWrap .accordionFooterItem {
     border-bottom: 1px solid #071D49;
     position: relative;
   }
-  .accordion-wrap .accordionFooterItem:after {
+  .accordionFooterWrap .accordionFooterItem:after {
     position: absolute;
     background-image: url(../images/plus.png);
     content: "";
@@ -692,7 +692,7 @@
     -webkit-transition: ease all 0.5s;
     transition: ease all 0.5s;
   }
-  .accordion-wrap .accordionFooterItem.is-active:after {
+  .accordionFooterWrap .accordionFooterItem.is-active:after {
     position: absolute;
     background-image: url(../images/remove.png);
     content: "";
@@ -706,14 +706,14 @@
     -webkit-transition: ease all 0.5s;
     transition: ease all 0.5s;
   }
-  .accordion-wrap .accordionFooterThumb {
+  .accordionFooterWrap .accordionFooterThumb {
     margin: 0;
     padding: 16px 0 20px;
     font-size: 24px;
     cursor: pointer;
     font-family: 'din_condensedbold';
   }
-  .accordion-wrap .accordionFooterPanel {
+  .accordionFooterWrap .accordionFooterPanel {
     margin: 0;
     padding-bottom: 15px;
     display: none;
