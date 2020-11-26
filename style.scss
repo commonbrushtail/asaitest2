@@ -320,11 +320,63 @@ header {
 		background-color: $theblue;
 		color: white;
 	}
+	.booknow-btn.nonTransparent {
+		background-color: $theblue;
+		color: white;
+	}
 }
 
 header.scrolling{
 	background-color: white;
 }
+
+header.nonTransparent{
+	background-color: white;
+	position: fixed;
+	transition: all 0.1s ease;
+	.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+		background-color: $theblue;
+	}
+	.svgHeaderIcon{
+		fill:$theblue;
+		color:white;
+		background-color: $theblue;
+	}
+	.locationNav{
+		position: absolute;
+		width: 100%;
+		height: 70%;
+		background-color: white;
+		transform: translateY(140%);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 30px ;
+		border-top:solid 0.1px rgba(128, 128, 128, 0.37);
+		
+
+		
+		
+		h4{
+			margin:0
+		}
+		ul{
+			display: flex;
+			width: 30%;
+			justify-content: space-between;
+			margin: 0;
+			li{
+				list-style-type: none;
+			}
+		}
+	}
+	
+
+	
+}
+
+
+
 
 .left-header a {
 	border-bottom: none;
@@ -456,6 +508,9 @@ header.scrolling{
 
 
 .svgHeaderIcon.scrolling{
+	fill: $theblue;
+}
+.svgHeaderIcon.nonTransparent{
 	fill: $theblue;
 }
 
@@ -612,6 +667,12 @@ header.scrolling{
 .hamburger-inner.scrolling,
 .hamburger-inner.scrolling::before,
 .hamburger-inner.scrolling::after{
+	background-color: $theblue;
+}
+
+.hamburger-inner.nonTransparent,
+.hamburger-inner.nonTransparent::before,
+.hamburger-inner.nonTransparent::after{
 	background-color: $theblue;
 }
 
@@ -1868,6 +1929,9 @@ footer ::placeholder {
 	
 
 }
+
+
+
 
 
 

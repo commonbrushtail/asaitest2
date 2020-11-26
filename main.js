@@ -173,10 +173,6 @@ function findSecondSection(){
 }
 
 
-
-
-
-
 ScrollTrigger.create({
     
     start: findSecondSection(),
@@ -515,7 +511,7 @@ let introAnimationOverlay = document.querySelector('.introAnimationOverlay')
 
 
 
-/*
+
 if(localStorage.getItem('asaiVisited')){
     introAnimationOverlay.classList.add('hide')  
 } else {
@@ -557,52 +553,7 @@ if(localStorage.getItem('asaiVisited')){
         
 }
 
-*/
 
-gsap.set('.introAnimationOverlay',{
-    opacity:100,
-})
-
-if(document.body.clientWidth>1200){
-    gsap.set('.introAnimate1Wrap,.introAnimate2',{
-        top:'50%'
-    })
-    
-} else {
-    gsap.set('.introAnimate1Wrap,.introAnimate2',{
-        top:'40%'  
-})
-}
-
-
-var tl = gsap.timeline({
-    onStart:()=>{
-        html.classList.add('active')
-    },
-    onComplete:()=>{
-        html.classList.remove('active')
-        
-    }
-});
-    
-    
-    tl.to('.introAnimate1',{y:0,duration:0.6,stagger:0.05,})
-      .to('.introAnimate1',{opacity:0,duration:0.8})
-      .to('.introAnimate2',{opacity:100,duration:0.8})
-      .to('.introAnimationOverlay',{height:0,duration:0.7,delay:0.8})
-      .to('.introAnimate2',{opacity:0,duration:0.01},'-=1')
-      .set('.introAnimationOverlay',{display:'none'})
-      
-      localStorage.setItem('asaiVisited',true)          
-
-
-
-
-
-
- 
-    
-    
 
 
 
@@ -650,6 +601,7 @@ ScrollTrigger.create({
 
 window.addEventListener('DOMContentLoaded', (event) => {
     ScrollTrigger.refresh();
+
 });    
 
 window.addEventListener('onResize', (event) => {
@@ -657,3 +609,16 @@ window.addEventListener('onResize', (event) => {
 });    
 
 
+
+headerHeight = document.querySelector('header.nonTransparent').offsetHeight;
+
+gsap.to('header.nonTransparent',{
+    y:-headerHeight,
+    scrollTrigger:{
+        scrub:true,
+        start:"top top",
+        end:"50 top",
+        duration:0.01,
+
+    },
+})
