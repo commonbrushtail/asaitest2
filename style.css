@@ -839,8 +839,8 @@ header.scrolling {
 .overlayNav.container .rightMenu[data-background-image] {
   -webkit-transition: ease all 0.3s;
   transition: ease all 0.3s;
-  -webkit-filter: grayscale(30%);
-          filter: grayscale(30%);
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
   background-size: cover;
 }
 
