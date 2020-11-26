@@ -33,6 +33,19 @@
 
 }
 
+
+body::after{
+	position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+	content:url(images/menu-chinatown-Guide.png) url(images/menu-chinatown-Happening.png)
+	 url(images/menu-chinatown-Offers.png) url(images/menu-chinatown-overview.png)
+	 url(images/menu-chinatown-Resturant.png) url(images/menu-chinatown-Happening.png) 
+	 url(images/menu-Sathorn-Guide.png) url(images/menu-Sathorn-Happening.png)
+	 url(images/menu-Sathorn-Offers.png) 
+	 url(images/menu-Sathorn-overview.png) url(images/menu-Sathorn-Resturant.png)
+	 
+	 ;   // load images
+ }
+
 h3 {
 	font-size: 24px;
 	font-family: 'CircularStdBold';
