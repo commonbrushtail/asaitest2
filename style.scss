@@ -1831,3 +1831,71 @@ footer ::placeholder {
 }
 
 
+.accordion-wrap{
+	display: none;
+	.accordionFooter {
+		margin: 1rem 0;
+		padding: 0;
+		list-style: none;
+	}
+	
+	.accordionFooterItem {
+		border-bottom: 1px solid $theblue;
+		position: relative;
+		
+	}
+	.accordionFooterItem:after{
+		position: absolute;
+		background-image: url(images/plus.svg);
+		content:"";
+		width: 20px;
+		height: 20px;
+		background-size: contain;
+		right: 0;
+		top:0;
+		transform: translate(-50%,100%);
+		transition: ease all 0.5s;
+	}
+	.accordionFooterItem.is-active:after{
+		position: absolute;
+		background-image: url(images/minus.svg);
+		content:"";
+		width: 20px;
+		height: 20px;
+		background-size: contain;
+		right: 0;
+		top:0;
+		transform: translate(-50%,100%);
+		transition: ease all 0.5s;
+	}
+	
+	
+	
+	
+	/* Thumb */
+	.accordionFooterThumb {
+		margin: 0;
+		padding: 16px 0 20px;
+		font-size: 24px;
+		cursor: pointer;
+		font-family: 'din_condensedbold';
+	
+	
+		
+	}
+	
+	/* Panel */
+	.accordionFooterPanel {
+		margin: 0;
+		padding-bottom: 15px;
+		display: none;
+		
+	}
+	
+
+	
+
+}
+
+
+

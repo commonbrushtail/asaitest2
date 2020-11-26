@@ -652,8 +652,41 @@
               </div>
             </div>
           </div>
-          <div class="footeOnly"></div>
+        </div>
+        <div class="hotelFooter">
+          <div class="accordion-wrap">
+            <ul class="accordionFooter">
+              <li class="accordionFooterItem" id="">
+                <h3 class="accordionFooterThumb">BANGKOK SATHORN</h3>
+                <ul class="accordionFooterPanel">
+                  <li><a href="">Overview</a></li>
+                  <li><a href="">Rooms</a></li>
+                  <li><a href="">Restaurant</a></li>
+                  <li><a href="">Guide</a></li>
+                  <li><a href="">Happenings</a></li>
+                  <li><a href="">Offers</a></li>
+                </ul>
+              </li>
 
+              <li class="accordionFooterItem" id="">
+                <h3 class="accordionFooterThumb">BANGKOK CHINATOWN</h3>
+                
+
+                <ul class="accordionFooterPanel">
+                  <li><a href="">Overview</a></li>
+                  <li><a href="">Rooms</a></li>
+                  <li><a href="">Restaurant</a></li>
+                  <li><a href="">Guide</a></li>
+                  <li><a href="">Happenings</a></li>
+                  <li><a href="">Offers</a></li>
+                </ul>
+              </li>
+              
+              
+              
+              
+            </ul>
+          </div>
         </div>
         <div class="footer-bottom">
             <p>© 2020 - Asaihotel</p>
@@ -720,51 +753,22 @@
     <script>
       $(function() {
         // (Optional) Active an item if it has the class "is-active"	
-        $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
+        $(".accordionFooter > .accordionFooterItem.is-active").children(".accordionFooterPanel").slideDown();
         
-        $(".accordion > .accordion-item").click(function() {
+        $(".accordionFooter > .accordionFooterItem").click(function() {
           // Cancel the siblings
-          $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
+          $(this).siblings(".accordionFooterItem").removeClass("is-active").children(".accordionFooterPanel").slideUp();
           // Toggle the item
-          $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+          $(this).toggleClass("is-active").children(".accordionFooterPanel").slideToggle("ease-out");
         });
       });
     </script>
 
-    <script>
-      $('.button1').on({
-          'click': function(){
-          $("#change-image")
-              .fadeOut(500, function() {
-                  $('#change-image').attr('src','images/img-foodbaverage.jpg');
-              })
-              .fadeIn(500);
 
-          }
-      });
 
-      $('.button2').on({
-        'click': function(){
-        $("#change-image")
-            .fadeOut(500, function() {
-                $('#change-image').attr('src','images/accordion-img.jpg');
-            })
-            .fadeIn(500);
-            
-        }
-      });
 
-      $('.button3').on({
-          'click': function(){
-          $("#change-image")
-              .fadeOut(500, function() {
-                  $('#change-image').attr('src','images/food-beverage.jpg');
-              })
-              .fadeIn(500);
 
-          }
-      });
-    </script>
+
 
     <script>
       AOS.init({
