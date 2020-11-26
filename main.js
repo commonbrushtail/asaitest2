@@ -601,24 +601,44 @@ ScrollTrigger.create({
 
 window.addEventListener('DOMContentLoaded', (event) => {
     ScrollTrigger.refresh();
+    
 
 });    
 
 window.addEventListener('onResize', (event) => {
     ScrollTrigger.refresh();
+    
 });    
 
 
 
-headerHeight = document.querySelector('header.nonTransparent').offsetHeight;
+/*
 
-gsap.to('header.nonTransparent',{
-    y:-headerHeight,
-    scrollTrigger:{
-        scrub:true,
-        start:"top top",
-        end:"50 top",
-        duration:0.01,
+gsap.to('.locationNav',{
+        y:0,
+        height:'100%',
+        scrollTrigger:{
+            start:'top top',
+            end:'10 top',
+            scrub:true,
+            duration:0.1,
+            
+        },
+})
+*/
 
-    },
+
+let locationAccordion = document.querySelector('.locationNavAccordion')
+let locationNavTitle = document.querySelector('.locationNavTitle') 
+
+locationNavTitle.addEventListener('click',()=>{
+    if(!locationAccordion.classList.contains('active')){
+        locationAccordion.classList.add('active')
+        
+    } else {
+        locationAccordion.classList.remove('active')
+        
+    }
+    
+    
 })

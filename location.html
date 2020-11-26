@@ -38,8 +38,8 @@
 
       </div>
       <div class="locationNav">
-        <h4>BANGKOK CHINATOWN</h4>
-        <ul>
+        <h4 class="locationNavTitle">BANGKOK CHINATOWN</h4>
+        <ul class="locationNavAccordion">
           <li>Overview</li>
           <li>Rooms</li>
           <li>Restaurant</li>
@@ -49,7 +49,8 @@
         </ul>
       </div>
       
-
+      
+      
       <div class="left-header">
         <button class="hamburger hamburger--slider" type="button">
           <span class="hamburger-box">
@@ -193,8 +194,11 @@
         <span><a href="">Terms and conditions apply.</a></span>
 
       </div>
+
+      
   
     </header>
+    
     
    
     <section id="banner" class="vertical-center">
@@ -776,20 +780,7 @@
         });
       });
     </script>
-
-<script>
-  $(function() {
-    // (Optional) Active an item if it has the class "is-active"	
-    $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
     
-    $(".accordion > .accordion-item").click(function() {
-      // Cancel the siblings
-      $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
-      // Toggle the item
-      $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
-    });
-  });
-</script>
 
 <script>
   $('.button1').on({
