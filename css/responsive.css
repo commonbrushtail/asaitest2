@@ -391,49 +391,49 @@
     -webkit-transition: ease all 0.3s;
     transition: ease all 0.3s;
   }
-  .overlayNav.container .rightMenu[data-background-image="default"] {
+  .overlayNav.container .rightMenu[data-background-image="default"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="chinaDefault"] {
+  .overlayNav.container .rightMenu[data-background-image="chinaDefault"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="chinaOverview"] {
+  .overlayNav.container .rightMenu[data-background-image="chinaOverview"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="chinaRoom"] {
+  .overlayNav.container .rightMenu[data-background-image="chinaRoom"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="chinaRestaurant"] {
+  .overlayNav.container .rightMenu[data-background-image="chinaRestaurant"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="chinaGuide"] {
+  .overlayNav.container .rightMenu[data-background-image="chinaGuide"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="chinaHappenings"] {
+  .overlayNav.container .rightMenu[data-background-image="chinaHappenings"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="chinaOffers"] {
+  .overlayNav.container .rightMenu[data-background-image="chinaOffers"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="sathornDefault"] {
+  .overlayNav.container .rightMenu[data-background-image="sathornDefault"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="sathornOverview"] {
+  .overlayNav.container .rightMenu[data-background-image="sathornOverview"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="sathornRoom"] {
+  .overlayNav.container .rightMenu[data-background-image="sathornRoom"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="sathornRestaurant"] {
+  .overlayNav.container .rightMenu[data-background-image="sathornRestaurant"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="sathornGuide"] {
+  .overlayNav.container .rightMenu[data-background-image="sathornGuide"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="sathornHappenings"] {
+  .overlayNav.container .rightMenu[data-background-image="sathornHappenings"]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image="sathornOffers"] {
+  .overlayNav.container .rightMenu[data-background-image="sathornOffers"]:before {
     background-image: none;
   }
   .overlayNav.container .rightMenu {
@@ -483,10 +483,14 @@
   .overlayNav.container .rightMenu .container .returnButton.chinatown:after {
     content: "Bangkok Chinatown";
     font-weight: 400;
+    position: relative;
+    z-index: 2;
   }
   .overlayNav.container .rightMenu .container .returnButton.sathorn:after {
     content: "Bangkok Sathorn";
     font-weight: 400;
+    position: relative;
+    z-index: 2;
   }
   .overlayNav.container .rightMenu .container ul {
     list-style: none;

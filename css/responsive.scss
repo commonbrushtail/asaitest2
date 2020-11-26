@@ -402,78 +402,78 @@ $theblue: #071D49;
 			
 				
 			}
-			.rightMenu[data-background-image="default"]{
+			.rightMenu[data-background-image="default"]:before{
 				background-image: none; 
 				
 				
 				
 			}
 	
-			.rightMenu[data-background-image="chinaDefault"]{
+			.rightMenu[data-background-image="chinaDefault"]:before{
 				background-image: none;
 				
 			}
-			.rightMenu[data-background-image="chinaOverview"]{
-				background-image: none;
-				
-				
-			}
-			.rightMenu[data-background-image="chinaRoom"]{
-				background-image: none;
-			
-				
-			}
-			.rightMenu[data-background-image="chinaRestaurant"]{
+			.rightMenu[data-background-image="chinaOverview"]:before{
 				background-image: none;
 				
 				
 			}
-			.rightMenu[data-background-image="chinaGuide"]{
-				background-image: none;
-				
-				
-			}
-			.rightMenu[data-background-image="chinaHappenings"]{
-				background-image: none;
-				
-				
-			}
-			.rightMenu[data-background-image="chinaOffers"]{
+			.rightMenu[data-background-image="chinaRoom"]:before{
 				background-image: none;
 			
 				
 			}
-			.rightMenu[data-background-image="sathornDefault"]{
+			.rightMenu[data-background-image="chinaRestaurant"]:before{
 				background-image: none;
 				
 				
 			}
-			.rightMenu[data-background-image="sathornOverview"]{
+			.rightMenu[data-background-image="chinaGuide"]:before{
 				background-image: none;
 				
 				
 			}
-			.rightMenu[data-background-image="sathornRoom"]{
+			.rightMenu[data-background-image="chinaHappenings"]:before{
+				background-image: none;
+				
+				
+			}
+			.rightMenu[data-background-image="chinaOffers"]:before{
 				background-image: none;
 			
 				
 			}
-			.rightMenu[data-background-image="sathornRestaurant"]{
+			.rightMenu[data-background-image="sathornDefault"]:before{
 				background-image: none;
 				
 				
 			}
-			.rightMenu[data-background-image="sathornGuide"]{
+			.rightMenu[data-background-image="sathornOverview"]:before{
 				background-image: none;
 				
 				
 			}
-			.rightMenu[data-background-image="sathornHappenings"]{
+			.rightMenu[data-background-image="sathornRoom"]:before{
+				background-image: none;
+			
+				
+			}
+			.rightMenu[data-background-image="sathornRestaurant"]:before{
 				background-image: none;
 				
 				
 			}
-			.rightMenu[data-background-image="sathornOffers"]{
+			.rightMenu[data-background-image="sathornGuide"]:before{
+				background-image: none;
+				
+				
+			}
+			.rightMenu[data-background-image="sathornHappenings"]:before{
+				background-image: none;
+				
+				
+			}
+			.rightMenu[data-background-image="sathornOffers"]:before{
 				background-image: none;
 				
 				
@@ -513,6 +513,7 @@ $theblue: #071D49;
 						
 						
 						
+						
 					}
 					.returnButton:before{
 						border: solid black;
@@ -530,10 +531,14 @@ $theblue: #071D49;
 					.returnButton.chinatown:after{
 						content:"Bangkok Chinatown";
 						font-weight: 400;
+						position: relative;
+						z-index: 2;
 					}
 					.returnButton.sathorn:after{
 						content:"Bangkok Sathorn";
 						font-weight: 400;
+						position: relative;
+						z-index: 2;
 					}
 
 					ul {
