@@ -785,6 +785,13 @@ header.scrolling{
 			}
 
 		}
+
+		.rightMenu[data-background-image]{
+			position: relative;
+		}
+			
+			
+		
 		.rightMenu[data-background-image]:before{
 			filter: brightness(70%);
 			content:"";
@@ -792,7 +799,11 @@ header.scrolling{
 			height: 100%;
 			position:absolute;
 			transition: ease all 0.3s;
-			background-size: contain;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 0%;
+			left: 0;
+			top: 0;
 			
 			
 		}

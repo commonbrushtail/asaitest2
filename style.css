@@ -836,6 +836,10 @@ header.scrolling {
   margin-right: 10px;
 }
 
+.overlayNav.container .rightMenu[data-background-image] {
+  position: relative;
+}
+
 .overlayNav.container .rightMenu[data-background-image]:before {
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
@@ -845,7 +849,11 @@ header.scrolling {
   position: absolute;
   -webkit-transition: ease all 0.3s;
   transition: ease all 0.3s;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  left: 0;
+  top: 0;
 }
 
 .overlayNav.container .rightMenu[data-background-image="default"]:before {

@@ -390,6 +390,7 @@
   .overlayNav.container .rightMenu[data-background-image] {
     -webkit-transition: ease all 0.3s;
     transition: ease all 0.3s;
+    position: absolute;
   }
   .overlayNav.container .rightMenu[data-background-image="default"]:before {
     background-image: none;
