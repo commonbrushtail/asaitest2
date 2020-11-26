@@ -680,7 +680,7 @@
   }
   .accordion-wrap .accordionFooterItem:after {
     position: absolute;
-    background-image: url(/images/plus.png);
+    background-image: url(../images/plus.png);
     content: "";
     width: 20px;
     height: 20px;
@@ -694,7 +694,7 @@
   }
   .accordion-wrap .accordionFooterItem.is-active:after {
     position: absolute;
-    background-image: url(images/remove.png);
+    background-image: url(../images/remove.png);
     content: "";
     width: 20px;
     height: 20px;
