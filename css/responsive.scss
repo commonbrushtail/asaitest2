@@ -745,7 +745,7 @@ $theblue: #071D49;
 		}
 		.accordionFooterItem:after{
 			position: absolute;
-			background-image: url(images/plus.svg);
+			background-image: url(/images/plus.svg);
 			content:"";
 			width: 20px;
 			height: 20px;
@@ -754,10 +754,11 @@ $theblue: #071D49;
 			top:0;
 			transform: translate(-50%,100%);
 			transition: ease all 0.5s;
+			
 		}
 		.accordionFooterItem.is-active:after{
 			position: absolute;
-			background-image: url(images/minus.svg);
+			background-image: url(/images/minus.svg);
 			content:"";
 			width: 20px;
 			height: 20px;
