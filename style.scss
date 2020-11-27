@@ -148,7 +148,7 @@ input {
 }
 
 .allwhite * {
-	color: #fff !important;
+	color: #fff ;
 	border-color: #fff !important;
 }
 
@@ -213,6 +213,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	margin-bottom: 5px;
 	.hiddenText{
 		display: block;
 		transform: translateY(100%);
@@ -373,13 +374,16 @@ header.nonTransparent{
 		ul{
 			display: flex;
 			width: 70%;
-			max-width: 600px;
+			max-width: 700px;
 			font-size: 20px;
 			justify-content: space-between;
 			margin: 0;
 			font-family: 'CircularStdBook';
 			li{
 				list-style-type: none;
+				a{
+					font-family: 'CircularStdBook';
+				}
 			}
 		}
 	}
@@ -395,133 +399,12 @@ header.nonTransparent{
 
 
 
+
+
+
 .left-header a {
 	border-bottom: none;
 }
-
-.float-book-wrap.white a {
-	background-color: white;
-	color: $theblue;
-	transition: all 0.3s ease;
-}
-.float-book-wrap a {
-
-	transition: all 0.3s ease;
-}
-
-.float-book-wrap {
-	display: none;
-	position: fixed;
-	bottom: 60px;
-	z-index: 10;
-	margin: auto;
-	left: 0;
-	right: 0;
-	text-align: center;
-	transition: all 0.5s ease;
-	
-}
-
-.float-booking {
-	background: $theblue;
-	color: #fff;
-	width: auto;
-	text-align: center;
-	padding: 15px 30px;
-	letter-spacing: 1px;
-
-	span {
-		font-family: 'CircularStdBook';
-	}
-}
-
-.overlayBookMenu{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: white;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
-	z-index: 999999;
-	text-align: start;
-	padding: 50px 20px 50px;
-	transform: translateY(100%);
-	opacity: 0;
-	transition: all 0.2s ease;
-	ul{
-		list-style: none;
-		padding: 0;
-		li{
-			padding: 0;
-			display: flex;
-			align-items: center;
-			img{
-				margin-right: 10px;
-				
-			}
-		}
-
-	}
-
-	form{
-		display: flex;
-		flex-direction: column;
-		label{
-			font-size: 14px;
-			margin-top: 20px;
-		}
-
-		.formGroupMobile{
-			position: relative;
-			input{
-				border: none;
-				font-size:24px ;
-				border-bottom: $theblue solid 1px;
-				position: relative;
-				width: 100%;
-				padding-bottom: 5px;
-				padding-left: 0;
-			}
-			input:focus{
-				outline: none;
-			}
-		}
-		.formGroupMobile:after{
-		border: solid $theblue;
-		border-width: 0 2px 2px 0;
-		display: inline-block;
-		padding: 5px;
-		z-index: 20;
-		position: absolute;
-		content: "";
-		right: 0;
-		top: 30%;
-		transform: rotate(45deg) translateY(50%) translateX(-50%);
-		}
-
-		button{
-			margin-top: 30px;
-			border: none;
-			background-color: $theblue;
-			color: white;
-			padding: 15px 0;
-		}
-		
-
-		
-	}
-}
-
-.overlayBookMenu.active{
-	transform: translateY(0);
-	opacity: 100;
-}
-
-
-
 
 
 .svgHeaderIcon.scrolling{
@@ -1948,6 +1831,144 @@ footer ::placeholder {
 	color: white;
 }
 
+
+
+
+.float-book-wrap.white a {
+	background-color: white;
+	color: $theblue!important;
+	transition: all 0.3s ease;
+	span{
+		color: $theblue!important;
+	}
+}
+.float-book-wrap a {
+	
+	transition: all 0.3s ease;
+}
+
+.float-book-wrap {
+	display: none;
+	position: fixed;
+	bottom: 60px;
+	z-index: 10;
+	margin: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	transition: all 0.5s ease;
+	
+}
+
+.float-booking {
+	background: $theblue;
+	color: #fff;
+	width: auto;
+	text-align: center;
+	padding: 15px 30px;
+	letter-spacing: 1px;
+
+	span {
+		font-family: 'CircularStdBook';
+	}
+}
+
+.overlayBookMenu{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	z-index: 999999;
+	text-align: start;
+	padding: 50px 20px 50px;
+	transform: translateY(100%);
+	opacity: 0;
+	transition: all 0.2s ease;
+	color:$theblue!important;
+	ul{
+		list-style: none;
+		padding: 0;
+		color:$theblue!important;
+		li{
+			padding: 0;
+			display: flex;
+			align-items: center;
+			color:$theblue!important;
+			img{
+				margin-right: 10px;
+				
+			}
+		}
+
+	}
+
+	form{
+		display: flex;
+		color:$theblue!important;
+		flex-direction: column;
+		label{
+			font-size: 14px;
+			margin-top: 20px;
+			color:$theblue!important;
+		}
+
+		.formGroupMobile{
+			position: relative;
+			input{
+				border: none;
+				font-size:24px ;
+				border-bottom: $theblue solid 1px!important;
+				position: relative;
+				width: 100%;
+				padding-bottom: 5px;
+				padding-left: 0;
+				color:$theblue!important;
+			}
+			input:focus{
+				outline: none;
+			}
+		}
+		.formGroupMobile:after{
+		border: solid $theblue;
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		padding: 5px;
+		z-index: 20;
+		position: absolute;
+		content: "";
+		right: 0;
+		top: 30%;
+		transform: rotate(45deg) translateY(50%) translateX(-50%);
+		}
+
+		button{
+			margin-top: 30px;
+			border: none;
+			background-color: $theblue;
+			color: white;
+			padding: 15px 0;
+		}
+		
+
+		
+	}
+	span{
+		color:$theblue!important;
+		a{
+			color:$theblue!important;
+		}
+	}
+}
+
+.overlayBookMenu.active{
+	transform: translateY(0);
+	opacity: 100;
+}
 
 .accordionFooterWrap{
 	display: none;

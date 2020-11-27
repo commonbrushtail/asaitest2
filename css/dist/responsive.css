@@ -116,7 +116,7 @@
     display: block;
   }
 
-  header .booknow-btn {
+  .booknow-btn {
     display: none;
   }
 }

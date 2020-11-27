@@ -451,9 +451,8 @@ window.addEventListener('DOMContentLoaded', function (event) {
 window.addEventListener('onResize', function (event) {
   ScrollTrigger.refresh();
 });
-gsap.to('.locationTopMenu', {
-  y: 0,
-  height: '100%',
+gsap.to('.nonTransparentHeader', {
+  y: '-100%',
   scrollTrigger: {
     start: 'top top',
     end: '10 top',

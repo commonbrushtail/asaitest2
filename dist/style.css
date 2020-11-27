@@ -121,7 +121,7 @@ input {
 }
 
 .allwhite * {
-  color: #fff !important;
+  color: #fff;
   border-color: #fff !important;
 }
 
@@ -184,6 +184,7 @@ a:hover {
   width: 100%;
   height: 100%;
   position: relative;
+  margin-bottom: 5px;
 }
 .revealText .hiddenText {
   display: block;
@@ -321,7 +322,7 @@ header.nonTransparent .locationTopMenu h4 {
 header.nonTransparent .locationTopMenu ul {
   display: flex;
   width: 70%;
-  max-width: 600px;
+  max-width: 700px;
   font-size: 20px;
   justify-content: space-between;
   margin: 0;
@@ -330,123 +331,15 @@ header.nonTransparent .locationTopMenu ul {
 header.nonTransparent .locationTopMenu ul li {
   list-style-type: none;
 }
+header.nonTransparent .locationTopMenu ul li a {
+  font-family: "CircularStdBook";
+}
 header.nonTransparent .locationTopMenuMobile {
   display: none;
 }
 
 .left-header a {
   border-bottom: none;
-}
-
-.float-book-wrap.white a {
-  background-color: white;
-  color: #071D49;
-  transition: all 0.3s ease;
-}
-
-.float-book-wrap a {
-  transition: all 0.3s ease;
-}
-
-.float-book-wrap {
-  display: none;
-  position: fixed;
-  bottom: 60px;
-  z-index: 10;
-  margin: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  transition: all 0.5s ease;
-}
-
-.float-booking {
-  background: #071D49;
-  color: #fff;
-  width: auto;
-  text-align: center;
-  padding: 15px 30px;
-  letter-spacing: 1px;
-}
-.float-booking span {
-  font-family: "CircularStdBook";
-}
-
-.overlayBookMenu {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  z-index: 999999;
-  text-align: start;
-  padding: 50px 20px 50px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: all 0.2s ease;
-}
-.overlayBookMenu ul {
-  list-style: none;
-  padding: 0;
-}
-.overlayBookMenu ul li {
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-.overlayBookMenu ul li img {
-  margin-right: 10px;
-}
-.overlayBookMenu form {
-  display: flex;
-  flex-direction: column;
-}
-.overlayBookMenu form label {
-  font-size: 14px;
-  margin-top: 20px;
-}
-.overlayBookMenu form .formGroupMobile {
-  position: relative;
-}
-.overlayBookMenu form .formGroupMobile input {
-  border: none;
-  font-size: 24px;
-  border-bottom: #071D49 solid 1px;
-  position: relative;
-  width: 100%;
-  padding-bottom: 5px;
-  padding-left: 0;
-}
-.overlayBookMenu form .formGroupMobile input:focus {
-  outline: none;
-}
-.overlayBookMenu form .formGroupMobile:after {
-  border: solid #071D49;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 5px;
-  z-index: 20;
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 30%;
-  transform: rotate(45deg) translateY(50%) translateX(-50%);
-}
-.overlayBookMenu form button {
-  margin-top: 30px;
-  border: none;
-  background-color: #071D49;
-  color: white;
-  padding: 15px 0;
-}
-
-.overlayBookMenu.active {
-  transform: translateY(0);
-  opacity: 100;
 }
 
 .svgHeaderIcon.scrolling {
@@ -1627,6 +1520,132 @@ footer :-ms-input-placeholder {
 
 footer ::placeholder {
   color: white;
+}
+
+.float-book-wrap.white a {
+  background-color: white;
+  color: #071D49 !important;
+  transition: all 0.3s ease;
+}
+.float-book-wrap.white a span {
+  color: #071D49 !important;
+}
+
+.float-book-wrap a {
+  transition: all 0.3s ease;
+}
+
+.float-book-wrap {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  z-index: 10;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.float-booking {
+  background: #071D49;
+  color: #fff;
+  width: auto;
+  text-align: center;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+}
+.float-booking span {
+  font-family: "CircularStdBook";
+}
+
+.overlayBookMenu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 999999;
+  text-align: start;
+  padding: 50px 20px 50px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.2s ease;
+  color: #071D49 !important;
+}
+.overlayBookMenu ul {
+  list-style: none;
+  padding: 0;
+  color: #071D49 !important;
+}
+.overlayBookMenu ul li {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #071D49 !important;
+}
+.overlayBookMenu ul li img {
+  margin-right: 10px;
+}
+.overlayBookMenu form {
+  display: flex;
+  color: #071D49 !important;
+  flex-direction: column;
+}
+.overlayBookMenu form label {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #071D49 !important;
+}
+.overlayBookMenu form .formGroupMobile {
+  position: relative;
+}
+.overlayBookMenu form .formGroupMobile input {
+  border: none;
+  font-size: 24px;
+  border-bottom: #071D49 solid 1px !important;
+  position: relative;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 0;
+  color: #071D49 !important;
+}
+.overlayBookMenu form .formGroupMobile input:focus {
+  outline: none;
+}
+.overlayBookMenu form .formGroupMobile:after {
+  border: solid #071D49;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 5px;
+  z-index: 20;
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 30%;
+  transform: rotate(45deg) translateY(50%) translateX(-50%);
+}
+.overlayBookMenu form button {
+  margin-top: 30px;
+  border: none;
+  background-color: #071D49;
+  color: white;
+  padding: 15px 0;
+}
+.overlayBookMenu span {
+  color: #071D49 !important;
+}
+.overlayBookMenu span a {
+  color: #071D49 !important;
+}
+
+.overlayBookMenu.active {
+  transform: translateY(0);
+  opacity: 100;
 }
 
 .accordionFooterWrap {

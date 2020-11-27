@@ -108,7 +108,7 @@
   .float-book-wrap {
     display: block;
   }
-  header .booknow-btn {
+  .booknow-btn {
     display: none;
   }
 }
