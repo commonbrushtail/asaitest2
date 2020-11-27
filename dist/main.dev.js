@@ -357,92 +357,55 @@ var rightListener = createButtonListener(true);
 left.addEventListener('click', leftListener);
 right.addEventListener('click', rightListener);
 var introAnimationOverlay = document.querySelector('.introAnimationOverlay');
-/* use this code if wanted to show animation only the first time
-if(localStorage.getItem('asaiVisited')){
-    introAnimationOverlay.classList.add('hide')  
+
+if (localStorage.getItem('asaiVisited')) {
+  introAnimationOverlay.classList.add('hide');
 } else {
-    gsap.set('.introAnimationOverlay',{
-        opacity:100,
-    })
+  gsap.set('.introAnimationOverlay', {
+    opacity: 100
+  });
 
-    if(document.body.clientWidth>1200){
-        gsap.set('.introAnimate1Wrap,.introAnimate2',{
-            top:'50%'
-        })
-    }
-
-
-    var tl = gsap.timeline({
-        onStart:()=>{
-            html.classList.add('active')
-        },
-        onComplete:()=>{
-            html.classList.remove('active')
-            
-        }
+  if (document.body.clientWidth > 1200) {
+    gsap.set('.introAnimate1Wrap,.introAnimate2', {
+      top: '50%'
     });
-        
-        
-        tl.to('.introAnimate1',{y:0,duration:0.6,stagger:0.05,})
-          .to('.introAnimate1',{opacity:0,duration:0.8})
-          .to('.introAnimate2',{opacity:100,duration:0.8})
-          .to('.introAnimationOverlay',{height:0,duration:0.7,delay:0.8})
-          .to('.introAnimate2',{opacity:0,duration:0.01},'-=1')
-          .set('.introAnimationOverlay',{display:'none'})
-          
-          localStorage.setItem('asaiVisited',true)          
-        
-    
-    
-       
-}
-
-*/
-
-gsap.set('.introAnimationOverlay', {
-  opacity: 100
-});
-
-if (document.body.clientWidth > 1200) {
-  gsap.set('.introAnimate1Wrap,.introAnimate2', {
-    top: '50%'
-  });
-} else {
-  gsap.set('.introAnimate1Wrap,.introAnimate2', {
-    top: '40%'
-  });
-}
-
-var tl = gsap.timeline({
-  onStart: function onStart() {
-    html.classList.add('active');
-  },
-  onComplete: function onComplete() {
-    html.classList.remove('active');
+  } else {
+    gsap.set('.introAnimate1Wrap,.introAnimate2', {
+      top: '40%'
+    });
   }
-});
-tl.to('.introAnimate1', {
-  y: 0,
-  duration: 0.6,
-  stagger: 0.05,
-  dealay: 0.5
-}).to('.introAnimate1', {
-  opacity: 0,
-  duration: 0.8
-}).to('.introAnimate2', {
-  opacity: 100,
-  duration: 0.8
-}).to('.introAnimationOverlay', {
-  height: 0,
-  duration: 0.7,
-  delay: 0.8
-}).to('.introAnimate2', {
-  opacity: 0,
-  duration: 0.01
-}, '-=1').set('.introAnimationOverlay', {
-  display: 'none'
-});
-localStorage.setItem('asaiVisited', true);
+
+  var tl = gsap.timeline({
+    onStart: function onStart() {
+      html.classList.add('active');
+    },
+    onComplete: function onComplete() {
+      html.classList.remove('active');
+    }
+  });
+  tl.to('.introAnimate1', {
+    y: 0,
+    duration: 0.6,
+    stagger: 0.05
+  }).to('.introAnimate1', {
+    opacity: 0,
+    duration: 0.8
+  }).to('.introAnimate2', {
+    opacity: 100,
+    duration: 0.8
+  }).to('.introAnimationOverlay', {
+    height: 0,
+    duration: 0.7,
+    delay: 0.8
+  }).to('.introAnimate2', {
+    opacity: 0,
+    duration: 0.01
+  }, '-=1').set('.introAnimationOverlay', {
+    display: 'none'
+  });
+  localStorage.setItem('asaiVisited', true);
+}
+
 blueSection = document.querySelectorAll('.blue');
 whiteSection = document.querySelectorAll('.white');
 floatBook = document.querySelector('.float-book-wrap');
@@ -488,3 +451,14 @@ window.addEventListener('DOMContentLoaded', function (event) {
 window.addEventListener('onResize', function (event) {
   ScrollTrigger.refresh();
 });
+gsap.to('.locationTopMenu', {
+  y: 0,
+  height: '100%',
+  scrollTrigger: {
+    start: 'top top',
+    end: '10 top',
+    scrub: true,
+    duration: 0.1
+  }
+});
+new Accordion('.accordion-container');

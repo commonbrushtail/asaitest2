@@ -23,6 +23,15 @@
   font-weight: normal;
   font-style: normal;
 }
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(images/menu-chinatown-Guide.png) url(images/menu-chinatown-Happening.png) url(images/menu-chinatown-Offers.png) url(images/menu-chinatown-overview.png) url(images/menu-chinatown-Resturant.png) url(images/menu-chinatown-Happening.png) url(images/menu-Sathorn-Guide.png) url(images/menu-Sathorn-Happening.png) url(images/menu-Sathorn-Offers.png) url(images/menu-Sathorn-overview.png) url(images/menu-Sathorn-Resturant.png);
+}
+
 h3 {
   font-size: 24px;
   font-family: "CircularStdBold";
@@ -265,9 +274,62 @@ header .booknow-btn.scrolling {
   background-color: #071D49;
   color: white;
 }
+header .booknow-btn.nonTransparent {
+  background-color: #071D49;
+  color: white;
+}
 
 header.scrolling {
   background-color: white;
+}
+
+header.nonTransparent {
+  background-color: white;
+  top: 0;
+  transition: all 0.1s ease;
+}
+header.nonTransparent .hamburger-inner, header.nonTransparent .hamburger-inner::before, header.nonTransparent .hamburger-inner::after {
+  background-color: #071D49;
+}
+header.nonTransparent .svgHeaderIcon {
+  fill: #071D49;
+  color: white;
+  background-color: #071D49;
+}
+header.nonTransparent .locationTopMenu {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  width: 100%;
+  transform: translateY(130%);
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-top: solid 0.1px rgba(128, 128, 128, 0.37);
+  transition: all ease 0.1s;
+  z-index: 100;
+}
+header.nonTransparent .locationTopMenu h4 {
+  margin: 0;
+  width: 30%;
+  font-family: "din_condensedbold";
+}
+header.nonTransparent .locationTopMenu ul {
+  display: flex;
+  width: 70%;
+  max-width: 600px;
+  justify-content: space-between;
+  margin: 0;
+  font-family: "CircularStdBook";
+}
+header.nonTransparent .locationTopMenu ul li {
+  list-style-type: none;
+}
+header.nonTransparent .locationTopMenuMobile {
+  display: none;
 }
 
 .left-header a {
@@ -386,6 +448,10 @@ header.scrolling {
 }
 
 .svgHeaderIcon.scrolling {
+  fill: #071D49;
+}
+
+.svgHeaderIcon.nonTransparent {
   fill: #071D49;
 }
 
@@ -521,6 +587,12 @@ header.scrolling {
 .hamburger-inner.scrolling,
 .hamburger-inner.scrolling::before,
 .hamburger-inner.scrolling::after {
+  background-color: #071D49;
+}
+
+.hamburger-inner.nonTransparent,
+.hamburger-inner.nonTransparent::before,
+.hamburger-inner.nonTransparent::after {
   background-color: #071D49;
 }
 
@@ -671,53 +743,64 @@ header.scrolling {
   margin-right: 10px;
 }
 .overlayNav.container .rightMenu[data-background-image] {
+  position: relative;
+}
+.overlayNav.container .rightMenu[data-background-image]:before {
+  filter: brightness(70%);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
   transition: ease all 0.3s;
-  filter: grayscale(30%);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  left: 0;
+  top: 0;
 }
-.overlayNav.container .rightMenu[data-background-image=default] {
+.overlayNav.container .rightMenu[data-background-image=default]:before {
   background-image: url(images/menu-open.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaDefault] {
+.overlayNav.container .rightMenu[data-background-image=chinaDefault]:before {
   background-image: url(images/menu-open.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaOverview] {
+.overlayNav.container .rightMenu[data-background-image=chinaOverview]:before {
   background-image: url(images/menu-chinatown-overview.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaRoom] {
+.overlayNav.container .rightMenu[data-background-image=chinaRoom]:before {
   background-image: url(images/menu-chinatown-Room.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaRestaurant] {
+.overlayNav.container .rightMenu[data-background-image=chinaRestaurant]:before {
   background-image: url(images/menu-chinatown-Resturant.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaGuide] {
+.overlayNav.container .rightMenu[data-background-image=chinaGuide]:before {
   background-image: url(images/menu-chinatown-Guide.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaHappenings] {
+.overlayNav.container .rightMenu[data-background-image=chinaHappenings]:before {
   background-image: url(images/menu-chinatown-Happening.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaOffers] {
+.overlayNav.container .rightMenu[data-background-image=chinaOffers]:before {
   background-image: url(images/menu-chinatown-Offers.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornDefault] {
+.overlayNav.container .rightMenu[data-background-image=sathornDefault]:before {
   background-image: url(images/menu-open.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornOverview] {
+.overlayNav.container .rightMenu[data-background-image=sathornOverview]:before {
   background-image: url(images/menu-Sathorn-overview.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornRoom] {
+.overlayNav.container .rightMenu[data-background-image=sathornRoom]:before {
   background-image: url(images/menu-Sathorn-Room.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornRestaurant] {
+.overlayNav.container .rightMenu[data-background-image=sathornRestaurant]:before {
   background-image: url(images/menu-Sathorn-Resturant.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornGuide] {
+.overlayNav.container .rightMenu[data-background-image=sathornGuide]:before {
   background-image: url(images/menu-Sathorn-Guide.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornHappenings] {
+.overlayNav.container .rightMenu[data-background-image=sathornHappenings]:before {
   background-image: url(images/menu-Sathorn-Happening.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornOffers] {
+.overlayNav.container .rightMenu[data-background-image=sathornOffers]:before {
   background-image: url(images/menu-Sathorn-Offers.png);
 }
 .overlayNav.container .rightMenu {
@@ -1539,4 +1622,8 @@ footer :-ms-input-placeholder {
 
 footer ::placeholder {
   color: white;
+}
+
+.accordionFooterWrap {
+  display: none;
 }

@@ -612,9 +612,9 @@ window.addEventListener('onResize', (event) => {
 
 
 
-/*
 
-gsap.to('.locationNav',{
+
+gsap.to('.locationTopMenu',{
         y:0,
         height:'100%',
         scrollTrigger:{
@@ -625,20 +625,10 @@ gsap.to('.locationNav',{
             
         },
 })
-*/
 
 
-let locationAccordion = document.querySelector('.locationNavAccordion')
-let locationNavTitle = document.querySelector('.locationNavTitle') 
 
-locationNavTitle.addEventListener('click',()=>{
-    if(!locationAccordion.classList.contains('active')){
-        locationAccordion.classList.add('active')
-        
-    } else {
-        locationAccordion.classList.remove('active')
-        
-    }
-    
-    
-})
+
+
+
+new Accordion('.accordion-container');

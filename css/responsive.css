@@ -129,74 +129,75 @@
     color: white;
     background-color: #071D49;
   }
-  header.nonTransparent .locationNav {
+  header.nonTransparent .locationTopMenu {
+    display: none;
+  }
+  header.nonTransparent .locationTopMenuMobile:focus {
+    outline: none;
+  }
+  header.nonTransparent .ac:focus, header.nonTransparent .ac-header:focus, header.nonTransparent .ac-panel:focus, header.nonTransparent .ac-trigger:focus {
+    outline: none;
+  }
+  header.nonTransparent .locationTopMenuMobile {
     position: absolute;
+    top: 80px;
+    bottom: 0;
+    display: block;
     width: 100%;
-    height: 70%;
-    width: 100%;
-    -webkit-transform: translateY(130%);
-            transform: translateY(130%);
-    top: 0;
-    z-index: 99;
-    background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0 30px;
-    border-top: solid 0.1px rgba(128, 128, 128, 0.37);
-    -webkit-transition: all ease 0.1s;
-    transition: all ease 0.1s;
-    z-index: 2;
+    border-top: 0.5px solid rgba(128, 128, 128, 0.377);
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
   }
-  header.nonTransparent .locationNav .locationNavTitle {
-    margin: 0;
-    width: 100%;
-    position: relative;
-    background-color: white;
-  }
-  header.nonTransparent .locationNav .locationNavTitle:after {
+  header.nonTransparent .locationTopMenuMobile .ac.is-active .ac-header .ac-trigger:after {
     content: "";
     background-image: url(../images/arrow-down.svg);
-    width: 30px;
-    height: 30px;
-    position: absolute;
     background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
     right: 0;
-    -webkit-transform: translate(-75%, 25%);
-            transform: translate(-75%, 25%);
+    background-position: center;
+    -webkit-transform: translate(-20%, -60%) rotate(180deg);
+            transform: translate(-20%, -60%) rotate(180deg);
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
   }
-  header.nonTransparent .locationNav .locationNavAccordion {
+  header.nonTransparent .locationTopMenuMobile .ac {
+    margin: 0 !important;
+    border: 0 !important;
+    border: 0;
+    padding: 15px 30px;
+    border-top: 1px solid gray;
+  }
+  header.nonTransparent .locationTopMenuMobile .ac .ac-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: absolute;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    max-width: 100%;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    padding: 30px;
-    -webkit-transform: translateY(-200%);
-            transform: translateY(-200%);
-    background-color: red;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
   }
-  header.nonTransparent .locationNav .locationNavAccordion.active {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger {
+    padding: 0;
+    color: #071D49;
+    font-family: 'din_condensedbold';
+    font-size: 20px;
+  }
+  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger:after {
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background-position: center;
+    -webkit-transform: translate(-25%, -50%);
+            transform: translate(-25%, -50%);
+    -webkit-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+  }
+  header.nonTransparent .locationTopMenuMobile .ac .ac-panel ul {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    font-family: 'CircularStdBook';
   }
   .matchingoffer {
     background: #ededed;
@@ -1010,6 +1011,39 @@
   }
   .locations h2 br {
     display: block;
+  }
+  header.nonTransparent .locationTopMenuMobile {
+    top: 60px;
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  header.nonTransparent .locationTopMenuMobile .ac.is-active .ac-header .ac-trigger:after {
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translate(-15%, -60%) rotate(180deg);
+            transform: translate(-15%, -60%) rotate(180deg);
+  }
+  header.nonTransparent .locationTopMenuMobile .ac {
+    padding: 10px 15px;
+    border-top: 1px solid gray;
+  }
+  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger {
+    padding: 0;
+    color: #071D49;
+    font-family: 'din_condensedbold';
+    font-size: 20px;
+  }
+  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger:after {
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    -webkit-transform: translate(-15%, -50%);
+            transform: translate(-15%, -50%);
+  }
+  header.nonTransparent .locationTopMenuMobile .ac .ac-panel ul {
+    margin-top: 15px;
+    margin-bottom: 0;
   }
   .matchingoffer {
     background: #ededed;
