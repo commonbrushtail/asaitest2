@@ -332,6 +332,7 @@ header.nonTransparent .locationTopMenu ul li {
 }
 header.nonTransparent .locationTopMenu ul li a {
   font-family: "CircularStdBook";
+  font-size: 16px;
 }
 header.nonTransparent .locationTopMenuMobile {
   display: none;
@@ -1533,6 +1534,7 @@ footer ::placeholder {
 .float-book-wrap a {
   color: white !important;
   transition: all 0.3s ease;
+  font-family: "CircularStdBold";
 }
 
 .float-book-wrap {
