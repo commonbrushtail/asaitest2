@@ -268,7 +268,6 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 20;
   padding: 15px 30px;
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
@@ -276,6 +275,7 @@ header {
   display: grid;
   -ms-grid-columns: 1fr auto 1fr;
       grid-template-columns: 1fr auto 1fr;
+  z-index: 90;
 }
 
 header .left-header {
@@ -365,13 +365,14 @@ header.nonTransparent .locationTopMenu {
   border-top: solid 0.1px rgba(128, 128, 128, 0.37);
   -webkit-transition: all ease 0.1s;
   transition: all ease 0.1s;
-  z-index: 100;
+  z-index: 91;
 }
 
 header.nonTransparent .locationTopMenu h4 {
   margin: 0;
   width: 30%;
   font-family: 'din_condensedbold';
+  font-size: 24px;
 }
 
 header.nonTransparent .locationTopMenu ul {
@@ -380,6 +381,7 @@ header.nonTransparent .locationTopMenu ul {
   display: flex;
   width: 70%;
   max-width: 600px;
+  font-size: 20px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -567,7 +569,6 @@ header.nonTransparent .locationTopMenuMobile {
 /*------closeBookingMenuButton------*/
 .closeButton {
   padding: 10px 0px;
-  z-index: 2;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -657,7 +658,7 @@ header.nonTransparent .locationTopMenuMobile {
 /* ---- Hamburger -------------------*/
 .hamburger {
   padding: 10px 0px;
-  z-index: 2;
+  z-index: 90;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -676,7 +677,7 @@ header.nonTransparent .locationTopMenuMobile {
   border: 0;
   margin: 0;
   overflow: visible;
-  z-index: 99;
+  z-index: 90;
 }
 
 .hamburger:hover {
@@ -689,6 +690,10 @@ header.nonTransparent .locationTopMenuMobile {
 
 .hamburger:focus {
   outline: none;
+}
+
+.hamburger.is-active {
+  z-index: 93;
 }
 
 .hamburger.is-active .hamburger-inner,
@@ -813,7 +818,7 @@ header.nonTransparent .locationTopMenuMobile {
       grid-template-rows: 1fr;
   gap: 0px 0px;
       grid-template-areas: "leftMenu rightMenu";
-  z-index: 30;
+  z-index: 91;
 }
 
 .overlayNav.container .leftMenu {
