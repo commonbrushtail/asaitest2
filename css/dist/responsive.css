@@ -116,90 +116,11 @@
     display: block;
   }
 
-  .booknow-btn {
+  header .booknow-btn {
     display: none;
   }
 }
 @media (max-width: 991px) {
-  header.nonTransparent {
-    background-color: white;
-    top: 0;
-    transition: all 0.1s ease;
-    z-index: 100;
-  }
-  header.nonTransparent .hamburger-inner, header.nonTransparent .hamburger-inner::before, header.nonTransparent .hamburger-inner::after {
-    background-color: #071D49;
-  }
-  header.nonTransparent .svgHeaderIcon {
-    fill: #071D49;
-    color: white;
-    background-color: #071D49;
-  }
-  header.nonTransparent .locationTopMenu {
-    display: none;
-  }
-  header.nonTransparent .locationTopMenuMobile:focus {
-    outline: none;
-  }
-  header.nonTransparent .ac:focus, header.nonTransparent .ac-header:focus, header.nonTransparent .ac-panel:focus, header.nonTransparent .ac-trigger:focus {
-    outline: none;
-  }
-  header.nonTransparent .locationTopMenuMobile {
-    position: absolute;
-    top: 80px;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    border-top: 0.5px solid rgba(128, 128, 128, 0.377);
-    transform: translateY(-3px);
-  }
-  header.nonTransparent .locationTopMenuMobile .ac.is-active .ac-header .ac-trigger:after {
-    content: "";
-    background-image: url(../images/arrow-down.svg);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    right: 0;
-    background-position: center;
-    transform: translate(-20%, -60%) rotate(180deg);
-    transition: all 0.1s ease;
-  }
-  header.nonTransparent .locationTopMenuMobile .ac {
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.018), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.022), 0 41.8px 33.4px rgba(0, 0, 0, 0.016), 0 100px 80px rgba(0, 0, 0, 0.12);
-    margin: 0 !important;
-    border: 0 !important;
-    border: 0;
-    padding: 15px 30px;
-    border-top: 1px solid gray;
-  }
-  header.nonTransparent .locationTopMenuMobile .ac .ac-header {
-    display: flex;
-  }
-  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger {
-    padding: 0;
-    color: #071D49;
-    font-family: "din_condensedbold";
-    font-size: 20px;
-  }
-  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger:after {
-    content: "";
-    background-image: url(../images/arrow-down.svg);
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-    right: 0;
-    background-position: center;
-    transform: translate(-25%, -50%);
-    transition: all 0.1s ease;
-  }
-  header.nonTransparent .locationTopMenuMobile .ac .ac-panel ul {
-    margin-top: 15px;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-    font-family: "CircularStdBook";
-  }
-
   .matchingoffer {
     background: #ededed;
     height: 900px;
@@ -405,51 +326,50 @@
   }
   .overlayNav.container .rightMenu[data-background-image] {
     transition: ease all 0.3s;
-    position: absolute;
   }
-  .overlayNav.container .rightMenu[data-background-image=default]:before {
+  .overlayNav.container .rightMenu[data-background-image=default] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaDefault]:before {
+  .overlayNav.container .rightMenu[data-background-image=chinaDefault] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaOverview]:before {
+  .overlayNav.container .rightMenu[data-background-image=chinaOverview] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaRoom]:before {
+  .overlayNav.container .rightMenu[data-background-image=chinaRoom] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaRestaurant]:before {
+  .overlayNav.container .rightMenu[data-background-image=chinaRestaurant] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaGuide]:before {
+  .overlayNav.container .rightMenu[data-background-image=chinaGuide] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaHappenings]:before {
+  .overlayNav.container .rightMenu[data-background-image=chinaHappenings] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaOffers]:before {
+  .overlayNav.container .rightMenu[data-background-image=chinaOffers] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornDefault]:before {
+  .overlayNav.container .rightMenu[data-background-image=sathornDefault] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornOverview]:before {
+  .overlayNav.container .rightMenu[data-background-image=sathornOverview] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornRoom]:before {
+  .overlayNav.container .rightMenu[data-background-image=sathornRoom] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornRestaurant]:before {
+  .overlayNav.container .rightMenu[data-background-image=sathornRestaurant] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornGuide]:before {
+  .overlayNav.container .rightMenu[data-background-image=sathornGuide] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornHappenings]:before {
+  .overlayNav.container .rightMenu[data-background-image=sathornHappenings] {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornOffers]:before {
+  .overlayNav.container .rightMenu[data-background-image=sathornOffers] {
     background-image: none;
   }
   .overlayNav.container .rightMenu {
@@ -489,14 +409,10 @@
   .overlayNav.container .rightMenu .container .returnButton.chinatown:after {
     content: "Bangkok Chinatown";
     font-weight: 400;
-    position: relative;
-    z-index: 2;
   }
   .overlayNav.container .rightMenu .container .returnButton.sathorn:after {
     content: "Bangkok Sathorn";
     font-weight: 400;
-    position: relative;
-    z-index: 2;
   }
   .overlayNav.container .rightMenu .container ul {
     list-style: none;
@@ -697,58 +613,6 @@
   .locations .swiper-pagination-bullet-active {
     background-color: #071D49;
     opacity: 1;
-  }
-
-  .accordionFooterWrap {
-    margin-top: 0;
-    display: block !important;
-    /* Thumb */
-    /* Panel */
-  }
-  .accordionFooterWrap .accordionFooter {
-    margin: 1rem 0;
-    padding: 0;
-    list-style: none;
-  }
-  .accordionFooterWrap .accordionFooterItem {
-    border-bottom: 1px solid #071D49;
-    position: relative;
-  }
-  .accordionFooterWrap .accordionFooterItem:after {
-    position: absolute;
-    background-image: url(../images/plus.png);
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    right: 0;
-    top: 0;
-    transform: translate(-50%, 100%);
-    transition: ease all 0.5s;
-  }
-  .accordionFooterWrap .accordionFooterItem.is-active:after {
-    position: absolute;
-    background-image: url(../images/remove.png);
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    right: 0;
-    top: 0;
-    transform: translate(-50%, 100%);
-    transition: ease all 0.5s;
-  }
-  .accordionFooterWrap .accordionFooterThumb {
-    margin: 0;
-    padding: 16px 0 20px;
-    font-size: 24px;
-    cursor: pointer;
-    font-family: "din_condensedbold";
-  }
-  .accordionFooterWrap .accordionFooterPanel {
-    margin: 0;
-    padding-bottom: 15px;
-    display: none;
   }
 }
 @media (max-width: 767px) {
@@ -985,37 +849,6 @@
 
   .locations h2 br {
     display: block;
-  }
-
-  header.nonTransparent .locationTopMenuMobile {
-    top: 60px;
-    transform: translateY(-3px);
-  }
-  header.nonTransparent .locationTopMenuMobile .ac.is-active .ac-header .ac-trigger:after {
-    content: "";
-    background-image: url(../images/arrow-down.svg);
-    width: 20px;
-    height: 20px;
-    transform: translate(-15%, -60%) rotate(180deg);
-  }
-  header.nonTransparent .locationTopMenuMobile .ac {
-    padding: 10px 15px;
-    border-top: 1px solid gray;
-  }
-  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger {
-    padding: 0;
-    color: #071D49;
-    font-family: "din_condensedbold";
-    font-size: 20px;
-  }
-  header.nonTransparent .locationTopMenuMobile .ac .ac-header .ac-trigger:after {
-    content: "";
-    background-image: url(../images/arrow-down.svg);
-    transform: translate(-15%, -50%);
-  }
-  header.nonTransparent .locationTopMenuMobile .ac .ac-panel ul {
-    margin-top: 15px;
-    margin-bottom: 0;
   }
 
   .matchingoffer {

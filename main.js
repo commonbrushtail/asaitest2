@@ -12,14 +12,14 @@ let floatBooking = document.querySelector('.float-booking')
 let overlayBookMenu = document.querySelector('.overlayBookMenu')
 let closeButton = document.querySelector('.closeButton')
 floatBooking.addEventListener('click',()=>{
-   
     overlayBookMenu.classList.add('active')
+    html.classList.add('active')
     
 })
 
 closeButton.addEventListener('click',()=>{
     overlayBookMenu.classList.remove('active')
-   
+    html.classList.remove('active')
 })
 
 let html = document.documentElement
@@ -612,11 +612,17 @@ window.addEventListener('onResize', (event) => {
 });    
 
 
+if(Accordion){
+    new Accordion('.locationNavMobile');
+}
 
 
 
-gsap.to('.nonTransparentHeader',{
+
+
+gsap.to('.nonTransparent',{
         y:'-100%',
+        
         scrollTrigger:{
             start:'top top',
             end:'10 top',
@@ -625,11 +631,3 @@ gsap.to('.nonTransparentHeader',{
             
         },
 })
-
-
-
-
-if(Accordion){
-    new Accordion('.accordion-container');
-}
-

@@ -124,7 +124,7 @@ $theblue: #071D49;
 	.float-book-wrap { 
 		display: block;
 	}
-	.booknow-btn {
+	header .booknow-btn {
 		display: none;
 	}
 
@@ -135,6 +135,9 @@ $theblue: #071D49;
 @media (max-width: 991px) {
 
 	
+
+	
+
 	header.nonTransparent{
 		background-color: white;
 		top: 0;
@@ -148,14 +151,12 @@ $theblue: #071D49;
 			color:white;
 			background-color: $theblue;
 		}
-		.locationTopMenu{
-			display: none;
 
-			
-			
-			
+		.locationNavDesktop{
+			display: none!important;
 		}
-		.locationTopMenuMobile:focus{
+
+		.locationNavMobile:focus{
 			outline: none;
 			
 		
@@ -165,7 +166,7 @@ $theblue: #071D49;
 			
 		}
 		
-		.locationTopMenuMobile{
+		.locationNavMobile{
 			position: absolute;
 			top: 80px;
 			bottom: 0;
@@ -243,10 +244,14 @@ $theblue: #071D49;
 			
 		}
 		
-
 		
-
+		
+	
+		
 	}
+	
+
+
 
 	.matchingoffer {
 		background: hsl(0, 0%, 93%);
@@ -1145,53 +1150,63 @@ $theblue: #071D49;
 
 
 	header.nonTransparent{
-	.locationTopMenuMobile{
-		top: 60px;
-		transform: translateY(-3px);
-		
-		.ac.is-active{
-
-			.ac-header{
-			.ac-trigger:after{
-				content: "";
-				background-image: url(../images/arrow-down.svg);
-				width: 20px;
-				height: 20px;
-				transform: translate(-15%,-60%)rotate(180deg);		
-			}
-			}		
-		}
-		.ac{
-			padding: 10px 15px;
-			border-top: 1px solid gray;
-			.ac-header{
-				.ac-trigger{
-					padding: 0;
-					color: $theblue;
-					font-family: 'din_condensedbold';
-					font-size: 20px;
-					
-				}
+		.locationNavMobile{
+			top: 60px;
+			transform: translateY(-3px);
+			
+			.ac.is-active{
+	
+				.ac-header{
 				.ac-trigger:after{
 					content: "";
 					background-image: url(../images/arrow-down.svg);
-					transform: translate(-15%,-50%);
-
+					width: 20px;
+					height: 20px;
+					transform: translate(-15%,-60%)rotate(180deg);		
 				}
+				}		
 			}
-			.ac-panel{
-				ul{
-					margin-top: 15px;
-					margin-bottom: 0;
+			.ac{
+				padding: 10px 15px;
+				border-top: 1px solid gray;
+				.ac-header{
+					.ac-trigger{
+						padding: 0;
+						color: $theblue;
+						font-family: 'din_condensedbold';
+						font-size: 20px;
+						
+					}
+					.ac-trigger:after{
+						content: "";
+						background-image: url(../images/arrow-down.svg);
+						transform: translate(-15%,-50%);
 	
+					}
 				}
+				.ac-panel{
+					ul{
+						margin-top: 15px;
+						margin-bottom: 0;
+						li{
+							list-style-type: none;
+							font-size: 16px;
+							font-family: 'CircularStdBook';
+							a{
+								list-style-type: none;
+								font-size: 16px;
+								font-family: 'CircularStdBook';
+							}
+						}
+		
+					}
+				}
+				
+				
 			}
-			
 			
 		}
-		
-	}
-	}
+		}
 
 	.matchingoffer {
 		background: hsl(0, 0%, 93%);

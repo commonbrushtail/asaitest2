@@ -18,7 +18,7 @@
   <body>
     
     
-    <header class="nonTransparent nonTransparentHeader">
+    <header class="nonTransparent">
       <div class="introAnimationOverlay">
         <div class="">
           <div class="din-title introAnimate1Wrap">
@@ -38,37 +38,35 @@
         </div>
 
       </div>
-      <div class="locationTopMenu">
+      <div class="locationNavDesktop">
         <h4 class="">BANGKOK CHINATOWN</h4>
         <ul class="">
-          <li><a href>Overview</a></li>
-          <li><a href>Rooms</a></li>
-          <li><a href>Restaurant</a></li>
-          <li><a href>Guide</a></li>
-          <li><a href>Happenings</a></li>
-          <li><a href>Happenings</a></li>
-    </ul>
+          <li><a>Overview</a></li>
+          <li><a>Rooms</a></li>
+          <li><a>Restaurant</a></li>
+          <li><a>Guide</a></li>
+          <li><a>Happenings</a></li>
+          <li><a>Offers</a></li>
+        </ul>
       </div>
-
-      <div class="accordion-container locationTopMenuMobile">
-        <div class="ac">
+      <div class="accordion-container locationNavMobile">
+        <div class="ac js-enabled" id="ac-0">
           <h4 class="ac-header">
-            <button class="ac-trigger">BANGKOK CHINATOWN</button>
+            <button class="ac-trigger" id="ac-trigger-0" role="button" aria-controls="ac-panel-0" aria-disabled="false" aria-expanded="false">BANGKOK CHINATOWN</button>
           </h4>
-          <div class="ac-panel">
+          <div class="ac-panel" id="ac-panel-0" role="region" aria-labelledby="ac-trigger-0" style="transition-duration: 600ms; height: 0px;">
             <ul>
-              <li><a href>Overview</a></li>
-              <li><a href>Rooms</a></li>
-              <li><a href>Restaurant</a></li>
-              <li><a href>Guide</a></li>
-              <li><a href>Happenings</a></li>
-              <li><a href>Happenings</a></li>
+              <li><a href="">Overview</a></li>
+              <li><a href="">Rooms</a></li>
+              <li><a href="">Restaurant</a></li>
+              <li><a href="">Guide</a></li>
+              <li><a href="">Happenings</a></li>
+              <li><a href="">Offers</a></li>
               
             </ul>
           </div>
         </div>
       </div>
-      
       
       
       
@@ -179,10 +177,13 @@
       </div>
       
 
+     
+
       
   
     </header>
-   
+    
+    
     
     
    
@@ -272,10 +273,28 @@
             <a href="#" class="link">*Terms and conditions apply.</a>
           </div>
     </section>
-    
 
     <section class="container-fluid col2-section secondSection blue">
       <div class="row">
+        <div class="col-lg-6 content-side" data-aos="">
+            <h2 class="din-title">
+              <span class="revealText"><span class="hiddenText">An</span></span>
+              <br>
+              <span class="revealText"><span class="hiddenText">Asian-inspired</span></span>
+              <br>
+              <span class="revealText"><span class="hiddenText">COLLECTION OF</span></span>
+              <br>
+              <span class="revealText"><span class="hiddenText">Hotels.</span></span>
+              
+            </h2>
+            <div>
+              <p class="subtitle">
+                Connecting curious travellers<br> seeking authentic local experiences.
+              </p>
+              <p>With inside knowledge and personal recommendations, ASAI Hotels are your access points to vibrant and diverse neighbourhoods around the world. With thoughtfully smaller rooms and larger communal spaces, we put people and experiences front and centre.</p>
+              <a href="#" class="link">Read more</a>
+            </div>
+        </div>
         <div class="col-lg-6 image-side" data-aos="fade-up" data-aos-delay="300">
           <a href="https://www.youtube.com/watch?v=jcAgAR8vuHY" data-fancybox>
           <img class="videoIcon" src="images/playButton.svg" alt="">
@@ -283,26 +302,6 @@
           <img src="images/img-video.jpg">
 
         </div>
-        <div class="col-lg-6 content-side" data-aos="">
-            <h2 class="din-title">
-              <span class="revealText"><span class="hiddenText">A LIFESTYLE HOTEL </span></span>
-              <br>
-              <span class="revealText"><span class="hiddenText">CONNECTING CURIOUS</span></span>
-              <br>
-              <span class="revealText"><span class="hiddenText">TRAVELLERS THROUGH</span></span>
-              <br>
-              <span class="revealText"><span class="hiddenText">LOCAL EXPERIENCES.</span></span>
-              
-            </h2>
-            <div>
-              <p class="subtitle">
-                ASAI Bangkok Chinatown is a lifestyle hotel located right in the heart of one of the best Chinatowns in the world.
-              </p>
-              <p>Just steps from our door, you’ll find markets, world famous street food, hidden bars, art, history and culture. In moments, you’re on Yaowarat Road, the main artery of Bangkok’s Chinatown, abuzz with authentic sights, sounds and smells to explore, and within easy reach of the rest of the city.</p>
-              <a href="#" class="link"></a>
-            </div>
-        </div>
-        
       </div>
     </section>
 
@@ -615,8 +614,45 @@
       </div>
       <svg id="membershipLine" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838.62 257.44"><defs><style>.cls-1{fill:none;stroke:#141f48;stroke-miterlimit:10;stroke-width:2.83px;}</style></defs><path class="cls-1" d="M0,270.62s92.9-53.14,137.06-128.21S181.5,17.72,150.86,17.67C105.52,17.58,78,201,188.37,257.61c102,52.3,157.45-51.9,129.9-55.05-26-3-28.75,72.13,112.22,39.55C563.68,211.32,633.81,216,629.18,255c-5.34,44.9-43.24-19.32,25.75-30.36s112.22,6.44,141.66,5.52,40.47-9.2,40.47-9.2" transform="translate(0.7 -16.25)"/></svg>
     </section>
+    <div class="overlayBookMenu">
+      <div class="perkCloseButton">
+        <ul >
+         
+          <li><img src="images/Group 56.svg" alt="">Early check-in, late check-out</li>
+          <li><img src="images/Group 24.svg" alt="">10% Discount on Food & Drinks</li>
+          <li><img src="images/Group 23.svg" alt="">Flexible Cancellation</li>
+        </ul>
+        <button class="closeButton is-active" type="button">
+          <span class="closeButtonWrap">
+            <span class="closeButtonInner"></span>
+          </span>
+        </button>  
+        
 
+      </div>
+      
+
+      <form action="">
+      <label for="Location">Location</label>
+      <div class="formGroupMobile"><input type="text" placeholder="Location"></div>
+      <label for="Checkin">Check in</label>
+      <div class="formGroupMobile"><input type="text" placeholder="Check in"></div>
+      <label for="Checkout">Check out</label>
+      <div class="formGroupMobile"><input type="text" placeholder="Check out"></div>
+      <label for="">Guest / Room</label>
+      <div class="formGroupMobile"><input type="text" placeholder="Guest/Room"></div>
+      
+      <button>See Availability</button>
+      </form>
+
+      <span><a href="">Terms and conditions apply.</a></span>
+
+    </div>
+    <div class="float-book-wrap">
+      <a href="#!" class="float-booking">BOOK NOW <span>and get a special offer!</span></a>
+    </div>
     <footer class="pt-med allwhite white">
+      
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -698,45 +734,6 @@
         </div>
       </div>
 
-      <div class="float-book-wrap">
-        <a href="#" class="float-booking">BOOK NOW <span>and get a special offer!</span></a>
-      </div>
-
-      <div class="overlayBookMenu">
-        <div class="perkCloseButton">
-          <ul >
-           
-            <li><img src="images/Group 56.svg" alt="">Early check-in, late check-out</li>
-            <li><img src="images/Group 24.svg" alt="">10% Discount on Food & Drinks</li>
-            <li><img src="images/Group 23.svg" alt="">Flexible Cancellation</li>
-          </ul>
-          <button class="closeButton is-active" type="button">
-            <span class="closeButtonWrap">
-              <span class="closeButtonInner"></span>
-            </span>
-          </button>  
-          
-
-        </div>
-        
-
-        <form action="">
-        <label for="Location">Location</label>
-        <div class="formGroupMobile"><input type="text" placeholder="Location"></div>
-        <label for="Checkin">Check in</label>
-        <div class="formGroupMobile"><input type="text" placeholder="Check in"></div>
-        <label for="Checkout">Check out</label>
-        <div class="formGroupMobile"><input type="text" placeholder="Check out"></div>
-        <label for="">Guest / Room</label>
-        <div class="formGroupMobile"><input type="text" placeholder="Guest/Room"></div>
-        
-        <button>See Availability</button>
-        </form>
-
-        <span><a href="">Terms and conditions apply.</a></span>
-
-      </div>
-
       
     </footer>
 
@@ -806,6 +803,20 @@
         });
       });
     </script>
+
+<script>
+  $(function() {
+    // (Optional) Active an item if it has the class "is-active"	
+    $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
+    
+    $(".accordion > .accordion-item").click(function() {
+      // Cancel the siblings
+      $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
+      // Toggle the item
+      $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+    });
+  });
+</script>
     
 
 <script>
@@ -860,10 +871,11 @@
     <script src="js/plugin/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <script src="js/library/Accordion-master/dist/accordion.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="js/library/Accordion-master/dist/accordion.min.js"></script>
     <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
     <script src="hammer.js"></script>
     <script src="main.js"></script>
