@@ -1125,7 +1125,7 @@ header.nonTransparent{
 	.content-side {
 		padding: 70px;
 
-		>div {
+		div {
 			padding-left: inherit;
 			padding-right: inherit;
 			padding-bottom: inherit;
@@ -1832,7 +1832,14 @@ footer ::placeholder {
 }
 
 
-
+.float-book-wrap.white a:hover {
+	background-color: white;
+	color: $theblue!important;
+	transition: all 0.3s ease;
+	span{
+		color: $theblue!important;
+	}
+}
 
 .float-book-wrap.white a {
 	background-color: white;
@@ -1842,7 +1849,14 @@ footer ::placeholder {
 		color: $theblue!important;
 	}
 }
+
 .float-book-wrap a {
+	color:white!important;
+	transition: all 0.3s ease;
+	font-family: 'CircularStdBold';
+}
+
+.float-book-wrap a:hover {
 	color:white!important;
 	transition: all 0.3s ease;
 	font-family: 'CircularStdBold';

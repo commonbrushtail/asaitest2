@@ -1132,7 +1132,7 @@ header.nonTransparent .locationTopMenuMobile {
   padding: 70px;
 }
 
-.col2-section .content-side > div {
+.col2-section .content-side div {
   padding-left: inherit;
   padding-right: inherit;
   padding-bottom: inherit;
@@ -1865,6 +1865,17 @@ footer ::placeholder {
   color: white;
 }
 
+.float-book-wrap.white a:hover {
+  background-color: white;
+  color: #071D49 !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.float-book-wrap.white a:hover span {
+  color: #071D49 !important;
+}
+
 .float-book-wrap.white a {
   background-color: white;
   color: #071D49 !important;
@@ -1877,6 +1888,13 @@ footer ::placeholder {
 }
 
 .float-book-wrap a {
+  color: white !important;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: 'CircularStdBold';
+}
+
+.float-book-wrap a:hover {
   color: white !important;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
