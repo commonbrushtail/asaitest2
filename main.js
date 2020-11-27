@@ -12,6 +12,7 @@ let floatBooking = document.querySelector('.float-booking')
 let overlayBookMenu = document.querySelector('.overlayBookMenu')
 let closeButton = document.querySelector('.closeButton')
 floatBooking.addEventListener('click',()=>{
+   
     overlayBookMenu.classList.add('active')
     
 })
@@ -628,6 +629,7 @@ gsap.to('.nonTransparentHeader',{
 
 
 
+if(Accordion){
+    new Accordion('.accordion-container');
+}
 
-
-new Accordion('.accordion-container');

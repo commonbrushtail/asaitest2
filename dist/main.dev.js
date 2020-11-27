@@ -460,4 +460,7 @@ gsap.to('.nonTransparentHeader', {
     duration: 0.1
   }
 });
-new Accordion('.accordion-container');
+
+if (Accordion) {
+  new Accordion('.accordion-container');
+}
