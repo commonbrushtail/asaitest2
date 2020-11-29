@@ -51,6 +51,10 @@ $theblue: #071D49;
 			
 		}
 	}
+
+	.roomTypeSwiper{
+		max-width: 100%;
+	}
 }
 
 // Ipad lanscape
@@ -304,7 +308,7 @@ $theblue: #071D49;
 					}
 	
 					.buttonContainer{
-						width: 150px;
+						width: 120px;
 						position: absolute;
 						top: initial;
 						left: 50%;
@@ -324,12 +328,14 @@ $theblue: #071D49;
 							cursor: pointer!important;
 							.left{
 								position: relative;
-								right: 2px;
+								right: 3px;
+								bottom: 1px;
 								cursor: pointer;
 							}
 							.right{
 								position: relative;
-								left: 2px;
+								left: 3px;
+								bottom: 1px;
 								cursor: pointer;
 								
 							}
@@ -397,7 +403,10 @@ $theblue: #071D49;
 		
 	}
 		
-
+	.roomTypeSwiper{
+		max-width: 100%!important;
+		padding-left: 0!important;
+	}
 
 
 
@@ -1094,6 +1103,22 @@ $theblue: #071D49;
 	}
 	.gallery-swiper {
 		height: 600px;
+		.gallerySlideText{
+			position: absolute;
+			bottom: 50px;
+			color: white;
+			max-width: none;
+			left: 30px;
+			
+			width: 90%;
+			
+		}
+		.swiperButtonContainer{
+			display: none;
+	
+			
+		}
+
 	}
 	.container {
 		max-width: 100%;
@@ -1259,7 +1284,7 @@ $theblue: #071D49;
 					}
 	
 					.buttonContainer{
-						width: 150px;
+						width: 120px;
 						position: absolute;
 						top: initial;
 						left: 50%;
@@ -1279,12 +1304,14 @@ $theblue: #071D49;
 							cursor: pointer!important;
 							.left{
 								position: relative;
-								right: 2px;
+								right: 3px;
+								bottom: 1px;
 								cursor: pointer;
 							}
 							.right{
 								position: relative;
-								left: 2px;
+								left: 3px;
+								bottom: 1px;
 								cursor: pointer;
 								
 							}

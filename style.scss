@@ -1390,6 +1390,56 @@ header.nonTransparent{
 		width: 100%;
 		height: 100%;
 	}
+	.brightnessFilter{
+		filter: brightness(70%);
+	}
+
+	.gallerySlideText{
+		position: absolute;
+		bottom: 170px;
+		color: white;
+		max-width: 500px;
+		left: 30px;
+	}
+
+	.swiperButtonContainer{
+		position: absolute;
+		bottom: 100px;
+		width: 120px;
+		left: 20px;
+		.swiper-button-prev{
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			border: 2px white solid;
+		}
+		.swiper-button-prev:after{
+			content:"";
+			width: 100%;
+			height: 100%;
+			background-image: url(../images/leftArrowWhite.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			transform: translate(-3px,-1px);
+		}
+		.swiper-button-next{
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			border: 2px white solid;
+		}
+		.swiper-button-next:after{
+			content:"";
+			width: 100%;
+			height: 100%;
+			background-image: url(../images/rightArrowWhite.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			transform: translate(3px,-1px);
+		}
+
+		
+	}
 
 	.swiper-pagination-bullet {
 		width: 14px;
@@ -1499,6 +1549,66 @@ header.nonTransparent{
 .locations {
 	overflow-x: hidden;
 }
+
+/*------Room Type -------------------------*/
+.roomTypeSwiper{
+	margin:100px 0;
+	margin-left:50px;
+	width: 100%;
+	max-width: 100%;
+	
+	.swiper-wrapper{
+		.swiper-slide{
+			max-width:410px ;
+			.imageSlideContainer{
+				
+				.swiper-wrapper{
+					.swiper-slide{
+						max-width:410px ;
+						img{
+							object-fit: cover;
+							width: 410px;
+							height: 370px;
+							object-position: 50% 50%;
+							
+						}
+					}
+					.roomPagination{
+						position: absolute;
+						bottom: 10px;
+						left: 20px;
+						.swiper-pagination-bullet {
+							width: 14px;
+							height: 14px;
+							display: inline-block;
+							border-radius: 100%;
+							background: #fff;
+							opacity: .3;
+							margin-right: 5px;
+						}
+					
+						.swiper-pagination-bullet-active {
+							background-color: #fff;
+							opacity: 1;
+						}
+					}
+				}
+			}
+			.contentContainer{
+				margin-top: 20px;
+				padding-right: 15px;
+				a{
+					text-decoration: underline;
+				}
+			}
+
+		}
+	}
+	.swiper-pagination{
+		display: none;
+	}
+}
+
 
 /* ---- Section See you soon ----------------*/
 

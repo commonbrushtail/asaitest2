@@ -1426,6 +1426,62 @@ header.nonTransparent .locationNavMobile {
   height: 100%;
 }
 
+.gallery-swiper .brightnessFilter {
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.gallery-swiper .gallerySlideText {
+  position: absolute;
+  bottom: 170px;
+  color: white;
+  max-width: 500px;
+  left: 30px;
+}
+
+.gallery-swiper .swiperButtonContainer {
+  position: absolute;
+  bottom: 100px;
+  width: 120px;
+  left: 20px;
+}
+
+.gallery-swiper .swiperButtonContainer .swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+.gallery-swiper .swiperButtonContainer .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/leftArrowWhite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: translate(-3px, -1px);
+          transform: translate(-3px, -1px);
+}
+
+.gallery-swiper .swiperButtonContainer .swiper-button-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+
+.gallery-swiper .swiperButtonContainer .swiper-button-next:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/rightArrowWhite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: translate(3px, -1px);
+          transform: translate(3px, -1px);
+}
+
 .gallery-swiper .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
@@ -1532,6 +1588,65 @@ header.nonTransparent .locationNavMobile {
 
 .locations {
   overflow-x: hidden;
+}
+
+/*------Room Type -------------------------*/
+.roomTypeSwiper {
+  margin: 100px 0;
+  margin-left: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide {
+  max-width: 410px;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .swiper-slide {
+  max-width: 410px;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 410px;
+  height: 370px;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .roomPagination {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .roomPagination .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #fff;
+  opacity: .3;
+  margin-right: 5px;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .roomPagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide .contentContainer {
+  margin-top: 20px;
+  padding-right: 15px;
+}
+
+.roomTypeSwiper .swiper-wrapper .swiper-slide .contentContainer a {
+  text-decoration: underline;
+}
+
+.roomTypeSwiper .swiper-pagination {
+  display: none;
 }
 
 /* ---- Section See you soon ----------------*/
