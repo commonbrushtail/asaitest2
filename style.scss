@@ -729,11 +729,14 @@ header.nonTransparent{
 					font-size: 24px;
 					padding-left: 0;
 					padding-right: 15px;
+					background-color: white;
 				}
 				input:focus{
 					outline: none;
 				}
-				
+				select:focus{
+					outline: none;
+				}
 				select{
 					border: none;
 					color: $theblue;

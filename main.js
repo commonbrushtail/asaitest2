@@ -1,6 +1,3 @@
-function test(){
-    console.log('adas')
-}
 
 
 

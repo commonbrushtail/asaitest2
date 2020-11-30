@@ -809,9 +809,14 @@ header.nonTransparent .locationNavMobile {
   font-size: 24px;
   padding-left: 0;
   padding-right: 15px;
+  background-color: white;
 }
 
 .reservationContainer .reservationWrap .reservationForm .inputItem input:focus {
+  outline: none;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem select:focus {
   outline: none;
 }
 
