@@ -52,9 +52,7 @@ $theblue: #071D49;
 		}
 	}
 
-	.roomTypeSwiper{
-		max-width: 100%;
-	}
+	
 }
 
 // Ipad lanscape
@@ -132,6 +130,34 @@ $theblue: #071D49;
 		display: none;
 	}
 
+	.mapContainer{
+		width: 90%;
+		max-width: 1440px;
+		height: 90vh;
+		max-height: 900px;
+		padding: 70px 0; 
+		
+		display: flex;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		.content-side{
+			width: 50%;
+			padding: 20px 50px 0;
+			padding-left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			
+			
+	
+		}
+		.image-side{
+			width: 50%;
+			padding-left: 50px;
+			
+		}
+	}
+
 }
 
 // Ipad Portrait and below
@@ -196,6 +222,7 @@ $theblue: #071D49;
 				}		
 			}
 			.ac{
+				/*
 				box-shadow:
 				0 2.8px 2.2px rgba(0, 0, 0, 0.014),
 				0 6.7px 5.3px rgba(0, 0, 0, 0.018),
@@ -203,7 +230,7 @@ $theblue: #071D49;
 				0 22.3px 17.9px rgba(0, 0, 0, 0.022),
 				0 41.8px 33.4px rgba(0, 0, 0, 0.016),
 				0 100px 80px rgba(0, 0, 0, 0.12)
-;
+;					*/
 				margin: 0!important;
 				border: 0!important;
 				border: 0;
@@ -406,6 +433,24 @@ $theblue: #071D49;
 	.roomTypeSwiper{
 		max-width: 100%!important;
 		padding-left: 0!important;
+		margin-left: 20px;
+		.swiper-wrapper{
+			.swiper-slide{
+				max-width: 322px;
+			.imageSlideContainer{
+				.swiper-wrapper{
+					.swiper-slide{
+						max-width: 322px;
+						img{
+							width: 322px;
+							height: 340px;
+						}
+					}
+				}
+			}
+			
+			}
+		}
 	}
 
 
@@ -725,6 +770,39 @@ $theblue: #071D49;
 
 		
 	}
+
+	.mapContainer{
+		width: 90%;
+		max-width: none;
+		height: 100%;
+		max-height: 150vh;
+		padding: 0; 
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-top: 70px;
+		margin-bottom: 70px;
+		.content-side{
+			width: 100%;
+			
+			padding: 0;
+			padding-left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			
+			
+	
+		}
+		.image-side{
+			width: 100%;
+			height: 450px;
+			padding-left: 0;
+			margin-top: 30px;
+			
+			
+		}
+	}
 	
 
 	
@@ -1003,6 +1081,42 @@ $theblue: #071D49;
 			height: auto;
 		}
 	}
+
+	.mapContainer{
+		width: 100%;
+		max-width: none;
+		height: 100%;
+		max-height: 150vh;
+		padding: 0; 
+		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		margin-top: 70px;
+		margin-bottom: 70px;
+		.content-side{
+			width: 100%;
+			
+			padding: 0;
+			padding-left: 15px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			
+			
+	
+		}
+		.image-side{
+			width: 100%;
+			height: 450px;
+			padding-left: 0;
+			margin-top: 30px;
+			
+			
+		}
+	}
+
+
 
 
 

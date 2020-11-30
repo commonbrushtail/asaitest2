@@ -536,7 +536,31 @@
       </div>
     </section>
 
-    
+    <section class="container-fluid col2-section secondSection ">
+      <div class="row">
+        <div class="col-lg-6 image-side" data-aos="fade-up" data-aos-delay="300">
+         
+          
+          <img src="images/menu-chinatown-Guide.png">
+
+        </div>
+        <div class="col-lg-6 content-side" data-aos="">
+            <h2 class="din-title">
+             <img src="images/jamJamLogo.png" alt="">
+              
+            </h2>
+            <div>
+              <p class="subtitle">
+                When local culinary talents get into a jam session, the result is a menu of comforting yet creative dishes inspired by authentic recipes from around the world.
+
+              </p>
+              <p>Tune in to sample the flavours in the mix at JAM JAM Eatery & Bar.</p>
+              <a href="#" class="link">Learn more</a>
+            </div>
+        </div>
+        
+      </div>
+    </section>
 
     <section class="matchingoffer blue"  data-aos="fade-up">
 
@@ -658,32 +682,66 @@
       </div>
     </section>
 
-    <section class="instagram container pt-large pb-large blue">
-      <h2 class="din-title font-40">
-        Instagram 
-      </h2>
-      <div class="row instagram-wrap">
-        <div class="col-lg col-4">
-          <a href="#"><img src="images/ig-1.jpg" class="img-fluid"></a>
+    <section class="mapContainer accordion-section">
+     
+        <div class="content-side" style="background-color: white;" data-aos="fade-up  data-aos-delay="300">
+          <div class="textWrap">
+            <h2 class="din-title">HOW TO GET HERE</h2>
+          
+            <p class="marginTop40"><strong>ASAI Bangkok Chinatown</strong>
+              <br>
+              531 Charoen Krung Rd, Khwaeng Pom Prap,<br> Pom Prap Sattru Phai, Bangkok 1010</p>
+              <a class="directionArrow underline" href="">Get direction</a>
+          </div>
+         
+          
+          
+            <div class="accordion-wrap">
+            <ul class="accordion">
+              <li class="accordion-item backgroundBlue is-active" id="">
+                <h3 class="accordion-thumb">By Taxi</h3>
+                
+                <p class="accordion-panel">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Placeat, quibusdam! Voluptate nobis, beatae
+                  tempora praesentium, illum quis illo, maiores quod
+                  similique placeat, saepe mollitia dolor officiis
+                  aspernatur deleniti debitis commodi!</span>
+                </p>
+              </li>
+              
+              <li class="accordion-item backgroundBlue">
+                <h3 class="accordion-thumb">By MRT</h3>
+                <p class="accordion-panel">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Reprehenderit quos, accusamus! Enim labore totam
+                  dicta quibusdam? Eveniet quis asperiores reprehenderit
+                  eaque atque in iure voluptate, explicabo, placeat, id
+                  earum architecto!</span>
+                </p>
+              </li>
+              
+              <li class="accordion-item backgroundBlue">
+                <h3 class="accordion-thumb">By Car</h3>
+                <p class="accordion-panel">
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Reprehenderit quos, accusamus! Enim labore
+                  totam dicta quibusdam? Eveniet quis asperiores
+                  reprehenderit eaque atque in iure voluptate,
+                  explicabo, placeat, id earum architecto!</span>
+                </p>
+              </li>
+            </ul>
+          </div>
+      </div>
+        <div class="image-side displayBlock">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.6175210260035!2d100.50917791488658!3d13.741591190354052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e299c6024aa167%3A0xa3f0b8fd01bbc7e9!2sASAI%20Bangkok%20Chinatown!5e0!3m2!1sen!2sth!4v1606708081479!5m2!1sen!2sth" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <div class="col-lg col-4">
-          <a href="#"><img src="images/ig-2.jpg" class="img-fluid"></a>
-        </div>
-        <div class="col-lg col-4">
-          <a href="#"><img src="images/ig-3.jpg" class="img-fluid"></a>
-        </div>
-        <div class="col-lg col-4">
-          <a href="#"><img src="images/ig-4.jpg" class="img-fluid"></a>
-        </div>
-        <div class="col-lg col-4">
-          <a href="#"><img src="images/ig-5.jpg" class="img-fluid"></a>
-        </div>
-        <div class="col-lg col-4">
-          <a href="#"><img src="images/ig-5.jpg" class="img-fluid"></a>
-        </div>
-        
+       
       </div>
     </section>
+
+    
 
     <section class="membership blue"  data-aos="fade-up">
       <div class="container">
@@ -879,19 +937,19 @@
       });
 
       var roomTypeSwiper = new Swiper('.roomTypeSwiper', {
-        speed: 1000,
-        spaceBetween: 30,
+        
+        grabCursor: true,
         pagination: {
           el: '.swiper-pagination',
         },
         breakpoints: {
           300: {
             slidesPerView: 1.05,
-            spaceBetween: 10,
+            spaceBetween: 25,
           },
           768: {
             slidesPerView: 1.2,
-            spaceBetween: 40,
+            spaceBetween: 25,
           },
           1024: {
             slidesPerView: 3.5,

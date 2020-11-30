@@ -121,6 +121,85 @@
   }
 }
 @media (max-width: 991px) {
+  header.nonTransparent {
+    background-color: white;
+    top: 0;
+    transition: all 0.1s ease;
+    z-index: 100;
+  }
+  header.nonTransparent .hamburger-inner, header.nonTransparent .hamburger-inner::before, header.nonTransparent .hamburger-inner::after {
+    background-color: #071D49;
+  }
+  header.nonTransparent .svgHeaderIcon {
+    fill: #071D49;
+    color: white;
+    background-color: #071D49;
+  }
+  header.nonTransparent .locationNavDesktop {
+    display: none !important;
+  }
+  header.nonTransparent .locationNavMobile:focus {
+    outline: none;
+  }
+  header.nonTransparent .ac:focus, header.nonTransparent .ac-header:focus, header.nonTransparent .ac-panel:focus, header.nonTransparent .ac-trigger:focus {
+    outline: none;
+  }
+  header.nonTransparent .locationNavMobile {
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    border-top: 0.5px solid rgba(128, 128, 128, 0.377);
+    transform: translateY(-3px);
+  }
+  header.nonTransparent .locationNavMobile .ac.is-active .ac-header .ac-trigger:after {
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background-position: center;
+    transform: translate(-20%, -60%) rotate(180deg);
+    transition: all 0.1s ease;
+  }
+  header.nonTransparent .locationNavMobile .ac {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.018), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.022), 0 41.8px 33.4px rgba(0, 0, 0, 0.016), 0 100px 80px rgba(0, 0, 0, 0.12);
+    margin: 0 !important;
+    border: 0 !important;
+    border: 0;
+    padding: 15px 30px;
+    border-top: 1px solid gray;
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-header {
+    display: flex;
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-header .ac-trigger {
+    padding: 0;
+    color: #071D49;
+    font-family: "din_condensedbold";
+    font-size: 20px;
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-header .ac-trigger:after {
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    background-position: center;
+    transform: translate(-25%, -50%);
+    transition: all 0.1s ease;
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-panel ul {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    font-family: "CircularStdBook";
+  }
+
   .matchingoffer {
     background: #ededed;
     height: 900px;
@@ -164,7 +243,7 @@
     cursor: grab !important;
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer {
-    width: 150px;
+    width: 120px;
     position: absolute;
     top: initial;
     left: 50%;
@@ -185,12 +264,14 @@
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer .arrowButton .left {
     position: relative;
-    right: 2px;
+    right: 3px;
+    bottom: 1px;
     cursor: pointer;
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer .arrowButton .right {
     position: relative;
-    left: 2px;
+    left: 3px;
+    bottom: 1px;
     cursor: pointer;
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .card {
@@ -228,6 +309,22 @@
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .cards .link {
     margin-top: 10px;
     display: inline-block;
+  }
+
+  .roomTypeSwiper {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    margin-left: 20px;
+  }
+  .roomTypeSwiper .swiper-wrapper .swiper-slide {
+    max-width: 322px;
+  }
+  .roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .swiper-slide {
+    max-width: 322px;
+  }
+  .roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .swiper-slide img {
+    width: 322px;
+    height: 340px;
   }
 
   .overlayNav.container {
@@ -326,50 +423,51 @@
   }
   .overlayNav.container .rightMenu[data-background-image] {
     transition: ease all 0.3s;
+    position: absolute;
   }
-  .overlayNav.container .rightMenu[data-background-image=default] {
+  .overlayNav.container .rightMenu[data-background-image=default]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaDefault] {
+  .overlayNav.container .rightMenu[data-background-image=chinaDefault]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaOverview] {
+  .overlayNav.container .rightMenu[data-background-image=chinaOverview]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaRoom] {
+  .overlayNav.container .rightMenu[data-background-image=chinaRoom]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaRestaurant] {
+  .overlayNav.container .rightMenu[data-background-image=chinaRestaurant]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaGuide] {
+  .overlayNav.container .rightMenu[data-background-image=chinaGuide]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaHappenings] {
+  .overlayNav.container .rightMenu[data-background-image=chinaHappenings]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=chinaOffers] {
+  .overlayNav.container .rightMenu[data-background-image=chinaOffers]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornDefault] {
+  .overlayNav.container .rightMenu[data-background-image=sathornDefault]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornOverview] {
+  .overlayNav.container .rightMenu[data-background-image=sathornOverview]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornRoom] {
+  .overlayNav.container .rightMenu[data-background-image=sathornRoom]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornRestaurant] {
+  .overlayNav.container .rightMenu[data-background-image=sathornRestaurant]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornGuide] {
+  .overlayNav.container .rightMenu[data-background-image=sathornGuide]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornHappenings] {
+  .overlayNav.container .rightMenu[data-background-image=sathornHappenings]:before {
     background-image: none;
   }
-  .overlayNav.container .rightMenu[data-background-image=sathornOffers] {
+  .overlayNav.container .rightMenu[data-background-image=sathornOffers]:before {
     background-image: none;
   }
   .overlayNav.container .rightMenu {
@@ -409,10 +507,14 @@
   .overlayNav.container .rightMenu .container .returnButton.chinatown:after {
     content: "Bangkok Chinatown";
     font-weight: 400;
+    position: relative;
+    z-index: 2;
   }
   .overlayNav.container .rightMenu .container .returnButton.sathorn:after {
     content: "Bangkok Sathorn";
     font-weight: 400;
+    position: relative;
+    z-index: 2;
   }
   .overlayNav.container .rightMenu .container ul {
     list-style: none;
@@ -614,6 +716,58 @@
     background-color: #071D49;
     opacity: 1;
   }
+
+  .accordionFooterWrap {
+    margin-top: 0;
+    display: block !important;
+    /* Thumb */
+    /* Panel */
+  }
+  .accordionFooterWrap .accordionFooter {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+  }
+  .accordionFooterWrap .accordionFooterItem {
+    border-bottom: 1px solid #071D49;
+    position: relative;
+  }
+  .accordionFooterWrap .accordionFooterItem:after {
+    position: absolute;
+    background-image: url(../images/plus.png);
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    right: 0;
+    top: 0;
+    transform: translate(-50%, 100%);
+    transition: ease all 0.5s;
+  }
+  .accordionFooterWrap .accordionFooterItem.is-active:after {
+    position: absolute;
+    background-image: url(../images/remove.png);
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    right: 0;
+    top: 0;
+    transform: translate(-50%, 100%);
+    transition: ease all 0.5s;
+  }
+  .accordionFooterWrap .accordionFooterThumb {
+    margin: 0;
+    padding: 16px 0 20px;
+    font-size: 24px;
+    cursor: pointer;
+    font-family: "din_condensedbold";
+  }
+  .accordionFooterWrap .accordionFooterPanel {
+    margin: 0;
+    padding-bottom: 15px;
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   header {
@@ -785,6 +939,17 @@
   .gallery-swiper {
     height: 600px;
   }
+  .gallery-swiper .gallerySlideText {
+    position: absolute;
+    bottom: 50px;
+    color: white;
+    max-width: none;
+    left: 30px;
+    width: 90%;
+  }
+  .gallery-swiper .swiperButtonContainer {
+    display: none;
+  }
 
   .container {
     max-width: 100%;
@@ -851,6 +1016,47 @@
     display: block;
   }
 
+  header.nonTransparent .locationNavMobile {
+    top: 60px;
+    transform: translateY(-3px);
+  }
+  header.nonTransparent .locationNavMobile .ac.is-active .ac-header .ac-trigger:after {
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    width: 20px;
+    height: 20px;
+    transform: translate(-15%, -60%) rotate(180deg);
+  }
+  header.nonTransparent .locationNavMobile .ac {
+    padding: 10px 15px;
+    border-top: 1px solid gray;
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-header .ac-trigger {
+    padding: 0;
+    color: #071D49;
+    font-family: "din_condensedbold";
+    font-size: 20px;
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-header .ac-trigger:after {
+    content: "";
+    background-image: url(../images/arrow-down.svg);
+    transform: translate(-15%, -50%);
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-panel ul {
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-panel ul li {
+    list-style-type: none;
+    font-size: 16px;
+    font-family: "CircularStdBook";
+  }
+  header.nonTransparent .locationNavMobile .ac .ac-panel ul li a {
+    list-style-type: none;
+    font-size: 16px;
+    font-family: "CircularStdBook";
+  }
+
   .matchingoffer {
     background: #ededed;
     height: 800px;
@@ -894,7 +1100,7 @@
     cursor: grab !important;
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer {
-    width: 150px;
+    width: 120px;
     position: absolute;
     top: initial;
     left: 50%;
@@ -915,12 +1121,14 @@
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer .arrowButton .left {
     position: relative;
-    right: 2px;
+    right: 3px;
+    bottom: 1px;
     cursor: pointer;
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer .arrowButton .right {
     position: relative;
-    left: 2px;
+    left: 3px;
+    bottom: 1px;
     cursor: pointer;
   }
   .matchingoffer .titleCardWrapContainer .cardWrap .cards .card {

@@ -23,6 +23,19 @@
   font-weight: normal;
   font-style: normal;
 }
+body {
+  position: relative;
+}
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(images/menu-chinatown-Guide.png) url(images/menu-chinatown-Happening.png) url(images/menu-chinatown-Offers.png) url(images/menu-chinatown-overview.png) url(images/menu-chinatown-Resturant.png) url(images/menu-chinatown-Happening.png) url(images/menu-Sathorn-Guide.png) url(images/menu-Sathorn-Happening.png) url(images/menu-Sathorn-Offers.png) url(images/menu-Sathorn-overview.png) url(images/menu-Sathorn-Resturant.png);
+}
+
 h3 {
   font-size: 24px;
   font-family: "CircularStdBold";
@@ -39,6 +52,32 @@ body {
   overflow-x: hidden;
 }
 
+strong {
+  font-weight: 700;
+}
+
+.marginTop40 {
+  margin-top: 40px;
+}
+
+.directionArrow {
+  width: 100%;
+}
+
+.backgroundBlue:before {
+  background-color: #071D49 !important;
+}
+
+.directionArrow:after {
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-image: url(../images/directionArrow.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: translate(100%, 60%);
+}
+
 .cat-text {
   font-size: 14px;
   font-family: "CircularStdBold";
@@ -46,6 +85,10 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 .introAnimationOverlay {
@@ -235,7 +278,7 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 50;
   padding: 15px 30px;
   transition: 0.2s all ease;
   display: grid;
@@ -265,23 +308,73 @@ header .booknow-btn.scrolling {
   background-color: #071D49;
   color: white;
 }
+header .booknow-btn.nonTransparent {
+  background-color: #071D49;
+  color: white;
+}
 
 header.scrolling {
   background-color: white;
 }
 
+header.nonTransparent {
+  background-color: white;
+  top: 0;
+  transition: all 0.1s ease;
+}
+header.nonTransparent .hamburger-inner, header.nonTransparent .hamburger-inner::before, header.nonTransparent .hamburger-inner::after {
+  background-color: #071D49;
+}
+header.nonTransparent .svgHeaderIcon {
+  fill: #071D49;
+  color: white;
+  background-color: #071D49;
+}
+header.nonTransparent .locationNavDesktop {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  width: 100%;
+  transform: translateY(130%);
+  top: 0;
+  z-index: 49;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-top: solid 0.1px rgba(128, 128, 128, 0.37);
+  transition: all ease 0.1s;
+}
+header.nonTransparent .locationNavDesktop h4 {
+  margin: 0;
+  width: 30%;
+  font-size: 20px;
+  font-family: "din_condensedbold";
+}
+header.nonTransparent .locationNavDesktop ul {
+  display: flex;
+  width: 70%;
+  max-width: 600px;
+  justify-content: space-between;
+  margin: 0;
+}
+header.nonTransparent .locationNavDesktop ul li {
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "CircularStdBook";
+}
+header.nonTransparent .locationNavDesktop ul li a {
+  list-style-type: none;
+  font-size: 16px;
+  font-family: "CircularStdBook";
+}
+header.nonTransparent .locationNavMobile {
+  display: none;
+}
+
 .left-header a {
   border-bottom: none;
-}
-
-.float-book-wrap.white a {
-  background-color: white;
-  color: #071D49;
-  transition: all 0.3s ease;
-}
-
-.float-book-wrap a {
-  transition: all 0.3s ease;
 }
 
 .float-book-wrap {
@@ -295,8 +388,8 @@ header.scrolling {
   text-align: center;
   transition: all 0.5s ease;
 }
-
-.float-booking {
+.float-book-wrap a {
+  transition: all 0.3s ease;
   background: #071D49;
   color: #fff;
   width: auto;
@@ -304,12 +397,35 @@ header.scrolling {
   padding: 15px 30px;
   letter-spacing: 1px;
 }
-.float-booking span {
+.float-book-wrap a span {
+  font-family: "CircularStdBook";
+}
+
+.float-book-wrap.white {
+  position: fixed;
+  bottom: 60px;
+  z-index: 10;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.float-book-wrap.white a {
+  transition: all 0.3s ease;
+  background: white !important;
+  color: #071D49 !important;
+  width: auto;
+  text-align: center;
+  padding: 15px 30px;
+  letter-spacing: 1px;
+}
+.float-book-wrap.white a span {
   font-family: "CircularStdBook";
 }
 
 .overlayBookMenu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
@@ -318,10 +434,10 @@ header.scrolling {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  z-index: 999999;
+  z-index: 999;
   text-align: start;
   padding: 50px 20px 50px;
-  transform: translateY(100%);
+  transform: translateY(300%);
   opacity: 0;
   transition: all 0.2s ease;
 }
@@ -386,6 +502,10 @@ header.scrolling {
 }
 
 .svgHeaderIcon.scrolling {
+  fill: #071D49;
+}
+
+.svgHeaderIcon.nonTransparent {
   fill: #071D49;
 }
 
@@ -524,6 +644,12 @@ header.scrolling {
   background-color: #071D49;
 }
 
+.hamburger-inner.nonTransparent,
+.hamburger-inner.nonTransparent::before,
+.hamburger-inner.nonTransparent::after {
+  background-color: #071D49;
+}
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -598,7 +724,7 @@ header.scrolling {
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "leftMenu rightMenu";
-  z-index: 30;
+  z-index: 50;
 }
 .overlayNav.container .leftMenu {
   display: flex;
@@ -671,53 +797,64 @@ header.scrolling {
   margin-right: 10px;
 }
 .overlayNav.container .rightMenu[data-background-image] {
+  position: relative;
+}
+.overlayNav.container .rightMenu[data-background-image]:before {
+  filter: brightness(70%);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
   transition: ease all 0.3s;
-  filter: grayscale(30%);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  left: 0;
+  top: 0;
 }
-.overlayNav.container .rightMenu[data-background-image=default] {
+.overlayNav.container .rightMenu[data-background-image=default]:before {
   background-image: url(images/menu-open.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaDefault] {
+.overlayNav.container .rightMenu[data-background-image=chinaDefault]:before {
   background-image: url(images/menu-open.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaOverview] {
+.overlayNav.container .rightMenu[data-background-image=chinaOverview]:before {
   background-image: url(images/menu-chinatown-overview.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaRoom] {
+.overlayNav.container .rightMenu[data-background-image=chinaRoom]:before {
   background-image: url(images/menu-chinatown-Room.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaRestaurant] {
+.overlayNav.container .rightMenu[data-background-image=chinaRestaurant]:before {
   background-image: url(images/menu-chinatown-Resturant.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaGuide] {
+.overlayNav.container .rightMenu[data-background-image=chinaGuide]:before {
   background-image: url(images/menu-chinatown-Guide.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaHappenings] {
+.overlayNav.container .rightMenu[data-background-image=chinaHappenings]:before {
   background-image: url(images/menu-chinatown-Happening.png);
 }
-.overlayNav.container .rightMenu[data-background-image=chinaOffers] {
+.overlayNav.container .rightMenu[data-background-image=chinaOffers]:before {
   background-image: url(images/menu-chinatown-Offers.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornDefault] {
+.overlayNav.container .rightMenu[data-background-image=sathornDefault]:before {
   background-image: url(images/menu-open.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornOverview] {
+.overlayNav.container .rightMenu[data-background-image=sathornOverview]:before {
   background-image: url(images/menu-Sathorn-overview.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornRoom] {
+.overlayNav.container .rightMenu[data-background-image=sathornRoom]:before {
   background-image: url(images/menu-Sathorn-Room.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornRestaurant] {
+.overlayNav.container .rightMenu[data-background-image=sathornRestaurant]:before {
   background-image: url(images/menu-Sathorn-Resturant.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornGuide] {
+.overlayNav.container .rightMenu[data-background-image=sathornGuide]:before {
   background-image: url(images/menu-Sathorn-Guide.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornHappenings] {
+.overlayNav.container .rightMenu[data-background-image=sathornHappenings]:before {
   background-image: url(images/menu-Sathorn-Happening.png);
 }
-.overlayNav.container .rightMenu[data-background-image=sathornOffers] {
+.overlayNav.container .rightMenu[data-background-image=sathornOffers]:before {
   background-image: url(images/menu-Sathorn-Offers.png);
 }
 .overlayNav.container .rightMenu {
@@ -1064,6 +1201,52 @@ header.scrolling {
   width: 100%;
   height: 100%;
 }
+.gallery-swiper .brightnessFilter {
+  filter: brightness(70%);
+}
+.gallery-swiper .gallerySlideText {
+  position: absolute;
+  bottom: 170px;
+  color: white;
+  max-width: 500px;
+  left: 30px;
+}
+.gallery-swiper .swiperButtonContainer {
+  position: absolute;
+  bottom: 100px;
+  width: 120px;
+  left: 20px;
+}
+.gallery-swiper .swiperButtonContainer .swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+.gallery-swiper .swiperButtonContainer .swiper-button-prev:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/leftArrowWhite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(-3px, -1px);
+}
+.gallery-swiper .swiperButtonContainer .swiper-button-next {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px white solid;
+}
+.gallery-swiper .swiperButtonContainer .swiper-button-next:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/rightArrowWhite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translate(3px, -1px);
+}
 .gallery-swiper .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
@@ -1154,6 +1337,54 @@ header.scrolling {
 
 .locations {
   overflow-x: hidden;
+}
+
+/*------Room Type -------------------------*/
+.roomTypeSwiper {
+  margin: 100px 0;
+  margin-left: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide {
+  max-width: 410px;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .swiper-slide {
+  max-width: 410px;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .swiper-slide img {
+  object-fit: cover;
+  width: 410px;
+  height: 370px;
+  object-position: 50% 50%;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .roomPagination {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .roomPagination .swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 0.3;
+  margin-right: 5px;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide .imageSlideContainer .swiper-wrapper .roomPagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide .contentContainer {
+  margin-top: 20px;
+  padding-right: 15px;
+}
+.roomTypeSwiper .swiper-wrapper .swiper-slide .contentContainer a {
+  text-decoration: underline;
+}
+.roomTypeSwiper .swiper-pagination {
+  display: none;
 }
 
 /* ---- Section See you soon ----------------*/
@@ -1539,4 +1770,8 @@ footer :-ms-input-placeholder {
 
 footer ::placeholder {
   color: white;
+}
+
+.accordionFooterWrap {
+  display: none;
 }

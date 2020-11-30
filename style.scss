@@ -65,6 +65,38 @@ body {
 	overflow-x: hidden;
 }
 
+
+strong{
+	font-weight: 700;
+}
+
+.marginTop40{
+	margin-top: 40px;
+}
+
+.directionArrow{
+	width: 100%;
+}
+
+
+.backgroundBlue:before{
+	background-color:#071D49!important;
+	height: 0!important;
+}
+.directionArrow:after{
+	width: 12px;
+	height: 12px;
+	content: "";
+	background-image: url(../images/directionArrow.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	transform: translate(100%, 60%);
+}
+
+.displayBlock{
+	display: block!important;
+}
+
 .cat-text {
 	font-size: 14px;
 	font-family: 'CircularStdBold';
@@ -72,6 +104,11 @@ body {
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	display: block;
+}
+
+.underline{
+	text-decoration:underline;
+	
 }
 
 
@@ -178,6 +215,33 @@ input {
 
 .container {
 	max-width: 1300px;
+}
+
+.mapContainer{
+	width: 90%;
+	max-width: 1440px;
+	height: 90vh;
+	max-height: 900px;
+	padding: 70px 0; 
+	
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	.content-side{
+		width: 50%;
+		padding: 20px 50px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		
+		
+
+	}
+	.image-side{
+		width: 50%;
+		padding-left: 50px;
+		
+	}
 }
 
 a,
