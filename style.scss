@@ -33,6 +33,15 @@
 
 }
 
+
+.test-container{
+	height: 100vh;
+	position: relative;
+	.swiper-wrapper{
+		height: 50%;
+	}
+}
+
 body{
 	position: relative;
 }

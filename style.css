@@ -27,6 +27,15 @@
   font-style: normal;
 }
 
+.test-container {
+  height: 100vh;
+  position: relative;
+}
+
+.test-container .swiper-wrapper {
+  height: 50%;
+}
+
 body {
   position: relative;
 }
