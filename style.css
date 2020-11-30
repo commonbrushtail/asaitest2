@@ -99,6 +99,7 @@ strong {
 
 .underline {
   text-decoration: underline;
+  text-underline-offset: 1.5px;
 }
 
 .introAnimationOverlay {
@@ -301,6 +302,11 @@ a:hover {
 .JamJamLogo {
   width: 141px;
   height: 141px;
+}
+
+.jamJamPageLogo {
+  width: 260px;
+  height: auto;
 }
 
 .text-center {
@@ -669,6 +675,189 @@ header.nonTransparent .locationNavMobile {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+/*-------reservationContainer-------*/
+.reservationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px;
+}
+
+.reservationContainer .detailWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reservationContainer .detailWrap .description {
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservationContainer .detailWrap .description h3 {
+  font-family: CircularStdBook;
+  font-weight: 700;
+}
+
+.reservationContainer .detailWrap .openingTime {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reservationContainer .detailWrap .openingTime h3 {
+  font-family: CircularStdBook;
+  font-weight: 700;
+}
+
+.reservationContainer .detailWrap .contact {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.reservationContainer .detailWrap .contact h3 {
+  font-family: CircularStdBook;
+  font-weight: 700;
+}
+
+.reservationContainer .detailWrap .contact .iconWrap {
+  margin-top: 25px;
+}
+
+.reservationContainer .detailWrap .contact .iconWrap a {
+  margin-right: 5px;
+}
+
+.reservationContainer .reservationWrap {
+  margin-top: 50px;
+}
+
+.reservationContainer .reservationWrap h4 {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'CircularStdBook';
+  margin-bottom: 20px;
+}
+
+.reservationContainer .reservationWrap .reservationForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem:after {
+  position: absolute;
+  background-image: url(images/arrow-down.svg);
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-2px, 25%);
+          transform: translate(-2px, 25%);
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  padding: 20px 25px;
+  width: 27%;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem label {
+  font-size: 14px;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem input {
+  border: none;
+  color: #071D49;
+  font-family: CircularStdBook;
+  font-size: 24px;
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem input:focus {
+  outline: none;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem select {
+  border: none;
+  color: #071D49;
+  font-family: CircularStdBook;
+  font-size: 24px;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem select option {
+  color: #071D49;
+  font-family: CircularStdBook;
+  font-size: 24px;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem select::-ms-expand {
+  display: none;
+}
+
+.reservationContainer .reservationWrap .reservationForm .inputItem select:after {
+  position: absolute;
+  background-image: url(images/arrow-down.svg);
+  right: 0px;
+  top: auto;
+  bottom: 20px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+
+.reservationContainer .reservationWrap .reservationForm button {
+  width: 19%;
+  background-color: #071D49;
+  color: white;
+  border: none;
+  font-family: CircularStdBook;
+  font-weight: 700;
+  position: relative;
 }
 
 /*------closeBookingMenuButton------*/
@@ -1671,7 +1860,7 @@ header.nonTransparent .locationNavMobile {
 /*------Room Type -------------------------*/
 .roomTypeSwiper {
   margin: 100px 0;
-  margin-left: 50px;
+  margin-left: 80px;
   width: 100%;
   max-width: 100%;
 }

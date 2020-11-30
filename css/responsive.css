@@ -146,6 +146,16 @@
     width: 115px !important;
     height: 115px !important;
   }
+  .reservationContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 80px 0px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -697,6 +707,177 @@
     height: 450px;
     padding-left: 0;
     margin-top: 30px;
+  }
+  .reservationContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+    max-width: 600px !important;
+  }
+  .reservationContainer .detailWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reservationContainer .detailWrap .description {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reservationContainer .detailWrap .description h3 {
+    font-family: CircularStdBook;
+    font-weight: 700;
+  }
+  .reservationContainer .detailWrap .openingTime {
+    margin-top: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .reservationContainer .detailWrap .openingTime h3 {
+    font-family: CircularStdBook;
+    font-weight: 700;
+  }
+  .reservationContainer .detailWrap .contact {
+    margin-top: 20px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .reservationContainer .detailWrap .contact h3 {
+    font-family: CircularStdBook;
+    font-weight: 700;
+  }
+  .reservationContainer .detailWrap .contact .iconWrap {
+    margin-top: 25px;
+  }
+  .reservationContainer .detailWrap .contact .iconWrap a {
+    margin-right: 5px;
+  }
+  .reservationContainer .reservationWrap {
+    margin-top: 50px;
+  }
+  .reservationContainer .reservationWrap h4 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'CircularStdBook';
+    margin-bottom: 20px;
+  }
+  .reservationContainer .reservationWrap .reservationForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-10px, 0%);
+            transform: translate(-10px, 0%);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid black;
+    padding: 5px 15px;
+    width: 100%;
+    height: 80px;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem label {
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem input {
+    border: none;
+    color: #071D49;
+    font-family: CircularStdBook;
+    font-size: 24px;
+    padding: 0 0;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem input:focus {
+    outline: none;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem select {
+    border: none;
+    color: #071D49;
+    font-family: CircularStdBook;
+    font-size: 24px;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem select option {
+    color: #071D49;
+    font-family: CircularStdBook;
+    font-size: 24px;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem select::-ms-expand {
+    display: none;
+  }
+  .reservationContainer .reservationWrap .reservationForm .inputItem select:after {
+    position: absolute;
+    background-image: url(images/arrow-down.svg);
+    right: 0px;
+    top: auto;
+    bottom: 20px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+  .reservationContainer .reservationWrap .reservationForm button {
+    width: 100%;
+    height: 70px;
+    background-color: #071D49;
+    color: white;
+    border: none;
+    font-family: CircularStdBook;
+    font-weight: 700;
+    position: relative;
   }
   .col2-section .content-side > div {
     position: relative;

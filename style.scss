@@ -108,6 +108,7 @@ strong{
 
 .underline{
 	text-decoration:underline;
+	text-underline-offset: 1.5px;
 	
 }
 
@@ -301,6 +302,10 @@ a:hover {
 .JamJamLogo{
 	width: 141px;
 	height: 141px;
+}
+.jamJamPageLogo{
+	width:260px;
+	height: auto;
 }
 
 
@@ -635,6 +640,147 @@ header.nonTransparent{
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+}
+
+/*-------reservationContainer-------*/
+.reservationContainer{
+	display:flex;
+	flex-direction: column;
+	padding: 80px;
+	.detailWrap{
+		display: flex;
+		justify-content: space-between;
+		.description{
+			width: 40%;
+			align-items: center;
+			h3{
+				font-family: CircularStdBook;
+				font-weight: 700;
+			}
+		}
+		.openingTime{
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h3{
+				font-family: CircularStdBook;
+				font-weight: 700;
+			}
+		}
+		.contact{
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			h3{
+				font-family: CircularStdBook;
+				font-weight: 700;
+			}
+			
+			.iconWrap{
+				margin-top: 25px;
+				a{
+					margin-right:5px;
+				}
+			}
+		}
+		
+
+		
+	}
+
+	.reservationWrap{
+		margin-top: 50px;
+		h4{
+			font-size: 24px;
+			font-weight: 700;
+			font-family: 'CircularStdBook';
+			margin-bottom: 20px;
+		}
+		.reservationForm{
+			display: flex;
+			
+			.inputItem:after{
+				position: absolute;
+				background-image: url(images/arrow-down.svg);
+				right: 0;
+				top: 50%;
+				transform: translate(-2px,25%);
+				width: 32px;
+				height: 32px;
+				background-repeat: no-repeat;
+				content: "";
+			}
+			.inputItem{
+				display: flex;
+				position: relative;
+				flex-direction: column;
+				border:1px solid black;
+				padding:20px 25px;
+				width: 27%;
+				label{
+					font-size: 14px;
+				}
+				input{
+					border: none;
+					color: $theblue;
+					font-family: CircularStdBook ;
+					font-size: 24px;
+					padding-left: 0;
+					padding-right: 15px;
+				}
+				input:focus{
+					outline: none;
+				}
+				
+				select{
+					border: none;
+					color: $theblue;
+					font-family: CircularStdBook ;
+					font-size: 24px;
+					option{
+						color: $theblue;
+						font-family: CircularStdBook ;
+						font-size: 24px;	
+					}
+				}
+				select {
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					text-indent: 1px;
+					text-overflow: '';
+				}
+				select::-ms-expand {
+					display: none;
+				}
+				select:after{
+					position: absolute;
+					background-image: url(images/arrow-down.svg);
+					right: 0px;
+					top: auto;
+					bottom: 20px;
+					width: 32px;
+					height: 32px;
+					background-repeat: no-repeat;
+				}
+
+				
+				
+			}
+			button{
+				width: 19%;
+				background-color: $theblue;
+				color: white;
+				border: none;
+				font-family: CircularStdBook;
+				font-weight: 700;
+				position: relative;
+			}
+			
+		}
+		
+	}
 }
 
 
@@ -1623,7 +1769,7 @@ header.nonTransparent{
 /*------Room Type -------------------------*/
 .roomTypeSwiper{
 	margin:100px 0;
-	margin-left:50px;
+	margin-left:80px;
 	width: 100%;
 	max-width: 100%;
 	
