@@ -424,17 +424,18 @@
       <h2 class="din-title text-center" >
         ROOM TYPES
       </h2>
-      <div class="container swiper-container roomTypeSwiper" >
+      <div class="swiper-container roomTypeSwiper" >
         <div class="swiper-wrapper">
           <div class="swiper-slide">  
             <div class="imageSlideContainer">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/Mask Group-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/menu-chinatown-Offers.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-chinatown-Happening.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-Sathorn-Room.png" alt=""></div>
                 <div class="roomPagination"></div>
               </div>
             </div> 
+            
             <div class="contentContainer">
               <h3>Comfy</h3>
               <p>19 SQM. GOOD FOR 2</p>
@@ -449,12 +450,13 @@
           <div class="swiper-slide">  
             <div class="imageSlideContainer">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/Mask Group-3.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/menu-chinatown-Offers.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-chinatown-Happening.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-Sathorn-Room.png" alt=""></div>
                 <div class="roomPagination"></div>
               </div>
             </div> 
+            
             <div class="contentContainer">
               <h3>Comfy</h3>
               <p>19 SQM. GOOD FOR 2</p>
@@ -469,12 +471,13 @@
           <div class="swiper-slide">  
             <div class="imageSlideContainer">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/menu-chinatown-Guide.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/menu-chinatown-Offers.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-chinatown-Happening.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-Sathorn-Room.png" alt=""></div>
                 <div class="roomPagination"></div>
               </div>
             </div> 
+            
             <div class="contentContainer">
               <h3>Comfy</h3>
               <p>19 SQM. GOOD FOR 2</p>
@@ -489,12 +492,13 @@
           <div class="swiper-slide">  
             <div class="imageSlideContainer">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/menu-chinatown-Guide.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/menu-chinatown-Offers.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-chinatown-Happening.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-Sathorn-Room.png" alt=""></div>
                 <div class="roomPagination"></div>
               </div>
             </div> 
+            
             <div class="contentContainer">
               <h3>Comfy</h3>
               <p>19 SQM. GOOD FOR 2</p>
@@ -509,12 +513,13 @@
           <div class="swiper-slide">  
             <div class="imageSlideContainer">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/menu-chinatown-Guide.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/menu-chinatown-Offers.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-chinatown-Happening.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/menu-Sathorn-Room.png" alt=""></div>
                 <div class="roomPagination"></div>
               </div>
             </div> 
+            
             <div class="contentContainer">
               <h3>Comfy</h3>
               <p>19 SQM. GOOD FOR 2</p>
@@ -526,6 +531,7 @@
               
             
           </div>
+          
           
        
          
@@ -536,7 +542,7 @@
       </div>
     </section>
 
-    <section class="container-fluid col2-section secondSection ">
+    <section class="container-fluid col2-section ">
       <div class="row">
         <div class="col-lg-6 image-side" data-aos="fade-up" data-aos-delay="300">
          
@@ -546,7 +552,7 @@
         </div>
         <div class="col-lg-6 content-side" data-aos="">
             <h2 class="din-title">
-             <img src="images/jamJamLogo.png" alt="">
+             <img class="JamJamLogo" src="images/jamJamLogo.png" alt="">
               
             </h2>
             <div>
@@ -748,7 +754,7 @@
         <div class="row">
           <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6">
             <span class="cat-text font-16">ASAI MEMBERSHIP</span>
-            <h2 class="din-title">Join Exclusive Benefits, Local Experiences</h2>
+            <h2 class="din-title lineHeight1-1">Join Exclusive Benefits, Local Experiences</h2>
             <p>20% discount off when members is staying in the hotel</p>
             <a href="#"><button class="linebtn">Join us FREE!</button></a>
           </div>
@@ -944,31 +950,39 @@
         },
         breakpoints: {
           300: {
-            slidesPerView: 1.05,
-            spaceBetween: 25,
+            slidesPerView: 1.2,
+            spaceBetween: 20,
           },
           768: {
-            slidesPerView: 1.2,
+            slidesPerView: 2.5,
             spaceBetween: 25,
           },
-          1024: {
+          991: {
             slidesPerView: 3.5,
+            spaceBetween: 25,
+          },
+          1200: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          },
+          1601: {
+            slidesPerView: 4.5,
             spaceBetween: 30,
           },
         }
       });
 
       var imageSlideContainer = new Swiper('.imageSlideContainer', {
-        effect: 'fade',
-        speed: 2000,
-        noSwiping:true,
+        slidesPerView:1,
+        effect:'fade',
         loop:true,
-        nested:true,
-        noSwiping:true,
-        slideToClickedSlide:true,
+        initialSlide: 0, //this one accept a number according to docs
+        slidesPerView: 1, //number or 'auto'
+        
+        
         pagination: {
           el: '.roomPagination',
-          clickable: true,
+          
         },
       });
 
