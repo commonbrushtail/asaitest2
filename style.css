@@ -2431,6 +2431,127 @@ header.nonTransparent .locationNavMobile {
   display: none;
 }
 
+.quoteContainer {
+  width: 100%;
+}
+
+.quoteContainer .swiper-wrapper {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quoteContainer .quoteBox {
+  text-align: center;
+  padding: 50px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #A64F4C;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 410px;
+  max-height: 440px;
+  font-size: 24px;
+}
+
+.quoteContainer .imageBox {
+  max-width: 410px;
+  max-height: 300px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.quoteContainer .imageBox img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.quoteContainer .imageBox p {
+  position: absolute;
+  top: 100%;
+}
+
+.quoteContainer .quoteBox2 {
+  text-align: center;
+  padding: 50px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #071D49;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 450px;
+  max-height: 450px;
+  font-size: 24px;
+}
+
+.quoteContainer .imageBox2 {
+  max-width: 410px;
+  max-height: 370px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.quoteContainer .imageBox2 img {
+  height: 370px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.quoteContainer .imageBox2 p {
+  position: absolute;
+  top: 100%;
+}
+
 /* ---- Section membership ----------------*/
 .membership img {
   width: 100%;

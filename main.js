@@ -1,10 +1,6 @@
 var imageTextSliderContainer = new Swiper('.imageTextSliderContainer', {
-    // Optional parameters
-
     loop:true,
-  
-    // If we need pagination
-    
+      
   effect:'fade',
     // Navigation arrows
     navigation: {
@@ -14,7 +10,31 @@ var imageTextSliderContainer = new Swiper('.imageTextSliderContainer', {
   
     // And if we need scrollbar
     
-  })
+})
+
+var quoteContainer = new Swiper('.quoteContainer', {
+    loop:true,
+    centeredSlides: true,
+    breakpoints: {
+        300: {
+          slidesPerView: 1.2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 25,
+        },
+        991: {
+          slidesPerView: 3.5,
+          spaceBetween: 25,
+        },
+        1200: {
+          slidesPerView: 3.4,
+          spaceBetween: 30,
+        },
+       
+    }
+})
 
 
 
