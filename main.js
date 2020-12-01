@@ -1,23 +1,19 @@
-var mySwiper = new Swiper('.test-container', {
+var imageTextSliderContainer = new Swiper('.imageTextSliderContainer', {
     // Optional parameters
 
-    
+    loop:true,
   
     // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
+    
+  effect:'fade',
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.buttonNext',
+      prevEl: '.buttonPrev',
     },
   
     // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    
   })
 
 
