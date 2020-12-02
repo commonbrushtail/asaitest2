@@ -704,6 +704,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
+     
       var bannerswiper = new Swiper('.banner-swiper', {
         effect: 'fade',
         speed: 2000,
@@ -747,11 +748,13 @@
             slidesPerView: 2,
             spaceBetween: 50,
           },
-        }
-      });
+            }
+        });
+
+     
 
     </script>
-
+      
     <script>
       $(function() {
         // (Optional) Active an item if it has the class "is-active"	
@@ -766,58 +769,54 @@
       });
     </script>
 
-<script>
-  $(function() {
-    // (Optional) Active an item if it has the class "is-active"	
-    $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
-    
-    $(".accordion > .accordion-item").click(function() {
-      // Cancel the siblings
-      $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
-      // Toggle the item
-      $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
-    });
-  });
-</script>
-
-<script>
-  $('.button1').on({
-      'click': function(){
-      $("#change-image")
-          .fadeOut(500, function() {
-              $('#change-image').attr('src','images/img-foodbaverage.jpg');
-          })
-          .fadeIn(500);
-
-      }
-  });
-
-  $('.button2').on({
-    'click': function(){
-    $("#change-image")
-        .fadeOut(500, function() {
-            $('#change-image').attr('src','images/accordion-img.jpg');
-        })
-        .fadeIn(500);
+    <script>
+      $(function() {
+        // (Optional) Active an item if it has the class "is-active"	
+        $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
         
-    }
-  });
+        $(".accordion > .accordion-item").click(function() {
+          // Cancel the siblings
+          $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
+          // Toggle the item
+          $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+        });
+      });
+    </script>
 
-  $('.button3').on({
-      'click': function(){
-      $("#change-image")
-          .fadeOut(500, function() {
-              $('#change-image').attr('src','images/food-beverage.jpg');
-          })
-          .fadeIn(500);
+    <script>
+      $('.button1').on({
+          'click': function(){
+          $("#change-image")
+              .fadeOut(500, function() {
+                  $('#change-image').attr('src','images/img-foodbaverage.jpg');
+              })
+              .fadeIn(500);
 
-      }
-  });
-</script>
+          }
+      });
 
+      $('.button2').on({
+        'click': function(){
+        $("#change-image")
+            .fadeOut(500, function() {
+                $('#change-image').attr('src','images/accordion-img.jpg');
+            })
+            .fadeIn(500);
+            
+        }
+      });
 
+      $('.button3').on({
+          'click': function(){
+          $("#change-image")
+              .fadeOut(500, function() {
+                  $('#change-image').attr('src','images/food-beverage.jpg');
+              })
+              .fadeIn(500);
 
-
+          }
+      });
+    </script>
 
     <script>
       AOS.init({
@@ -827,18 +826,20 @@
     </script>
 
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/library/gsap3/ScrollTrigger.min.js"></script>
+    <script src="js/library/gsap3/gsap.min.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="js/membership.js"></script>    
 
-    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
     <script src="hammer.js"></script>
+    <script src="js/matchingOffer.js"></script>
+    
+    
+    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+    
     <script src="main.js"></script>
   </body>
 </html>
