@@ -1980,12 +1980,14 @@ header.nonTransparent{
 						cursor: pointer!important;
 						.left{
 							position: relative;
-							right: 2px;
+							right: 3px;
+							bottom: 1px;
 							cursor: pointer;
 						}
 						.right{
 							position: relative;
-							left: 2px;
+							left: 3px;
+							bottom: 1px;
 							cursor: pointer;
 							
 						}
@@ -2300,7 +2302,7 @@ header.nonTransparent{
 	width: 100%;
 	.swiper-wrapper{
 		width: 100%;
-		height: 80vh;
+		height: 600px;
 		display: flex;
 		align-items: center;
 	}
@@ -2308,6 +2310,21 @@ header.nonTransparent{
 		text-align: center;
 		padding: 50px 40px;
 		box-sizing: border-box;
+		background-color: $theblue;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 370px;
+		max-height: 370px;
+		font-size: 24px;
+	}
+	.quoteBox2{
+		text-align: center;
+		padding: 50px 40px;
+		box-sizing: border-box;
+		
 		background-color: #A64F4C;
 		color: white;
 		display: flex;
@@ -2315,7 +2332,7 @@ header.nonTransparent{
 		justify-content: center;
 		align-items: center;
 		max-width: 410px;
-		max-height: 440px;
+		max-height: 410px;
 		font-size: 24px;
 	}
 	.imageBox{
@@ -2334,38 +2351,27 @@ header.nonTransparent{
 			
 			position: absolute;
 			top: 100%;
+			transform: translateY(5px);
 		}
 	}
-	.quoteBox2{
-		text-align: center;
-		padding: 50px 40px;
-		box-sizing: border-box;
-		background-color: $theblue;
-		color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		max-width: 450px;
-		max-height: 450px;
-		font-size: 24px;
-	}
+	
 	.imageBox2{
 		max-width: 410px;
-		max-height: 370px;
+		max-height: 280px;
 		height: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		position: relative;
 		img{            
-			height: 370px;
+			height: 280px;
 			object-fit: cover;
 		}
 		p{
 			
 			position: absolute;
 			top: 100%;
+			transform: translateY(5px);
 		}
 	}
 }
