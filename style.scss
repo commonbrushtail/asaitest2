@@ -2296,7 +2296,15 @@ header.nonTransparent{
 	display: none;
 }
 
-.slideshow
+
+.owl-carousel{
+	.owl-stage{
+		height: 500px;
+		display: flex;
+		align-items: center;
+		
+			
+	}
 	.quoteBox{
 		text-align: center;
 		padding: 50px 40px;
@@ -2307,9 +2315,17 @@ header.nonTransparent{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		max-width: 370px;
-		max-height: 370px;
-		font-size: 24px;
+		min-width: 370px;
+		min-height: 370px;
+		font-size: 20px;
+		font-family: 'CircularStdBook';
+		font-weight: 700;
+		line-height: 1.2;
+		span{
+			font-weight: 400;
+			font-size: 16px;
+			margin-top: 15px;
+		}
 	}
 	.quoteBox2{
 		text-align: center;
@@ -2323,8 +2339,16 @@ header.nonTransparent{
 		justify-content: center;
 		align-items: center;
 		max-width: 410px;
-		max-height: 410px;
-		font-size: 24px;
+		min-height: 410px;
+		font-size: 20px;
+		font-family: 'CircularStdBook';
+		font-weight: 700;
+		line-height: 1.2;
+		span{
+			font-weight: 400;
+			font-size: 16px;
+			margin-top: 15px;
+		}
 	}
 	.imageBox{
 		max-width: 410px;
@@ -2334,6 +2358,7 @@ header.nonTransparent{
 		flex-direction: column;
 		justify-content: center;
 		position: relative;
+		
 		img{            
 			height: 300px;
 			object-fit: cover;
@@ -2365,6 +2390,8 @@ header.nonTransparent{
 			transform: translateY(5px);
 		}
 	}
+}
+
 
 .asSeenInContainer{
 	width: 100vw;

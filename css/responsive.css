@@ -169,7 +169,7 @@
         grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     background-color: #94B3C4;
-        grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
+        grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
   }
   .imageTextSliderContainer .imageWrap {
     width: 100%;
@@ -957,7 +957,7 @@
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
     gap: 0px 0px;
-        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
+        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
   }
   .imageTextSliderContainer .titleWrap {
     -ms-grid-row: 1;
@@ -1374,7 +1374,7 @@
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
     gap: 0px 0px;
-        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
+        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
   }
   .imageTextSliderContainer .titleWrap {
     -ms-grid-row: 1;
@@ -1435,7 +1435,7 @@
         grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 50px;
     justify-items: center;
-        grid-template-areas: "logo1 logo1 logo2 logo2 logo3 logo3" ". logo4 logo4 logo5 logo5 ." ". . logo6 logo6 . .";
+        grid-template-areas: "logo1 logo1 logo2 logo2 logo3 logo3" ". logo4 logo4 logo5 logo5 ." ". . logo6 logo6 . .";
   }
   .asSeenInContainer .asSeenIn span {
     display: none;

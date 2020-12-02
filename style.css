@@ -2185,7 +2185,7 @@ header.nonTransparent .locationNavMobile {
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   background-color: #94B3C4;
-      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
+      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
 }
 
 .imageTextSliderContainer .imageWrap {
@@ -2432,8 +2432,17 @@ header.nonTransparent .locationNavMobile {
   display: none;
 }
 
-.slideshow
-.quoteBox {
+.owl-carousel .owl-stage {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.owl-carousel .quoteBox {
   text-align: center;
   padding: 50px 40px;
   -webkit-box-sizing: border-box;
@@ -2453,12 +2462,21 @@ header.nonTransparent .locationNavMobile {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 370px;
-  max-height: 370px;
-  font-size: 24px;
+  min-width: 370px;
+  min-height: 370px;
+  font-size: 20px;
+  font-family: 'CircularStdBook';
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.quoteBox2 {
+.owl-carousel .quoteBox span {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.owl-carousel .quoteBox2 {
   text-align: center;
   padding: 50px 40px;
   -webkit-box-sizing: border-box;
@@ -2479,11 +2497,20 @@ header.nonTransparent .locationNavMobile {
       -ms-flex-align: center;
           align-items: center;
   max-width: 410px;
-  max-height: 410px;
-  font-size: 24px;
+  min-height: 410px;
+  font-size: 20px;
+  font-family: 'CircularStdBook';
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.imageBox {
+.owl-carousel .quoteBox2 span {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.owl-carousel .imageBox {
   max-width: 410px;
   max-height: 300px;
   height: 100%;
@@ -2500,20 +2527,20 @@ header.nonTransparent .locationNavMobile {
   position: relative;
 }
 
-.imageBox img {
+.owl-carousel .imageBox img {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.imageBox p {
+.owl-carousel .imageBox p {
   position: absolute;
   top: 100%;
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
 }
 
-.imageBox2 {
+.owl-carousel .imageBox2 {
   max-width: 410px;
   max-height: 280px;
   height: 100%;
@@ -2530,13 +2557,13 @@ header.nonTransparent .locationNavMobile {
   position: relative;
 }
 
-.imageBox2 img {
+.owl-carousel .imageBox2 img {
   height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.imageBox2 p {
+.owl-carousel .imageBox2 p {
   position: absolute;
   top: 100%;
   -webkit-transform: translateY(5px);
