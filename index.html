@@ -150,7 +150,7 @@
     </header>
    
     <section id="banner" class="vertical-center">
-      <h2 class="font-100 font-din">BE A LOCAL <br>EVERYWHERE</h2>
+      <h2 class="font-din">BE A LOCAL <br>EVERYWHERE</h2>
 
       <div class="swiper-container banner-swiper">
         <div class="swiper-wrapper">
@@ -224,7 +224,7 @@
             </form>
           </div>
           <div class="perk-wrap">
-            <h3 class="font-18">Perks of Direct Booking</h3>
+            <h3 class="font-16">Perks of Direct Booking</h3>
             <ul>
               <li><img src="images/icon_clock.svg">Early check-in, late check-out</li>
               <li><img src="images/icon_percent.svg">10% Discount on Food & Drinks</li>
@@ -362,7 +362,7 @@
               <div class="content-hover-wrap allwhite">
                 <img src="images/bangkokchinatown.jpg">
                 <div class="content">
-                  <h3 class="font-30">Bangkok Chinatown</h3>
+                  <h3 class="font-26">Bangkok Chinatown</h3>
                   <div class="details">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                     <span class="link">See more</span>
@@ -376,7 +376,7 @@
               <a href="#">
                 <img src="images/bangkoksathorn.jpg">
               <div class="content">
-                <h3 class="font-30">Bangkok Sathorn</h3>
+                <h3 class="font-26">Bangkok Sathorn</h3>
                 <div class="details">
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                   <span class="link">See more</span>
@@ -566,7 +566,7 @@
         <div class="row">
           <div class="col-xl-5 offset-xl-7 col-lg-6 offset-lg-6">
             <span class="cat-text font-16">ASAI MEMBERSHIP</span>
-            <h2 class="din-title lineHeight1-1">Join Exclusive Benefits, Local Experiences</h2>
+            <h2 class="din-title">Join Exclusive Benefits, Local Experiences</h2>
             <p>20% discount off when members <br> is staying in the hotel</p>
             <a href="#"><button class="linebtn">Join us FREE!</button></a>
           </div>
@@ -704,7 +704,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-     
       var bannerswiper = new Swiper('.banner-swiper', {
         effect: 'fade',
         speed: 2000,
@@ -748,13 +747,11 @@
             slidesPerView: 2,
             spaceBetween: 50,
           },
-            }
-        });
-
-     
+        }
+      });
 
     </script>
-      
+
     <script>
       $(function() {
         // (Optional) Active an item if it has the class "is-active"	
@@ -769,54 +766,58 @@
       });
     </script>
 
-    <script>
-      $(function() {
-        // (Optional) Active an item if it has the class "is-active"	
-        $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
+<script>
+  $(function() {
+    // (Optional) Active an item if it has the class "is-active"	
+    $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
+    
+    $(".accordion > .accordion-item").click(function() {
+      // Cancel the siblings
+      $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
+      // Toggle the item
+      $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
+    });
+  });
+</script>
+
+<script>
+  $('.button1').on({
+      'click': function(){
+      $("#change-image")
+          .fadeOut(500, function() {
+              $('#change-image').attr('src','images/img-foodbaverage.jpg');
+          })
+          .fadeIn(500);
+
+      }
+  });
+
+  $('.button2').on({
+    'click': function(){
+    $("#change-image")
+        .fadeOut(500, function() {
+            $('#change-image').attr('src','images/accordion-img.jpg');
+        })
+        .fadeIn(500);
         
-        $(".accordion > .accordion-item").click(function() {
-          // Cancel the siblings
-          $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
-          // Toggle the item
-          $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
-        });
-      });
-    </script>
+    }
+  });
 
-    <script>
-      $('.button1').on({
-          'click': function(){
-          $("#change-image")
-              .fadeOut(500, function() {
-                  $('#change-image').attr('src','images/img-foodbaverage.jpg');
-              })
-              .fadeIn(500);
+  $('.button3').on({
+      'click': function(){
+      $("#change-image")
+          .fadeOut(500, function() {
+              $('#change-image').attr('src','images/food-beverage.jpg');
+          })
+          .fadeIn(500);
 
-          }
-      });
+      }
+  });
+</script>
 
-      $('.button2').on({
-        'click': function(){
-        $("#change-image")
-            .fadeOut(500, function() {
-                $('#change-image').attr('src','images/accordion-img.jpg');
-            })
-            .fadeIn(500);
-            
-        }
-      });
 
-      $('.button3').on({
-          'click': function(){
-          $("#change-image")
-              .fadeOut(500, function() {
-                  $('#change-image').attr('src','images/food-beverage.jpg');
-              })
-              .fadeIn(500);
 
-          }
-      });
-    </script>
+
 
     <script>
       AOS.init({
@@ -826,20 +827,19 @@
     </script>
 
 
-    <script src="js/library/gsap3/ScrollTrigger.min.js"></script>
-    <script src="js/library/gsap3/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
     <script src="js/plugin/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <script src="js/membership.js"></script>    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
 
+    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
     <script src="hammer.js"></script>
     <script src="js/matchingOffer.js"></script>
-    
-    
-    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
-
-    
     <script src="main.js"></script>
   </body>
 </html>

@@ -500,69 +500,33 @@
         
       </div>
     </section>
-<!--
-    <section class=" pt-large ">
+
+    <section class="pt-large">
       <h2 class="din-title text-center" >
         What People are saying
       </h2>
-
-      <div class="quoteContainer">
+    <div class="owl-carousel owl-theme">
+      <div class="slide imageBox2">
+        <img src="images/food-beverage.jpg" alt="">
+        <p>Khao Tom Moo</p>
+        
+      </div>
+      <div class="slide quoteBox">Everything has been <br>
+        designed to bring <br> you a discreet<br> services. <br>
+        <span class="font-16">Brie Burrida</span>
+     </div>
+     <div class="slide imageBox">
+       <img src="images/menu-chinatown-Guide.png" alt="">
+       <p>Khao Tom Moo</p>
        
-        <div class="swiper-wrapper">
-            
-            
-            <div class="swiper-slide imageBox2">
-              <img src="images/food-beverage.jpg" alt="">
-              <p>Khao Tom Moo</p>
-              
-            </div>
-            <div class="swiper-slide quoteBox">Everything has been <br>
-              designed to bring <br> you a discreet<br> services. <br>
-              <span class="font-16">Brie Burrida</span>
-           </div>
-           <div class="swiper-slide imageBox">
-             <img src="images/menu-chinatown-Guide.png" alt="">
-             <p>Khao Tom Moo</p>
-             
-           </div>
-           <div class="swiper-slide quoteBox2">ASAI is the 
-            best place to eat authentic Thai Street food
-            <span class="font-16">Brie Burrida</span>
-         </div>
-            
-        </div>
-   
-    
-
-    </div>
-    </section>
-  -->
-
-  <section class="pt-large">
-    <h2 class="din-title text-center" >
-      What People are saying
-    </h2>
-  <div class="owl-carousel owl-theme">
-    <div class="slide imageBox2">
-      <img src="images/food-beverage.jpg" alt="">
-      <p>Khao Tom Moo</p>
-      
-    </div>
-    <div class="slide quoteBox">Everything has been <br>
-      designed to bring <br> you a discreet<br> services. <br>
+     </div>
+     <div class="slide quoteBox2">ASAI is the 
+      best place to eat authentic Thai Street food
       <span class="font-16">Brie Burrida</span>
    </div>
-   <div class="slide imageBox">
-     <img src="images/menu-chinatown-Guide.png" alt="">
-     <p>Khao Tom Moo</p>
-     
-   </div>
-   <div class="slide quoteBox2">ASAI is the 
-    best place to eat authentic Thai Street food
-    <span class="font-16">Brie Burrida</span>
- </div>
-  </div>
-</section>
+    </div>
+  </section>
+
 
     <section class="pt-large asSeenInContainer pb-large">
       <div class="asSeenIn container">
@@ -720,14 +684,13 @@
 
       
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="js/library/owlCarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="js/library/owlCarousel/assets/owl.theme.default.min.css">
     <script src="js/library/owlCarousel/owl.carousel.js"></script>
-    
 
     <script>
       var bannerswiper = new Swiper('.banner-swiper', {
@@ -782,22 +745,35 @@
         }
       });
 
-      
-      var imageTextSliderContainer = new Swiper('.imageTextSliderContainer', {
-    loop:true,
-      
-  effect:'fade',
-  
-    navigation: {
-      nextEl: '.buttonNext',
-      prevEl: '.buttonPrev',
-    },
-  
-    
-    
-})
-
-    
+      var roomTypeSwiper = new Swiper('.roomTypeSwiper', {
+        
+        grabCursor: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 25,
+          },
+          991: {
+            slidesPerView: 3.5,
+            spaceBetween: 25,
+          },
+          1200: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          },
+          1601: {
+            slidesPerView: 4.5,
+            spaceBetween: 30,
+          },
+        }
+      });
 
       var imageSlideContainer = new Swiper('.imageSlideContainer', {
         slidesPerView:1,
@@ -815,8 +791,27 @@
 
     
 
-    </script>
+    
 
+    </script>
+    <script>
+
+      jQuery('.owl-carousel').owlCarousel({
+                  center: true,
+                  items:4,
+                  loop:true,
+                  margin:20,
+                  nav:false,
+                  autoWidth:true,
+                  dots:false,
+                  autoplay: true,
+                  slideTransition: 'linear',
+                  autoplayTimeout: 6000,
+                  autoplaySpeed: 6000,
+                  autoplayHoverPause: false,
+                 
+              });
+      </script>
     <script>
       $(function() {
         // (Optional) Active an item if it has the class "is-active"	
@@ -845,48 +840,65 @@
   });
 </script>
     
-<script>
-
-jQuery('.owl-carousel').owlCarousel({
-            center: true,
-            items:4,
-            loop:true,
-            margin:20,
-            nav:false,
-            autoWidth:true,
-            dots:false,
-            autoplay: true,
-            slideTransition: 'linear',
-            autoplayTimeout: 6000,
-            autoplaySpeed: 6000,
-            autoplayHoverPause: false,
-           
-        });
-</script>
-
-
-
-
-
 
 <script>
-  AOS.init({
-    duration: 1000,
-    once: true,
+  $('.button1').on({
+      'click': function(){
+      $("#change-image")
+          .fadeOut(500, function() {
+              $('#change-image').attr('src','images/img-foodbaverage.jpg');
+          })
+          .fadeIn(500);
+
+      }
+  });
+
+  $('.button2').on({
+    'click': function(){
+    $("#change-image")
+        .fadeOut(500, function() {
+            $('#change-image').attr('src','images/accordion-img.jpg');
+        })
+        .fadeIn(500);
+        
+    }
+  });
+
+  $('.button3').on({
+      'click': function(){
+      $("#change-image")
+          .fadeOut(500, function() {
+              $('#change-image').attr('src','images/food-beverage.jpg');
+          })
+          .fadeIn(500);
+
+      }
   });
 </script>
 
 
-<script src="js/library/gsap3/ScrollTrigger.min.js"></script>
-<script src="js/library/gsap3/gsap.min.js"></script>
-<script src="js/plugin/scrollmagic/uncompressed/ScrollMagic.js"></script>
-<script src="js/plugin/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
-<script src="js/plugin/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-<script src="js/membership.js"></script>    
 
 
 
-<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
-<script src="main.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/plugin/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="js/plugin/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script src="js/plugin/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+    <script src="js/library/Accordion-master/dist/accordion.min.js"></script>
+    <script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script src="hammer.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

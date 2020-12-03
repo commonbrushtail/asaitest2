@@ -33,9 +33,6 @@
 
 }
 
-
-
-
 body{
 	position: relative;
 }
@@ -52,7 +49,7 @@ body::after{
  }
 
 h3 {
-	font-size: 24px;
+	font-size: 22px;
 	font-family: 'CircularStdBold';
 	line-height: 1.3;
 	letter-spacing: .6px;
@@ -189,6 +186,7 @@ $theblue: #071D49;
 
 .headerLogo{
 	clip-path: rect(30px, 20px, 30px, 40px);
+	width: 62px;
 }
 
 input {
@@ -213,16 +211,16 @@ input {
 	font-size: 40px !important;
 }
 
-.font-30 {
-	font-size: 30px !important;
-}
-
-.font-18 {
-	font-size: 18px !important;
+.font-26 {
+	font-size: 26px !important;
 }
 
 .font-16 {
 	font-size: 16px !important;
+}
+
+.font-14 {
+	font-size: 14px !important;
 }
 
 .container {
@@ -271,15 +269,15 @@ a:hover {
 }
 
 .din-title {
-	font-size: 60px;
+	font-size: 54px;
 	font-family: 'din_condensedbold';
-	line-height: 0.85;
+	line-height: 0.9;
 	text-transform: uppercase;
 	font-weight: 400;
 }
 
 .subtitle {
-	font-size: 24px;
+	font-size: 22px;
 	font-family: 'CircularStdBold';
 	line-height: 1.27;
 }
@@ -341,7 +339,7 @@ body,
 button {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 16px;
+	font-size: 14px;
 	color: $theblue;
 	font-family: 'CircularStdBook';
 }
@@ -370,7 +368,7 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 50;
-	padding: 15px 30px;
+	padding: 10px 30px;
 	transition: 0.2s all ease;
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
@@ -385,21 +383,22 @@ header {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		svg {
+			width: 23px;
+		}
 	}
 	
 
 	.booknow-btn {
 		font-family: 'CircularStdBold';
-		font-size: 14px;
+		font-size: 12px;
 		letter-spacing: 0.1em;
 		margin-left: 10px;
-	}
-
-	.booknow-btn {
 		background-color: #fff;
-		padding: 8px 15px;
+		padding: 7px 15px;
 		display: inline-block;
 	}
+
 	.booknow-btn.scrolling {
 		background-color: $theblue;
 		color: white;
@@ -441,9 +440,6 @@ header.nonTransparent{
 		padding: 0 30px ;
 		border-top:solid 0.1px rgba(128, 128, 128, 0.37);
 		transition: all ease 0.1s;
-		
-	
-		
 		
 		h4{
 			margin:0;
@@ -951,7 +947,7 @@ header.nonTransparent{
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-	width: 40px;
+	width: 36px;
 	height: 2px;
 	background-color: white;
 	border-radius: 4px;
@@ -1057,7 +1053,7 @@ header.nonTransparent{
 					ul {
 						list-style: none;
 						padding: 0;
-						font-size: 50px
+						font-size: 45px
 					}
 					
 					.locationList{
@@ -1104,8 +1100,11 @@ header.nonTransparent{
 						width: 50%;
 						line-height: 35px;
 						letter-spacing: 1px;
-						font-family: 'CircularStdBook';
-
+						a {
+							font-family: 'CircularStdBook';
+							letter-spacing: .5px;
+							font-size: 16px;
+						}
 					}
 				}
 
@@ -1236,7 +1235,7 @@ header.nonTransparent{
 					text-align: start;
 					padding: 0;
 					margin-top: 80px;
-					font-size: 24px;
+					font-size: 20px;
 					line-height: 50px;
 
 					li {
@@ -1282,7 +1281,7 @@ header.nonTransparent{
 		position: absolute;
 		font-family: 'din_condensedbold';
 		z-index: 2;
-		font-size: 100px;
+		font-size: 90px;
 		line-height: 1;
 		font-weight: 400;
 	}
@@ -1336,7 +1335,7 @@ header.nonTransparent{
 
 .booking-form .form-group {
 	position: relative;
-	padding: 20px 25px;
+	padding: 12px 25px;
 	margin-bottom: 0px;
 }
 
@@ -1355,10 +1354,10 @@ header.nonTransparent{
 	background-color: transparent;
 	border-radius: 0px;
 	border: none;
-	height: 50px;
+	height: 42px;
 	-webkit-box-shadow: none;
 	box-shadow: none;
-	font-size: 24px;
+	font-size: 20px;
 	color: $theblue;
 	font-weight: 400;
 	padding: 0;
@@ -1420,7 +1419,7 @@ header.nonTransparent{
 	border-radius: 0;
 	width: 100%;
 	height: 100%;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 400;
 	color: #fff;
 }
@@ -1437,7 +1436,7 @@ header.nonTransparent{
 
 .perk-wrap {
 	display: flex;
-	padding: 30px 25px;
+	padding: 20px 25px 25px;
 
 	ul {
 		margin-top: 2px;
@@ -1476,7 +1475,7 @@ header.nonTransparent{
 
 .col2-section {
 	padding: 0;
-	height: 100vh;
+	height: calc(100vh - 70px);
 
 	.row {
 		margin: 0;
@@ -1484,6 +1483,7 @@ header.nonTransparent{
 
 	.content-side {
 		padding: 70px;
+		padding-bottom: 50px;
 
 		>div {
 			padding-left: inherit;
@@ -1499,7 +1499,7 @@ header.nonTransparent{
 
 	.image-side {
 		padding: 0;
-		height: 100vh;
+		height: calc(100vh - 70px);
 		min-height: 600px;
 		background-color: $theblue;
 
@@ -1520,8 +1520,8 @@ header.nonTransparent{
 			transform: translate(-50%,-50%);
 			.videoIcon{
 				position: absolute;
-				width: 200px;
-				height: 200px;
+				width: 180px;
+				height: 180px;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%,-50%);
@@ -1577,8 +1577,8 @@ header.nonTransparent{
 /* Thumb */
 .accordion-thumb {
 	margin: 0;
-	padding: 16px 0 20px;
-	font-size: 24px;
+	padding: 12px 0 12px 0;
+	font-size: 20px;
 	cursor: pointer;
 	font-weight: normal;
 	font-family: 'CircularStdBold';
@@ -1626,7 +1626,7 @@ header.nonTransparent{
 
 .gallery-swiper {
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 70px);
 
 	img {
 		object-fit: cover;
@@ -1743,7 +1743,7 @@ header.nonTransparent{
 	img {
 		object-fit: cover;
 		width: 100%;
-		height: 600px;
+		height: 530px;
 		position: relative;
 		transition: 1s;
 	}
@@ -1880,6 +1880,10 @@ header.nonTransparent{
 	color: $theblue
 }*/
 
+.seeyou h2 {
+	margin-bottom: 30px;
+}
+
 .seeyouwrap {
 	overflow: hidden;
 	width: 100vw;
@@ -1890,7 +1894,7 @@ header.nonTransparent{
 		.textWrap{
 			position:relative;
 			width: 2560px;
-			font-size: 40px;
+			font-size: 36px;
 			display: flex;
 			justify-content: center;
 		
@@ -1917,13 +1921,13 @@ header.nonTransparent{
 
 .matchingoffer {
 	background: hsl(0, 0%, 93%);
-	height: 520px;
+	height: 480px;
 	width: 100vw;
 	.titleCardWrapContainer{
 		max-width: 1600px;
 		width: 80%;
 		height: 100%;
-		padding:80px 0 40px;
+		padding:60px 0 30px;
 		margin: 0 auto;
 		display: flex;
 		
@@ -2005,8 +2009,8 @@ header.nonTransparent{
 					justify-content: center;
 					align-items: center;
 					padding: 30px;
-					width: 620px;
-					height: 280px;
+					width: 580px;
+					height: 260px;
 					
 					
 					.row{
@@ -2138,25 +2142,24 @@ header.nonTransparent{
 .story-expand .item {
 	flex: 1;
 	height: 100%;
-	transition: all 0.3s ease;
+	transition: all 1s ease;
 	position: relative;
-	transition-delay: .0.2s;
 	overflow: hidden;
 	display: block;
 
 	.cat-text {
-		transition: 0.3s;
+		transition: 1s;
 		top: 0;
 		position: relative;
 	}
 
 	h2 {
-		transition: 0.3s;
+		transition: 1s;
 		transform-origin: left;
 	}
 
 	h3 {
-		transition: 0.3s;
+		transition: 1s;
 		transform-origin: left bottom;
 	}
 
@@ -2185,7 +2188,7 @@ header.nonTransparent{
 }
 
 .box-top {
-	padding: 30px;
+	padding: 20px 30px;
 }
 
 .box-top.journal-wrap {
@@ -2206,7 +2209,7 @@ header.nonTransparent{
 
 	img {
 		width: 100%;
-		height: 550px;
+		height: 500px;
 		object-fit: cover;
 		object-position: center;
 	}
@@ -2240,7 +2243,7 @@ header.nonTransparent{
 
 .story-expand h2 {
 	font-family: 'brittanian';
-	font-size: 55px;
+	font-size: 50px;
 	font-weight: normal;
 	margin-bottom: 0;
 }
@@ -2248,7 +2251,7 @@ header.nonTransparent{
 .story-expand .box-top a {
 	position: absolute;
 	right: 30px;
-	top: 60px;
+	top: 45px;
 	height: auto;
 }
 
@@ -2392,14 +2395,13 @@ header.nonTransparent{
 	}
 }
 
-
 .asSeenInContainer{
 	width: 100vw;
 	.asSeenIn{
 		width: 80%;
 		height: 100%;
-		border-top:#E2E2E2 1px solid;
-		border-bottom: #E2E2E2 1px solid;
+		border-top: gray 1px solid;
+		border-bottom: gray 1px solid;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-around;
@@ -2490,7 +2492,7 @@ footer .logo {
 	margin-bottom: 30px;
 }
 
-footer ::-webkit-input-placeholder,
+footer ::-webkit-input-placeholder
 	{
 	/* Edge */
 	color: white;

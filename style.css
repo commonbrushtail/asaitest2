@@ -41,7 +41,7 @@ body::after {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'CircularStdBold';
   line-height: 1.3;
   letter-spacing: .6px;
@@ -179,6 +179,7 @@ strong {
 .headerLogo {
   -webkit-clip-path: rect(30px, 20px, 30px, 40px);
           clip-path: rect(30px, 20px, 30px, 40px);
+  width: 62px;
 }
 
 input {
@@ -203,16 +204,16 @@ input {
   font-size: 40px !important;
 }
 
-.font-30 {
-  font-size: 30px !important;
-}
-
-.font-18 {
-  font-size: 18px !important;
+.font-26 {
+  font-size: 26px !important;
 }
 
 .font-16 {
   font-size: 16px !important;
+}
+
+.font-14 {
+  font-size: 14px !important;
 }
 
 .container {
@@ -267,15 +268,15 @@ a:hover {
 }
 
 .din-title {
-  font-size: 60px;
+  font-size: 54px;
   font-family: 'din_condensedbold';
-  line-height: 0.85;
+  line-height: 0.9;
   text-transform: uppercase;
   font-weight: 400;
 }
 
 .subtitle {
-  font-size: 24px;
+  font-size: 22px;
   font-family: 'CircularStdBold';
   line-height: 1.27;
 }
@@ -337,7 +338,7 @@ body,
 button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 14px;
   color: #071D49;
   font-family: 'CircularStdBook';
 }
@@ -361,7 +362,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 50;
-  padding: 15px 30px;
+  padding: 10px 30px;
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
   display: -ms-grid;
@@ -391,16 +392,17 @@ header .right-header {
           align-items: center;
 }
 
-header .booknow-btn {
-  font-family: 'CircularStdBold';
-  font-size: 14px;
-  letter-spacing: 0.1em;
-  margin-left: 10px;
+header .right-header svg {
+  width: 23px;
 }
 
 header .booknow-btn {
+  font-family: 'CircularStdBold';
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  margin-left: 10px;
   background-color: #fff;
-  padding: 8px 15px;
+  padding: 7px 15px;
   display: inline-block;
 }
 
@@ -1030,7 +1032,7 @@ header.nonTransparent .locationNavMobile {
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-  width: 40px;
+  width: 36px;
   height: 2px;
   background-color: white;
   border-radius: 4px;
@@ -1167,7 +1169,7 @@ header.nonTransparent .locationNavMobile {
 .overlayNav.container .leftMenu .container .selectLocation ul {
   list-style: none;
   padding: 0;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .overlayNav.container .leftMenu .container .selectLocation .locationList {
@@ -1218,7 +1220,12 @@ header.nonTransparent .locationNavMobile {
   width: 50%;
   line-height: 35px;
   letter-spacing: 1px;
+}
+
+.overlayNav.container .leftMenu .container .listMenu ul a {
   font-family: 'CircularStdBook';
+  letter-spacing: .5px;
+  font-size: 16px;
 }
 
 .overlayNav.container .leftMenu .container .socialLink a {
@@ -1331,7 +1338,7 @@ header.nonTransparent .locationNavMobile {
   text-align: start;
   padding: 0;
   margin-top: 80px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 50px;
 }
 
@@ -1370,7 +1377,7 @@ header.nonTransparent .locationNavMobile {
   position: absolute;
   font-family: 'din_condensedbold';
   z-index: 2;
-  font-size: 100px;
+  font-size: 90px;
   line-height: 1;
   font-weight: 400;
 }
@@ -1420,7 +1427,7 @@ header.nonTransparent .locationNavMobile {
 
 .booking-form .form-group {
   position: relative;
-  padding: 20px 25px;
+  padding: 12px 25px;
   margin-bottom: 0px;
 }
 
@@ -1439,10 +1446,10 @@ header.nonTransparent .locationNavMobile {
   background-color: transparent;
   border-radius: 0px;
   border: none;
-  height: 50px;
+  height: 42px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-size: 24px;
+  font-size: 20px;
   color: #071D49;
   font-weight: 400;
   padding: 0;
@@ -1508,7 +1515,7 @@ header.nonTransparent .locationNavMobile {
   border-radius: 0;
   width: 100%;
   height: 100%;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
 }
@@ -1526,7 +1533,7 @@ header.nonTransparent .locationNavMobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 25px;
+  padding: 20px 25px 25px;
 }
 
 .perk-wrap ul {
@@ -1561,7 +1568,7 @@ header.nonTransparent .locationNavMobile {
 /* ---- Section 2 Column fullwidth ----------------*/
 .col2-section {
   padding: 0;
-  height: 100vh;
+  height: calc(100vh - 70px);
 }
 
 .col2-section .row {
@@ -1570,6 +1577,7 @@ header.nonTransparent .locationNavMobile {
 
 .col2-section .content-side {
   padding: 70px;
+  padding-bottom: 50px;
 }
 
 .col2-section .content-side > div {
@@ -1584,7 +1592,7 @@ header.nonTransparent .locationNavMobile {
 
 .col2-section .image-side {
   padding: 0;
-  height: 100vh;
+  height: calc(100vh - 70px);
   min-height: 600px;
   background-color: #071D49;
 }
@@ -1611,8 +1619,8 @@ header.nonTransparent .locationNavMobile {
 
 .col2-section .image-side a .videoIcon {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1664,8 +1672,8 @@ header.nonTransparent .locationNavMobile {
 /* Thumb */
 .accordion-thumb {
   margin: 0;
-  padding: 16px 0 20px;
-  font-size: 24px;
+  padding: 12px 0 12px 0;
+  font-size: 20px;
   cursor: pointer;
   font-weight: normal;
   font-family: 'CircularStdBold';
@@ -1711,7 +1719,7 @@ header.nonTransparent .locationNavMobile {
 /* ---- Section Gallery swiper ----------------*/
 .gallery-swiper {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 70px);
 }
 
 .gallery-swiper img {
@@ -1835,7 +1843,7 @@ header.nonTransparent .locationNavMobile {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 600px;
+  height: 530px;
   position: relative;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1972,6 +1980,10 @@ header.nonTransparent .locationNavMobile {
 .seeyou p span {
 	color: $theblue
 }*/
+.seeyou h2 {
+  margin-bottom: 30px;
+}
+
 .seeyouwrap {
   overflow: hidden;
   width: 100vw;
@@ -1990,7 +2002,7 @@ header.nonTransparent .locationNavMobile {
 .seeyouwrap .textWrap {
   position: relative;
   width: 2560px;
-  font-size: 40px;
+  font-size: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2015,7 +2027,7 @@ header.nonTransparent .locationNavMobile {
 /* ---- Section Matching offer ----------------*/
 .matchingoffer {
   background: #ededed;
-  height: 520px;
+  height: 480px;
   width: 100vw;
 }
 
@@ -2023,7 +2035,7 @@ header.nonTransparent .locationNavMobile {
   max-width: 1600px;
   width: 80%;
   height: 100%;
-  padding: 80px 0 40px;
+  padding: 60px 0 30px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2137,8 +2149,8 @@ header.nonTransparent .locationNavMobile {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
-  width: 620px;
-  height: 280px;
+  width: 580px;
+  height: 260px;
 }
 
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card .row {
@@ -2185,7 +2197,7 @@ header.nonTransparent .locationNavMobile {
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   background-color: #94B3C4;
-      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
+      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
 }
 
 .imageTextSliderContainer .imageWrap {
@@ -2263,32 +2275,30 @@ header.nonTransparent .locationNavMobile {
       -ms-flex: 1;
           flex: 1;
   height: 100%;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
   position: relative;
-  -webkit-transition-delay: 0 0.2s;
-          transition-delay: 0 0.2s;
   overflow: hidden;
   display: block;
 }
 
 .story-expand .item .cat-text {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 1s;
+  transition: 1s;
   top: 0;
   position: relative;
 }
 
 .story-expand .item h2 {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-transform-origin: left;
           transform-origin: left;
 }
 
 .story-expand .item h3 {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-transform-origin: left bottom;
           transform-origin: left bottom;
 }
@@ -2321,7 +2331,7 @@ header.nonTransparent .locationNavMobile {
 }
 
 .box-top {
-  padding: 30px;
+  padding: 20px 30px;
 }
 
 .box-top.journal-wrap {
@@ -2343,7 +2353,7 @@ header.nonTransparent .locationNavMobile {
 
 .box-bottom img {
   width: 100%;
-  height: 550px;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -2378,7 +2388,7 @@ header.nonTransparent .locationNavMobile {
 
 .story-expand h2 {
   font-family: 'brittanian';
-  font-size: 55px;
+  font-size: 50px;
   font-weight: normal;
   margin-bottom: 0;
 }
@@ -2386,7 +2396,7 @@ header.nonTransparent .locationNavMobile {
 .story-expand .box-top a {
   position: absolute;
   right: 30px;
-  top: 60px;
+  top: 45px;
   height: auto;
 }
 
@@ -2577,8 +2587,8 @@ header.nonTransparent .locationNavMobile {
 .asSeenInContainer .asSeenIn {
   width: 80%;
   height: 100%;
-  border-top: #E2E2E2 1px solid;
-  border-bottom: #E2E2E2 1px solid;
+  border-top: gray 1px solid;
+  border-bottom: gray 1px solid;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
