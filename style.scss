@@ -1649,6 +1649,197 @@ header.nonTransparent{
 	
 }
 
+.accordionContact{
+	.accordion-wrap{
+		width: 85vw;
+		max-width: 1280px;
+		margin:0 auto;
+		.accordion {
+			margin: 1rem 0;
+			padding: 0;
+			list-style: none;
+			.accordion-item {
+				border-bottom: 1px solid $theblue;
+				position: relative;
+				
+				.accordion-thumb {
+					margin: 0;
+					padding: 15px 0;
+					font-size: 20px;
+					cursor: pointer;
+					position: relative;
+					font-weight: normal;
+					font-family: 'CircularStdBold';
+				
+					// Chevron
+					&::after {
+						content: '';
+						display: inline-block;
+						height: 32px;
+						width: 32px;
+						background-size: cover;
+						background-image: url(images/icon-toggle.svg);
+						margin-right: 1rem;
+						margin-left: .5rem;
+						vertical-align: middle;
+						transform: translateY(-5px);
+						transition: transform .2s ease-out;
+						position: absolute;
+						right: 0;
+						
+					}
+					&::before{
+						display: none;
+					}
+				}
+				
+				
+				.accordion-panel {
+					margin: 0;
+					margin-top: 15px;
+					padding-bottom: 30px!important;
+					display: none;
+					padding: 0px;
+				
+					img{
+						display: block;
+					}
+					.contentWrap{
+						display: flex;
+						.mapWrap{
+						height: 350px;
+						width: 585px;
+						}
+						.textWrap{
+						margin-left: 25px;
+						margin-top: 15px;
+						}
+					}
+				}
+			}
+			.accordion-item:first-child{
+				border-top: 1px solid $theblue;
+			}
+			.accordion-item.is-active {
+				.accordion-thumb::after {
+					transform: rotate(45deg);
+					
+				}
+			}
+			
+		}
+
+	}
+}
+
+
+.contactForm{
+	display: flex;
+	width: 85vw;
+	max-width: 1280px;
+	margin: 0 auto;	
+	.textWrap{
+		width: 45%;
+		padding-right: 150px;
+		.linkWrap{
+			margin-top: 25px;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		
+	}
+	.formWrap{
+		width: 55%;
+		background-color: #D9C7B6;
+		display: flex;
+		flex-direction: column;
+		padding-top:50px;
+		position: relative;
+		padding-left: 50px;
+		padding-bottom: 90px;
+		
+		.selectWrap{
+		width: 100%;
+		position: relative;
+		select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			text-indent: 1px;
+			text-overflow: '';
+			border: none;
+			color: $theblue;
+			position: relative;
+			width: 100%;
+			padding: 10px 15px;
+		}
+
+		
+		
+		select::-ms-expand {
+			display: none;
+		}
+		}
+		.selectWrap:after{
+			position: absolute;
+			background-image: url(images/arrow-down.svg);
+			right: 20px;
+			top: 50%;
+			transform: translateY(-25%);
+			width: 15px;
+			height: 15px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			content: "";
+			
+		}
+		
+		
+		input{
+			color: $theblue;
+			border: none;
+			border-bottom: 1px solid $theblue;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			background-color: transparent;
+		}
+		input::placeholder{
+			color: $theblue;
+		}
+		input:focus{
+			outline: none;
+		}
+		input[type=textbox]{
+		padding-bottom: 150px;
+			
+		}
+		button{
+			background-color: $theblue;
+			color: white;
+			padding: 15px 0 ;
+			border:none;
+			margin-top: 20px;
+		}
+	}
+	.formWrap:after{
+		content:"";
+		background-color: #D9C7B6;
+		height: 100%;
+		width: 300%;
+		position: absolute;
+		top: 0;
+		right: calc(-300% + 1px );
+		
+	}
+}
+
+
+
+
+
+
+
+
 
 
 /* ---- Section Gallery swiper ----------------*/

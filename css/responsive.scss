@@ -1199,6 +1199,89 @@ $theblue: #071D49;
 		}
 	}
 
+	.accordionContact{
+		.accordion-wrap{
+			width: 90vw;
+			max-width: 1500px;
+			margin:0 auto;
+			.accordion {
+				margin: 1rem 0;
+				padding: 0;
+				list-style: none;
+				.accordion-item {
+					border-bottom: 1px solid $theblue;
+					position: relative;
+					
+					.accordion-thumb {
+						margin: 0;
+						padding: 15px 0;
+						font-size: 20px;
+						cursor: pointer;
+						position: relative;
+						font-weight: normal;
+						font-family: 'CircularStdBold';
+					
+						// Chevron
+						&::after {
+							content: '';
+							display: inline-block;
+							height: 32px;
+							width: 32px;
+							background-size: cover;
+							
+							margin-right: 1rem;
+							margin-left: .5rem;
+							vertical-align: middle;
+							transform: translateY(-5px);
+							transition: transform .2s ease-out;
+							position: absolute;
+							right: 0;
+							
+						}
+						&::before{
+							display: none;
+						}
+					}
+					
+					
+					.accordion-panel {
+						margin: 0;
+						margin-top: 15px;
+						padding-bottom: 30px!important;
+						display: none;
+						padding: 0px;
+					
+						img{
+							display: block;
+						}
+						.contentWrap{
+							display: flex;
+							flex-direction: column;
+							.mapWrap{
+							height: 250px;
+							width: 100%;
+							}
+							.textWrap{
+							margin-left: 0px;
+							margin-top: 15px;
+							}
+						}
+					}
+				}
+				.accordion-item:first-child{
+					border-top: 1px solid $theblue;
+				}
+				.accordion-item.is-active {
+					.accordion-thumb::after {
+						transform: rotate(45deg);
+						
+					}
+				}
+				
+			}
+	
+		}
+	}
 	
 
 

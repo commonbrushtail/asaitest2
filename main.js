@@ -352,6 +352,7 @@ listForMenuBackground.forEach(element => {
 
 
 
+new Accordion('.locationNavMobile');
     
 
 

@@ -1181,6 +1181,84 @@
     -webkit-transform: translateY(5px);
             transform: translateY(5px);
   }
+  .accordionContact .accordion-wrap {
+    width: 90vw;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  .accordionContact .accordion-wrap .accordion {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item {
+    border-bottom: 1px solid #071D49;
+    position: relative;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-thumb {
+    margin: 0;
+    padding: 15px 0;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    font-weight: normal;
+    font-family: 'CircularStdBold';
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-thumb::after {
+    content: '';
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-size: cover;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    vertical-align: middle;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    position: absolute;
+    right: 0;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-thumb::before {
+    display: none;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-panel {
+    margin: 0;
+    margin-top: 15px;
+    padding-bottom: 30px !important;
+    display: none;
+    padding: 0px;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-panel img {
+    display: block;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .mapWrap {
+    height: 250px;
+    width: 100%;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .textWrap {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item:first-child {
+    border-top: 1px solid #071D49;
+  }
+  .accordionContact .accordion-wrap .accordion .accordion-item.is-active .accordion-thumb::after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
   .col2-section .content-side > div {
     position: relative;
     padding: 0;
