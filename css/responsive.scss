@@ -225,6 +225,48 @@ $theblue: #071D49;
 				
 
 	}
+
+	.asSeenInContainer{
+		width: 100vw;
+		margin-top: 25px;
+	
+		.asSeenIn{
+			width: 80%;
+			height: 100%;
+			border-top: #E2E2E2 1px solid;
+			border-bottom: #E2E2E2 1px solid;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 30px 0;
+			
+			span{
+				display: block;
+				margin-top: 25px;
+			}
+			ul{
+				list-style: none;
+				display: flex;
+				align-items: center;
+				margin-top: 25px;
+			.partnerLogo{
+				filter: grayscale(100);
+				max-width: 120px;
+				margin:15px 10px
+				
+			}
+			.partnerLogoTall{
+				
+				max-width: 80px;
+				
+				
+			}
+			}
+			
+		}
+	}
 	
 
 }
@@ -498,9 +540,9 @@ $theblue: #071D49;
 	
 		
 	}
+	
 
 	
-		
 	
 
 
@@ -1062,14 +1104,104 @@ $theblue: #071D49;
 	
 	}
 
-	.asSeenInContainer{
-		.asSeenIn{
-		
+	.owl-carousel{
+		.owl-stage{
+			height: 450px;
+			display: flex;
+			align-items: center;
+			
+				
+		}
+		.quoteBox{
+			text-align: center;
+			padding: 50px 40px;
+			box-sizing: border-box;
+			background-color: $theblue;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-width: 300px;
+			min-height: 300px;
+			font-size: 20px;
+			font-family: 'CircularStdBook';
+			font-weight: 700;
+			line-height: 1.2;
 			span{
-				display: none;
+				font-weight: 400;
+				font-size: 16px;
+				margin-top: 15px;
 			}
-		}	
+		}
+		.quoteBox2{
+			text-align: center;
+			padding: 50px 40px;
+			box-sizing: border-box;
+			
+			background-color: #A64F4C;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			max-width: 330px;
+			min-height: 330px;
+			font-size: 20px;
+			font-family: 'CircularStdBook';
+			font-weight: 700;
+			line-height: 1.2;
+			span{
+				font-weight: 400;
+				font-size: 16px;
+				margin-top: 15px;
+			}
+		}
+		.imageBox{
+			max-width: 300px;
+			max-height: 250px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			position: relative;
+			
+			img{            
+				height: 250px;
+				object-fit: cover;
+			}
+			p{
+				
+				position: absolute;
+				top: 100%;
+				transform: translateY(5px);
+			}
+		}
+		
+		.imageBox2{
+			max-width: 280px;
+			max-height: 240px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			position: relative;
+			img{            
+				height: 240px;
+				object-fit: cover;
+			}
+			p{
+				
+				position: absolute;
+				top: 100%;
+				transform: translateY(5px);
+			}
+		}
 	}
+
+	
+
+
 
 	
 
@@ -1278,6 +1410,51 @@ $theblue: #071D49;
 		
 	
 	}
+
+	.accordionMenu{
+		.accordion-item{
+			padding: 15px 0;
+			.accordion-thumb:before{
+				content:none
+			}
+			.accordion-thumb:after{
+				content:"";
+				
+					width: 30px;
+					height: 20px;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translate(-100%, -25%);
+					background-repeat: no-repeat;
+					
+			}
+			
+	
+			
+		}
+	
+		.accordion-item:hover{
+			.accordion-thumb:after{
+				content:"";
+					
+					width: 30px;
+					height: 20px;
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translate(-100%, -25%);
+					background-repeat: no-repeat;
+					
+			}
+		}
+	
+		.accordion-item:last-child{
+			border-bottom: none;
+		}
+		
+	}
+	
 
 
 
@@ -1509,40 +1686,60 @@ $theblue: #071D49;
 				
 	
 	}
-
 	.asSeenInContainer{
+		width: 100vw;
+		margin-top: 25px;
+	
 		.asSeenIn{
-			padding-top:70px;
-			padding-bottom: 10px;
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr;
-			gap: 0px 50px;
-			justify-items: center;;
-			grid-template-areas:
-				"logo1 logo1 logo2 logo2 logo3 logo3"
-				". logo4 logo4 logo5 logo5 ."
-				". . logo6 logo6 . .";
-			span{
-				display: none;
-			}
-			.partnerLogo{
-				max-width: 80px;
-				margin-top: 0;
-				margin-bottom: 10px;
-				
-			}
-			.logo1 { grid-area: logo1; }
-			.logo2 { grid-area: logo2; }
-			.logo3 { grid-area: logo3; }
-			.logo4 { grid-area: logo4; }
-			.logo5 { grid-area: logo5; }
-			.logo6 { grid-area: logo6; }
+			width: 90%;
+			height: 100%;
+			border-top: #E2E2E2 1px solid;
+			border-bottom: #E2E2E2 1px solid;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 30px 0;
 			
+			span{
+				display: block;
+				margin-top: 25px;
+			}
+			ul{
+				list-style: none;
+				padding-left: 0;
+				display: flex;
+				align-items: center;
+				margin-top: 25px;
+				justify-content: center;
+				flex-wrap: wrap;
+				
+				li:last-child{
+					
+				}
+				
+				.partnerLogo{
+					filter: grayscale(100);
+					max-width: 90px;
+					margin:15px 10px;
+					flex-grow:1;
+					
+				}
+				
+				.partnerLogoTall{
+					max-width: 60px;
+				}
+				
+			
+			}
 			
 		}
 	}
 
+	.jamJamPageLogo{
+		width:135px ;
+	}
 
 
 

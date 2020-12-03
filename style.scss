@@ -1541,22 +1541,8 @@ header.nonTransparent{
 	list-style: none;
 }
 
-.accordionMenu{
-	.accordion-thumb:before{
-		content:none
-	}
-	.accordion-thumb:after{
-		content:"";
-		background-image: url(images/Menu-Arrow_icon.svg);
-		width: 30px;
-		height: 20px;
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateX(-100%);
-		background-repeat: no-repeat;
-	}
-}
+
+
 
 .accordion-item {
 	border-bottom: 1px solid $theblue;
@@ -1617,6 +1603,50 @@ header.nonTransparent{
 
 .accordion-panel img {
 	display: none;
+}
+.accordionMenu{
+	.accordion-item{
+		padding: 15px 0;
+		.accordion-thumb:before{
+			content:none
+		}
+		.accordion-thumb:after{
+			content:none;
+				background-image: url(images/Menu-Arrow_icon.svg);
+				width: 30px;
+				height: 20px;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translate(-100%, -25%);
+				background-repeat: no-repeat;
+				
+		}
+		
+		
+
+		
+	}
+
+	.accordion-item:hover{
+		.accordion-thumb:after{
+			content:"";
+				background-image: url(images/Menu-Arrow_icon.svg);
+				width: 30px;
+				height: 20px;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translate(-100%, -25%);
+				background-repeat: no-repeat;
+				
+		}
+	}
+
+	.accordion-item:last-child{
+		border-bottom: none;
+	}
+	
 }
 
 
@@ -2302,7 +2332,7 @@ header.nonTransparent{
 
 .owl-carousel{
 	.owl-stage{
-		height: 500px;
+		height: 600px;
 		display: flex;
 		align-items: center;
 		
@@ -2397,22 +2427,38 @@ header.nonTransparent{
 
 .asSeenInContainer{
 	width: 100vw;
+	margin-top: 25px;
+
 	.asSeenIn{
 		width: 80%;
 		height: 100%;
-		border-top: gray 1px solid;
-		border-bottom: gray 1px solid;
+		border-top: #E2E2E2 1px solid;
+		border-bottom: #E2E2E2 1px solid;
 		margin: 0 auto;
 		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		justify-content: center;
+		align-items: baseline;
 		padding: 30px 0;
-		flex-wrap: wrap;
+		
+		span{
+			display: block;
+		}
+		ul{
+			list-style: none;
+			display: flex;
+			align-items: center;
 		.partnerLogo{
 			filter: grayscale(100);
 			max-width: 120px;
-			margin:15px 15px
+			margin:15px 10px
 			
+		}
+		.partnerLogoTall{
+			
+			max-width: 80px;
+			
+			
+		}
 		}
 		
 	}
