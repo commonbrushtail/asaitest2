@@ -1872,14 +1872,14 @@ $theblue: #071D49;
 				width: 51px;
 				height: 35px;
 				object-fit: contain;
-				margin-left: 25px;
+				margin-left: 50px;
 				margin-top: 30px;
 			}
 			.textWrap{
 				display: block!important;
 			    margin-top: 40px;
 				width: 100%;
-				padding-left: 25px;
+				padding-left: 50px;
 				min-height: 100%;
 
 				
@@ -1938,7 +1938,6 @@ $theblue: #071D49;
 			width: 100%;
 			height: 100%;
 			position: absolute;
-		
 			content: "";
 			z-index: -1;
 			filter: brightness(50%);
@@ -1961,8 +1960,8 @@ $theblue: #071D49;
 				margin: 0 auto;
 				margin-top: 40px;
 				position: static;
-				padding-left: 25px;
-				padding-right: 25px;
+				padding-left: 40px;
+				padding-right: 40px;
 
 				h3{
 					margin-bottom: 15px!important;
@@ -1972,7 +1971,7 @@ $theblue: #071D49;
 					top: 0;
 					margin: 0;
 					left: initial;
-					margin-right: 25px;
+					margin-right: 40px;
 					margin-top: 30px;
 					right: 0;
 					position: absolute;
@@ -2738,6 +2737,219 @@ $theblue: #071D49;
 			}
 	
 		}
+	}
+	.registerForm{
+		width: 100vw;
+		min-height: 100vh;
+		
+		display: flex;
+		flex-direction: column;
+		
+		.perkRegister{
+			background-color: black;
+			width: 100%;
+			height: max-content;
+			color: white;
+			padding-bottom: 20px;
+			z-index: 1;
+			
+			
+			
+			img{
+				position: static;
+				width: 51px;
+				height: 35px;
+				object-fit: contain;
+				margin-left: 25px;
+				margin-top: 30px;
+			}
+			.textWrap{
+				display: block!important;
+			    margin-top: 40px;
+				width: 100%;
+				padding-left: 25px;
+				min-height: 100%;
+
+				
+				
+				
+				h3{
+					font-size:24px;
+					width: 100%;
+					margin-bottom: 0;
+					
+					
+				}
+				h2{
+					font-size: 32px;
+					font-family: 'CircularStdBook';
+					font-weight: 700;
+					margin-top: 15px;
+					line-height: 1.1;
+					letter-spacing:3px;
+					width: 100%;
+				}
+				ul{
+					list-style: none;
+					padding-left: 0;
+					margin-top: 25px;
+					width: 100%;
+					letter-spacing: 2px;
+	
+					li{
+						font-size: 16px;
+						font-family: 'CircularStdBook';
+						position: relative;
+						margin-top: 15px;
+						
+						
+						
+					}
+					li:before{
+						content: "";
+						
+						width: 24px;
+						height: 15.5px;
+						background-size: contain;
+						background-repeat: no-repeat;
+						position: relative;
+						margin-right: 5px;
+						display: inline-block;
+						
+						
+	
+					}
+				}
+			}
+		}
+		.perkRegister:before{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		
+			content: "";
+			z-index: -1;
+			filter: brightness(50%);
+			background-size: cover;
+			
+		}
+		.formWrap{
+			width: 100%;
+			position: static;
+			min-height: 100%;
+			padding-bottom: 20px;
+			
+			
+			form{
+				width: 100%;
+				height: max-content;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 auto;
+				margin-top: 40px;
+				position: static;
+				padding-left: 25px;
+				padding-right: 25px;
+
+				h3{
+					margin-bottom: 15px!important;
+				}
+				
+				.backToHome{
+					top: 0;
+					margin: 0;
+					left: initial;
+					margin-right: 25px;
+					margin-top: 30px;
+					right: 0;
+					position: absolute;
+					color: white;
+					z-index: 2;
+				}
+				.backToHome:before{
+					content: "";
+					filter:  brightness(0) invert(100) ;
+					width: 20px;
+					height: 10px;
+					background-repeat: no-repeat;	
+					margin-right: 10px;
+					display: inline-block
+					
+				}
+				
+				input{
+					width: 100%;
+					color: $theblue;
+					border: none;
+					border-bottom: 1px solid $theblue;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					background-color: transparent;
+					font-size: 20px;
+				}
+				input::placeholder{
+					color: $theblue;
+				}
+				input:focus{
+					outline: none;
+				}
+				input[type=textbox]{
+				padding-bottom: 100px;
+					
+				}
+				input[type=file]{
+					display: none;
+				}
+				a{
+					margin: 20px 0;
+					font-size: 16px;
+					font-weight: 400;
+				}
+				button{
+					width: 100%;
+					padding: 15px 0;
+					border: none;
+					font-weight: 700;
+					font-size: 20px;
+					
+					
+				}
+				.loginButton{
+					background-color: $theblue;
+					color: white;
+					margin-top: 5px;
+					letter-spacing: 2px;
+				}
+				.registerButton{
+					background-color: white;
+					color: $theblue;
+					border: 1px solid $theblue;
+					margin-top: 20px;
+				}
+				.backToHomeMobile{
+					
+					margin-top: 30px;
+					display: block!important;
+					
+				}
+				.backToHomeMobile:before{
+					content: "";
+					background-image: url(../images/Careers/backArrow.svg);
+					width: 20px;
+					height: 10px;
+					background-repeat: no-repeat;	
+					margin-right: 10px;
+					display: inline-block
+					
+				}
+				
+			}
+	
+		}
+		
+		
+	
 	}
 
 

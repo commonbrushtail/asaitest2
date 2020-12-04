@@ -166,7 +166,19 @@
     </script>
       
  
-
+      <script>
+        $(function() {
+          // (Optional) Active an item if it has the class "is-active"	
+          $(".accordionFooter > .accordionFooterItem.is-active").children(".accordionFooterPanel").slideDown();
+          
+          $(".accordionFooter > .accordionFooterItem").click(function() {
+            // Cancel the siblings
+            $(this).siblings(".accordionFooterItem").removeClass("is-active").children(".accordionFooterPanel").slideUp();
+            // Toggle the item
+            $(this).toggleClass("is-active").children(".accordionFooterPanel").slideToggle("ease-out");
+          });
+        });
+      </script>
     
 
     <script>
