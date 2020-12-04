@@ -104,21 +104,38 @@ function findSecondSection(){
     }
 }
 
-ScrollTrigger.create({
+if(document.querySelector('.indexPage')){
+    ScrollTrigger.create({
     
-    start: findSecondSection(),
-    trigger:'.secondSection',
-    endTrigger:"html" ,
-    end:"bottom top",
+        start: findSecondSection(),
+        trigger:'.secondSection',
+        endTrigger:"html" ,
+        end:"bottom top",
+        marker:true,
+        
+        toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
+        
+    });
+}else {
+    ScrollTrigger.create({
     
-    toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
-    
-});
+        start: 'top top',
+        trigger:'.secondSection',
+        endTrigger:"html" ,
+        end:"bottom top",
+        marker:true,
+        
+        toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
+        
+    });
+}
+
+
 
 
 /** non transparent header **/
 
-gsap.to('.nonTransparent',{
+gsap.to('.nonTransparent.locationHeader',{
         y:'-100%',
         
         scrollTrigger:{
@@ -352,7 +369,8 @@ listForMenuBackground.forEach(element => {
 
 
 
-new Accordion('.locationNavMobile');
+if(document.querySelector('.locationNavMobile')){
+new Accordion('.locationNavMobile');}
     
 
 

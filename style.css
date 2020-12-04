@@ -1826,20 +1826,26 @@ header.nonTransparent .locationNavMobile {
 }
 
 .contactForm {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.contactForm .contactFormInner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 85vw;
   max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
-.contactForm .textWrap {
-  width: 45%;
+.contactForm .contactFormInner .textWrap {
+  width: 50%;
   padding-right: 150px;
 }
 
-.contactForm .textWrap .linkWrap {
+.contactForm .contactFormInner .textWrap .linkWrap {
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1850,8 +1856,8 @@ header.nonTransparent .locationNavMobile {
           flex-direction: column;
 }
 
-.contactForm .formWrap {
-  width: 55%;
+.contactForm .contactFormInner .formWrap {
+  width: 50%;
   background-color: #D9C7B6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1866,12 +1872,12 @@ header.nonTransparent .locationNavMobile {
   padding-bottom: 90px;
 }
 
-.contactForm .formWrap .selectWrap {
+.contactForm .contactFormInner .formWrap .selectWrap {
   width: 100%;
   position: relative;
 }
 
-.contactForm .formWrap .selectWrap select {
+.contactForm .contactFormInner .formWrap .selectWrap select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -1883,11 +1889,11 @@ header.nonTransparent .locationNavMobile {
   padding: 10px 15px;
 }
 
-.contactForm .formWrap .selectWrap select::-ms-expand {
+.contactForm .contactFormInner .formWrap .selectWrap select::-ms-expand {
   display: none;
 }
 
-.contactForm .formWrap .selectWrap:after {
+.contactForm .contactFormInner .formWrap .selectWrap:after {
   position: absolute;
   background-image: url(images/arrow-down.svg);
   right: 20px;
@@ -1901,7 +1907,7 @@ header.nonTransparent .locationNavMobile {
   content: "";
 }
 
-.contactForm .formWrap input {
+.contactForm .contactFormInner .formWrap input {
   color: #071D49;
   border: none;
   border-bottom: 1px solid #071D49;
@@ -1910,39 +1916,40 @@ header.nonTransparent .locationNavMobile {
   background-color: transparent;
 }
 
-.contactForm .formWrap input::-webkit-input-placeholder {
+.contactForm .contactFormInner .formWrap input::-webkit-input-placeholder {
   color: #071D49;
 }
 
-.contactForm .formWrap input:-ms-input-placeholder {
+.contactForm .contactFormInner .formWrap input:-ms-input-placeholder {
   color: #071D49;
 }
 
-.contactForm .formWrap input::-ms-input-placeholder {
+.contactForm .contactFormInner .formWrap input::-ms-input-placeholder {
   color: #071D49;
 }
 
-.contactForm .formWrap input::placeholder {
+.contactForm .contactFormInner .formWrap input::placeholder {
   color: #071D49;
 }
 
-.contactForm .formWrap input:focus {
+.contactForm .contactFormInner .formWrap input:focus {
   outline: none;
 }
 
-.contactForm .formWrap input[type=textbox] {
+.contactForm .contactFormInner .formWrap input[type=textbox] {
   padding-bottom: 150px;
 }
 
-.contactForm .formWrap button {
+.contactForm .contactFormInner .formWrap button {
   background-color: #071D49;
   color: white;
   padding: 15px 0;
   border: none;
   margin-top: 20px;
+  font-weight: 700;
 }
 
-.contactForm .formWrap:after {
+.contactForm .contactFormInner .formWrap:after {
   content: "";
   background-color: #D9C7B6;
   height: 100%;
@@ -1950,6 +1957,381 @@ header.nonTransparent .locationNavMobile {
   position: absolute;
   top: 0;
   right: calc(-300% + 1px);
+  display: inline;
+}
+
+.accordionCareer .accordion-wrap {
+  width: 85vw;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.accordionCareer .accordion-wrap .accordion {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item {
+  border-bottom: 1px solid #071D49;
+  position: relative;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-thumb {
+  margin: 0;
+  padding: 15px 0px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  font-weight: normal;
+  font-family: 'CircularStdBold';
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-thumb p {
+  font-size: 16px;
+  font-family: 'CircularStdBook';
+  font-weight: 400;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-thumb::after {
+  content: '';
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  background-size: cover;
+  background-image: url(images/icon-toggle.svg);
+  margin-right: 1rem;
+  margin-left: .5rem;
+  vertical-align: middle;
+  -webkit-transform: translate(30%, -30%);
+          transform: translate(30%, -30%);
+  -webkit-transition: -webkit-transform .2s ease-out;
+  transition: -webkit-transform .2s ease-out;
+  transition: transform .2s ease-out;
+  transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-thumb::before {
+  display: none;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel {
+  margin: 0;
+  margin-top: 15px;
+  padding-bottom: 30px !important;
+  display: none;
+  padding: 0px;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel img {
+  display: block;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .textWrap {
+  width: 70%;
+  padding: 30px 5px 30px 0px !important;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .textWrap ol li {
+  margin-top: 10px;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap {
+  width: 30%;
+  background-color: #D9C7B6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 30px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input {
+  color: #071D49;
+  border: none;
+  border-bottom: 1px solid #071D49;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input::-webkit-input-placeholder {
+  color: #071D49;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input:-ms-input-placeholder {
+  color: #071D49;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input::-ms-input-placeholder {
+  color: #071D49;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input::placeholder {
+  color: #071D49;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input:focus {
+  outline: none;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input[type=textbox] {
+  padding-bottom: 100px;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap input[type=file] {
+  display: none;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap .customFileUpload {
+  margin-top: 25px;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item .accordion-panel .contentWrap .formWrap button {
+  background-color: #071D49;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item:first-child {
+  border-top: 1px solid #071D49;
+}
+
+.accordionCareer .accordion-wrap .accordion .accordion-item.is-active .accordion-thumb::after {
+  -webkit-transform: rotate(45deg) translate(0%, -50%);
+          transform: rotate(45deg) translate(0%, -50%);
+}
+
+.registerForm {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.registerForm .perkRegister {
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+
+.registerForm .perkRegister img {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 68px;
+  height: 47px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.registerForm .perkRegister .textWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.registerForm .perkRegister .textWrap h3 {
+  font-size: 30px;
+  width: 100%;
+}
+
+.registerForm .perkRegister .textWrap h2 {
+  font-size: 50px;
+  font-family: 'CircularStdBook';
+  font-weight: 700;
+  margin-top: 25px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.registerForm .perkRegister .textWrap ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 50px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.registerForm .perkRegister .textWrap ul li {
+  font-size: 18px;
+  font-family: 'CircularStdBook';
+  position: relative;
+  margin-top: 15px;
+}
+
+.registerForm .perkRegister .textWrap ul li:before {
+  content: "";
+  background-image: url(images/Careers/check.svg);
+  width: 24px;
+  height: 15.5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.registerForm .perkRegister:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(images/Login_Register/Login_img.png);
+  content: "";
+  z-index: -1;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  background-size: cover;
+}
+
+.registerForm .formWrap {
+  width: 50%;
+  position: relative;
+  min-height: 100vh;
+}
+
+.registerForm .formWrap form {
+  width: 65%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.registerForm .formWrap form .backToHome {
+  top: 40px;
+  left: 0px;
+  position: absolute;
+  font-family: 'CircularStdBook';
+}
+
+.registerForm .formWrap form .backToHome:before {
+  content: "";
+  background-image: url(images/Careers/backArrow.svg);
+  width: 20px;
+  height: 10px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.registerForm .formWrap form input {
+  width: 100%;
+  color: #071D49;
+  border: none;
+  border-bottom: 1px solid #071D49;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.registerForm .formWrap form input::-webkit-input-placeholder {
+  color: #071D49;
+}
+
+.registerForm .formWrap form input:-ms-input-placeholder {
+  color: #071D49;
+}
+
+.registerForm .formWrap form input::-ms-input-placeholder {
+  color: #071D49;
+}
+
+.registerForm .formWrap form input::placeholder {
+  color: #071D49;
+}
+
+.registerForm .formWrap form input:focus {
+  outline: none;
+}
+
+.registerForm .formWrap form input[type=textbox] {
+  padding-bottom: 100px;
+}
+
+.registerForm .formWrap form input[type=file] {
+  display: none;
+}
+
+.registerForm .formWrap form a {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.registerForm .formWrap form button {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.registerForm .formWrap form .loginButton {
+  background-color: #071D49;
+  color: white;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.registerForm .formWrap form .registerButton {
+  background-color: white;
+  color: #071D49;
+  border: 1px solid #071D49;
+  margin-top: 20px;
+}
+
+.registerForm .formWrap form .backToHomeMobile {
+  display: none;
+  font-family: 'CircularStdBook';
 }
 
 /* ---- Section Gallery swiper ----------------*/
@@ -2433,7 +2815,7 @@ header.nonTransparent .locationNavMobile {
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   background-color: #94B3C4;
-      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
+      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
 }
 
 .imageTextSliderContainer .imageWrap {

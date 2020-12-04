@@ -267,6 +267,320 @@ $theblue: #071D49;
 			
 		}
 	}
+
+	.accordionCareer{
+	
+	
+		.accordion-wrap{
+			width: 85vw;
+			max-width: 1280px;
+			margin:0 auto;
+			.accordion {
+				margin: 1rem 0;
+				padding: 0;
+				list-style: none;
+				.accordion-item {
+					border-bottom: 1px solid $theblue;
+					position: relative;
+					
+					.accordion-thumb {
+						margin: 0;
+						padding: 15px 0px 0px;
+						font-size: 20px;
+						cursor: pointer;
+						position: relative;
+						font-weight: normal;
+						font-family: 'CircularStdBold';
+						p{
+							font-size: 16px;
+							font-family: 'CircularStdBook';
+							font-weight: 400;
+						}
+					
+						// Chevron
+						&::after {
+							content: '';
+							display: inline-block;
+							height: 32px;
+							width: 32px;
+							background-size: cover;
+							
+							margin-right: 1rem;
+							margin-left: .5rem;
+							vertical-align: middle;
+							transform: translate(30%,-30%);
+							transition: transform .2s ease-out;
+							position: absolute;
+							right: 0;
+							top: 50%;
+							
+						}
+						&::before{
+							display: none;
+						}
+					}
+					
+					
+					.accordion-panel {
+						margin: 0;
+						margin-top: 15px;
+						padding-bottom: 30px!important;
+						display: none;
+						padding: 0px;
+					
+						img{
+							display: block;
+						}
+						.contentWrap{
+							display: flex;
+							width: 100%;
+							.textWrap{
+							width: 55%;
+							padding: 25px 30px 60px 0px;
+							}
+							.formWrap{
+							width: 45%;
+							background-color: #D9C7B6;
+							height: max-content;
+							display: flex;
+							flex-direction: column;
+							padding: 30px 30px;
+							input{
+								color: $theblue;
+								border: none;
+								border-bottom: 1px solid $theblue;
+								padding-top: 15px;
+								padding-bottom: 15px;
+								background-color: transparent;
+								font-size: 16px;
+							}
+							input::placeholder{
+								color: $theblue;
+							}
+							input:focus{
+								outline: none;
+							}
+							input[type=textbox]{
+							padding-bottom: 100px;
+								
+							}
+							input[type=file]{
+								display: none;
+							}
+							.customFileUpload{
+								margin-top: 25px;
+							}
+							button{
+								background-color: $theblue;
+								color: white;
+								padding: 15px 0 ;
+								border:none;
+								margin-top: 20px;
+								font-weight: 700;
+							}
+							}
+						}
+					}
+				}
+				.accordion-item:first-child{
+					border-top: 1px solid $theblue;
+				}
+				.accordion-item.is-active {
+					.accordion-thumb::after {
+						transform: rotate(45deg) translate(0%,-50%);
+						
+						
+					}
+				}
+				
+			}
+	
+		}
+	}
+
+	.registerForm{
+		width: 100vw;
+		min-height: 100vh;
+		
+		display: flex;
+		
+		.perkRegister{
+			background-color: black;
+			width: 50%;
+			height: 100%;
+			color: white;
+			position: relative;
+			z-index: 5;
+			
+			
+			
+			img{
+				position: absolute;
+				top: 40px;
+				left: 50px;
+				width: 68px;
+				height: 47px;
+				object-fit: contain;
+			}
+			.textWrap{
+				display: flex;
+				flex-direction: column;
+				width: 80%;
+				min-height: 100vh;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto;
+				
+				
+				
+				h3{
+					font-size:30px;
+					width: 100%;
+					
+					
+				}
+				h2{
+					font-size: 50px;
+					font-family: 'CircularStdBook';
+					font-weight: 700;
+					margin-top: 25px;
+					line-height: 1.2;
+					letter-spacing:3px;
+					width: 100%;
+				}
+				ul{
+					list-style: none;
+					padding-left: 0;
+					margin-top: 50px;
+					width: 100%;
+					letter-spacing: 2px;
+	
+					li{
+						font-size: 18px;
+						font-family: 'CircularStdBook';
+						position: relative;
+						margin-top: 15px;
+						
+						
+						
+					}
+					li:before{
+						content: "";
+						
+						width: 24px;
+						height: 15.5px;
+						background-size: contain;
+						background-repeat: no-repeat;
+						position: relative;
+						margin-right: 5px;
+						display: inline-block;
+						
+						
+	
+					}
+				}
+			}
+		}
+		.perkRegister:before{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		
+			content: "";
+			z-index: -1;
+			filter: brightness(50%);
+			background-size: cover;
+			
+		}
+		.formWrap{
+			width: 50%;
+			position: relative;
+			min-height: 100vh;
+			
+			
+			form{
+				.backToHome{
+					top: 40px;
+					left: 0px;
+					position: absolute;
+				}
+				.backToHome:before{
+					content: "";
+				
+					width: 20px;
+					height: 10px;
+					background-repeat: no-repeat;	
+					margin-right: 10px;
+					display: inline-block
+					
+				}
+				width: 80%;
+				height: 90%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 auto;
+				position: relative;
+				
+				
+				input{
+					width: 100%;
+					color: $theblue;
+					border: none;
+					border-bottom: 1px solid $theblue;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					background-color: transparent;
+					font-size: 20px;
+				}
+				input::placeholder{
+					color: $theblue;
+				}
+				input:focus{
+					outline: none;
+				}
+				input[type=textbox]{
+				padding-bottom: 100px;
+					
+				}
+				input[type=file]{
+					display: none;
+				}
+				a{
+					margin: 20px 0;
+					font-size: 16px;
+					font-weight: 400;
+				}
+				button{
+					width: 100%;
+					padding: 15px 0;
+					border: none;
+					font-weight: 700;
+					font-size: 20px;
+					
+					
+				}
+				.loginButton{
+					background-color: $theblue;
+					color: white;
+					margin-top: 5px;
+					letter-spacing: 2px;
+				}
+				.registerButton{
+					background-color: white;
+					color: $theblue;
+					border: 1px solid $theblue;
+					margin-top: 20px;
+				}
+				
+			}
+	
+		}
+		
+		
+	
+	}
+	
 	
 
 }
@@ -1282,6 +1596,473 @@ $theblue: #071D49;
 	
 		}
 	}
+
+	.contactForm{
+		width: 100vw;
+		overflow: hidden;
+		padding-top: 70px!important;
+		.contactFormInner{
+			display: flex;
+			width: 90vw;
+			max-width: 1280px;
+			margin: 0 auto;	
+			flex-direction: column;
+			position: relative;
+			.textWrap{
+				width: 100%;
+				padding-right: 0;
+				.linkWrap{
+					margin-top: 25px;
+					display: flex;
+					flex-direction: column;
+				}
+				
+				
+			}
+			.formWrap{
+				margin-top: 30px;
+				width: 100%;
+				background-color: #D9C7B6;
+				display: flex;
+				flex-direction: column;
+				padding-top:30px;
+				position: relative;
+				padding-left: 0;
+				padding-bottom: 90px;
+				
+				
+				.selectWrap{
+				width: 100%;
+				position: relative;
+				margin-bottom: 15px;
+				select {
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					text-indent: 1px;
+					text-overflow: '';
+					border: none;
+					color: $theblue;
+					position: relative;
+					width: 100%;
+					padding: 10px 15px;
+				}
+	
+				
+				
+				select::-ms-expand {
+					display: none;
+				}
+				}
+				.selectWrap:after{
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					transform: translateY(-25%);
+					width: 15px;
+					height: 15px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					content: "";
+					
+				}
+				
+				
+				input{
+					color: $theblue;
+					border: none;
+					border-bottom: 1px solid $theblue;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					background-color: transparent;
+				}
+				
+				input::placeholder{
+					color: $theblue;
+				}
+				input:focus{
+					outline: none;
+				}
+				input[type=textbox]{
+				padding-bottom: 100px;
+					
+				}
+				button{
+					background-color: $theblue;
+					color: white;
+					padding: 15px 0 ;
+					border:none;
+					margin-top: 30px;
+				}
+			}
+			.formWrap:after{
+				content:"";
+				background-color: #D9C7B6;
+				height: 100%;
+				width: 300%;
+				position: absolute;
+				top: 0;
+				right: calc(-300% + 1px );
+				display: inline;
+				
+			}
+			.formWrap:before{
+				content:"";
+				background-color: #D9C7B6;
+				height: 100%;
+				width: 300%;
+				position: absolute;
+				top: 0;
+				left: calc(-300% + 1px );
+				display: inline;
+				
+			}
+			
+		}
+	}
+
+	.accordionCareer{
+	
+	
+		.accordion-wrap{
+			width: 85vw;
+			max-width: 1280px;
+			margin:0 auto;
+			.accordion {
+				margin: 1rem 0;
+				padding: 0;
+				list-style: none;
+				.accordion-item {
+					border-bottom: 1px solid $theblue;
+					position: relative;
+					
+					.accordion-thumb {
+						margin: 0;
+						padding: 15px 0px 0px;
+						font-size: 20px;
+						cursor: pointer;
+						position: relative;
+						font-weight: normal;
+						font-family: 'CircularStdBold';
+						p{
+							font-size: 16px;
+							font-family: 'CircularStdBook';
+							font-weight: 400;
+						}
+					
+						// Chevron
+						&::after {
+							content: '';
+							display: inline-block;
+							height: 32px;
+							width: 32px;
+							background-size: cover;
+							
+							margin-right: 1rem;
+							margin-left: .5rem;
+							vertical-align: middle;
+							transform: translate(30%,-30%);
+							transition: transform .2s ease-out;
+							position: absolute;
+							right: 0;
+							top: 50%;
+							
+						}
+						&::before{
+							display: none;
+						}
+					}
+					
+					
+					.accordion-panel {
+						margin: 0;
+						margin-top: 15px;
+						padding-bottom: 30px!important;
+						display: none;
+						padding: 0px;
+					
+						img{
+							display: block;
+						}
+						.contentWrap{
+							display: flex;
+							flex-direction: column;
+							width: 100%;
+							.textWrap{
+							width: 100%;
+							padding: 25px 30px 60px 0px;
+							}
+							.formWrap{
+							width: 100%;
+							background-color: #D9C7B6;
+							height: max-content;
+							display: flex;
+							flex-direction: column;
+							padding: 30px 30px;
+							input{
+								color: $theblue;
+								border: none;
+								border-bottom: 1px solid $theblue;
+								padding-top: 15px;
+								padding-bottom: 15px;
+								background-color: transparent;
+								font-size: 16px;
+							}
+							input::placeholder{
+								color: $theblue;
+							}
+							input:focus{
+								outline: none;
+							}
+							input[type=textbox]{
+							padding-bottom: 100px;
+								
+							}
+							input[type=file]{
+								display: none;
+							}
+							.customFileUpload{
+								margin-top: 25px;
+							}
+							button{
+								background-color: $theblue;
+								color: white;
+								padding: 15px 0 ;
+								border:none;
+								margin-top: 20px;
+								font-weight: 700;
+							}
+							}
+						}
+					}
+				}
+				.accordion-item:first-child{
+					border-top: 1px solid $theblue;
+				}
+				.accordion-item.is-active {
+					.accordion-thumb::after {
+						transform: rotate(45deg) translate(0%,-50%);
+						
+						
+					}
+				}
+				
+			}
+	
+		}
+	}
+	.registerForm{
+		width: 100vw;
+		min-height: 100vh;
+		
+		display: flex;
+		flex-direction: column;
+		
+		.perkRegister{
+			background-color: black;
+			width: 100%;
+			height: max-content;
+			color: white;
+			padding-bottom: 20px;
+			z-index: 1;
+			
+			
+			
+			img{
+				position: static;
+				width: 51px;
+				height: 35px;
+				object-fit: contain;
+				margin-left: 25px;
+				margin-top: 30px;
+			}
+			.textWrap{
+				display: block!important;
+			    margin-top: 40px;
+				width: 100%;
+				padding-left: 25px;
+				min-height: 100%;
+
+				
+				
+				
+				h3{
+					font-size:24px;
+					width: 100%;
+					margin-bottom: 0;
+					
+					
+				}
+				h2{
+					font-size: 32px;
+					font-family: 'CircularStdBook';
+					font-weight: 700;
+					margin-top: 15px;
+					line-height: 1.1;
+					letter-spacing:3px;
+					width: 100%;
+				}
+				ul{
+					list-style: none;
+					padding-left: 0;
+					margin-top: 25px;
+					width: 100%;
+					letter-spacing: 2px;
+	
+					li{
+						font-size: 16px;
+						font-family: 'CircularStdBook';
+						position: relative;
+						margin-top: 15px;
+						
+						
+						
+					}
+					li:before{
+						content: "";
+						
+						width: 24px;
+						height: 15.5px;
+						background-size: contain;
+						background-repeat: no-repeat;
+						position: relative;
+						margin-right: 5px;
+						display: inline-block;
+						
+						
+	
+					}
+				}
+			}
+		}
+		.perkRegister:before{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+		
+			content: "";
+			z-index: -1;
+			filter: brightness(50%);
+			background-size: cover;
+			
+		}
+		.formWrap{
+			width: 100%;
+			position: static;
+			min-height: 100%;
+			padding-bottom: 20px;
+			
+			
+			form{
+				width: 100%;
+				height: max-content;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 auto;
+				margin-top: 40px;
+				position: static;
+				padding-left: 25px;
+				padding-right: 25px;
+
+				h3{
+					margin-bottom: 15px!important;
+				}
+				
+				.backToHome{
+					top: 0;
+					margin: 0;
+					left: initial;
+					margin-right: 25px;
+					margin-top: 30px;
+					right: 0;
+					position: absolute;
+					color: white;
+					z-index: 2;
+				}
+				.backToHome:before{
+					content: "";
+					filter:  brightness(0) invert(100) ;
+					width: 20px;
+					height: 10px;
+					background-repeat: no-repeat;	
+					margin-right: 10px;
+					display: inline-block
+					
+				}
+				
+				input{
+					width: 100%;
+					color: $theblue;
+					border: none;
+					border-bottom: 1px solid $theblue;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					background-color: transparent;
+					font-size: 20px;
+				}
+				input::placeholder{
+					color: $theblue;
+				}
+				input:focus{
+					outline: none;
+				}
+				input[type=textbox]{
+				padding-bottom: 100px;
+					
+				}
+				input[type=file]{
+					display: none;
+				}
+				a{
+					margin: 20px 0;
+					font-size: 16px;
+					font-weight: 400;
+				}
+				button{
+					width: 100%;
+					padding: 15px 0;
+					border: none;
+					font-weight: 700;
+					font-size: 20px;
+					
+					
+				}
+				.loginButton{
+					background-color: $theblue;
+					color: white;
+					margin-top: 5px;
+					letter-spacing: 2px;
+				}
+				.registerButton{
+					background-color: white;
+					color: $theblue;
+					border: 1px solid $theblue;
+					margin-top: 20px;
+				}
+				.backToHomeMobile{
+					
+					margin-top: 30px;
+					display: block!important;
+					
+				}
+				.backToHomeMobile:before{
+					content: "";
+					background-image: url(../images/Careers/backArrow.svg);
+					width: 20px;
+					height: 10px;
+					background-repeat: no-repeat;	
+					margin-right: 10px;
+					display: inline-block
+					
+				}
+				
+			}
+	
+		}
+		
+		
+	
+	}
 	
 
 
@@ -1823,6 +2604,141 @@ $theblue: #071D49;
 	.jamJamPageLogo{
 		width:135px ;
 	}
+	.accordionCareer{
+	
+	
+		.accordion-wrap{
+			width: 90vw;
+			max-width: 1280px;
+			margin:0 auto;
+			.accordion {
+				margin: 1rem 0;
+				padding: 0;
+				list-style: none;
+				.accordion-item {
+					border-bottom: 1px solid $theblue;
+					position: relative;
+					
+					.accordion-thumb {
+						margin: 0;
+						padding: 15px 0px 0px;
+						font-size: 20px;
+						cursor: pointer;
+						position: relative;
+						font-weight: normal;
+						font-family: 'CircularStdBold';
+						p{
+							font-size: 16px;
+							font-family: 'CircularStdBook';
+							font-weight: 400;
+						}
+					
+						// Chevron
+						&::after {
+							content: '';
+							display: inline-block;
+							height: 32px;
+							width: 32px;
+							background-size: cover;
+							
+							margin-right: 1rem;
+							margin-left: .5rem;
+							vertical-align: middle;
+							transform: translate(30%,-30%);
+							transition: transform .2s ease-out;
+							position: absolute;
+							right: 0;
+							top: 50%;
+							
+						}
+						&::before{
+							display: none;
+						}
+					}
+					
+					
+					.accordion-panel {
+						margin: 0;
+						margin-top: 15px;
+						padding-bottom: 30px!important;
+						display: none;
+						padding: 0px;
+					
+						img{
+							display: block;
+						}
+						.contentWrap{
+							display: flex;
+							flex-direction: column;
+							width: 100%;
+							.textWrap{
+								width: 100%;
+								padding: 25px 0px 60px 0px;
+								ol{
+									li{
+										margin-top: 10px;
+									}
+								}
+							}
+							.formWrap{
+							width: 100%;
+							background-color: #D9C7B6;
+							height: max-content;
+							display: flex;
+							flex-direction: column;
+							padding: 30px 30px;
+							input{
+								color: $theblue;
+								border: none;
+								border-bottom: 1px solid $theblue;
+								padding-top: 15px;
+								padding-bottom: 15px;
+								background-color: transparent;
+								font-size: 16px;
+							}
+							input::placeholder{
+								color: $theblue;
+							}
+							input:focus{
+								outline: none;
+							}
+							input[type=textbox]{
+							padding-bottom: 100px;
+								
+							}
+							input[type=file]{
+								display: none;
+							}
+							.customFileUpload{
+								margin-top: 25px;
+							}
+							button{
+								background-color: $theblue;
+								color: white;
+								padding: 15px 0 ;
+								border:none;
+								margin-top: 20px;
+								font-weight: 700;
+							}
+							}
+						}
+					}
+				}
+				.accordion-item:first-child{
+					border-top: 1px solid $theblue;
+				}
+				.accordion-item.is-active {
+					.accordion-thumb::after {
+						transform: rotate(45deg) translate(0%,-50%);
+						
+						
+					}
+				}
+				
+			}
+	
+		}
+	}
 
 
 
@@ -1883,6 +2799,7 @@ $theblue: #071D49;
 		font-size: 14px;
 		padding: 14px;
 		letter-spacing: .6px;
+		min-width: 320px;
 	}
 	.content-hover-wrap .content {
 		padding: 30px;
