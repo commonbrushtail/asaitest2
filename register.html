@@ -19,7 +19,9 @@
     
     <section class="registerForm">
       <div class="perkRegister">
+          <div class="logoWrap">
           <img src="images/logo-white.svg" alt="">
+          </div>
           <div class="textWrap">
             <h3 class="din-title">ASAI MEMBERSHIP</h3>
             <h2>Join Exclusive<br>
@@ -39,15 +41,20 @@
         <form action="">
           <a class="backToHome" href="">Back to Home</a>
           <h3 class="din-title">REGISTER</h3>
+          <h4>Personal details</h4>
           <input type="text" placeholder="Email*">
           <input type="text" placeholder="First name*">
           <input type="text" placeholder="Last name*">
-          <select name="" id="">
-            <option value="">Country</option>
-          </select>
+          <div class="selectWrap">
+            <select name="" id="">
+              <option value=""> Country*</option>
+              <option value="">test</option>
+            </select>
+            </div>
           <input type="text" placeholder="City*">
-          <label for="">Password</label>
+          <h4 class="passwordLabel">Password</h4>
           <input type="text" placeholder="Password*">
+          <p>by creating an account, you're agreeing with our <a class="underline" href="">Terms and Conditions</a> and <a class="underline" href="">Privacy</a> Statement.</p>
           <button class="loginButton">Submit</button>
           <a class="backToHomeMobile" href="">Back to Home</a>
         </form>  

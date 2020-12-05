@@ -1986,35 +1986,38 @@ header.nonTransparent{
 .loginForm{
 	width: 100vw;
 	min-height: 100vh;
-	
 	display: flex;
 	
 	.perkRegister{
 		background-color: black;
 		width: 50%;
-		height: 100%;
 		color: white;
 		position: relative;
 		z-index: 5;
 		
 		
-		
-		img{
-			position: absolute;
-			top: 40px;
-			left: 50px;
-			width: 68px;
-			height: 47px;
-			object-fit: contain;
+		.logoWrap{
+			width: 90%;
+			margin: 0 auto;
+			img{
+				position: relative;
+				margin-top: 40px;
+				width: 68px;
+				height: 47px;
+				object-fit: contain;
+			}
 		}
+		
 		.textWrap{
 			display: flex;
 			flex-direction: column;
+			margin: 0 auto;
 			width: 70%;
-			min-height: 100vh;
+			margin-top: 100px;
+			
 			align-items: center;
 			justify-content: center;
-			margin: 0 auto;
+			
 			
 			
 			
@@ -2173,36 +2176,41 @@ header.nonTransparent{
 
 .registerForm{
 	width: 100vw;
-	min-height: 100vh;
+	min-height: 100%;
+	height: max-content;
 	
 	display: flex;
 	
 	.perkRegister{
-		background-color: black;
 		width: 50%;
-		height: 100%;
 		color: white;
 		position: relative;
 		z-index: 5;
 		
 		
 		
-		img{
-			position: absolute;
-			top: 40px;
-			left: 50px;
-			width: 68px;
-			height: 47px;
-			object-fit: contain;
+		.logoWrap{
+			width: 90%;
+			margin: 0 auto;
+			img{
+				position: relative;
+				margin-top: 40px;
+				width: 68px;
+				height: 47px;
+				object-fit: contain;
+			}
 		}
+		
 		.textWrap{
 			display: flex;
 			flex-direction: column;
+			margin: 0 auto;
 			width: 70%;
-			min-height: 100vh;
+			margin-top: 100px;
+			
 			align-items: center;
 			justify-content: center;
-			margin: 0 auto;
+			
 			
 			
 			
@@ -2282,9 +2290,8 @@ header.nonTransparent{
 			position: relative;
 			
 			.backToHome{
-				top: 40px;
-				left: 0px;
-				position: absolute;
+				margin-top: 120px;
+				position: static;
 				font-family: 'CircularStdBook';
 			}
 			.backToHome:before{
@@ -2297,6 +2304,13 @@ header.nonTransparent{
 				display: inline-block
 				
 			}
+			h3{
+				margin-top: 50px;
+				margin-bottom: 45px;
+			}
+			h4{
+				font-size: 24px;
+			}
 			input{
 				width: 100%;
 				color: $theblue;
@@ -2306,6 +2320,7 @@ header.nonTransparent{
 				padding-bottom: 15px;
 				background-color: transparent;
 				font-size: 20px;
+				font-weight: 400;
 			}
 			input::placeholder{
 				color: $theblue;
@@ -2320,6 +2335,57 @@ header.nonTransparent{
 			input[type=file]{
 				display: none;
 			}
+			.selectWrap{
+				width: 100%;
+				position: relative;
+				select {
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					color: $theblue;
+					border: none;
+					border-bottom: 1px solid $theblue;
+					padding-top: 15px;
+					padding-bottom: 15px;
+					background-color: transparent;
+					font-size: 20px;
+					font-weight: 400;
+					width: 100%;
+					
+				}
+	
+				
+				
+				select::-ms-expand {
+					display: none;
+				}
+				select:focus{
+					outline: none;
+				}
+			}
+			.selectWrap:after{
+				position: absolute;
+				background-image: url(images/arrow-down.svg);
+				right: 20px;
+				top: 50%;
+				transform: translateY(-25%);
+				width: 15px;
+				height: 15px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				content: "";
+				
+			}
+
+			.passwordLabel{
+				font-size: 24px;
+				margin-top: 50px;
+			}
+			p{
+				margin:40px 0;
+			}
+				
+				
+		
 			a{
 				margin: 20px 0;
 				font-size: 16px;

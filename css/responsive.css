@@ -413,15 +413,17 @@
   .loginForm .perkRegister {
     background-color: black;
     width: 50%;
-    height: 100%;
     color: white;
     position: relative;
     z-index: 5;
   }
-  .loginForm .perkRegister img {
-    position: absolute;
-    top: 40px;
-    left: 50px;
+  .loginForm .perkRegister .logoWrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .loginForm .perkRegister .logoWrap img {
+    position: relative;
+    margin-top: 40px;
     width: 68px;
     height: 47px;
     -o-object-fit: contain;
@@ -436,7 +438,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
     width: 80%;
-    min-height: 100vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -444,6 +445,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto;
+    margin-top: 100px;
   }
   .loginForm .perkRegister .textWrap h3 {
     font-size: 30px;
@@ -1859,14 +1861,17 @@
     padding-bottom: 20px;
     z-index: 1;
   }
-  .loginForm .perkRegister img {
+  .loginForm .perkRegister .logoWrap {
+    width: 100%;
+    padding-left: 50px;
+  }
+  .loginForm .perkRegister .logoWrap img {
+    margin-top: 30px;
     position: static;
     width: 51px;
     height: 35px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-left: 50px;
-    margin-top: 30px;
   }
   .loginForm .perkRegister .textWrap {
     display: block !important;
@@ -2708,14 +2713,17 @@
     padding-bottom: 20px;
     z-index: 1;
   }
-  .loginForm .perkRegister img {
+  .loginForm .perkRegister .logoWrap {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .loginForm .perkRegister .logoWrap img {
+    margin-top: 30px;
     position: static;
     width: 51px;
     height: 35px;
     -o-object-fit: contain;
        object-fit: contain;
-    margin-left: 30px;
-    margin-top: 30px;
   }
   .loginForm .perkRegister .textWrap {
     display: block !important;

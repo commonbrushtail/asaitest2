@@ -407,30 +407,32 @@ $theblue: #071D49;
 		.perkRegister{
 			background-color: black;
 			width: 50%;
-			height: 100%;
+			
 			color: white;
 			position: relative;
 			z-index: 5;
 			
 			
-			
-			img{
-				position: absolute;
-				top: 40px;
-				left: 50px;
-				width: 68px;
-				height: 47px;
-				object-fit: contain;
+			.logoWrap{
+				width: 90%;
+				margin: 0 auto;
+				img{
+					position: relative;
+					margin-top: 40px;
+					width: 68px;
+					height: 47px;
+					object-fit: contain;
+				}
 			}
 			.textWrap{
 				display: flex;
 				flex-direction: column;
 				width: 80%;
-				min-height: 100vh;
+				
 				align-items: center;
 				justify-content: center;
 				margin: 0 auto;
-				
+				margin-top: 100px;
 				
 				
 				h3{
@@ -1866,14 +1868,17 @@ $theblue: #071D49;
 			z-index: 1;
 			
 			
-			
+			.logoWrap{
+				width: 100%;
+				padding-left: 50px;
 			img{
+				margin-top: 30px;
 				position: static;
 				width: 51px;
 				height: 35px;
 				object-fit: contain;
-				margin-left: 50px;
-				margin-top: 30px;
+				
+			}
 			}
 			.textWrap{
 				display: block!important;
@@ -2755,13 +2760,17 @@ $theblue: #071D49;
 			
 			
 			
+			.logoWrap{
+				width: 100%;
+				padding-left: 30px;
 			img{
+				margin-top: 30px;
 				position: static;
 				width: 51px;
 				height: 35px;
 				object-fit: contain;
-				margin-left: 30px;
-				margin-top: 30px;
+				
+			}
 			}
 			.textWrap{
 				display: block!important;

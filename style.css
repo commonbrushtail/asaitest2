@@ -2133,16 +2133,19 @@ header.nonTransparent .locationNavMobile {
 .loginForm .perkRegister {
   background-color: black;
   width: 50%;
-  height: 100%;
   color: white;
   position: relative;
   z-index: 5;
 }
 
-.loginForm .perkRegister img {
-  position: absolute;
-  top: 40px;
-  left: 50px;
+.loginForm .perkRegister .logoWrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.loginForm .perkRegister .logoWrap img {
+  position: relative;
+  margin-top: 40px;
   width: 68px;
   height: 47px;
   -o-object-fit: contain;
@@ -2157,15 +2160,15 @@ header.nonTransparent .locationNavMobile {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
   width: 70%;
-  min-height: 100vh;
+  margin-top: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
 }
 
 .loginForm .perkRegister .textWrap h3 {
@@ -2336,25 +2339,30 @@ header.nonTransparent .locationNavMobile {
 
 .registerForm {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .registerForm .perkRegister {
-  background-color: black;
   width: 50%;
-  height: 100%;
   color: white;
   position: relative;
   z-index: 5;
 }
 
-.registerForm .perkRegister img {
-  position: absolute;
-  top: 40px;
-  left: 50px;
+.registerForm .perkRegister .logoWrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.registerForm .perkRegister .logoWrap img {
+  position: relative;
+  margin-top: 40px;
   width: 68px;
   height: 47px;
   -o-object-fit: contain;
@@ -2369,15 +2377,15 @@ header.nonTransparent .locationNavMobile {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
   width: 70%;
-  min-height: 100vh;
+  margin-top: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
 }
 
 .registerForm .perkRegister .textWrap h3 {
@@ -2458,9 +2466,8 @@ header.nonTransparent .locationNavMobile {
 }
 
 .registerForm .formWrap form .backToHome {
-  top: 40px;
-  left: 0px;
-  position: absolute;
+  margin-top: 120px;
+  position: static;
   font-family: 'CircularStdBook';
 }
 
@@ -2474,6 +2481,15 @@ header.nonTransparent .locationNavMobile {
   display: inline-block;
 }
 
+.registerForm .formWrap form h3 {
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.registerForm .formWrap form h4 {
+  font-size: 24px;
+}
+
 .registerForm .formWrap form input {
   width: 100%;
   color: #071D49;
@@ -2483,6 +2499,7 @@ header.nonTransparent .locationNavMobile {
   padding-bottom: 15px;
   background-color: transparent;
   font-size: 20px;
+  font-weight: 400;
 }
 
 .registerForm .formWrap form input::-webkit-input-placeholder {
@@ -2511,6 +2528,56 @@ header.nonTransparent .locationNavMobile {
 
 .registerForm .formWrap form input[type=file] {
   display: none;
+}
+
+.registerForm .formWrap form .selectWrap {
+  width: 100%;
+  position: relative;
+}
+
+.registerForm .formWrap form .selectWrap select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #071D49;
+  border: none;
+  border-bottom: 1px solid #071D49;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.registerForm .formWrap form .selectWrap select::-ms-expand {
+  display: none;
+}
+
+.registerForm .formWrap form .selectWrap select:focus {
+  outline: none;
+}
+
+.registerForm .formWrap form .selectWrap:after {
+  position: absolute;
+  background-image: url(images/arrow-down.svg);
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.registerForm .formWrap form .passwordLabel {
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+.registerForm .formWrap form p {
+  margin: 40px 0;
 }
 
 .registerForm .formWrap form a {
