@@ -2446,11 +2446,11 @@ header.nonTransparent .locationNavMobile {
   width: 50%;
   position: relative;
   min-height: 100vh;
+  padding-bottom: 80px;
 }
 
 .registerForm .formWrap form {
   width: 65%;
-  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2466,8 +2466,7 @@ header.nonTransparent .locationNavMobile {
 }
 
 .registerForm .formWrap form .backToHome {
-  margin-top: 120px;
-  position: static;
+  margin-top: 60px;
   font-family: 'CircularStdBook';
 }
 
@@ -2583,7 +2582,8 @@ header.nonTransparent .locationNavMobile {
 .registerForm .formWrap form a {
   margin: 20px 0;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 400 !important;
+  font-family: 'CircularStdBook';
 }
 
 .registerForm .formWrap form button {

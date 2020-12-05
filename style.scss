@@ -2277,12 +2277,12 @@ header.nonTransparent{
 		width: 50%;
 		position: relative;
 		min-height: 100vh;
+		padding-bottom: 80px;
 		
 		
 		form{
 			
 			width: 65%;
-			height: 90%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -2290,8 +2290,7 @@ header.nonTransparent{
 			position: relative;
 			
 			.backToHome{
-				margin-top: 120px;
-				position: static;
+				margin-top: 60px;
 				font-family: 'CircularStdBook';
 			}
 			.backToHome:before{
@@ -2307,11 +2306,11 @@ header.nonTransparent{
 			h3{
 				margin-top: 50px;
 				margin-bottom: 45px;
-			}
-			h4{
+			  }
+			  h4{
 				font-size: 24px;
-			}
-			input{
+			  }
+			  input{
 				width: 100%;
 				color: $theblue;
 				border: none;
@@ -2321,48 +2320,48 @@ header.nonTransparent{
 				background-color: transparent;
 				font-size: 20px;
 				font-weight: 400;
-			}
-			input::placeholder{
+			  }
+			  input::placeholder{
 				color: $theblue;
-			}
-			input:focus{
+			  }
+			  input:focus{
 				outline: none;
-			}
-			input[type=textbox]{
-			padding-bottom: 100px;
+			  }
+			  input[type=textbox]{
+			  padding-bottom: 100px;
 				
-			}
-			input[type=file]{
+			  }
+			  input[type=file]{
 				display: none;
-			}
-			.selectWrap{
+			  }
+			  .selectWrap{
 				width: 100%;
 				position: relative;
 				select {
-					-webkit-appearance: none;
-					-moz-appearance: none;
-					color: $theblue;
-					border: none;
-					border-bottom: 1px solid $theblue;
-					padding-top: 15px;
-					padding-bottom: 15px;
-					background-color: transparent;
-					font-size: 20px;
-					font-weight: 400;
-					width: 100%;
-					
+				  -webkit-appearance: none;
+				  -moz-appearance: none;
+				  color: $theblue;
+				  border: none;
+				  border-bottom: 1px solid $theblue;
+				  padding-top: 15px;
+				  padding-bottom: 15px;
+				  background-color: transparent;
+				  font-size: 20px;
+				  font-weight: 400;
+				  width: 100%;
+				  
 				}
-	
+		  
 				
 				
 				select::-ms-expand {
-					display: none;
+				  display: none;
 				}
 				select:focus{
-					outline: none;
+				  outline: none;
 				}
-			}
-			.selectWrap:after{
+			  }
+			  .selectWrap:after{
 				position: absolute;
 				background-image: url(images/arrow-down.svg);
 				right: 20px;
@@ -2374,24 +2373,25 @@ header.nonTransparent{
 				background-repeat: no-repeat;
 				content: "";
 				
-			}
-
-			.passwordLabel{
+			  }
+		  
+			  .passwordLabel{
 				font-size: 24px;
 				margin-top: 50px;
-			}
-			p{
+			  }
+			  p{
 				margin:40px 0;
-			}
+			  }
 				
 				
-		
-			a{
+			
+			  a{
 				margin: 20px 0;
 				font-size: 16px;
-				font-weight: 400;
-			}
-			button{
+				font-weight: 400!important;
+				font-family: 'CircularStdBook';
+			  }
+			  button{
 				width: 100%;
 				padding: 15px 0;
 				border: none;
@@ -2399,31 +2399,31 @@ header.nonTransparent{
 				font-size: 20px;
 				
 				
-			}
-			.loginButton{
+			  }
+			  .loginButton{
 				background-color: $theblue;
 				color: white;
 				margin-top: 5px;
 				letter-spacing: 2px;
-			}
-			.registerButton{
+			  }
+			  .registerButton{
 				background-color: white;
 				color: $theblue;
 				border: 1px solid $theblue;
 				margin-top: 20px;
-			}
-			.backToHomeMobile{
+			  }
+			  .backToHomeMobile{
 				display: none;
 				font-family: 'CircularStdBook';
-			}
+			  }
 			
+
 		}
+	
+	
 
 	}
-	
-	
-
-}
+}	
 
 
 
