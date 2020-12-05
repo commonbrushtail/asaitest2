@@ -2122,6 +2122,218 @@ header.nonTransparent .locationNavMobile {
           transform: rotate(45deg) translate(0%, -50%);
 }
 
+.loginForm {
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loginForm .perkRegister {
+  background-color: black;
+  width: 50%;
+  height: 100%;
+  color: white;
+  position: relative;
+  z-index: 5;
+}
+
+.loginForm .perkRegister img {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 68px;
+  height: 47px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.loginForm .perkRegister .textWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.loginForm .perkRegister .textWrap h3 {
+  font-size: 30px;
+  width: 100%;
+}
+
+.loginForm .perkRegister .textWrap h2 {
+  font-size: 50px;
+  font-family: 'CircularStdBook';
+  font-weight: 700;
+  margin-top: 25px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  width: 100%;
+}
+
+.loginForm .perkRegister .textWrap ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 50px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.loginForm .perkRegister .textWrap ul li {
+  font-size: 18px;
+  font-family: 'CircularStdBook';
+  position: relative;
+  margin-top: 15px;
+}
+
+.loginForm .perkRegister .textWrap ul li:before {
+  content: "";
+  background-image: url(images/Careers/check.svg);
+  width: 24px;
+  height: 15.5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.loginForm .perkRegister:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(images/Login_Register/Login_img.png);
+  content: "";
+  z-index: -1;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  background-size: cover;
+}
+
+.loginForm .formWrap {
+  width: 50%;
+  position: relative;
+  min-height: 100vh;
+}
+
+.loginForm .formWrap form {
+  width: 65%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.loginForm .formWrap form .backToHome {
+  top: 40px;
+  left: 0px;
+  position: absolute;
+  font-family: 'CircularStdBook';
+}
+
+.loginForm .formWrap form .backToHome:before {
+  content: "";
+  background-image: url(images/Careers/backArrow.svg);
+  width: 20px;
+  height: 10px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.loginForm .formWrap form input {
+  width: 100%;
+  color: #071D49;
+  border: none;
+  border-bottom: 1px solid #071D49;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.loginForm .formWrap form input::-webkit-input-placeholder {
+  color: #071D49;
+}
+
+.loginForm .formWrap form input:-ms-input-placeholder {
+  color: #071D49;
+}
+
+.loginForm .formWrap form input::-ms-input-placeholder {
+  color: #071D49;
+}
+
+.loginForm .formWrap form input::placeholder {
+  color: #071D49;
+}
+
+.loginForm .formWrap form input:focus {
+  outline: none;
+}
+
+.loginForm .formWrap form input[type=textbox] {
+  padding-bottom: 100px;
+}
+
+.loginForm .formWrap form input[type=file] {
+  display: none;
+}
+
+.loginForm .formWrap form a {
+  margin: 20px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.loginForm .formWrap form button {
+  width: 100%;
+  padding: 15px 0;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.loginForm .formWrap form .loginButton {
+  background-color: #071D49;
+  color: white;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.loginForm .formWrap form .registerButton {
+  background-color: white;
+  color: #071D49;
+  border: 1px solid #071D49;
+  margin-top: 20px;
+}
+
+.loginForm .formWrap form .backToHomeMobile {
+  display: none;
+  font-family: 'CircularStdBook';
+}
+
 .registerForm {
   width: 100vw;
   min-height: 100vh;

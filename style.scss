@@ -1983,6 +1983,194 @@ header.nonTransparent{
 
 
 
+.loginForm{
+	width: 100vw;
+	min-height: 100vh;
+	
+	display: flex;
+	
+	.perkRegister{
+		background-color: black;
+		width: 50%;
+		height: 100%;
+		color: white;
+		position: relative;
+		z-index: 5;
+		
+		
+		
+		img{
+			position: absolute;
+			top: 40px;
+			left: 50px;
+			width: 68px;
+			height: 47px;
+			object-fit: contain;
+		}
+		.textWrap{
+			display: flex;
+			flex-direction: column;
+			width: 70%;
+			min-height: 100vh;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto;
+			
+			
+			
+			h3{
+				font-size:30px;
+				width: 100%;
+				
+				
+			}
+			h2{
+				font-size: 50px;
+				font-family: 'CircularStdBook';
+				font-weight: 700;
+				margin-top: 25px;
+				line-height: 1.2;
+				letter-spacing:3px;
+				width: 100%;
+			}
+			ul{
+				list-style: none;
+				padding-left: 0;
+				margin-top: 50px;
+				width: 100%;
+				letter-spacing: 2px;
+
+				li{
+					font-size: 18px;
+					font-family: 'CircularStdBook';
+					position: relative;
+					margin-top: 15px;
+					
+					
+					
+				}
+				li:before{
+					content: "";
+					background-image: url(images/Careers/check.svg);
+					width: 24px;
+					height: 15.5px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					position: relative;
+					margin-right: 5px;
+					display: inline-block;
+					
+					
+
+				}
+			}
+		}
+	}
+	.perkRegister:before{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		background-image: url(images/Login_Register/Login_img.png);
+		content: "";
+		z-index: -1;
+		filter: brightness(50%);
+		background-size: cover;
+		
+	}
+	.formWrap{
+		width: 50%;
+		position: relative;
+		min-height: 100vh;
+		
+		
+		form{
+			
+			width: 65%;
+			height: 90%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: 0 auto;
+			position: relative;
+			
+			.backToHome{
+				top: 40px;
+				left: 0px;
+				position: absolute;
+				font-family: 'CircularStdBook';
+			}
+			.backToHome:before{
+				content: "";
+				background-image: url(images/Careers/backArrow.svg);
+				width: 20px;
+				height: 10px;
+				background-repeat: no-repeat;	
+				margin-right: 10px;
+				display: inline-block
+				
+			}
+			input{
+				width: 100%;
+				color: $theblue;
+				border: none;
+				border-bottom: 1px solid $theblue;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				background-color: transparent;
+				font-size: 20px;
+			}
+			input::placeholder{
+				color: $theblue;
+			}
+			input:focus{
+				outline: none;
+			}
+			input[type=textbox]{
+			padding-bottom: 100px;
+				
+			}
+			input[type=file]{
+				display: none;
+			}
+			a{
+				margin: 20px 0;
+				font-size: 16px;
+				font-weight: 400;
+			}
+			button{
+				width: 100%;
+				padding: 15px 0;
+				border: none;
+				font-weight: 700;
+				font-size: 20px;
+				
+				
+			}
+			.loginButton{
+				background-color: $theblue;
+				color: white;
+				margin-top: 5px;
+				letter-spacing: 2px;
+			}
+			.registerButton{
+				background-color: white;
+				color: $theblue;
+				border: 1px solid $theblue;
+				margin-top: 20px;
+			}
+			.backToHomeMobile{
+				display: none;
+				font-family: 'CircularStdBook';
+			}
+			
+		}
+
+	}
+	
+	
+
+}
+
 .registerForm{
 	width: 100vw;
 	min-height: 100vh;
@@ -2170,6 +2358,8 @@ header.nonTransparent{
 	
 
 }
+
+
 
 
 
