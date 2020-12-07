@@ -2288,6 +2288,7 @@
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2305,6 +2306,7 @@
     color: white;
     padding-bottom: 20px;
     z-index: 1;
+    position: relative;
   }
   .registerForm .perkRegister .logoWrap {
     width: 100%;
@@ -2374,8 +2376,8 @@
   }
   .registerForm .formWrap {
     width: 100%;
-    position: relative;
-    min-height: 100vh;
+    position: static;
+    min-height: initial !important;
     padding-bottom: 80px;
   }
   .registerForm .formWrap form {
@@ -2391,25 +2393,33 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0 auto;
-    position: relative;
+    position: static;
     padding-left: 50px;
     padding-right: 50px;
   }
   .registerForm .formWrap form .backToHome {
-    margin-top: 60px;
-    font-family: 'CircularStdBook';
+    top: 0;
+    margin: 0;
+    left: initial;
+    margin-right: 50px;
+    margin-top: 30px;
+    right: 0;
+    position: absolute;
+    color: white;
+    z-index: 2;
   }
   .registerForm .formWrap form .backToHome:before {
     content: "";
+    -webkit-filter: brightness(0) invert(100);
+            filter: brightness(0) invert(100);
     width: 20px;
     height: 10px;
     background-repeat: no-repeat;
     margin-right: 10px;
     display: inline-block;
-    position: absolute;
   }
   .registerForm .formWrap form h3 {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 45px;
   }
   .registerForm .formWrap form h4 {
@@ -3369,6 +3379,251 @@
     background-repeat: no-repeat;
     margin-right: 10px;
     display: inline-block;
+  }
+  .registerForm {
+    width: 100vw;
+    min-height: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registerForm .perkRegister {
+    background-color: black;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    color: white;
+    padding-bottom: 20px;
+    z-index: 1;
+  }
+  .registerForm .perkRegister .logoWrap {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .registerForm .perkRegister .logoWrap img {
+    margin-top: 30px;
+    position: static;
+    width: 51px;
+    height: 35px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .registerForm .perkRegister .textWrap {
+    display: block !important;
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 30px;
+    min-height: 100%;
+  }
+  .registerForm .perkRegister .textWrap h3 {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .registerForm .perkRegister .textWrap h2 {
+    font-size: 32px;
+    font-family: 'CircularStdBook';
+    font-weight: 700;
+    margin-top: 15px;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    width: 100%;
+  }
+  .registerForm .perkRegister .textWrap ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 25px;
+    width: 100%;
+    letter-spacing: 2px;
+  }
+  .registerForm .perkRegister .textWrap ul li {
+    font-size: 16px;
+    font-family: 'CircularStdBook';
+    position: relative;
+    margin-top: 15px;
+  }
+  .registerForm .perkRegister .textWrap ul li:before {
+    content: "";
+    width: 24px;
+    height: 15.5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  .registerForm .perkRegister:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    background-size: cover;
+  }
+  .registerForm .formWrap {
+    width: 100%;
+    position: static;
+    min-height: initial !important;
+    padding-bottom: 80px;
+  }
+  .registerForm .formWrap form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    position: static;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .registerForm .formWrap form .backToHome {
+    top: 0;
+    margin: 0;
+    left: initial;
+    margin-right: 30px;
+    margin-top: 30px;
+    right: 0;
+    position: absolute;
+    color: white;
+    z-index: 2;
+  }
+  .registerForm .formWrap form .backToHome:before {
+    content: "";
+    -webkit-filter: brightness(0) invert(100);
+            filter: brightness(0) invert(100);
+    width: 20px;
+    height: 10px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .registerForm .formWrap form h3 {
+    margin-top: 70px;
+    margin-bottom: 45px;
+  }
+  .registerForm .formWrap form h4 {
+    font-size: 24px;
+  }
+  .registerForm .formWrap form input {
+    width: 100%;
+    color: #071D49;
+    border: none;
+    border-bottom: 1px solid #071D49;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .registerForm .formWrap form input::-webkit-input-placeholder {
+    color: #071D49;
+  }
+  .registerForm .formWrap form input:-ms-input-placeholder {
+    color: #071D49;
+  }
+  .registerForm .formWrap form input::-ms-input-placeholder {
+    color: #071D49;
+  }
+  .registerForm .formWrap form input::placeholder {
+    color: #071D49;
+  }
+  .registerForm .formWrap form input:focus {
+    outline: none;
+  }
+  .registerForm .formWrap form input[type=textbox] {
+    padding-bottom: 100px;
+  }
+  .registerForm .formWrap form input[type=file] {
+    display: none;
+  }
+  .registerForm .formWrap form .selectWrap {
+    width: 100%;
+    position: relative;
+  }
+  .registerForm .formWrap form .selectWrap select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #071D49;
+    border: none;
+    border-bottom: 1px solid #071D49;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+  }
+  .registerForm .formWrap form .selectWrap select::-ms-expand {
+    display: none;
+  }
+  .registerForm .formWrap form .selectWrap select:focus {
+    outline: none;
+  }
+  .registerForm .formWrap form .selectWrap:after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+  }
+  .registerForm .formWrap form .passwordLabel {
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  .registerForm .formWrap form p {
+    margin: 40px 0;
+  }
+  .registerForm .formWrap form a {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400 !important;
+    font-family: 'CircularStdBook';
+  }
+  .registerForm .formWrap form button {
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .registerForm .formWrap form .loginButton {
+    background-color: #071D49;
+    color: white;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+  .registerForm .formWrap form .registerButton {
+    background-color: white;
+    color: #071D49;
+    border: 1px solid #071D49;
+    margin-top: 20px;
+  }
+  .registerForm .formWrap form .backToHomeMobile {
+    display: none;
+    font-family: 'CircularStdBook';
   }
   h3 {
     font-size: 20px;
