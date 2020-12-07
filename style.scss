@@ -69,12 +69,220 @@ body {
 strong{
 	font-weight: 700;
 }
+.height100Percent{
+	height: 100%!important;
+}
+
+.relative{
+	position: relative;
+}
+
+.memberBanner{
+	height: 650px!important;
+}
+.memberBannerText{
+	font-family: 'CircularStdBook'!important;
+	font-size: 70px!important;
+	font-weight: 700;
+}
+.underBannerText{
+	position: absolute;
+	bottom: 0;
+	z-index: 7;
+	background-color: #D9C7B6;
+	padding: 15px 0px;
+	font-size: 16px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.developmentBannerText{
+	position: absolute;
+	z-index: 2;
+	color: white;
+	text-align: center;
+	h4{
+		font-size: 44px;
+		font-family: 'din_condensedbold';
+		font-weight: 700;
+	}
+	p{
+		font-size: 50px;
+		line-height: 55px;
+		letter-spacing: 3px;
+		max-width: 690px;
+
+	}
+	button{
+		background-color:transparent; 
+		color:white;
+		border: none;
+		padding: 20px 35px;
+		border: 1px solid white;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: 1.5px;
+		margin-top: 50px;
+		a{
+			color: white;
+		}
+	}
+
+}
+.uniqueDevelopment{
+	.keyIconWrap{
+		max-width: 858px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		margin: 0 auto;
+		margin-top: 50px;
+		font-size: 13px;
+		font-family: 'CircularStdBook';
+		font-weight: 700;
+		.keyIcon{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			img{
+				max-width: 69px;
+				height: 60px;
+				object-fit: contain;
+				margin-bottom: 15px;
+			}
+		}
+
+		
+	}
+	
+	.textWrap{
+		max-width: 850px;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 50px;
+		p{
+			font-size: 20px;
+			max-width: 850px;
+			
+		}
+	}
+	
+	
+}
+
+.asaiModel{
+	.modelContainer{
+		padding-top: 50px;
+		.modelItem1{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			
+			.imageWrap{
+				width: 55%;
+				display: flex;
+				justify-content: flex-end;
+				img{
+					max-width:583px ;
+				}
+			}
+			.textWrap{
+				width: 45%;
+				position: relative;
+				bottom: 35px;
+				left: 100px;
+				display: flex;
+				flex-direction: column;;
+				
+				.modelItemLine1{
+				position: absolute;
+				left: 0;
+				transform: translate(-110% ,30%);
+				}
+				
+				
+				
+				h4{
+					font-size: 24px;
+					font-weight: 700;
+					letter-spacing: 1.1px;
+									}
+				ul{
+					
+					font-size: 18px;
+					line-height: 24px;
+					max-width: 380px;
+					margin-top: 15px;
+					padding-left: 14px;
+					li{
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+		.modelItem2{
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+			
+			.textWrap{
+				width: 45%;
+				position: relative;
+				bottom: 0px;
+				left: 0px;
+				display: flex;
+				flex-direction: column;;
+				align-items: flex-end;
+				
+				.modelItemLine2{
+				position: absolute;
+				
+				transform: translate(-0% ,30%);
+				}
+				
+				
+				
+				h4{
+					font-size: 24px;
+					font-weight: 700;
+					letter-spacing: 1.1px;
+									}
+				ul{
+					
+					font-size: 18px;
+					line-height: 24px;
+					max-width: 380px;
+					margin-top: 15px;
+					padding-left: 14px;
+					li{
+						margin-top: 10px;
+					}
+				}
+			}
+			.imageWrap{
+				width: 55%;
+				display: flex;
+				justify-content: flex-start;
+				img{
+					max-width:583px ;
+				}
+			}
+		}
+	}
+}
+
 
 .marginTop40{
 	margin-top: 40px;
 }
 .marginTop15{
 	margin-top: 15px;
+}
+
+.maxWidth250{
+	max-width: 250px!important;
 }
 
 
@@ -218,6 +426,9 @@ input {
 .font-16 {
 	font-size: 16px !important;
 }
+.font-18{
+	font-size: 18px!important;
+}
 
 .font-14 {
 	font-size: 14px !important;
@@ -253,6 +464,82 @@ input {
 		
 	}
 }
+
+
+.offerSection{
+	width: 87%;
+	max-width: 1200px;
+	margin: 0 auto;
+	h3{
+		font-size: 40px;
+		font-family: 'din_condensedbold';
+	}
+	.offerCardContainer{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
+		justify-content: stretch;
+		margin-top: 50px;
+		padding-bottom: 100px;
+	
+		.cardOffer{
+			display: flex;
+			flex-direction: column;
+			height: 509px;
+			max-width: 413px;
+			.top{
+				height:55% ;
+				position: relative;
+				.cardTag{
+					display: block;
+					background-color: $theblue;
+					color: white;
+					position: absolute;
+					top: 10px;
+					right: 10px;
+					font-size: 14px;
+					font-family: 'CircularStdBook';
+					padding: 5px 10px;
+				}
+				img{
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+					
+				
+				}
+			}
+			.bottom{
+				display: flex;
+				flex-direction: column;
+				height: 45%;
+				background-color:#D9C7B6;
+				position: relative;
+				padding:30px 30px 30px;
+				
+				h5{
+					font-size: 14px;
+					
+				}
+				h3{
+					font-size: 24px;
+					font-weight: 700;
+					font-family: 'CircularStdBook';
+					
+
+				}
+				a{
+					position: absolute;
+					bottom: 20px;
+					
+					
+				}
+			}
+			
+		}
+	}
+}
+
 
 a,
 a:hover {

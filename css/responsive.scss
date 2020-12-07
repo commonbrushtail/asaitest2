@@ -830,6 +830,79 @@ $theblue: #071D49;
 		}
 	}	
 
+	.offerSection{
+		width: 95%;
+		margin: 0 auto;
+		h3{
+			font-size: 40px;
+			font-family: 'din_condensedbold';
+		}
+		.offerCardContainer{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 30px;
+			justify-content: stretch;
+			margin-top: 50px;
+			padding-bottom: 100px;
+		
+			.cardOffer{
+				display: flex;
+				flex-direction: column;
+				height: 509px;
+				max-width: 413px;
+				.top{
+					height:55% ;
+					position: relative;
+					.cardTag{
+						display: block;
+						background-color: $theblue;
+						color: white;
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						font-size: 14px;
+						font-family: 'CircularStdBook';
+						padding: 5px 10px;
+					}
+					img{
+					object-fit: cover;
+					width: 100%;
+					height: 100%;
+						
+					
+					}
+				}
+				.bottom{
+					display: flex;
+					flex-direction: column;
+					height: 45%;
+					background-color:#D9C7B6;
+					position: relative;
+					padding:30px 30px 30px;
+					
+					h5{
+						font-size: 14px;
+						
+					}
+					h3{
+						font-size: 24px;
+						font-weight: 700;
+						font-family: 'CircularStdBook';
+						
+	
+					}
+					a{
+						position: absolute;
+						bottom: 20px;
+						
+						
+					}
+				}
+				
+			}
+		}
+	}
+
 	
 	
 	
@@ -1103,6 +1176,91 @@ $theblue: #071D49;
 		}
 		
 	
+		
+	}
+	.memberBannerText{
+		font-family: 'CircularStdBook'!important;
+		font-size: 44px!important;
+		font-weight: 700;
+		max-width: 295px;
+		line-height: 1.2!important;
+		padding-top: 60px!important;
+	}
+	.memberBanner{
+		height: 500px!important;
+	}
+	.underBannerText{
+		display: none;
+	}
+	.developmentBannerText{
+		position: absolute;
+		z-index: 2;
+		color: white;
+		text-align: center;
+		padding: 0 30px;
+		h4{
+			font-size: 34px;
+			font-family: 'din_condensedbold';
+			font-weight: 700;
+		}
+		p{
+			font-size: 34px;
+			line-height: 40px;
+			letter-spacing: 1px;
+			max-width: 690px;
+	
+		}
+		button{
+			background-color:transparent; 
+			color:white;
+			border: none;
+			padding: 20px 20px;
+			border: 1px solid white;
+			font-weight: 700;
+			font-size: 16px;
+			letter-spacing: 1.5px;
+		}
+	
+	}
+
+	.uniqueDevelopment{
+		.din-title{
+			line-height: 1.1;
+			margin: 0 auto;
+		}
+		.keyIconWrap{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			gap: 15px 0px;
+			grid-template-areas:
+			  "keyIcon1 keyIcon1 keyIcon2 keyIcon2 keyIcon3 keyIcon3"
+			  ". keyIcon4 keyIcon4 keyIcon5 keyIcon5 .";
+		  
+			max-width: 380px;
+			margin: 0 auto;
+			margin-top: 50px;
+			font-size: 10px;
+			font-family: 'CircularStdBook';
+			font-weight: 700;
+			.keyIcon{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				img{
+					max-width: 50px;
+					height: 50px;
+					object-fit: contain;
+					margin-bottom: 15px;
+				}
+			}
+			.keyIcon1 { grid-area: keyIcon1; }
+			.keyIcon2 { grid-area: keyIcon2; }
+			.keyIcon3 { grid-area: keyIcon3; }
+			.keyIcon4 { grid-area: keyIcon4; }
+			.keyIcon5 { grid-area: keyIcon5; }
+			
+		}
 		
 	}
 	
@@ -2576,6 +2734,78 @@ $theblue: #071D49;
 	
 		}
 	}	
+	.offerSection{
+		width: 94%;
+		margin: 0 auto;
+		h3{
+			font-size: 40px;
+			font-family: 'din_condensedbold';
+		}
+		.offerCardContainer{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 20px;
+			justify-content: stretch;
+			margin-top: 50px;
+			padding-bottom: 100px;
+		
+			.cardOffer{
+				display: flex;
+				flex-direction: column;
+				height: 509px;
+				max-width: 413px;
+				.top{
+					height:55% ;
+					position: relative;
+					.cardTag{
+						display: block;
+						background-color: $theblue;
+						color: white;
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						font-size: 14px;
+						font-family: 'CircularStdBook';
+						padding: 5px 10px;
+					}
+					img{
+					object-fit: cover;
+					width: 100%;
+					height: 100%;
+						
+					
+					}
+				}
+				.bottom{
+					display: flex;
+					flex-direction: column;
+					height: 45%;
+					background-color:#D9C7B6;
+					position: relative;
+					padding:30px 30px 30px;
+					
+					h5{
+						font-size: 14px;
+						
+					}
+					h3{
+						font-size: 24px;
+						font-weight: 700;
+						font-family: 'CircularStdBook';
+						
+	
+					}
+					a{
+						position: absolute;
+						bottom: 20px;
+						
+						
+					}
+				}
+				
+			}
+		}
+	}
 	
 
 
@@ -3730,6 +3960,125 @@ $theblue: #071D49;
 		}
 	}	
 
+	.offerSection{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 15px;
+		
+		h3{ 
+			font-size: 40px;
+			font-family: 'din_condensedbold';
+		}
+		.offerCardContainer{
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 20px;
+			justify-content: stretch;
+			margin-top: 50px;
+			padding-bottom: 100px;
+			
+			
+		
+			.cardOffer{
+				display: flex;
+				flex-direction: column;
+				height: 509px;
+				max-width: 361px;
+				justify-self: center;
+				.top{
+					height:55% ;
+					position: relative;
+					.cardTag{
+						display: block;
+						background-color: $theblue;
+						color: white;
+						position: absolute;
+						top: 10px;
+						right: 10px;
+						font-size: 14px;
+						font-family: 'CircularStdBook';
+						padding: 5px 10px;
+					}
+					img{
+					object-fit: cover;
+					width: 100%;
+					height: 100%;
+						
+					
+					}
+				}
+				.bottom{
+					display: flex;
+					flex-direction: column;
+					height: 45%;
+					background-color:#D9C7B6;
+					position: relative;
+					padding:30px 30px 30px;
+					
+					h5{
+						font-size: 14px;
+						
+					}
+					h3{
+						font-size: 24px;
+						font-weight: 700;
+						font-family: 'CircularStdBook';
+						
+	
+					}
+					a{
+						position: absolute;
+						bottom: 20px;
+						
+						
+					}
+				}
+				
+			}
+		}
+	}
+
+	.uniqueDevelopment{
+		.din-title{
+			max-width: 350px;
+			margin: 0 auto;
+			
+		}
+		.keyIconWrap{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+			gap: 15px 0px;
+			grid-template-areas:
+			  "keyIcon1 keyIcon1 keyIcon2 keyIcon2 keyIcon3 keyIcon3"
+			  ". keyIcon4 keyIcon4 keyIcon5 keyIcon5 .";
+		  
+			max-width: 380px;
+			margin: 0 auto;
+			margin-top: 50px;
+			font-size: 10px;
+			font-family: 'CircularStdBook';
+			font-weight: 700;
+			.keyIcon{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				img{
+					max-width: 50px;
+					height: 50px;
+					object-fit: contain;
+					margin-bottom: 15px;
+				}
+			}
+			.keyIcon1 { grid-area: keyIcon1; }
+			.keyIcon2 { grid-area: keyIcon2; }
+			.keyIcon3 { grid-area: keyIcon3; }
+			.keyIcon4 { grid-area: keyIcon4; }
+			.keyIcon5 { grid-area: keyIcon5; }
+			
+		}
+		
+	}
 
 
 
