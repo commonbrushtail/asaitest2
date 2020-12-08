@@ -3968,6 +3968,186 @@ footer ::placeholder {
 	}
 }
 
+.singleBanner{
+	background-color:#D9C7B6;
+	width: 100%;
+	height: 740px;
+	padding-top: 160px;
+	
+	.bannerWrap{
+		margin: 0 auto;
+		.textWrap{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h5{
+				font-size: 16px;
+				font-weight: 700;
+			}
+			h3{
+				font-size: 50px;
+				font-weight: 700;
+				letter-spacing: 1.1;
+				max-width: 580px;
+				text-align: center;
+			}
+		}
+		.imageWrap{
+			
+			height: 750px;
+			margin-top: 25px;
+			display: flex;
+			justify-content: center;
+			img{
+				object-fit: contain;
+				width: 100%;
+				height: 100%;
+				object-position: center;
+			}
+		}
+	}
+}
+
+.detailContainer{
+	display:flex;
+	flex-direction: column;
+	margin-top: 200px;
+	.detailWrap{
+		display: flex;
+		justify-content: space-between;
+		.description{
+			width: 40%;
+			align-items: center;
+			h3{
+				font-family: CircularStdBook;
+				font-weight: 700;
+			}
+		}
+		.openingTime{
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			h3{
+				font-family: CircularStdBook;
+				font-weight: 700;
+			}
+		}
+		.purchaseDetail{
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			
+			
+			.iconWrap{
+				margin-top: 25px;
+				a{
+					margin-right:5px;
+				}
+			}
+		}
+		
+
+		
+	}
+
+	.reservationWrap{
+		margin-top: 50px;
+		h4{
+			font-size: 24px;
+			font-weight: 700;
+			font-family: 'CircularStdBook';
+			margin-bottom: 20px;
+		}
+		.reservationForm{
+			display: flex;
+			
+			.inputItem:after{
+				position: absolute;
+				background-image: url(images/arrow-down.svg);
+				right: 0;
+				top: 50%;
+				transform: translate(-2px,25%);
+				width: 32px;
+				height: 32px;
+				background-repeat: no-repeat;
+				content: "";
+			}
+			.inputItem{
+				display: flex;
+				position: relative;
+				flex-direction: column;
+				border:1px solid black;
+				padding:20px 25px;
+				width: 27%;
+				label{
+					font-size: 14px;
+				}
+				input{
+					border: none;
+					color: $theblue;
+					font-family: CircularStdBook ;
+					font-size: 24px;
+					padding-left: 0;
+					padding-right: 15px;
+					background-color: white;
+				}
+				input:focus{
+					outline: none;
+				}
+				select:focus{
+					outline: none;
+				}
+				select{
+					border: none;
+					color: $theblue;
+					font-family: CircularStdBook ;
+					font-size: 24px;
+					option{
+						color: $theblue;
+						font-family: CircularStdBook ;
+						font-size: 24px;	
+					}
+				}
+				select {
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					text-indent: 1px;
+					text-overflow: '';
+				}
+				select::-ms-expand {
+					display: none;
+				}
+				select:after{
+					position: absolute;
+					background-image: url(images/arrow-down.svg);
+					right: 0px;
+					top: auto;
+					bottom: 20px;
+					width: 32px;
+					height: 32px;
+					background-repeat: no-repeat;
+				}
+
+				
+				
+			}
+			button{
+				width: 19%;
+				background-color: $theblue;
+				color: white;
+				border: none;
+				font-family: CircularStdBook;
+				font-weight: 700;
+				position: relative;
+			}
+			
+		}
+		
+	}
+}
+
 
 
 
