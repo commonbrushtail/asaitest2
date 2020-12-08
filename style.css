@@ -110,8 +110,9 @@ strong {
 .developmentBannerText p {
   font-size: 50px;
   line-height: 55px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   max-width: 690px;
+  font-weight: 700;
 }
 
 .developmentBannerText button {
@@ -3195,6 +3196,14 @@ header.nonTransparent .locationNavMobile {
   color: white;
   max-width: 500px;
   left: 30px;
+}
+
+.gallery-swiper .gallerySlideText h3 {
+  font-size: 30px;
+}
+
+.gallery-swiper .gallerySlideText p {
+  font-size: 16px;
 }
 
 .gallery-swiper .swiperButtonContainer {

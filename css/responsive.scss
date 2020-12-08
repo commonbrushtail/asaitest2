@@ -1418,11 +1418,25 @@ $theblue: #071D49;
 		}
 		
 	}
-	
+	.gallerySlideText{
+		position: absolute;
+		bottom: 170px;
+		color: white;
+		max-width: 500px;
+		left: 30px;
+		h3{
+			font-size: 36px;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
 
 	
 	
-
+	.colRevese{
+		flex-direction: column-reverse;
+	}
 
 
 	.overlayNav.container {
