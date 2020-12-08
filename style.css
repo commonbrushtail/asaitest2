@@ -178,6 +178,7 @@ strong {
 
 .asaiModel .modelContainer {
   padding-top: 50px;
+  overflow: hidden;
 }
 
 .asaiModel .modelContainer .modelItem1 {
@@ -234,9 +235,9 @@ strong {
 .asaiModel .modelContainer .modelItem1 .textWrap ul {
   font-size: 18px;
   line-height: 24px;
-  max-width: 380px;
-  margin-top: 15px;
-  padding-left: 14px;
+  max-width: 372px;
+  margin-top: 5px;
+  padding-left: 20px;
 }
 
 .asaiModel .modelContainer .modelItem1 .textWrap ul li {
@@ -254,6 +255,8 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 .asaiModel .modelContainer .modelItem2 .textWrap {
@@ -271,26 +274,29 @@ strong {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  margin-right: 100px;
 }
 
 .asaiModel .modelContainer .modelItem2 .textWrap .modelItemLine2 {
   position: absolute;
-  -webkit-transform: translate(0%, 30%);
-          transform: translate(0%, 30%);
+  right: 0;
+  -webkit-transform: translate(70%, 30%);
+          transform: translate(70%, 30%);
 }
 
 .asaiModel .modelContainer .modelItem2 .textWrap h4 {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1.1px;
+  width: 380px;
 }
 
 .asaiModel .modelContainer .modelItem2 .textWrap ul {
   font-size: 18px;
   line-height: 24px;
   max-width: 380px;
-  margin-top: 15px;
-  padding-left: 14px;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
 .asaiModel .modelContainer .modelItem2 .textWrap ul li {
@@ -308,7 +314,72 @@ strong {
 }
 
 .asaiModel .modelContainer .modelItem2 .imageWrap img {
-  max-width: 583px;
+  max-width: 636px;
+}
+
+.asaiModel .modelContainer .modelItem3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(-360px);
+          transform: translateY(-360px);
+}
+
+.asaiModel .modelContainer .modelItem3 .imageWrap {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.asaiModel .modelContainer .modelItem3 .imageWrap img {
+  max-width: 636px;
+}
+
+.asaiModel .modelContainer .modelItem3 .textWrap {
+  width: 45%;
+  position: relative;
+  top: 110px;
+  left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.asaiModel .modelContainer .modelItem3 .textWrap .modelItemLine3 {
+  position: absolute;
+  left: 0;
+  -webkit-transform: translate(-110%, 30%);
+          transform: translate(-110%, 30%);
+}
+
+.asaiModel .modelContainer .modelItem3 .textWrap h4 {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.asaiModel .modelContainer .modelItem3 .textWrap ul {
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 372px;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.asaiModel .modelContainer .modelItem3 .textWrap ul li {
+  margin-top: 10px;
 }
 
 .marginTop40 {
@@ -330,6 +401,10 @@ strong {
 .backgroundBlue:before {
   background-color: #071D49 !important;
   height: 0 !important;
+}
+
+.backgroundOrange {
+  background-color: #D9C7B6;
 }
 
 .directionArrow:after {
@@ -2308,6 +2383,141 @@ header.nonTransparent .locationNavMobile {
   display: inline;
 }
 
+.contactFormDevelopment {
+  width: 100vw;
+  margin-top: -300px;
+  overflow: hidden;
+}
+
+.contactFormDevelopment .contactFormInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85vw;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contactFormDevelopment .contactFormInner .textWrap {
+  width: 50%;
+  padding-right: 150px;
+}
+
+.contactFormDevelopment .contactFormInner .textWrap .linkWrap {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap {
+  width: 50%;
+  background-color: #D9C7B6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding-left: 50px;
+  padding-bottom: 90px;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap .selectWrap {
+  width: 100%;
+  position: relative;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap .selectWrap select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  border: none;
+  color: #071D49;
+  position: relative;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap .selectWrap select::-ms-expand {
+  display: none;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap .selectWrap:after {
+  position: absolute;
+  background-image: url(images/arrow-down.svg);
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.contactFormDevelopment .contactFormInner .formWrap input {
+  color: #071D49;
+  border: none;
+  border-bottom: 1px solid #071D49;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: transparent;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap input::-webkit-input-placeholder {
+  color: #071D49;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap input:-ms-input-placeholder {
+  color: #071D49;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap input::-ms-input-placeholder {
+  color: #071D49;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap input::placeholder {
+  color: #071D49;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap input:focus {
+  outline: none;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap input[type=textbox] {
+  padding-bottom: 150px;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap button {
+  background-color: #071D49;
+  color: white;
+  padding: 15px 0;
+  border: none;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.contactFormDevelopment .contactFormInner .formWrap:after {
+  content: "";
+  background-color: #D9C7B6;
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  top: 0;
+  right: calc(-300% + 1px);
+  display: inline;
+}
+
 .accordionCareer .accordion-wrap {
   width: 85vw;
   max-width: 1280px;
@@ -3442,7 +3652,7 @@ header.nonTransparent .locationNavMobile {
       grid-template-rows: 1fr 1fr 1fr;
   gap: 0px 0px;
   background-color: #94B3C4;
-      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
+      grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
 }
 
 .imageTextSliderContainer .imageWrap {
