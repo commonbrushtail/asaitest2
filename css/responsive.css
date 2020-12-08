@@ -3338,6 +3338,187 @@
   .asaiModel .modelContainer .modelItem3 .textWrap ul li {
     margin-top: 10px;
   }
+  .profileContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+  }
+  .profileContainer h2 {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    padding-left: 30px;
+  }
+  .profileContainer .profileWrap {
+    padding: 0 30px;
+  }
+  .profileContainer .profileWrap .profileItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .profileWrap .profileItem .titleWrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap {
+    width: 100%;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap {
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: solid 1px #071D49;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #071D49;
+    opacity: 0.37;
+    margin-bottom: 5px;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap input {
+    font-size: 20px;
+    border: none;
+    padding-bottom: 0px;
+    padding: 0;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap input:focus {
+    outline: none;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap {
+    width: 100%;
+    position: relative;
+    margin-top: 7px;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap label {
+    opacity: 0.38;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-overflow: '';
+    border: none;
+    color: #071D49;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 15px;
+    border-bottom: #071D49 solid 1px;
+    font-size: 20px;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap select:focus {
+    outline: none;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap select::-ms-expand {
+    display: none;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap:after {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+  }
+  .profileContainer .profileWrap .profileItem.noLabel {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .titleWrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap {
+    width: 100%;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input {
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 1px #071D49;
+    padding: 20px 0;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input:focus {
+    outline: none;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input::-webkit-input-placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input:-ms-input-placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input::-ms-input-placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input::placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .buttonWrap {
+    margin-top: 80px;
+    border: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .profileContainer .profileWrap .buttonWrap button {
+    padding: 15px;
+    border: none;
+    width: 100%;
+    background-color: #071D49;
+  }
+  .profileContainer .profileWrap .buttonWrap button a {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+  }
   .col2-section .content-side > div {
     position: relative;
     padding: 0;
@@ -4582,6 +4763,187 @@
     -ms-grid-column: 4;
     -ms-grid-column-span: 2;
     grid-area: keyIcon5;
+  }
+  .profileContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+  }
+  .profileContainer h2 {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    padding-left: 15px;
+  }
+  .profileContainer .profileWrap {
+    padding: 0 15px;
+  }
+  .profileContainer .profileWrap .profileItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .profileWrap .profileItem .titleWrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap {
+    width: 100%;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap {
+    width: 100%;
+    margin-top: 0px;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: solid 1px #071D49;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #071D49;
+    opacity: 0.37;
+    margin-bottom: 5px;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap input {
+    font-size: 20px;
+    border: none;
+    padding-bottom: 0px;
+    padding: 0;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .inputWrap input:focus {
+    outline: none;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap {
+    width: 100%;
+    position: relative;
+    margin-top: 7px;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap label {
+    opacity: 0.38;
+    margin-bottom: 0;
+    position: relative;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-overflow: '';
+    border: none;
+    color: #071D49;
+    position: relative;
+    width: 100%;
+    padding: 0px 0px 15px;
+    border-bottom: #071D49 solid 1px;
+    font-size: 20px;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap select:focus {
+    outline: none;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap select::-ms-expand {
+    display: none;
+  }
+  .profileContainer .profileWrap .profileItem .formWrap form .selectWrap:after {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: "";
+  }
+  .profileContainer .profileWrap .profileItem.noLabel {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .titleWrap {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap {
+    width: 100%;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input {
+    font-size: 20px;
+    border: none;
+    border-bottom: solid 1px #071D49;
+    padding: 20px 0;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input:focus {
+    outline: none;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input::-webkit-input-placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input:-ms-input-placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input::-ms-input-placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .profileItem.noLabel .formWrap form input::placeholder {
+    color: #071D49;
+  }
+  .profileContainer .profileWrap .buttonWrap {
+    margin-top: 80px;
+    border: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .profileContainer .profileWrap .buttonWrap button {
+    padding: 15px;
+    border: none;
+    width: 100%;
+    background-color: #071D49;
+  }
+  .profileContainer .profileWrap .buttonWrap button a {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
   }
   h3 {
     font-size: 20px;

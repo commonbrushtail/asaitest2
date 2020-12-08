@@ -3274,6 +3274,173 @@ $theblue: #071D49;
 			}
 		}
 	}
+	.profileContainer{
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 150px;
+		h2{
+			margin-top: 70px;
+			margin-bottom: 80px;
+			padding-left: 30px;
+			
+		}
+		.profileWrap{
+			padding: 0 30px;
+			.profileItem{
+				display: flex;
+				flex-direction: column;
+				.titleWrap{
+					width: 100%;
+					display: flex;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 30px;
+					letter-spacing: 0.03em;
+					text-align: left;
+					
+	
+				}
+				.formWrap{
+					width: 100%;
+					form{
+						.inputWrap{
+							width: 100%;
+							margin-top: 0px;
+							padding: 10px 0;
+							display: flex;
+							flex-direction: column;
+							border-bottom: solid 1px $theblue;
+							
+							label{
+							font-size: 14px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 18px;
+							color: $theblue;
+							opacity: 0.37;
+							margin-bottom: 5px;
+							
+							}
+							
+							input{
+								font-size:20px;
+								border: none;
+								
+								padding-bottom: 0px;
+								padding: 0;
+							}
+							input:focus{
+								outline: none;
+							}
+						}
+						.selectWrap{
+							width: 100%;
+							position: relative;
+							margin-top: 7px;
+							label{
+								opacity: 0.38;
+								margin-bottom: 0;
+								position: relative;
+								
+							}
+							select {
+								-webkit-appearance: none;
+								-moz-appearance: none;
+								text-overflow: '';
+								border: none;
+								color: $theblue;
+								position: relative;
+								width: 100%;
+								padding: 0px 0px 15px;
+								border-bottom: $theblue solid 1px;
+								font-size: 20px;
+							}
+							select:focus{
+								outline: none;
+							}
+				
+							
+							
+							select::-ms-expand {
+								display: none;
+							}
+							}
+							.selectWrap:after{
+								position: absolute;
+								right: 5px;
+								top: 50%;
+								transform: translateY(-25%);
+								width: 15px;
+								height: 15px;
+								background-size: contain;
+								background-repeat: no-repeat;
+								content: "";
+								
+							}
+						
+					}
+				}
+			}
+			.profileItem.noLabel{
+				margin-top: 80px;
+				display: flex;
+				
+				.titleWrap{
+					width: 100%;
+					display: flex;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 30px;
+					letter-spacing: 0.03em;
+					text-align: left;
+	
+				}
+				.formWrap{
+					width: 100%;
+					form{
+						display: flex;
+						flex-direction: column;
+						input{
+							font-size:20px;
+							border: none;
+							border-bottom: solid 1px $theblue;
+							padding: 20px 0;
+						}
+						input:focus{
+							outline: none;
+						}
+						
+						input::placeholder{
+							color: $theblue;
+						}
+						
+						
+					}
+				}
+			}
+			.buttonWrap{
+				margin-top: 80px;
+				border: none;
+				width: 100%;
+				display: flex;
+				justify-content: flex-end;
+				button{
+					padding: 15px;
+					border: none;
+					width: 100%;
+					background-color: $theblue;
+					a{
+						color: white;
+						font-size: 20px;
+						font-weight: 700;
+						
+					}
+				}
+			}
+		}
+	}
 	
 
 
@@ -4547,6 +4714,175 @@ $theblue: #071D49;
 		}
 		
 	}
+
+	.profileContainer{
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 150px;
+		h2{
+			margin-top: 70px;
+			margin-bottom: 80px;
+			padding-left: 15px;
+			
+		}
+		.profileWrap{
+			padding: 0 15px;
+			.profileItem{
+				display: flex;
+				flex-direction: column;
+				.titleWrap{
+					width: 100%;
+					display: flex;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 30px;
+					letter-spacing: 0.03em;
+					text-align: left;
+					
+	
+				}
+				.formWrap{
+					width: 100%;
+					form{
+						.inputWrap{
+							width: 100%;
+							margin-top: 0px;
+							padding: 10px 0;
+							display: flex;
+							flex-direction: column;
+							border-bottom: solid 1px $theblue;
+							
+							label{
+							font-size: 14px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 18px;
+							color: $theblue;
+							opacity: 0.37;
+							margin-bottom: 5px;
+							
+							}
+							
+							input{
+								font-size:20px;
+								border: none;
+								
+								padding-bottom: 0px;
+								padding: 0;
+							}
+							input:focus{
+								outline: none;
+							}
+						}
+						.selectWrap{
+							width: 100%;
+							position: relative;
+							margin-top: 7px;
+							label{
+								opacity: 0.38;
+								margin-bottom: 0;
+								position: relative;
+								
+							}
+							select {
+								-webkit-appearance: none;
+								-moz-appearance: none;
+								text-overflow: '';
+								border: none;
+								color: $theblue;
+								position: relative;
+								width: 100%;
+								padding: 0px 0px 15px;
+								border-bottom: $theblue solid 1px;
+								font-size: 20px;
+							}
+							select:focus{
+								outline: none;
+							}
+				
+							
+							
+							select::-ms-expand {
+								display: none;
+							}
+							}
+							.selectWrap:after{
+								position: absolute;
+								right: 5px;
+								top: 50%;
+								transform: translateY(-25%);
+								width: 15px;
+								height: 15px;
+								background-size: contain;
+								background-repeat: no-repeat;
+								content: "";
+								
+							}
+						
+					}
+				}
+			}
+			.profileItem.noLabel{
+				margin-top: 80px;
+				display: flex;
+				
+				.titleWrap{
+					width: 100%;
+					display: flex;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 30px;
+					letter-spacing: 0.03em;
+					text-align: left;
+	
+				}
+				.formWrap{
+					width: 100%;
+					form{
+						display: flex;
+						flex-direction: column;
+						input{
+							font-size:20px;
+							border: none;
+							border-bottom: solid 1px $theblue;
+							padding: 20px 0;
+						}
+						input:focus{
+							outline: none;
+						}
+						
+						input::placeholder{
+							color: $theblue;
+						}
+						
+						
+					}
+				}
+			}
+			.buttonWrap{
+				margin-top: 80px;
+				border: none;
+				width: 100%;
+				display: flex;
+				justify-content: flex-end;
+				button{
+					padding: 15px;
+					border: none;
+					width: 100%;
+					background-color: $theblue;
+					a{
+						color: white;
+						font-size: 20px;
+						font-weight: 700;
+						
+					}
+				}
+			}
+		}
+	}
+	
 
 
 
