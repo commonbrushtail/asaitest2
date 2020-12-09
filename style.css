@@ -56,6 +56,102 @@ body {
   overflow-x: hidden;
 }
 
+body .userNameWrap {
+  display: none;
+}
+
+body.logined .userIcon {
+  display: none;
+}
+
+body.logined .userNameWrap {
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 30px;
+  position: relative;
+}
+
+body.logined .userNameWrap svg {
+  -webkit-transform: translateY(-1.5px);
+          transform: translateY(-1.5px);
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+body.logined .userNameWrap .userNameHoverMenu {
+  position: absolute;
+  top: 0px;
+  background-color: #071D49;
+  display: block;
+  pointer-events: none;
+  height: 0;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  opacity: 0;
+}
+
+body.logined .userNameWrap .userNameHoverMenu ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 25px 20px;
+  margin: 0;
+}
+
+body.logined .userNameWrap .userNameHoverMenu ul li a {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body.logined .userNameWrap .userNameHoverMenu:before {
+  content: "";
+  width: 0;
+  height: 0;
+  top: -8px;
+  left: 15%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  border-bottom: 10px solid #071D49;
+}
+
+body.logined .userNameWrap:hover .userNameHoverMenu {
+  position: absolute;
+  top: 50px;
+  background-color: #071D49;
+  opacity: 100;
+  pointer-events: all;
+  height: 500%;
+}
+
+body.logined .userNameWrap:hover .userNameHoverMenu ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 25px 20px;
+  margin: 0;
+}
+
+body.logined .userNameWrap:hover .userNameHoverMenu ul li a {
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body.logined .userNameWrap.scrolling {
+  color: #071D49;
+}
+
+body.logined .userNameWrap.scrolling svg path {
+  stroke: #071D49;
+}
+
 strong {
   font-weight: 700;
 }
@@ -919,6 +1015,18 @@ header.nonTransparent .locationNavDesktop ul li a {
 
 header.nonTransparent .locationNavMobile {
   display: none;
+}
+
+header.transparentBlue .hamburger .hamburger-inner,
+header.transparentBlue .hamburger .hamburger-inner::before,
+header.transparentBlue .hamburger .hamburger-inner::after {
+  background-color: #071D49 !important;
+}
+
+header.transparentBlue .svgHeaderIcon {
+  fill: #071D49;
+  color: white;
+  background-color: #071D49;
 }
 
 .left-header a {
@@ -3172,6 +3280,11 @@ header.nonTransparent .locationNavMobile {
   font-family: 'CircularStdBook';
 }
 
+.backToHomeMobile {
+  display: none;
+  font-family: 'CircularStdBook';
+}
+
 /* ---- Section Gallery swiper ----------------*/
 .gallery-swiper {
   width: 100%;
@@ -4391,11 +4504,18 @@ footer ::placeholder {
   font-weight: 7002;
 }
 
+.noWrap {
+  white-space: nowrap;
+  display: inline-block;
+}
+
 .singleBanner {
   background-color: #D9C7B6;
   width: 100%;
-  height: 740px;
+  height: 100%;
   padding-top: 160px;
+  position: relative;
+  z-index: 5;
 }
 
 .singleBanner .bannerWrap {
@@ -4429,7 +4549,7 @@ footer ::placeholder {
 }
 
 .singleBanner .bannerWrap .imageWrap {
-  height: 750px;
+  position: relative;
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4440,12 +4560,19 @@ footer ::placeholder {
 }
 
 .singleBanner .bannerWrap .imageWrap img {
-  -o-object-fit: contain;
-     object-fit: contain;
   width: 100%;
-  height: 100%;
-  -o-object-position: center;
-     object-position: center;
+}
+
+.singleBanner:after {
+  content: "";
+  position: absolute;
+  height: 33%;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  z-index: -1;
 }
 
 .detailContainer {
@@ -4456,7 +4583,7 @@ footer ::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .detailContainer .detailWrap {
@@ -4469,19 +4596,7 @@ footer ::placeholder {
 }
 
 .detailContainer .detailWrap .description {
-  width: 40%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.detailContainer .detailWrap .description h3 {
-  font-family: CircularStdBook;
-  font-weight: 700;
-}
-
-.detailContainer .detailWrap .openingTime {
-  width: 30%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4489,18 +4604,33 @@ footer ::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.detailContainer .detailWrap .openingTime h3 {
+.detailContainer .detailWrap .description h3 {
   font-family: CircularStdBook;
   font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 30.48px;
+  margin-bottom: 15px;
+}
+
+.detailContainer .detailWrap .description p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.detailContainer .detailWrap .description h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 .detailContainer .detailWrap .purchaseDetail {
-  width: 30%;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4511,12 +4641,33 @@ footer ::placeholder {
   text-align: left;
 }
 
+.detailContainer .detailWrap .purchaseDetail span {
+  margin-bottom: 10px;
+}
+
+.detailContainer .detailWrap .purchaseDetail span p {
+  margin-bottom: 0;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.detailContainer .detailWrap .purchaseDetail span p strong {
+  font-size: 18px;
+}
+
 .detailContainer .detailWrap .purchaseDetail .iconWrap {
   margin-top: 25px;
 }
 
+.detailContainer .detailWrap .purchaseDetail .iconWrap p {
+  display: inline;
+  margin-right: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .detailContainer .detailWrap .purchaseDetail .iconWrap a {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .detailContainer .reservationWrap {
@@ -4534,6 +4685,7 @@ footer ::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .detailContainer .reservationWrap .reservationForm .inputItem:after {
@@ -4558,22 +4710,23 @@ footer ::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid black;
-  padding: 20px 25px;
-  width: 27%;
+  border: 1px solid #071D49;
+  border-right: none;
+  width: 21.7%;
+  padding: 20px 10px;
 }
 
 .detailContainer .reservationWrap .reservationForm .inputItem label {
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 .detailContainer .reservationWrap .reservationForm .inputItem input {
   border: none;
   color: #071D49;
   font-family: CircularStdBook;
-  font-size: 24px;
-  padding-left: 0;
-  padding-right: 15px;
+  font-size: 20px;
+  padding: 0;
   background-color: white;
 }
 
@@ -4589,13 +4742,12 @@ footer ::placeholder {
   border: none;
   color: #071D49;
   font-family: CircularStdBook;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .detailContainer .reservationWrap .reservationForm .inputItem select option {
   color: #071D49;
   font-family: CircularStdBook;
-  font-size: 24px;
 }
 
 .detailContainer .reservationWrap .reservationForm .inputItem select {
@@ -4621,12 +4773,17 @@ footer ::placeholder {
 }
 
 .detailContainer .reservationWrap .reservationForm button {
-  width: 19%;
   background-color: #071D49;
   color: white;
   border: none;
   font-family: CircularStdBook;
   font-weight: 700;
   position: relative;
+  width: 20%;
+  font-size: 18px;
+}
+
+.detailContainer .reservationWrap .reservationForm .iconWrapMobile {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

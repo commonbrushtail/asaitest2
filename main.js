@@ -113,7 +113,7 @@ if(document.querySelector('.indexPage')){
         end:"bottom top",
         marker:true,
         
-        toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
+        toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner,.userNameWrap", className: "scrolling",}
         
     });
 }else {

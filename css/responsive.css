@@ -85,6 +85,193 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .detailContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .detailContainer .detailWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .detailContainer .detailWrap .description {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detailContainer .detailWrap .description h3 {
+    font-family: CircularStdBook;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 30.48px;
+    margin-bottom: 15px;
+  }
+  .detailContainer .detailWrap .description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .detailContainer .detailWrap .description h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .detailContainer .detailWrap .purchaseDetail {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .detailContainer .detailWrap .purchaseDetail span {
+    margin-bottom: 10px;
+  }
+  .detailContainer .detailWrap .purchaseDetail span p {
+    margin-bottom: 0;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  .detailContainer .detailWrap .purchaseDetail span p strong {
+    font-size: 18px;
+  }
+  .detailContainer .detailWrap .purchaseDetail .iconWrap {
+    margin-top: 25px;
+  }
+  .detailContainer .detailWrap .purchaseDetail .iconWrap p {
+    display: inline;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .detailContainer .detailWrap .purchaseDetail .iconWrap a {
+    margin-right: 10px;
+  }
+  .detailContainer .reservationWrap {
+    margin-top: 50px;
+  }
+  .detailContainer .reservationWrap h4 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'CircularStdBook';
+    margin-bottom: 20px;
+  }
+  .detailContainer .reservationWrap .reservationForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(-2px, 25%);
+            transform: translate(-2px, 25%);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 1px solid #071D49;
+    border-right: none;
+    width: 21.7%;
+    padding: 20px 10px;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem label {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem input {
+    border: none;
+    color: #071D49;
+    font-family: CircularStdBook;
+    font-size: 20px;
+    padding: 0;
+    background-color: white;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem input:focus {
+    outline: none;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select:focus {
+    outline: none;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select {
+    border: none;
+    color: #071D49;
+    font-family: CircularStdBook;
+    font-size: 20px;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select option {
+    color: #071D49;
+    font-family: CircularStdBook;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select::-ms-expand {
+    display: none;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select:after {
+    position: absolute;
+    right: 0px;
+    top: auto;
+    bottom: 20px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem1 {
+    width: 30%;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem2, .detailContainer .reservationWrap .reservationForm .inputItem3, .detailContainer .reservationWrap .reservationForm .inputItem4 {
+    width: 16%;
+  }
+  .detailContainer .reservationWrap .reservationForm button {
+    background-color: #071D49;
+    color: white;
+    border: none;
+    font-family: CircularStdBook;
+    font-weight: 700;
+    position: relative;
+    width: 22%;
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1200px) {
   .content-hover-wrap .content {
     bottom: 0;
@@ -1105,7 +1292,7 @@
   }
   header.nonTransparent .locationNavMobile {
     position: absolute;
-    top: 80px;
+    top: 70px;
     bottom: 0;
     display: block;
     width: 100%;
@@ -3519,6 +3706,298 @@
     font-size: 20px;
     font-weight: 700;
   }
+  .singleBanner {
+    background-color: #D9C7B6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+  }
+  .singleBanner .bannerWrap {
+    margin: 0 auto;
+  }
+  .singleBanner .bannerWrap .textWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .singleBanner .bannerWrap .textWrap h5 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .singleBanner .bannerWrap .textWrap h3 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.1;
+    max-width: 580px;
+    text-align: center;
+  }
+  .singleBanner .bannerWrap .imageWrap {
+    position: relative;
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .singleBanner .bannerWrap .imageWrap img {
+    width: 100%;
+    height: auto;
+  }
+  .singleBanner:after {
+    content: none;
+    position: absolute;
+    height: 33%;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+    z-index: -1;
+  }
+  .detailContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
+  .detailContainer .detailWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .detailContainer .detailWrap .purchaseDetail {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+  }
+  .detailContainer .detailWrap .purchaseDetail span {
+    margin-bottom: 10px;
+  }
+  .detailContainer .detailWrap .purchaseDetail span p {
+    margin-bottom: 0;
+    line-height: 1.8;
+    font-size: 16px;
+  }
+  .detailContainer .detailWrap .purchaseDetail span p strong {
+    font-size: 18px;
+  }
+  .detailContainer .detailWrap .purchaseDetail .iconWrap {
+    margin-top: 25px;
+    display: none;
+  }
+  .detailContainer .detailWrap .purchaseDetail .iconWrap p {
+    display: inline;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .detailContainer .detailWrap .purchaseDetail .iconWrap a {
+    margin-right: 10px;
+  }
+  .detailContainer .detailWrap .purchaseDetail:after {
+    height: 1px;
+    width: 100%;
+    content: "";
+    background-color: #071D49;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .detailContainer .detailWrap .description {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detailContainer .detailWrap .description h3 {
+    font-family: CircularStdBook;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 30.48px;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .detailContainer .detailWrap .description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .detailContainer .detailWrap .description h4 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .detailContainer .reservationWrap {
+    margin-top: 30px;
+  }
+  .detailContainer .reservationWrap h4 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'CircularStdBook';
+    margin-bottom: 20px;
+  }
+  .detailContainer .reservationWrap .reservationForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(10px, 25%);
+            transform: translate(10px, 25%);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    content: "";
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    border-bottom: 1px solid #071D49;
+    width: 100% !important;
+    padding: 20px 0px;
+    padding-bottom: 10px;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem label {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem input {
+    border: none;
+    color: #071D49;
+    font-family: CircularStdBook;
+    font-size: 24px;
+    padding: 0;
+    background-color: white;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem input:focus {
+    outline: none;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select:focus {
+    outline: none;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select {
+    border: none;
+    color: #071D49;
+    font-family: CircularStdBook;
+    font-size: 24px;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select option {
+    color: #071D49;
+    font-family: CircularStdBook;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select::-ms-expand {
+    display: none;
+  }
+  .detailContainer .reservationWrap .reservationForm .inputItem select:after {
+    position: absolute;
+    right: 0px;
+    top: auto;
+    bottom: 20px;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+  }
+  .detailContainer .reservationWrap .reservationForm button {
+    margin-top: 30px;
+    background-color: #071D49;
+    color: white;
+    border: none;
+    font-family: CircularStdBook;
+    font-weight: 700;
+    position: relative;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+  .detailContainer .reservationWrap .reservationForm .iconWrapMobile {
+    margin-top: 40px;
+    display: block !important;
+  }
+  .detailContainer .reservationWrap .reservationForm .iconWrapMobile p {
+    display: inline;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .detailContainer .reservationWrap .reservationForm .iconWrapMobile a {
+    margin-right: 10px;
+  }
+  .backToHomeMobile {
+    margin-top: 30px;
+    display: block !important;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    font-size: 16px;
+  }
+  .backToHomeMobile:before {
+    content: "";
+    background-image: url(../images/Careers/backArrow.svg);
+    width: 20px;
+    height: 10px;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    display: inline-block;
+  }
   .col2-section .content-side > div {
     position: relative;
     padding: 0;
@@ -4944,6 +5423,59 @@
     color: white;
     font-size: 20px;
     font-weight: 700;
+  }
+  .singleBanner {
+    background-color: #D9C7B6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+  }
+  .singleBanner .bannerWrap {
+    margin: 0 auto;
+  }
+  .singleBanner .bannerWrap .textWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+  .singleBanner .bannerWrap .textWrap h5 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .singleBanner .bannerWrap .textWrap h3 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1.1;
+    max-width: 580px;
+    text-align: center;
+  }
+  .singleBanner .bannerWrap .imageWrap {
+    position: relative;
+    margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .singleBanner .bannerWrap .imageWrap img {
+    width: 100%;
+    height: auto;
   }
   h3 {
     font-size: 20px;
