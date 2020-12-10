@@ -2,6 +2,11 @@ var allCards = document.querySelectorAll('.card');
 var left = document.querySelector('.left');
 var right = document.querySelector('.right');
 var offerCardWrap = document.querySelector('.cards')
+var cardLink = document.querySelectorAll('.card a')
+
+cardLink.forEach(element => {
+  
+});
 
 
 
@@ -60,8 +65,7 @@ initCards();
 function addHammer(el){
   
     var hammertime = new Hammer(el);
-    
-    
+    hammertime.domEvents = true;
   
     hammertime.on('pan', function (event) {
       el.classList.add('moving');
@@ -107,27 +111,28 @@ function addHammer(el){
         initCards();
       }
     });
-
+   
    
   
 }
 
 allCards.forEach(function (el) {
   var hammertime = new Hammer(el);
-  
- 
+  hammertime.domEvents = true;
+
   hammertime.get('pan').options.direction = 6
   
   
   hammertime.on('pan', function (event) {
     el.classList.add('moving');
+   
   });
 
   hammertime.on('pan', function (event) {
     if (event.deltaX === 0) return;
     if (event.center.x === 0 && event.center.y === 0) return;
 
-    
+
 
     var xMulti = event.deltaX * 0.03;
     var yMulti = event.deltaY / 80;
@@ -142,6 +147,7 @@ allCards.forEach(function (el) {
     var moveOutWidth = document.body.clientWidth;
     var keep = Math.abs(event.deltaX) < 10 || Math.abs(event.velocityX) < 0.01;
 
+   
     event.target.classList.toggle('removed', !keep);
     event.target.id = "removed"
 

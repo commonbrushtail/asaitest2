@@ -3431,6 +3431,9 @@ header.transparentBlue{
 				div:nth-child(2){
 					pointer-events: all!important;
 					cursor: grab!important;
+					content{
+						pointer-events: all!important;
+					}
 				}
 
 				.buttonContainer{
@@ -3488,7 +3491,9 @@ header.transparentBlue{
 					.content {
 						padding-top: 20px;
 						pointer-events: none!important;
-						
+						a{
+							pointer-events: all;
+						}
 						
 					}
 				}

@@ -3710,6 +3710,10 @@ header.transparentBlue .userNameWrap svg path {
   cursor: grab !important;
 }
 
+.matchingoffer .titleCardWrapContainer .cardWrap .cards div:nth-child(2) content {
+  pointer-events: all !important;
+}
+
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .buttonContainer {
   width: 750px;
   position: absolute;
@@ -3783,6 +3787,10 @@ header.transparentBlue .userNameWrap svg path {
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card .content {
   padding-top: 20px;
   pointer-events: none !important;
+}
+
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card .content a {
+  pointer-events: all;
 }
 
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card.purple {
