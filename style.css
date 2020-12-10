@@ -597,7 +597,7 @@ strong {
 }
 
 .introAnimationOverlay .introAnimate1Wrap .introAnimate1 {
-  opacity: 100;
+  opacity: 0;
   height: 100%;
   display: block;
   position: relative;
@@ -843,13 +843,15 @@ a:hover {
   display: block;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  opacity: 0;
 }
 
 .revealText .hiddenText.active {
   -webkit-transform: translate(0);
           transform: translate(0);
+  opacity: 100%;
 }
 
 .JamJamLogo {

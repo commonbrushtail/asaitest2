@@ -570,7 +570,7 @@ strong{
 		overflow: hidden;
 
 		.introAnimate1{
-			opacity: 100;
+			opacity: 0;
 			height: 100%;
 			display: block;
 			position: relative;
@@ -795,11 +795,13 @@ a:hover {
 	.hiddenText{
 		display: block;
 		transform: translateY(100%);
-		transition: all 0.3s ease;
+		transition: all 1s ease;
+		opacity: 0;
 		
 	}
 	.hiddenText.active{
 		transform: translate(0);
+		opacity: 100%;
 	}
 }
 

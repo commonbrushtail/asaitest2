@@ -34,7 +34,7 @@ if(localStorage.getItem('asaiVisited')){
     });
         
         
-        tl.to('.introAnimate1',{y:0,duration:0.6,stagger:0.05,})
+        tl.to('.introAnimate1',{y:0,opacity:'100%',duration:0.8,stagger:0.05,delay:0.1})
           .to('.introAnimate1',{opacity:0,duration:0.8})
           .to('.introAnimate2',{opacity:100,duration:0.8})
           .to('.introAnimationOverlay',{height:0,duration:0.7,delay:0.8})
@@ -59,7 +59,7 @@ gsap.fromTo('.cls-1',{
 },
     {
         attr:{"stroke-dashoffset": 0},
-        duration:3,
+        duration:1.5,
         scrollTrigger:{
             trigger:'.membership',
             start:"center bottom"
