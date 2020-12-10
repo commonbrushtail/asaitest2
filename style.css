@@ -3793,6 +3793,26 @@ header.transparentBlue .userNameWrap svg path {
   pointer-events: initial;
 }
 
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card a {
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  pointer-events: all;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+}
+
+.matchingoffer .titleCardWrapContainer .cardWrap .cards .card a img {
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  pointer-events: all;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: no-drag;
+}
+
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card.purple {
   background-color: #AC9DB4;
 }

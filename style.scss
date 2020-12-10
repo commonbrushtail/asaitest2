@@ -3496,6 +3496,20 @@ header.transparentBlue{
 						}
 						
 					}
+					a{
+						user-select: none;
+						pointer-events: all;
+						-webkit-user-select: none;
+						-webkit-user-drag: none;
+						-webkit-app-region: no-drag;
+						img{
+							user-select: none;
+							pointer-events: all;
+							-webkit-user-select: none;
+							-webkit-user-drag: none;
+							-webkit-app-region: no-drag;
+						}
+					}
 				}
 				
 				

@@ -65,7 +65,7 @@ function addHammer(el){
     hammertime.get('pan').options.direction = 6
     hammertime.on('pan', function (event) {
       
-     if (event.target.nodeName == 'A' || event.target.classList.contains("link"))
+     if (event.target.nodeName == 'A' || event.target.classList.contains("link") || event.target.nodeName == 'IMG')
      { return } 
   
       el.classList.add('moving');
@@ -77,7 +77,7 @@ function addHammer(el){
       
       if (event.deltaX === 0) return;
       if (event.center.x === 0 && event.center.y === 0) return;
-      if (event.target.nodeName == 'A' || event.target.classList.contains("link"))
+      if (event.target.nodeName == 'A' || event.target.classList.contains("link") || event.target.nodeName == 'IMG')
       { return } 
       
   
@@ -90,7 +90,7 @@ function addHammer(el){
   
     hammertime.on('panend', function (event) {
       
-      if (event.target.nodeName == 'A' || event.target.classList.contains("link"))
+      if (event.target.nodeName == 'A' || event.target.classList.contains("link") || event.target.nodeName == 'IMG')
       { return } 
       var moveOutWidth = document.body.clientWidth;
       var keep = Math.abs(event.deltaX) < 10 || Math.abs(event.velocityX) < 0.01;
