@@ -1,13 +1,9 @@
-var allCards = document.querySelectorAll('.card');
+
+var allCards = document.querySelectorAll('.card:not(.link)');
 var left = document.querySelector('.left');
 var right = document.querySelector('.right');
 var offerCardWrap = document.querySelector('.cards')
 var cardLink = document.querySelectorAll('.card a')
-
-cardLink.forEach(element => {
-  
-});
-
 
 
 
@@ -66,12 +62,15 @@ function addHammer(el){
   
     var hammertime = new Hammer(el);
     hammertime.domEvents = true;
-  
+    hammertime.get('pan').options.direction = 6
     hammertime.on('pan', function (event) {
+      console.log(event.target)
+
       el.classList.add('moving');
     });
   
     hammertime.on('pan', function (event) {
+      if(event.target != parent){ return; }
       if (event.deltaX === 0) return;
       if (event.center.x === 0 && event.center.y === 0) return;
   
@@ -85,7 +84,7 @@ function addHammer(el){
     });
   
     hammertime.on('panend', function (event) {
-    
+      
   
       var moveOutWidth = document.body.clientWidth;
       var keep = Math.abs(event.deltaX) < 10 || Math.abs(event.velocityX) < 0.01;
@@ -117,58 +116,11 @@ function addHammer(el){
 }
 
 allCards.forEach(function (el) {
-  var hammertime = new Hammer(el);
-  hammertime.domEvents = true;
-
-  hammertime.get('pan').options.direction = 6
-  
-  
-  hammertime.on('pan', function (event) {
-    el.classList.add('moving');
-   
-  });
-
-  hammertime.on('pan', function (event) {
-    if (event.deltaX === 0) return;
-    if (event.center.x === 0 && event.center.y === 0) return;
-
-
-
-    var xMulti = event.deltaX * 0.03;
-    var yMulti = event.deltaY / 80;
-    var rotate = xMulti * yMulti;
-
-    event.target.style.transform = 'translate(' + event.deltaX + 'px) rotate(' + rotate + 'deg)';
-  });
-
-  hammertime.on('panend', function (event) {
+  addHammer(el);
   
 
-    var moveOutWidth = document.body.clientWidth;
-    var keep = Math.abs(event.deltaX) < 10 || Math.abs(event.velocityX) < 0.01;
 
-   
-    event.target.classList.toggle('removed', !keep);
-    event.target.id = "removed"
 
-    if (keep) {
-      event.target.style.transform = '';
-      initCards();
-      
-    } else {
-      var endX = Math.max(Math.abs(event.velocityX) * moveOutWidth, moveOutWidth);
-      var toX = event.deltaX > 0 ? endX : -endX;
-      var endY = Math.abs(event.velocityY) * moveOutWidth;
-      var toY = event.deltaY > 0 ? endY : -endY;
-      var xMulti = event.deltaX * 0.03;
-      var yMulti = event.deltaY / 80;
-      var rotate = xMulti * yMulti;
-      event.target.style.transform = 'translate(' + toX + 'px, ' + (toY + event.deltaY) + 'px) rotate(' + rotate + 'deg)';
-      
-      
-      initCards();
-    }
-  });
 });
 
 function createButtonListener(love) {

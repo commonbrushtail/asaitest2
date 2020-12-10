@@ -3790,7 +3790,7 @@ header.transparentBlue .userNameWrap svg path {
 }
 
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card .content a {
-  pointer-events: all;
+  pointer-events: initial;
 }
 
 .matchingoffer .titleCardWrapContainer .cardWrap .cards .card.purple {

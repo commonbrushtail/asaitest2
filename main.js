@@ -25,7 +25,7 @@ if(localStorage.getItem('asaiVisited')){
 
     var tl = gsap.timeline({
         onStart:()=>{
-            html.classList.add('active')
+            html.classList.add('')
         },
         onComplete:()=>{
             html.classList.remove('active')
