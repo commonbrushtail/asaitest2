@@ -64,16 +64,21 @@ function addHammer(el){
     hammertime.domEvents = true;
     hammertime.get('pan').options.direction = 6
     hammertime.on('pan', function (event) {
-      console.log(event.target)
-
+      
+     if (event.target.nodeName == 'A' || event.target.classList.contains("link"))
+     { return } 
+  
       el.classList.add('moving');
+       
+      
     });
   
     hammertime.on('pan', function (event) {
-      if(event.target != parent){ return; }
+      
       if (event.deltaX === 0) return;
       if (event.center.x === 0 && event.center.y === 0) return;
-  
+      if (event.target.nodeName == 'A' || event.target.classList.contains("link"))
+      { return } 
       
   
       var xMulti = event.deltaX * 0.01;
@@ -85,7 +90,8 @@ function addHammer(el){
   
     hammertime.on('panend', function (event) {
       
-  
+      if (event.target.nodeName == 'A' || event.target.classList.contains("link"))
+      { return } 
       var moveOutWidth = document.body.clientWidth;
       var keep = Math.abs(event.deltaX) < 10 || Math.abs(event.velocityX) < 0.01;
   
