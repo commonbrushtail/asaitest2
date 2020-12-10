@@ -73,7 +73,7 @@ body.logined .userNameWrap {
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
-  margin-right: 30px;
+  margin-right: 20px;
   position: relative;
 }
 
@@ -87,21 +87,32 @@ body.logined .userNameWrap svg {
 
 body.logined .userNameWrap .userNameHoverMenu {
   position: absolute;
-  top: 0px;
-  background-color: #071D49;
   display: block;
-  pointer-events: none;
-  height: 0;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
+  height: 600%;
+  width: 130%;
+  padding-top: 25px;
   opacity: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  pointer-events: none;
+  z-index: 99;
 }
 
 body.logined .userNameWrap .userNameHoverMenu ul {
   list-style: none;
   padding-left: 0;
-  padding: 25px 20px;
   margin: 0;
+  background-color: #071D49;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+body.logined .userNameWrap .userNameHoverMenu ul li {
+  padding: 0 30px;
+  line-height: 1.6;
 }
 
 body.logined .userNameWrap .userNameHoverMenu ul li a {
@@ -110,11 +121,19 @@ body.logined .userNameWrap .userNameHoverMenu ul li a {
   font-size: 16px;
 }
 
-body.logined .userNameWrap .userNameHoverMenu:before {
+body.logined .userNameWrap .userNameHoverMenu ul li:first-child {
+  margin-top: 15px;
+}
+
+body.logined .userNameWrap .userNameHoverMenu ul li:last-child {
+  margin-bottom: 15px;
+}
+
+body.logined .userNameWrap .userNameHoverMenu ul:before {
   content: "";
   width: 0;
   height: 0;
-  top: -8px;
+  top: 18px;
   left: 15%;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
@@ -124,24 +143,33 @@ body.logined .userNameWrap .userNameHoverMenu:before {
 
 body.logined .userNameWrap:hover .userNameHoverMenu {
   position: absolute;
-  top: 50px;
-  background-color: #071D49;
-  opacity: 100;
+  display: block;
+  height: 600%;
+  padding-top: 25px;
+  opacity: 100%;
   pointer-events: all;
-  height: 500%;
 }
 
 body.logined .userNameWrap:hover .userNameHoverMenu ul {
   list-style: none;
-  padding-left: 0;
-  padding: 25px 20px;
   margin: 0;
+  background-color: #071D49;
+  overflow: hidden;
+  max-height: 100%;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
 }
 
-body.logined .userNameWrap:hover .userNameHoverMenu ul li a {
-  color: white;
-  font-weight: 400;
-  font-size: 16px;
+body.logined .userNameWrap:hover .userNameHoverMenu ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  top: 18px;
+  left: 15%;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  border-bottom: 10px solid #071D49;
 }
 
 body.logined .userNameWrap.scrolling {
@@ -1017,6 +1045,14 @@ header.nonTransparent .locationNavMobile {
   display: none;
 }
 
+header.nonTransparent .userNameWrap {
+  color: #071D49;
+}
+
+header.nonTransparent .userNameWrap svg path {
+  stroke: #071D49;
+}
+
 header.transparentBlue .hamburger .hamburger-inner,
 header.transparentBlue .hamburger .hamburger-inner::before,
 header.transparentBlue .hamburger .hamburger-inner::after {
@@ -1027,6 +1063,14 @@ header.transparentBlue .svgHeaderIcon {
   fill: #071D49;
   color: white;
   background-color: #071D49;
+}
+
+header.transparentBlue .userNameWrap {
+  color: #071D49;
+}
+
+header.transparentBlue .userNameWrap svg path {
+  stroke: #071D49;
 }
 
 .left-header a {

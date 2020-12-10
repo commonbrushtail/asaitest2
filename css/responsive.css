@@ -1263,6 +1263,61 @@
   .asaiModel .modelContainer .modelItem3 .textWrap ul li {
     margin-top: 10px;
   }
+  .userNameWrap {
+    margin-right: 0 !important;
+    font-size: 16px !important;
+  }
+  .userNameHoverMenu {
+    position: absolute;
+    display: block;
+    height: 600%;
+    right: 0;
+    width: 140% !important;
+    padding-top: 25px;
+    opacity: 0;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    pointer-events: none;
+  }
+  .userNameHoverMenu ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: #071D49;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0;
+    -webkit-transition: all ease 1s;
+    transition: all ease 1s;
+  }
+  .userNameHoverMenu ul li {
+    padding: 0 30px;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+  .userNameHoverMenu ul li a {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .userNameHoverMenu ul li:first-child {
+    margin-top: 15px;
+  }
+  .userNameHoverMenu ul li:last-child {
+    margin-bottom: 15px;
+  }
+  .userNameHoverMenu ul:before {
+    content: "";
+    width: 0;
+    height: 0;
+    top: 18px;
+    right: 10px;
+    left: initial !important;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    border-bottom: 10px solid #071D49;
+  }
 }
 
 @media (max-width: 991px) {
@@ -5476,6 +5531,37 @@
   .singleBanner .bannerWrap .imageWrap img {
     width: 100%;
     height: auto;
+  }
+  .userNameWrap {
+    display: block;
+    color: white;
+    font-size: 16px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 20px;
+    position: relative;
+  }
+  .userNameWrap svg {
+    -webkit-transform: translateY(-1.5px);
+            transform: translateY(-1.5px);
+    width: 8px !important;
+    height: 8px !important;
+    margin-left: 0px !important;
+  }
+  .userNameHoverMenu {
+    position: absolute;
+    display: block;
+    height: 600%;
+    right: 0;
+    width: 170% !important;
+    padding-top: 25px;
+    opacity: 0;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    pointer-events: none;
   }
   h3 {
     font-size: 20px;

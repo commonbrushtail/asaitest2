@@ -1,3 +1,4 @@
+/*
 let line = document.querySelector('.cls-1')
 
 function pathPrepare (element) {
@@ -23,3 +24,4 @@ var scene = new ScrollMagic.Scene({triggerElement: ".membership", duration: 400,
 .addTo(controller);
 
 
+*/

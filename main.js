@@ -46,6 +46,33 @@ if(localStorage.getItem('asaiVisited')){
 }
 
 
+let line = document.querySelector('.cls-1')
+
+var lineLength = line.getTotalLength();
+ 
+
+
+
+gsap.fromTo('.cls-1',{
+    attr:{"stroke-dashoffset": lineLength,
+    "stroke-dasharray": lineLength},
+},
+    {
+        attr:{"stroke-dashoffset": 0},
+        duration:3,
+        scrollTrigger:{
+            trigger:'.membership',
+            start:"center bottom"
+        }
+    }
+    
+    
+    )
+
+
+
+
+
 
 //*floatbook Change Color -> add 'white' class to the section////
 
@@ -125,7 +152,7 @@ if(document.querySelector('.indexPage')){
         end:"bottom top",
         marker:true,
         
-        toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner", className: "scrolling",}
+        toggleClass: {targets: "header,.svgHeaderIcon,.hamburger-inner,.userNameWrap", className: "scrolling",}
         
     });
 }
