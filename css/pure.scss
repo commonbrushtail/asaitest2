@@ -81,6 +81,7 @@ Journal all
 .journal-wrap {
     padding-left: 5px;
     padding-right: 5px;
+    display: table;
     .journal-list {
         position: relative;
         min-height: 1px;
@@ -91,6 +92,7 @@ Journal all
         h3 {
             max-width: 400px;
             overflow: hidden;
+            
             text-overflow: ellipsis;
             display: -webkit-box;
             -webkit-line-clamp: 3; /* number of lines to show */
@@ -143,9 +145,12 @@ a.readmore {
 .journal-list:hover .blog-thumb {
     transform: scale(1.1);
 }
-
+.journal-list h3{
+    font-size: 20px;
+}
 .journal-list:hover h3 {
     text-decoration: underline;
+    
 }
 
 #banner.guide-banner h1 {
@@ -301,7 +306,7 @@ Journal single
 }
 
 .content-blog-wrap h3 {
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 50px;
 }
 
@@ -404,7 +409,7 @@ Happenings
 }
 
 .happening-slider-wrap {
-    padding-top: 50px;
+    padding-top: 80px!important;
     padding-bottom: 80px;
     overflow: hidden;
     h2 {
@@ -426,6 +431,9 @@ Happenings
         margin-bottom: 50px;
         border-top: solid 1px #e5e5e5;
         border-bottom: none;
+    }
+    h3{
+        font-size: 20px;
     }
 }
 
@@ -455,6 +463,8 @@ Happenings
         width: 70px;
         height: 65px;
     }
+   
+
     .swiper-button-next, 
     .swiper-button-prev{
         top: -58px;
@@ -470,6 +480,38 @@ Happenings
     .swiper-button-next:after, .swiper-button-prev:after {
         font-size: 22px;
     }
+    .swiper-slide{
+        
+        a{
+            overflow: hidden;
+          
+            display: block;
+            
+            transition: all ease 0.5s;
+            img{
+                transform: scale(1); 
+                transition: all ease 0.5s;
+            }
+        }
+        h3{
+            
+            transition: all ease 0.5s;
+        }
+        
+    }
+    .swiper-slide:hover{
+        a{
+        img{
+            transform: scale(1.2); 
+            transition: all ease 0.5s;
+        }
+        }
+        h3{
+            text-decoration: underline;
+            transition: all ease 0.5s;
+        }
+    }
+    
 }
 
 
@@ -521,9 +563,8 @@ OFFER ALL
             
         }
         h3{
-            font-size: 24px;
-            font-weight: 700;
-            font-family: 'CircularStdBook';
+            font-size: 20px;
+            font-family: 'CircularStdBold';
             
 
         }

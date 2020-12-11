@@ -79,9 +79,9 @@ body.logined{
 	.userNameWrap{
 		display: block;		
 		color: white;
-		font-size: 18px;
+		font-size: 14px;
 		font-style: normal;
-		font-weight: 700;
+		font-family: 'CircularStdBold';
 		line-height: 23px;
 		letter-spacing: 0em;
 		text-align: left;
@@ -98,7 +98,7 @@ body.logined{
 			position: absolute;
 			display: block;
 			height: 600%;
-			width: 130%;
+			width: 160%;
 			padding-top: 25px;
 			opacity: 0;
 			transition: all ease 0.5s;
@@ -114,11 +114,13 @@ body.logined{
 				max-height: 0;
 				padding: 0;
 				transition: all ease 1s;
+				font-size:14px;
 				
 				
 				li{
 					padding: 0 30px;
 					line-height: 1.6;
+					font-size:14px;
 				
 					
 					
@@ -127,7 +129,7 @@ body.logined{
 						
 						color: white;
 						font-weight: 400;
-						font-size: 16px;
+						font-size:14px;
 					}
 				}
 				li:first-child{
@@ -221,7 +223,7 @@ body.logined{
 
 
 strong{
-	font-weight: 700;
+	font-family: 'CircularStdBold';
 }
 
 
@@ -240,7 +242,7 @@ strong{
 .memberBannerText{
 	font-family: 'CircularStdBook'!important;
 	font-size: 70px!important;
-	font-weight: 700;
+	font-family: 'CircularStdBold';
 }
 .underBannerText{
 	position: absolute;
@@ -260,28 +262,28 @@ strong{
 	color: white;
 	text-align: center;
 	h4{
-		font-size: 44px;
+		font-size: 36px;
 		font-family: 'din_condensedbold';
-		font-weight: 700;
+
 	}
 	p{
-		font-size: 50px;
+		font-size: 44px;
 		line-height: 55px;
 		letter-spacing: 2px;
-		max-width: 690px;
-		font-weight: 700;
+		max-width: 600px;
+		font-family: 'CircularStdBold';
 
 	}
 	button{
 		background-color:transparent; 
 		color:white;
 		border: none;
-		padding: 20px 35px;
+		padding: 15px 35px;
 		border: 1px solid white;
-		font-weight: 700;
+		font-family: 'CircularStdBold';
 		font-size: 16px;
-		letter-spacing: 1.5px;
-		margin-top: 50px;
+		letter-spacing: 0px;
+		margin-top: 15px;
 		a{
 			color: white;
 		}
@@ -297,7 +299,7 @@ strong{
 		margin-top: 50px;
 		font-size: 13px;
 		font-family: 'CircularStdBook';
-		font-weight: 700;
+		font-family: 'CircularStdBold';
 		.keyIcon{
 			display: flex;
 			flex-direction: column;
@@ -362,9 +364,9 @@ strong{
 				
 				
 				h4{
-					font-size: 24px;
-					font-weight: 700;
-					letter-spacing: 1.1px;
+					font-size: 22px;
+					font-family: 'CircularStdBold';
+					letter-spacing: 0.6px;
 									}
 				ul{
 					
@@ -375,6 +377,8 @@ strong{
 					padding-left: 20px;
 					li{
 						margin-top: 10px;
+						font-size: 16px;
+						
 					}
 				}
 			}
@@ -406,9 +410,9 @@ strong{
 				
 				
 				h4{
-					font-size: 24px;
-					font-weight: 700;
-					letter-spacing: 1.1px;
+					font-size: 22px;
+					font-family: 'CircularStdBold';
+					letter-spacing: 0.6px;
 					width: 380px;
 					
 									}
@@ -421,6 +425,7 @@ strong{
 					padding-left: 20px;
 					li{
 						margin-top: 10px;
+						font-size: 16px;
 					}
 				}
 			}
@@ -464,9 +469,9 @@ strong{
 				
 				
 				h4{
-					font-size: 24px;
-					font-weight: 700;
-					letter-spacing: 1.1px;
+					font-size: 22px;
+					font-family: 'CircularStdBold';
+					letter-spacing: 0.6px;
 									}
 				ul{
 					
@@ -477,6 +482,7 @@ strong{
 					padding-left: 20px;
 					li{
 						margin-top: 10px;
+						font-size: 16px;
 					}
 				}
 			}
@@ -485,6 +491,9 @@ strong{
 }
 
 
+.membershipSingle{
+	margin-top: 50px;
+}
 
 
 .marginTop40{
@@ -517,7 +526,7 @@ strong{
 	width: 12px;
 	height: 12px;
 	content: "";
-	background-image: url(../images/directionArrow.svg);
+	background-image: url(images/directionArrow.svg);
 	background-repeat: no-repeat;
 	position: absolute;
 	transform: translate(100%, 60%);
@@ -529,7 +538,7 @@ strong{
 
 .cat-text {
 	font-size: 14px;
-	font-family: 'CircularStdBold';
+	font-family: 'CircularStdBold'!important;
 	letter-spacing: .6px;
 	text-transform: uppercase;
 	margin-bottom: 10px;
@@ -633,6 +642,7 @@ input {
 .font-40 {
 	font-size: 40px !important;
 }
+
 
 .font-26 {
 	font-size: 26px !important;
@@ -738,7 +748,7 @@ input {
 				}
 				h3{
 					font-size: 24px;
-					font-weight: 700;
+					font-family: 'CircularStdBold';
 					font-family: 'CircularStdBook';
 					
 
@@ -782,6 +792,7 @@ a:hover {
 	font-size: 22px;
 	font-family: 'CircularStdBold';
 	line-height: 1.27;
+	letter-spacing: 0.6px;
 }
  
 
@@ -792,6 +803,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	/*
 	.hiddenText{
 		display: block;
 		transform: translateY(100%);
@@ -803,6 +815,7 @@ a:hover {
 		transform: translate(0);
 		opacity: 100%;
 	}
+	*/
 }
 
 
@@ -843,7 +856,7 @@ body,
 button {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-size: 14px;
+	font-size: 15px;
 	color: $theblue;
 	font-family: 'CircularStdBook';
 }
@@ -872,7 +885,7 @@ header {
 	top: 0;
 	width: 100%;
 	z-index: 50;
-	padding: 10px 30px;
+	padding: 20px 30px;
 	transition: 0.2s all ease;
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
@@ -915,9 +928,11 @@ header {
 
 header.scrolling{
 	background-color: white;
+	padding: 10px 30px;
 }
 
 header.nonTransparent{
+	padding: 10px 30px;
 	background-color: white;
 	top: 0;
 	transition: all 0.1s ease;
@@ -948,23 +963,23 @@ header.nonTransparent{
 		h4{
 			margin:0;
 			width:30%;
-			font-size: 20px;
+			font-size: 22px;
 			font-family: 'din_condensedbold';
 		}	
 		ul{
 			display: flex;
 			width: 70%;
-			max-width: 600px;
+			max-width: 560px;
 			
 			justify-content: space-between;
 			margin: 0;
 			li{
 				list-style-type: none;
-				font-size: 16px;
+				font-size: 15px;
 				font-family: 'CircularStdBook';
 				a{
 				list-style-type: none;
-				font-size: 16px;
+				font-size: 15px;
 				font-family: 'CircularStdBook';
 				}
 			}
@@ -1199,17 +1214,24 @@ header.transparentBlue{
 			align-items: center;
 			h3{
 				font-family: CircularStdBook;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 			}
 		}
 		.openingTime{
 			width: 30%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			
 			h3{
 				font-family: CircularStdBook;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
+				position: relative;
+				left: 50%;
+				transform: translateX(-25%);	
+			}
+			p{
+				display: block;
+				position: relative;
+				left: 50%;
+				transform: translateX(-25%);
 			}
 		}
 		.contact{
@@ -1219,7 +1241,7 @@ header.transparentBlue{
 			text-align: left;
 			h3{
 				font-family: CircularStdBook;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 			}
 			
 			.iconWrap{
@@ -1238,8 +1260,7 @@ header.transparentBlue{
 		margin-top: 50px;
 		h4{
 			font-size: 24px;
-			font-weight: 700;
-			font-family: 'CircularStdBook';
+			font-family: 'CircularStdBold';
 			margin-bottom: 20px;
 		}
 		.reservationForm{
@@ -1261,6 +1282,7 @@ header.transparentBlue{
 				position: relative;
 				flex-direction: column;
 				border:1px solid black;
+				border-right: none;
 				padding:20px 25px;
 				width: 27%;
 				label{
@@ -1277,6 +1299,9 @@ header.transparentBlue{
 				}
 				input:focus{
 					outline: none;
+				}
+				input::placeholder{
+					color: $theblue;
 				}
 				select:focus{
 					outline: none;
@@ -1315,13 +1340,14 @@ header.transparentBlue{
 				
 				
 			}
+			
 			button{
 				width: 19%;
 				background-color: $theblue;
 				color: white;
 				border: none;
-				font-family: CircularStdBook;
-				font-weight: 700;
+				font-size: 16px;
+				font-family: 'CircularStdBold';
 				position: relative;
 			}
 			
@@ -2148,20 +2174,24 @@ header.transparentBlue{
 }
 .accordionMenu{
 	.accordion-item{
-		padding: 15px 0;
+		padding: 0px 0;
 		.accordion-thumb:before{
 			content:none
 		}
 		.accordion-thumb:after{
-			content:none;
+			content:"";
 				background-image: url(images/Menu-Arrow_icon.svg);
 				width: 30px;
 				height: 20px;
 				position: absolute;
 				right: 0;
+				background-size: contain;
 				top: 50%;
 				transform: translate(-100%, -25%);
 				background-repeat: no-repeat;
+				opacity: 0;
+				transition: 0.5s all ease-out;
+				
 				
 		}
 		
@@ -2179,8 +2209,10 @@ header.transparentBlue{
 				position: absolute;
 				right: 0;
 				top: 50%;
-				transform: translate(-100%, -25%);
+				transform: translate(0%, -25%);
 				background-repeat: no-repeat;
+				opacity: 100%;
+				
 				
 		}
 	}
@@ -2195,10 +2227,14 @@ header.transparentBlue{
 	
 	
 	.accordion-wrap{
+		/*
 		width: 85vw;
 		max-width: 1280px;
+		*/
 		margin:0 auto;
 		.accordion {
+
+			
 			margin: 1rem 0;
 			padding: 0;
 			list-style: none;
@@ -2214,6 +2250,7 @@ header.transparentBlue{
 					position: relative;
 					font-weight: normal;
 					font-family: 'CircularStdBold';
+					
 				
 					// Chevron
 					&::after {
@@ -2252,11 +2289,19 @@ header.transparentBlue{
 						display: flex;
 						.mapWrap{
 						height: 350px;
-						width: 585px;
+						width: 50%;
 						}
 						.textWrap{
-						margin-left: 25px;
+						margin-left: 50px;
 						margin-top: 15px;
+						p{
+							strong{
+								font-size: 18px;
+								display: block;
+								margin-bottom: 10px;
+								
+							}
+						}
 						}
 					}
 				}
@@ -2281,13 +2326,19 @@ header.transparentBlue{
 	overflow: hidden;
 	.contactFormInner{
 		display: flex;
+		/*
 		width: 85vw;
 		max-width: 1280px;
+		*/
 		margin: 0 auto;	
 		position: relative;
 		.textWrap{
 			width: 50%;
 			padding-right: 150px;
+			h4{
+				margin-bottom: 30px;
+			}
+			
 			.linkWrap{
 				margin-top: 25px;
 				display: flex;
@@ -2307,6 +2358,7 @@ header.transparentBlue{
 			padding-bottom: 90px;
 			
 			
+			
 			.selectWrap{
 			width: 100%;
 			position: relative;
@@ -2320,6 +2372,7 @@ header.transparentBlue{
 				position: relative;
 				width: 100%;
 				padding: 10px 15px;
+				font-size: 18px;
 			}
 
 			
@@ -2350,6 +2403,7 @@ header.transparentBlue{
 				padding-top: 15px;
 				padding-bottom: 15px;
 				background-color: transparent;
+				font-size: 18px;
 			}
 			input::placeholder{
 				color: $theblue;
@@ -2367,7 +2421,8 @@ header.transparentBlue{
 				padding: 15px 0 ;
 				border:none;
 				margin-top: 20px;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
+				font-size: 18px;
 			}
 		}
 		.formWrap:after{
@@ -2390,13 +2445,17 @@ header.transparentBlue{
 	overflow: hidden;
 	.contactFormInner{
 		display: flex;
+		/*
 		width: 85vw;
 		max-width: 1280px;
+		*/
 		margin: 0 auto;	
 		position: relative;
+		
 		.textWrap{
 			width: 50%;
 			padding-right: 150px;
+			font-size: 44px;
 			.linkWrap{
 				margin-top: 25px;
 				display: flex;
@@ -2459,6 +2518,7 @@ header.transparentBlue{
 				padding-top: 15px;
 				padding-bottom: 15px;
 				background-color: transparent;
+				font-size: 18px;
 			}
 			input::placeholder{
 				color: $theblue;
@@ -2476,7 +2536,8 @@ header.transparentBlue{
 				padding: 15px 0 ;
 				border:none;
 				margin-top: 20px;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
+				font-size: 18px;
 			}
 		}
 		.formWrap:after{
@@ -2497,8 +2558,10 @@ header.transparentBlue{
 	
 	
 	.accordion-wrap{
+		/*
 		width: 85vw;
 		max-width: 1280px;
+		*/
 		margin:0 auto;
 		.accordion {
 			margin: 1rem 0;
@@ -2516,6 +2579,8 @@ header.transparentBlue{
 					position: relative;
 					font-weight: normal;
 					font-family: 'CircularStdBold';
+					font-size: 22px;
+					letter-spacing: 0;
 					p{
 						font-size: 16px;
 						font-family: 'CircularStdBook';
@@ -2562,10 +2627,17 @@ header.transparentBlue{
 						.textWrap{
 						width: 70%;
 						padding: 30px 5px 30px 0px!important;
+						h4{
+							font-size: 18px;
+							font-family: 'CircularStdBold';
+							
+						}
 						
 						ol{
+							padding-right: 100px;
 							li{
 								margin-top: 10px;
+								font-size: 16px;
 							}
 						}
 						}
@@ -2576,6 +2648,10 @@ header.transparentBlue{
 						flex-direction: column;
 						padding: 30px 30px;
 						height: max-content;
+						h4{
+							font-size: 18px;
+							font-family: 'CircularStdBold';
+						}
 						input{
 							color: $theblue;
 							border: none;
@@ -2607,7 +2683,7 @@ header.transparentBlue{
 							padding: 15px 0 ;
 							border:none;
 							margin-top: 20px;
-							font-weight: 700;
+							font-family: 'CircularStdBold';
 						}
 						}
 					}
@@ -2681,7 +2757,7 @@ header.transparentBlue{
 			h2{
 				font-size: 50px;
 				font-family: 'CircularStdBook';
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				margin-top: 25px;
 				line-height: 1.2;
 				letter-spacing:3px;
@@ -2795,7 +2871,7 @@ header.transparentBlue{
 				width: 100%;
 				padding: 15px 0;
 				border: none;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				font-size: 20px;
 				
 				
@@ -2837,6 +2913,11 @@ header.transparentBlue{
 		color: white;
 		position: relative;
 		z-index: 5;
+		position: sticky;
+		top: 0;
+		height: 100vh;
+		
+		
 		
 		
 		
@@ -2866,18 +2947,19 @@ header.transparentBlue{
 			
 			
 			h3{
-				font-size:30px;
+				font-size:24px;
 				width: 100%;
+				margin-top: 10px;
 				
 				
 			}
 			h2{
-				font-size: 50px;
+				font-size: 44px;
 				font-family: 'CircularStdBook';
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				margin-top: 25px;
 				line-height: 1.2;
-				letter-spacing:3px;
+				letter-spacing:2px;
 				width: 100%;
 			}
 			ul{
@@ -2886,12 +2968,14 @@ header.transparentBlue{
 				margin-top: 50px;
 				width: 100%;
 				letter-spacing: 2px;
+				margin-top: 10px;
 
 				li{
-					font-size: 18px;
+					font-size: 16px;
 					font-family: 'CircularStdBook';
 					position: relative;
-					margin-top: 15px;
+					margin-top: 10px;
+					letter-spacing: 0.6px;
 					
 					
 					
@@ -2922,6 +3006,7 @@ header.transparentBlue{
 		z-index: -1;
 		filter: brightness(50%);
 		background-size: cover;
+		transform: translateX(-2px);
 		
 	}
 	.formWrap{
@@ -2931,9 +3016,10 @@ header.transparentBlue{
 		padding-bottom: 80px;
 		
 		
+		
 		form{
 			
-			width: 65%;
+			width: 70%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -2942,7 +3028,7 @@ header.transparentBlue{
 			
 			.backToHome{
 				margin-top: 60px;
-				font-family: 'CircularStdBook';
+				
 			}
 			.backToHome:before{
 				content: "";
@@ -2957,9 +3043,11 @@ header.transparentBlue{
 			h3{
 				margin-top: 50px;
 				margin-bottom: 45px;
+				
 			  }
 			  h4{
-				font-size: 24px;
+				font-size: 20px;
+				font-family: 'CircularStdBold';
 			  }
 			  input{
 				width: 100%;
@@ -2969,7 +3057,7 @@ header.transparentBlue{
 				padding-top: 15px;
 				padding-bottom: 15px;
 				background-color: transparent;
-				font-size: 20px;
+				font-size: 18px;
 				font-weight: 400;
 			  }
 			  input::placeholder{
@@ -2997,7 +3085,7 @@ header.transparentBlue{
 				  padding-top: 15px;
 				  padding-bottom: 15px;
 				  background-color: transparent;
-				  font-size: 20px;
+				  font-size: 18px;
 				  font-weight: 400;
 				  width: 100%;
 				  
@@ -3027,7 +3115,7 @@ header.transparentBlue{
 			  }
 		  
 			  .passwordLabel{
-				font-size: 24px;
+				font-size: 20px;
 				margin-top: 50px;
 			  }
 			  p{
@@ -3046,8 +3134,9 @@ header.transparentBlue{
 				width: 100%;
 				padding: 15px 0;
 				border: none;
-				font-weight: 700;
-				font-size: 20px;
+				font-family: 'CircularStdBold';
+				font-size: 18px;
+				letter-spacing: 0.6px;
 				
 				
 			  }
@@ -3055,7 +3144,7 @@ header.transparentBlue{
 				background-color: $theblue;
 				color: white;
 				margin-top: 5px;
-				letter-spacing: 2px;
+				letter-spacing: 0.6px;
 			  }
 			  .registerButton{
 				background-color: white;
@@ -3102,10 +3191,10 @@ header.transparentBlue{
 
 	.gallerySlideText{
 		position: absolute;
-		bottom: 170px;
+		bottom: 150px;
 		color: white;
 		max-width: 500px;
-		left: 30px;
+		left: 60px;
 		h3{
 			font-size: 30px;
 		}
@@ -3118,7 +3207,7 @@ header.transparentBlue{
 		position: absolute;
 		bottom: 100px;
 		width: 120px;
-		left: 20px;
+		left: 49px;
 		.swiper-button-prev{
 			width: 44px;
 			height: 44px;
@@ -3129,7 +3218,7 @@ header.transparentBlue{
 			content:"";
 			width: 100%;
 			height: 100%;
-			background-image: url(../images/leftArrowWhite.svg);
+			background-image: url(images/leftArrowWhite.svg);
 			background-repeat: no-repeat;
 			background-position: center;
 			transform: translate(-3px,-1px);
@@ -3144,7 +3233,7 @@ header.transparentBlue{
 			content:"";
 			width: 100%;
 			height: 100%;
-			background-image: url(../images/rightArrowWhite.svg);
+			background-image: url(images/rightArrowWhite.svg);
 			background-repeat: no-repeat;
 			background-position: center;
 			transform: translate(3px,-1px);
@@ -3160,6 +3249,8 @@ header.transparentBlue{
 		border-radius: 100%;
 		background: #fff;
 		opacity: .3;
+		position: relative;
+		left: 29px;
 	}
 
 	.swiper-pagination-bullet-active {
@@ -3256,6 +3347,7 @@ header.transparentBlue{
 	.swiper-pagination {
 		display: none;
 	}
+	
 }
 
 .locations {
@@ -3264,11 +3356,11 @@ header.transparentBlue{
 
 /*------Room Type -------------------------*/
 .roomTypeSwiper{
-	margin:100px 0;
-	margin-left:80px;
+	margin:60px 0 100px;
+	
 	width: 100%;
 	max-width: 100%;
-	
+	overflow:visible;
 	.swiper-wrapper{
 		.swiper-slide{
 			
@@ -3283,9 +3375,7 @@ header.transparentBlue{
 						height: 100%;
 						img{
 							width: 100%;
-							height: auto;
-							min-height: 100%;
-							max-height: 370px;
+							height: 370px;
 							object-fit: cover;
 							object-position: 50%,50%;
 						}
@@ -3551,7 +3641,7 @@ header.transparentBlue{
 /* ---- imageTextSliderContainer ----------------*/
 
 .imageTextSliderContainer{
-	height: 100vh;
+	height: calc(100vh - 70px);
 	width: 100%;
 	.customSlide{
 		display: grid;
@@ -3566,7 +3656,7 @@ header.transparentBlue{
 	  }
 		.imageWrap{
 			width: 100%;
-			height: 100vh;
+			height: calc(100vh - 70px);
 			overflow: hidden;
 			grid-area: imageWrap; 
 			img{
@@ -3580,7 +3670,7 @@ header.transparentBlue{
 		}
 		.titleWrap { 
 			grid-area: titleWrap;
-			padding: 90px 120px 0;
+			padding: 70px 70px 0;
 			
 			
 		
@@ -3588,13 +3678,13 @@ header.transparentBlue{
 		.textWrap { 
 			grid-area: textWrap;
 			align-self: end;	
-			padding: 90px 120px 50px;
+			padding: 70px 70px 50px;
 			h4{
-				font-size: 24px;
-				
+				font-size: 22px;
+					
 			}
 			p{
-				font-size: 16px;
+				font-size: 14px;
 				margin-top: 20px;
 			}
 			.buttonContainer{
@@ -3681,6 +3771,7 @@ header.transparentBlue{
 
 .box-top.journal-wrap {
 	background: #94B3C4;
+	
 }
 
 .box-top.happening-wrap {
@@ -3810,7 +3901,7 @@ header.transparentBlue{
 		min-height: 370px;
 		font-size: 20px;
 		font-family: 'CircularStdBook';
-		font-weight: 700;
+		font-family: 'CircularStdBold';
 		line-height: 1.2;
 		span{
 			font-weight: 400;
@@ -3833,7 +3924,7 @@ header.transparentBlue{
 		min-height: 410px;
 		font-size: 20px;
 		font-family: 'CircularStdBook';
-		font-weight: 700;
+		font-family: 'CircularStdBold';
 		line-height: 1.2;
 		span{
 			font-weight: 400;
@@ -3888,23 +3979,27 @@ header.transparentBlue{
 	margin-top: 25px;
 
 	.asSeenIn{
-		width: 80%;
+		width: 100%;
 		height: 100%;
 		border-top: #E2E2E2 1px solid;
 		border-bottom: #E2E2E2 1px solid;
 		margin: 0 auto;
 		display: flex;
-		justify-content: center;
+		
 		align-items: baseline;
 		padding: 30px 0;
 		
 		span{
 			display: block;
+			width: 10%;
 		}
 		ul{
 			list-style: none;
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
+			width: 90%;
+			margin-left:0;
 		.partnerLogo{
 			filter: grayscale(100);
 			max-width: 120px;
@@ -3940,6 +4035,17 @@ header.transparentBlue{
 	top: 0;
 	left: 0;
 }
+.membership{
+	button{
+		font-size: 16px;
+	}
+	p{
+		font-size: 16px;
+	}
+	a{
+		font-size: 16px;
+	}
+}
 
 
 /* ---- footer ----------------*/
@@ -3973,11 +4079,19 @@ footer form input {
 	color: #fff;
 	padding: 0 20px;
 	height: 60px;
+	box-sizing: border-box;
 }
 
 footer form input[type=submit] {
-	left: -5px;
+	
 	position: relative;
+	box-sizing: border-box;
+	border:none;
+	border: solid 1px #fff;
+	left: -5px;
+	top: -0.5px;
+	
+	
 }
 
 .footer-bottom {
@@ -4038,7 +4152,7 @@ footer ::placeholder {
 				display: flex;
 				font-size: 24px;
 				font-style: normal;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				line-height: 30px;
 				letter-spacing: 0.03em;
 				text-align: left;
@@ -4135,7 +4249,7 @@ footer ::placeholder {
 				display: flex;
 				font-size: 24px;
 				font-style: normal;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				line-height: 30px;
 				letter-spacing: 0.03em;
 				text-align: left;
@@ -4178,7 +4292,7 @@ footer ::placeholder {
 				a{
 					color: white;
 					font-size: 20px;
-					font-weight: 7002;
+					font-family: 'CircularStdBold';
 					
 				}
 			}
@@ -4206,11 +4320,11 @@ footer ::placeholder {
 			align-items: center;
 			h5{
 				font-size: 16px;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 			}
 			h3{
 				font-size: 50px;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				letter-spacing: 1.1;
 				max-width: 580px;
 				text-align: center;
@@ -4255,10 +4369,10 @@ footer ::placeholder {
 			width: 60%;
 			display: flex;
 			flex-direction: column;
+			padding-right: 100px;
 			h3{
-				font-family: CircularStdBook;
-				font-weight: 700;
-				letter-spacing: 1.2px;
+
+				font-family: 'CircularStdBold';
 				line-height: 30.48px;
 				margin-bottom: 15px;
 			}
@@ -4269,7 +4383,7 @@ footer ::placeholder {
 			h4{
 				font-size: 18px;
 				font-style: normal;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				line-height: 18px;
 				letter-spacing: 0.03em;
 				text-align: left;
@@ -4301,7 +4415,7 @@ footer ::placeholder {
 					display: inline;
 					margin-right: 15px;
 					font-size:16px;
-					font-weight: 700;
+					font-family: 'CircularStdBold';
 				}
 				a{
 					margin-right:10px;
@@ -4317,7 +4431,7 @@ footer ::placeholder {
 		margin-top: 50px;
 		h4{
 			font-size: 24px;
-			font-weight: 700;
+			font-family: 'CircularStdBold';
 			font-family: 'CircularStdBook';
 			margin-bottom: 20px;
 		}
@@ -4343,7 +4457,7 @@ footer ::placeholder {
 				border:1px solid $theblue;
 				border-right: none;
 				width: 21.7%;
-				padding: 20px 10px;
+				padding: 15px;
 				label{
 					font-size: 14px;
 					margin-bottom: 0;
@@ -4357,7 +4471,7 @@ footer ::placeholder {
 					background-color: white;
 				}
 				input::placeholder{
-
+					color: $theblue;
 				}
 				input:focus{
 					outline: none;
@@ -4399,15 +4513,21 @@ footer ::placeholder {
 				
 				
 			}
+			.inputItem1{
+				width: 45%;
+			}
+			.inputItem2,.inputItem3,.inputItem4{
+				width: 16%;
+			}
 			button{
 		
 				background-color: $theblue;
 				color: white;
 				border: none;
 				font-family: CircularStdBook;
-				font-weight: 700;
+				font-family: 'CircularStdBold';
 				position: relative;
-				width: 20%;
+				width: 30%;
 				font-size: 18px;
 			}
 

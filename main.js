@@ -2,6 +2,11 @@
 gsap.registerPlugin(ScrollTrigger)
 
 
+
+gsap.fromTo('body',
+    {opacity:0,}
+    ,{opacity:100})
+
 //*Check If Enter website for the first time/////
 let introAnimationOverlay = document.querySelector('.introAnimationOverlay')
 if(localStorage.getItem('asaiVisited')){
@@ -47,8 +52,10 @@ if(localStorage.getItem('asaiVisited')){
 
 
 let line = document.querySelector('.cls-1')
+if(line){
+    var lineLength = line.getTotalLength();
+}
 
-var lineLength = line.getTotalLength();
  
 
 
@@ -162,6 +169,7 @@ if(document.querySelector('.indexPage')){
 
 /** non transparent header **/
 
+
 gsap.to('.nonTransparent.locationHeader',{
         y:'-100%',
         
@@ -181,7 +189,7 @@ gsap.to('.nonTransparent.locationHeader',{
 
 let hiddenText = document.querySelectorAll('.hiddenText');
 let dinTitle = document.querySelectorAll('.din-title');
-
+/*
 hiddenText.forEach(section => {
     ScrollTrigger.create({
         trigger:section,
@@ -200,7 +208,7 @@ hiddenText.forEach(section => {
 
 });
 
-
+*/
 /****sliding text section***/
 
 

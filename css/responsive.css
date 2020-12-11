@@ -11,6 +11,9 @@
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  .membershipSingle {
+    margin-top: 100px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -23,6 +26,12 @@
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  .asSeenInContainer {
+    padding-bottom: 100px;
+  }
+  .clearBoth {
+    height: 1000px;
   }
 }
 
@@ -356,7 +365,7 @@
         grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     background-color: #94B3C4;
-        grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
+        grid-template-areas: "imageWrap imageWrap titleWrap titleWrap" "imageWrap imageWrap textWrap textWrap" "imageWrap imageWrap textWrap textWrap";
   }
   .imageTextSliderContainer .imageWrap {
     width: 100%;
@@ -447,6 +456,11 @@
         -ms-flex-align: center;
             align-items: center;
     margin-top: 25px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
   }
   .asSeenInContainer .asSeenIn ul .partnerLogo {
     -webkit-filter: grayscale(100);
@@ -1272,7 +1286,7 @@
     display: block;
     height: 600%;
     right: 0;
-    width: 140% !important;
+    width: 160% !important;
     padding-top: 25px;
     opacity: 0;
     -webkit-transition: all ease 0.5s;
@@ -1622,7 +1636,7 @@
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     gap: 15px 0px;
-        grid-template-areas: "keyIcon1 keyIcon1 keyIcon2 keyIcon2 keyIcon3 keyIcon3" ". keyIcon4 keyIcon4 keyIcon5 keyIcon5 .";
+        grid-template-areas: "keyIcon1 keyIcon1 keyIcon2 keyIcon2 keyIcon3 keyIcon3" ". keyIcon4 keyIcon4 keyIcon5 keyIcon5 .";
     max-width: 380px;
     margin: 0 auto;
     margin-top: 50px;
@@ -2112,6 +2126,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     border: 1px solid black;
+    border-bottom: none;
     padding: 5px 15px;
     width: 100%;
     height: 80px;
@@ -2183,7 +2198,7 @@
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
     gap: 0px 0px;
-        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
+        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
   }
   .imageTextSliderContainer .titleWrap {
     -ms-grid-row: 1;
@@ -4281,6 +4296,63 @@
   .accordionMenu .accordion-item:last-child {
     border-bottom: none;
   }
+  .asSeenInContainer {
+    width: 100vw;
+    margin-top: 25px;
+  }
+  .asSeenInContainer .asSeenIn {
+    width: 80%;
+    height: 100%;
+    border-top: #E2E2E2 1px solid;
+    border-bottom: #E2E2E2 1px solid;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 0;
+  }
+  .asSeenInContainer .asSeenIn span {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+  }
+  .asSeenInContainer .asSeenIn ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25px;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 0;
+  }
+  .asSeenInContainer .asSeenIn ul .partnerLogo {
+    -webkit-filter: grayscale(100);
+            filter: grayscale(100);
+    max-width: 120px;
+    margin: 15px 10px;
+  }
+  .asSeenInContainer .asSeenIn ul .partnerLogoTall {
+    max-width: 80px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -4449,7 +4521,7 @@
     -ms-grid-rows: auto auto auto;
         grid-template-rows: auto auto auto;
     gap: 0px 0px;
-        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
+        grid-template-areas: "titleWrap" "imageWrap" "textWrap";
   }
   .imageTextSliderContainer .titleWrap {
     -ms-grid-row: 1;
@@ -5241,7 +5313,7 @@
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     gap: 15px 0px;
-        grid-template-areas: "keyIcon1 keyIcon1 keyIcon2 keyIcon2 keyIcon3 keyIcon3" ". keyIcon4 keyIcon4 keyIcon5 keyIcon5 .";
+        grid-template-areas: "keyIcon1 keyIcon1 keyIcon2 keyIcon2 keyIcon3 keyIcon3" ". keyIcon4 keyIcon4 keyIcon5 keyIcon5 .";
     max-width: 380px;
     margin: 0 auto;
     margin-top: 50px;
@@ -5556,7 +5628,7 @@
     display: block;
     height: 600%;
     right: 0;
-    width: 170% !important;
+    width: 180% !important;
     padding-top: 25px;
     opacity: 0;
     -webkit-transition: all ease 0.5s;
